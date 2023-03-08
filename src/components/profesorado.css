@@ -1,0 +1,16 @@
+.scrollbox h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.scrollbox h2 {
+    font-size: 18px;
+}
+
+.scrollbox h3 {
+    font-size: 12px;
+}
+
+.scrollbox {
+    height: 600px;
+    overflow: auto;
+}

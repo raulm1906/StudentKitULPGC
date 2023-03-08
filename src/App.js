@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { Grid, GridItem } from '@chakra-ui/react'
+
+import RegisterForm from './components/RegisterForm';
+import RegisterPortada from './components/RegisterPortada';
+
+import LoginForm from './components/LoginForm';
+
+import Profesorado from './components/Profesorado';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Grid templateColumns='repeat(6, 1fr)' gap={5}>
+        <GridItem colSpan={3}>
+          <RegisterForm  />
+        </GridItem>
+        <GridItem colSpan={3}>
+          <RegisterPortada />
+        </GridItem>
+      </Grid>
     </div>
   );
 }
 
-export default App;
+function DisplayPage() {
+  return (
+    <Footer />
+  )
+}
+
+export default DisplayPage;
