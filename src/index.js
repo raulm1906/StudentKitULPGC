@@ -6,11 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from '@chakra-ui/theme';
+import Index from './pages/ProfesorInfo/Index'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider theme={theme}>
-    <App />
+    <Index />
   </ChakraProvider>
 );
 

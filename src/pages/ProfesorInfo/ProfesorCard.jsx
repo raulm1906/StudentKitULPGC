@@ -15,32 +15,32 @@ function ProfesorCard() {
         .catch(error => {
             console.log(error)
         })
-      }, []);
+      }, []);  
 
     return(
-        <Card h="100%" margin="1rem" bg="#EDECEC" padding={4} borderRadius="20px">
+        <Card h="100%" margin={2} bg="#EDECEC" padding={4} borderRadius="20px">
             <CardHeader textAlign="center">
                 <Heading fontSize='4xl' as="b">{profesor.nombre}</Heading>
             </CardHeader>
             <CardBody padding={1} maxH="450px" overflowY="scroll">
                 <Flex as="article" marginBottom={5} marginTop={5}>
                     <Box flex="1">
-                        <Text key="data.id"><Text as="b">Correo: </Text>{profesor.correo}</Text>
+                        <Text ><Text as="b">Correo: </Text>{profesor.correo}</Text>
                     </Box>
                     <Box flex="1">
-                        <Text key="data.id"><Text as="b">Despacho: </Text>{profesor.despacho}</Text>
-                        <Text key="data.id"><Text as="b">Telefono: </Text>{profesor.telefono}</Text>
+                        <Text ><Text as="b">Despacho: </Text>{profesor.despacho}</Text>
+                        <Text ><Text as="b">Telefono: </Text>{profesor.telefono}</Text>
                     </Box>
                 </Flex >
                 <Flex as="article" direction="column" marginBottom={5}>
-                    <Heading as="b">Horas de tutoria:</Heading>
+                    <Heading as="b" fontSize="xl">Horas de tutoria:</Heading>
                     <TutoriaSchedule/>
                 </Flex>
                 <Flex direction="column">
-                    <Heading as="b">Asignaturas impartidas por el profesor:</Heading>
-                    <Text key="data.id">{profesor.correo}</Text>
-                    <Text key="data.id">{profesor.correo}</Text>
-                    <Text key="data.id">{profesor.correo}</Text>
+                    <Heading fontSize="xl" as="b">Asignaturas impartidas por el profesor:</Heading>
+                    <Text >{profesor.correo}</Text>
+                    <Text >{profesor.correo}</Text>
+                    <Text >{profesor.correo}</Text>
                 </Flex>
             </CardBody>
         </Card>
