@@ -6,7 +6,7 @@ import Header from "../pages/cabecera";
 import LayaoutPublic from "./LayoutPublic";
 import NotFound from "./NotFound";
 import Profesorado from "../pages/Profesorado";
-
+import subject from "../data/subjects.json" 
 export const router = createBrowserRouter([
     {
         path:"/",
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/Asignatura",
-                element: <Asignatura />,
+                element: <Asignatura asignatura={subject[0]} />,
             },
             {
                 path:"/Profesorado",

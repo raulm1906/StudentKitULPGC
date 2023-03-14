@@ -11,7 +11,7 @@ function Header (){
             <span  className="lefticon"> <BiConversation /></span>
             <div className="centralnav">
                 <NavLink to="#">Horario</NavLink>
-                <Link to=".\Profesorado">Profesorado</Link>
+                <NavLink to=".\Profesorado">Profesorado</NavLink>
                 <NavLink to=".\Asignatura">Asignaturas</NavLink>
 
             </div>

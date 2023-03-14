@@ -1,9 +1,9 @@
-import React from "react";
+import React, {BrowserRouter,Route,Routes} from "react";
 
 function App() {
   return (
     <div className="container">
-      MainPAge
+      MAINPAGE
     </div>
   );
 }

@@ -17,12 +17,14 @@ function TableProf(){
         <ChakraProvider>
         <Table size="md">
             <Thead>
-                <Th>Mañana/Tarde</Th>
-                <Th>Lunes</Th>
-                <Th>Martes</Th>    
-                <Th>Miercoles</Th>    
-                <Th>Jueves</Th>    
-                <Th>Viernes</Th>    
+                <Tr>
+                    <Th>Mañana/Tarde</Th>
+                    <Th>Lunes</Th>
+                    <Th>Martes</Th>    
+                    <Th>Miercoles</Th>    
+                    <Th>Jueves</Th>    
+                    <Th>Viernes</Th>
+                </Tr>    
             </Thead>
             <Tbody>
                 <Tr>
