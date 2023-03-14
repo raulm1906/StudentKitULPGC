@@ -1,7 +1,5 @@
 import requests
-import csv
 from bs4 import BeautifulSoup
-import pandas as pd
 import json
 
 data = []
@@ -26,9 +24,10 @@ for endpoint in range(40951, 40991):
     duracion = soup.find('td', {'headers': 'hdDuracion'})
     creditos = soup.find('td', {'headers': 'hdCreditos'})
     año = soup.find('td', {'headers': 'hdCursos'})
+    proyectoDocente = soup.find('a', string='Proyecto docente [2022/23]')
 
-    # Create a dictionary for the current course
-    course = {
+    # Create a dictionary for the current subject
+    subject = {
         'id': asignatura_number,
         'asignatura': asignatura.text,
         'tipo': tipo.text,
@@ -36,15 +35,21 @@ for endpoint in range(40951, 40991):
         'departamento': departamento.text,
         'duracion': duracion.text,
         'creditos': creditos.text,
-        'año': año.text
+        'año': año.text,
+        'proyectoDocente': proyectoDocente.get('href')
     }
 
-    # Append the course dictionary to the courses list
-    data.append(course)
+    # Append the subject dictionary to the subjects list
+    data.append(subject)
 
     # Print the extracted information
-    print(f'Asignatura: {asignatura.text}\nTipo: {tipo.text}\nTitulación: {titulacion.text}\n')
-    print(f'Departamento: {departamento.text}\nDuracion: {duracion.text}\nCréditos: {creditos.text}\nAño: {año.text}\n')
+    '''
+    print(f'Asignatura: {asignatura.text}\nTipo: {tipo.text}\nTitulación: {titulacion.text}')
+    print(f'Departamento: {departamento.text}\nDuracion: {duracion.text}\nCréditos: {creditos.text}\nAño: {año.text}')
+    print(f'Proyecto Docente: {subject["proyectoDocente"]}\n')
+    '''
 
-with open('courses.json', 'w', encoding='utf-8') as f:
-    json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True) 
+with open('subjects.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
+
+print('Done')
