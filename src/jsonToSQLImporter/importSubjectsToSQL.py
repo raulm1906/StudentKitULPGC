@@ -42,7 +42,7 @@ if __name__ == "__main__":
     connection = DBConnection.DBConnect()
     cursor = connection.cursor()
 
-    with open("../subjects.json", 'r', encoding='utf-8') as subjectsJson:
+    with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
         subjectsList = json.load(subjectsJson)
 
     for subject in subjectsList:

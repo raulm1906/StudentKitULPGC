@@ -1,12 +1,12 @@
 import unittest
 import json
-from jsonToSQLImporter.importSubjectsToSQL import deserializeSubject
+from src.jsonToSQLImporter.importSubjectsToSQL import deserializeSubject
 
 class TestJsonDeserialize(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        with open("../subjects.json", 'r', encoding='utf-8') as subjectsJson:
+        with open("../src/scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
             cls.subjectsList = json.load(subjectsJson)
 
     def test_subject_name(self):
