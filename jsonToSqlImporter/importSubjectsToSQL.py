@@ -1,10 +1,8 @@
-import DBConnection
+from . import DBConnection
 import json
 import re
+import mariadb
 
-
-# connection = DBConnect.dbConnect()
-# cursor = connection.cursor()
 
 def deserializeSubject(subject: dict) -> dict:
     cleanDict = {}
@@ -35,14 +33,29 @@ def deserializeSubject(subject: dict) -> dict:
     cleanDict["year"] = subject["año"]
 
     # Subject linkPD
-    cleanDict["linkPD"] = ""
+    cleanDict["linkPD"] = subject["proyectoDocente"]
 
     return cleanDict
 
 
-with open("../courses.json", 'r', encoding='utf-8') as subjectsJson:
-    subjectsDict = json.load(subjectsJson)
-    for subject in subjectsDict:
-        cleanDict = deserializeSubject(subject)
+if __name__ == "__main__":
+    connection = DBConnection.DBConnect()
+    cursor = connection.cursor()
 
-# DBConnection.dbDisconnect(connection)
+    with open("../subjects.json", 'r', encoding='utf-8') as subjectsJson:
+        subjectsList = json.load(subjectsJson)
+
+    for subject in subjectsList:
+        dsDict = deserializeSubject(subject)
+
+        try:
+            cursor.execute("INSERT INTO SUBJECTS (code,name,degree,semester,type,credits,year,linkPD)\
+                VAULES(?, ?, ?, ?, ?, ?, ?, ?)", (dsDict["code"], dsDict["name"], dsDict["degree"],
+                                                    dsDict["semester"],dsDict["type"], dsDict["credits"],
+                                                    dsDict["year"], dsDict["linkPD"]))
+        except mariadb.Error as e:
+            print(f"Error: {e}")
+
+        connection.commit()
+
+    DBConnection.DBDisconnect(connection)

@@ -1,7 +1,7 @@
 import mariadb
 import sys
 
-def dbConnect ():
+def DBConnect ():
     # Connect to MariaDB Platform
     try:
         conn = mariadb.connect(
@@ -17,5 +17,5 @@ def dbConnect ():
         sys.exit(1)
 
 
-def dbDisconnect (conn):
+def DBDisconnect (conn):
     conn.close
