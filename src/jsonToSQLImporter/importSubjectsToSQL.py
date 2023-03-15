@@ -37,25 +37,39 @@ def deserializeSubject(subject: dict) -> dict:
 
     return cleanDict
 
+def insertDegree(connection: mariadb.connections, degree: str) -> bool:
+    cursor = connection.cursor
+    try:
+        cursor.execute(f"INSERT INTO DEGREE(degree) VALUES ({degree})")
+        connection.commit()
+        return True
+    except mariadb.Error as e:
+        print(f"Error: {e}")
+        return False
+
+def insertSubject(connection: mariadb.connections, subject: dict) -> bool:
+    cursor = connection.cursor
+    try:
+        cursor.execute(f"SELECT id FROM DEGREES WHERE degree={subject['degree']}")
+        degreeId = cursor[0]
+        cursor.execute(f"INSERT INTO SUBJECTS (code,name,degree,semester,type,credits,year,linkPD) \
+            VALUES ({subject['code']}, {subject['name']}, {degreeId}, {subject['semester']}, \
+            {subject['type']}, {subject['credits']}, {subject['year']}, {subject['linkPD']})")
+        connection.commit()
+        return True
+    except mariadb.Error as e:
+        print(f"Error: {e}")
+        return False
+
 
 if __name__ == "__main__":
     connection = DBConnection.DBConnect()
-    cursor = connection.cursor()
 
     with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
         subjectsList = json.load(subjectsJson)
 
     for subject in subjectsList:
         dsDict = deserializeSubject(subject)
-
-        try:
-            cursor.execute("INSERT INTO SUBJECTS (code,name,degree,semester,type,credits,year,linkPD)\
-                VAULES(?, ?, ?, ?, ?, ?, ?, ?)", (dsDict["code"], dsDict["name"], dsDict["degree"],
-                                                    dsDict["semester"],dsDict["type"], dsDict["credits"],
-                                                    dsDict["year"], dsDict["linkPD"]))
-        except mariadb.Error as e:
-            print(f"Error: {e}")
-
-        connection.commit()
+        insertSubject(dsDict)
 
     DBConnection.DBDisconnect(connection)
