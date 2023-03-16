@@ -63,6 +63,6 @@ if __name__ == "__main__":
 
     for subject in subjectsList:
         dsDict = jsonFormatter.subjectFormatter(subject)
-        insertSubject(connection, dsDict)
+        insertSubject(connection, dsDict, saveLog)
 
     DBConnection.DBDisconnect(connection)
