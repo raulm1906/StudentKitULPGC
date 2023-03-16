@@ -38,10 +38,10 @@ def insertSubject(connection: mariadb.connections, subject: dict, logging: bool 
 
 
 if __name__ == "__main__":
-    if len(sys.argv) == 2:
-        connection = DBConnection.DBConnect(sys.argv[0], sys.argv[1])
-    elif len(sys.argv) == 3:
-        connection = DBConnection.DBConnect(sys.argv[0], sys.argv[1], sys.argv[2])
+    if len(sys.argv) == 3:
+        connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2])
+    elif len(sys.argv) == 4:
+        connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2], sys.argv[3])
     else:
         exit(1)
 
