@@ -59,7 +59,7 @@ if __name__ == "__main__":
     with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
         subjectsList = json.load(subjectsJson)
 
-    insertDegree(connection,jsonFormatter.subjectFormatter(subjectsList[0])['degree'],saveLog)
+    #insertDegree(connection,jsonFormatter.subjectFormatter(subjectsList[0])['degree'],saveLog)
 
     for subject in subjectsList:
         dsDict = jsonFormatter.subjectFormatter(subject)
