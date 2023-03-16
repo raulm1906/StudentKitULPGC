@@ -1,6 +1,5 @@
 import unittest
 import json
-from src.jsonToSQLImporter.insertSQL import deserializeSubject
 
 class TestJsonDeserialize(unittest.TestCase):
 

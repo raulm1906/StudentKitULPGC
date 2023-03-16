@@ -1,6 +1,6 @@
 import sys
-from . import DBConnection
-from . import jsonFormatter
+import DBConnection
+import jsonFormatter
 import json
 import mariadb
 import logging
