@@ -7,39 +7,39 @@ import mariadb
 import logging
 
 
-def insertDegree(connection: mariadb.connections, degree: str, logging: bool = False) -> bool:
+def insertDegree(connection: mariadb.connections, degree: str, saveLog: bool = False) -> bool:
     cursor = connection.cursor
     try:
         cursor.execute(f"INSERT INTO DEGREE(degree) VALUES ({degree})")
         return True
     except mariadb.Error as e:
-        if logging:
+        if saveLog:
             logging.error(f"Error: {e}")
         return False
 
 
-def insertSubject(connection: mariadb.connections, subject: dict, logging: bool = False) -> bool:
+def insertSubject(connection: mariadb.connections, subject: dict, saveLog: bool = False) -> bool:
     cursor = connection.cursor
 
     try:
         cursor.execute(f"SELECT id FROM DEGREES WHERE degree={subject['degree']}")
         degreeId = cursor.fetchone()[0]
-        if logging:
+        if saveLog:
             logging.info(degreeId)
         cursor.execute(f"INSERT INTO SUBJECTS (code,name,degree,semester,type,credits,year,linkPD) \
             VALUES ({subject['code']}, {subject['name']}, {degreeId}, {subject['semester']}, \
             {subject['type']}, {subject['credits']}, {subject['year']}, {subject['linkPD']})")
-        if logging:
+        if saveLog:
             logging.info(cursor.fetchone()[0])
         return True
     except mariadb.Error as e:
-        if logging:
+        if saveLog:
             logging.exception(f"Error: {e}")
         return False
 
 
 if __name__ == "__main__":
-    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    fileDir = os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     if len(sys.argv) == 3:
         connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2])
@@ -48,6 +48,7 @@ if __name__ == "__main__":
     else:
         exit(1)
 
+    logpath = os.path.join(fileDir, "../../logs/insertSQL.log")
     logging.basicConfig(filename="../../logs/insertSQL.log", encoding="UFT-8",
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
@@ -56,8 +57,8 @@ if __name__ == "__main__":
 
     insertDegree(connection,subjectsList[0]['degree'],True)
 
-    for subject in subjectsList:
-        dsDict = jsonFormatter.subjectFormatter(subject)
-        insertSubject(connection, dsDict)
+    #for subject in subjectsList:
+    #    dsDict = jsonFormatter.subjectFormatter(subject)
+    #    insertSubject(connection, dsDict)
 
     DBConnection.DBDisconnect(connection)
