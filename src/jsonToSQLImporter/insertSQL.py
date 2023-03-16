@@ -24,15 +24,15 @@ def insertSubject(connection: mariadb.connections, subject: dict, saveLog: bool 
     cursor = connection.cursor()
 
     try:
-        cursor.execute(f"SELECT id FROM DEGREES WHERE degree={subject['degree']}")
+        cursor.execute(f"SELECT id FROM DEGREES WHERE degree='{subject['degree']}'")
         degreeId = cursor.fetchone()[0]
         if saveLog:
             logging.info(degreeId)
         cursor.execute(f"INSERT INTO SUBJECTS (code,name,degree,semester,type,credits,year,linkPD) \
-            VALUES ({subject['code']}, {subject['name']}, {degreeId}, {subject['semester']}, \
-            {subject['type']}, {subject['credits']}, {subject['year']}, {subject['linkPD']})")
+            VALUES('{subject['code']}', '{subject['name']}', '{degreeId}', '{subject['semester']}', \
+            '{subject['type']}', '{subject['credits']}', '{subject['year']}', '{subject['linkPD']}')")
         if saveLog:
-            logging.info(cursor.fetchone()[0])
+            logging.info(f"{cursor.rowcount} values inserted")
         return True
     except mariadb.Error as e:
         if saveLog:
@@ -61,8 +61,8 @@ if __name__ == "__main__":
 
     insertDegree(connection,jsonFormatter.subjectFormatter(subjectsList[0])['degree'],saveLog)
 
-    #for subject in subjectsList:
-    #    dsDict = jsonFormatter.subjectFormatter(subject)
-    #    insertSubject(connection, dsDict)
+    for subject in subjectsList:
+        dsDict = jsonFormatter.subjectFormatter(subject)
+        insertSubject(connection, dsDict)
 
     DBConnection.DBDisconnect(connection)
