@@ -8,9 +8,11 @@ import logging
 
 
 def insertDegree(connection: mariadb.connections, degree: str, saveLog: bool = False) -> bool:
-    cursor = connection.cursor
+    cursor = connection.cursor()
     try:
-        cursor.execute(f"INSERT INTO DEGREE(degree) VALUES ({degree})")
+        cursor.execute(f"INSERT INTO DEGREE(degree) VALUES('{degree}')")
+        if saveLog:
+            logging.info(f"{cursor.rowcount} values inserted")
         return True
     except mariadb.Error as e:
         if saveLog:
@@ -19,7 +21,7 @@ def insertDegree(connection: mariadb.connections, degree: str, saveLog: bool = F
 
 
 def insertSubject(connection: mariadb.connections, subject: dict, saveLog: bool = False) -> bool:
-    cursor = connection.cursor
+    cursor = connection.cursor()
 
     try:
         cursor.execute(f"SELECT id FROM DEGREES WHERE degree={subject['degree']}")
@@ -43,10 +45,12 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 3:
         connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2])
+        saveLog = False
     elif len(sys.argv) == 4:
         connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2], sys.argv[3])
+        saveLog = sys.argv[3]
     else:
-        exit(1)
+        sys.exit(-1)
 
 
     logging.basicConfig(filename="../../logs/insertSQL.log", encoding="UTF-8",
@@ -55,7 +59,7 @@ if __name__ == "__main__":
     with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
         subjectsList = json.load(subjectsJson)
 
-    insertDegree(connection,subjectsList[0]['degree'],True)
+    insertDegree(connection,jsonFormatter.subjectFormatter(subjectsList[0])['degree'],saveLog)
 
     #for subject in subjectsList:
     #    dsDict = jsonFormatter.subjectFormatter(subject)
