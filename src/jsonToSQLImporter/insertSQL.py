@@ -39,7 +39,7 @@ def insertSubject(connection: mariadb.connections, subject: dict, saveLog: bool 
 
 
 if __name__ == "__main__":
-    fileDir = os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    fileDir = os.path.dirname(os.path.abspath(__file__))
 
     if len(sys.argv) == 3:
         connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2])
@@ -49,7 +49,7 @@ if __name__ == "__main__":
         exit(1)
 
     logpath = os.path.join(fileDir, "../../logs/insertSQL.log")
-    logging.basicConfig(filename="../../logs/insertSQL.log", encoding="UFT-8",
+    logging.basicConfig(filename=logPath, encoding="UFT-8",
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
