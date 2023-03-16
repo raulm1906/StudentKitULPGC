@@ -1,3 +1,4 @@
+import os
 import sys
 import DBConnection
 import jsonFormatter
@@ -38,6 +39,8 @@ def insertSubject(connection: mariadb.connections, subject: dict, logging: bool 
 
 
 if __name__ == "__main__":
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
     if len(sys.argv) == 3:
         connection = DBConnection.DBConnect(sys.argv[1], sys.argv[2])
     elif len(sys.argv) == 4:
