@@ -24,7 +24,7 @@ def insertSubject(connection: mariadb.connections, subject: dict, saveLog: bool 
     cursor = connection.cursor()
 
     try:
-        cursor.execute(f"SELECT id FROM DEGREES WHERE degree='{subject['degree']}'")
+        cursor.execute(f"SELECT id FROM DEGREE WHERE degree='{subject['degree']}'")
         degreeId = cursor.fetchone()[0]
         if saveLog:
             logging.info(degreeId)
