@@ -1,3 +1,4 @@
+import sys
 from . import DBConnection
 from . import jsonFormatter
 import json
@@ -32,14 +33,19 @@ def insertSubject(connection: mariadb.connections, subject: dict, logging: bool 
         return True
     except mariadb.Error as e:
         if logging:
-            logging.error(f"Error: {e}")
+            logging.exception(f"Error: {e}")
         return False
 
 
 if __name__ == "__main__":
-    connection = DBConnection.DBConnect()
+    if len(sys.argv) == 2:
+        connection = DBConnection.DBConnect(sys.argv[0], sys.argv[1])
+    elif len(sys.argv) == 3:
+        connection = DBConnection.DBConnect(sys.argv[0], sys.argv[1], sys.argv[2])
+    else:
+        exit(1)
 
-    logging.basicConfig(filename="/logs/logSQL.log", encoding="UFT-8",
+    logging.basicConfig(filename="../../logs/insertSQL.log", encoding="UFT-8",
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
     with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
