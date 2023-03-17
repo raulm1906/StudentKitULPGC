@@ -11,6 +11,7 @@ const Search = ({ searchTerm, onItemClick }) => {
     }
   
     return (
+     
     <div id="resultSearch">
         {filteredData.map((item, index) => (
         <div className="border m-2" key={index}>

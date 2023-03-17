@@ -44,13 +44,13 @@ a:focus{
   height: 25em;
   overflow: scroll;
   display: flex;
-  overflow-x: hidden;
   margin: 1%;
   background-color: #F0F0F0;
   border-radius: 10px;
   flex-direction: column;
   float: left;
   scrollbar-width: thin;
+  padding: 1%;
 }
 .search_asignaturas{
   background-color: #F0F0F0;
@@ -98,7 +98,7 @@ a:focus{
 
  .profesorado {
   width: 100%;
-  height: 5em;
+  height: auto;
  }
 
 /*ScrollBar*/
@@ -107,54 +107,33 @@ a:focus{
   max-height: 85%;
   overflow: auto;
 }
-/* Cambiar el ancho y el color de la barra de desplazamiento */
-.scroll-box::-webkit-scrollbar {
-  height: 100;
-  width: 10px;
+
+/* Profesorado */ 
+
+
+.tutoriasFrame{
+  padding: 1em;
+  background-color: #DADADA;
+  border-radius: 1em;
 }
-
-.scroll-box::-webkit-scrollbar-track {
-  background: #f2f2f2;
+.m-2 p{
+  font-size: small;
+  padding-top:1em;
+  padding-bottom:1em ;
 }
-
-.scroll-box::-webkit-scrollbar-thumb {
-  background: #c2c2c2;
-  border-radius: 10px;
-}
-
-.scroll-box::-webkit-scrollbar-thumb:hover {
-  background: #a2a2a2;
-}
-
-.scroll-box::-webkit-scrollbar-thumb:active {
-  background: #818181;
-}
-
-::-webkit-scrollbar-button {
-  display: block;
-  background-color: #f2f2f2;
-}
-
-::-webkit-scrollbar-button:start:decrement {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-::-webkit-scrollbar-button:end:increment {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-/* Profesoado */ 
-
 #atributos_teacher{
+
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto ;
+  grid-template-rows: auto auto;
   gap: 0.1em;
   width: 100%;
   height: 30%;
   text-align: center;
+  align-items: center;
+  justify-items: start;
+  justify-content: space-around;
+
 }
 
 #teachername{
@@ -221,21 +200,9 @@ a:focus{
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .inputBuscar{
   width: 50% !important;
-}
-
-table{
-  min-width: 500px;
 }
 
 .containerInput{
@@ -246,18 +213,4 @@ table{
   padding-bottom: 25px;
 }
 
-@media (max-width: 988px){
-  
-  .inputBuscar{
-    width: 100% !important;
-  }
 
-  .App{
-    padding: 40px 5px;
-  }
-
-  
-.containerInput{
-  padding-bottom: 15px;
-}
-}

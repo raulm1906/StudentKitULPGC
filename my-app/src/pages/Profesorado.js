@@ -1,9 +1,36 @@
 import React,  { useEffect, useState } from 'react'
 import '../components/style.css';
 import { ChakraProvider } from '@chakra-ui/react';
-import TableProf from '../components/tableAsignaturas';
+import TableProf from '../components/tablaProfesorado';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Search from '../components/Busqueda/Search';
+import SearchBar from '../components/Busqueda/SearchBar';
+import { Container, Row, Col } from 'react-bootstrap';
+
 
 function Profesorado (){
+
+    const [newSubject, setAsignatura] = useState()
+    const [searchTerm, setSearchTerm] = useState('');
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const cambiarSubject = (varSubject) => {
+        setAsignatura(varSubject)
+    }
+
+    const handleSearchInputChange = (e) => {
+        setSearchTerm(e.target.value);
+    }
+
+    const handleItemClick = (item) => {
+        setSelectedItem(item);
+        setAsignatura(item)
+    }
+    
+    const handleChange = event => {
+        setSearchTerm(event.target.value);
+      }
+
     return (
         <div id="mainprofesorado">
             <section className="scroll-box">
@@ -14,15 +41,26 @@ function Profesorado (){
                     <div className= "Despacho"><b>Departamento:</b><label name="despacho">XXX</label></div>
                     <div className="Telefono"><b>telefono:</b><label name="telefono">XXX</label></div>
                 </div>
-                <p><b>Horas de tutorias</b></p>
-                <div></div>
-                <p><b>Asignaturas impartidas por el profesor</b></p>
-            </section>
-            <section className="search_profesores">
-                <div className="nav_search">
-                    <i className="material-icons">search</i>
-                    <span>Profesores</span>
+                <b>Horas Tutorías</b>
+                <div className='text-center tutoriasFrame'>
+
+                    <p className='text-center'>Primer Semestre</p>
+                    <TableProf className="center-x"/>
+                    <p className='text-center'>Segundo Semestre</p>
+                    <TableProf className="center-x"/>
                 </div>
+            </section>
+
+
+
+            <section className="search_asignaturas">
+                <div className="nav_search">
+                    <button type = "submit" className="material-icons">search</button>
+                    <SearchBar searchTerm={searchTerm} handleChange={handleChange} />
+                </div>
+
+                <Search searchTerm={searchTerm} onItemClick={handleItemClick} />
+
             </section>
 
         </div>

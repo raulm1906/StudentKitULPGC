@@ -1,12 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
 
+import App from "../App";
 import Asignatura from "../pages/Asignaturas";
-import Header from "../pages/cabecera";
 import LayaoutPublic from "./LayoutPublic";
 import NotFound from "./NotFound";
 import Profesorado from "../pages/Profesorado";
 import subject from "../data/subjects.json" 
+import profesores from "../data/profesorado.json" 
+
 export const router = createBrowserRouter([
     {
         path:"/",
@@ -23,9 +24,9 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/Profesorado",
-                element: <Profesorado />,
+                element: <Profesorado profesor={profesores[0]} />,
         
-            }
+            },
         ],
     },
     

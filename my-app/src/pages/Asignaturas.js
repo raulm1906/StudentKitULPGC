@@ -1,11 +1,13 @@
-import React,  { useEffect, useState } from 'react'
+import React, { useState } from 'react';
 import '../components/style.css';
 import TableProf from '../components/tableAsignaturas';
-import data from '../data/subjects.json'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import data from '../data/subjects.json';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from '../components/Busqueda/Search';
 import SearchBar from '../components/Busqueda/SearchBar';
+import SearchProfesores from '../components/Busqueda/SearchProfesores'
 function Asignatura ({asignatura}){  
+
     const [newSubject, setAsignatura] = useState(asignatura)
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedItem, setSelectedItem] = useState(null);
@@ -26,6 +28,7 @@ function Asignatura ({asignatura}){
     const handleChange = event => {
         setSearchTerm(event.target.value);
       }
+
     return (
         <div id="mainprofesorado">
             <section className="scroll-box">
@@ -40,18 +43,18 @@ function Asignatura ({asignatura}){
                 </div>
                 <div className="profesorado">
                    <b>Profesorados</b>
+                    <SearchProfesores searchTerm={newSubject.id}></SearchProfesores>
                 </div>
                 <div style={{ borderTop: "3px solid #707070 ", marginLeft: 20, marginRight: 20 }}></div>
                 <TableProf />
             </section>
+
             <section className="search_asignaturas">
                 <div className="nav_search">
                     <button type = "submit" className="material-icons">search</button>
-                    <SearchBar searchTerm={searchTerm} handleChange={handleChange} />
+                    <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={"Asignaturas"} />
                 </div>
-
                 <Search searchTerm={searchTerm} onItemClick={handleItemClick} />
-
             </section>
             
         </div>
