@@ -1,0 +1,914 @@
+[
+    {
+        "id": 1,
+        "profesorado": {
+            "despacho": "s7",
+            "email": "marilola.afonsoulpgc.es",
+            "profesor": "Afonso Suárez, María Dolores",
+            "telefono": "(928) 45 87 27"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.30-11.30",
+            "MARTES": "8.30-11.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 2,
+        "profesorado": {
+            "despacho": "d3-12",
+            "email": "francisco.alayonulpgc.es",
+            "profesor": "Alayón Hernández, Francisco",
+            "telefono": "(928) 45 87 56"
+        },
+        "tutorias": {
+            "JUEVES": "9.30-10.30 / 12.30-13.30",
+            "LUNES": "10.30-13.30",
+            "MARTES": "12.30-13.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 3,
+        "profesorado": {
+            "despacho": "d1-4",
+            "email": "miguel.alemanulpgc.es",
+            "profesor": "Alemán Flores, Miguel",
+            "telefono": "(928) 45 87 04"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.30-9.30 / 10.30-13.30",
+            "MARTES": "8.30-9.30",
+            "MIÉRCOLES": "8.30-9.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 4,
+        "profesorado": {
+            "despacho": "d1-9",
+            "email": "lalvarezulpgc.es",
+            "profesor": "Álvarez León, Luis",
+            "telefono": "(928) 45 45 63"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "11.30-14.30",
+            "MARTES": "9.30-12.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 5,
+        "profesorado": {
+            "despacho": "d3-6",
+            "email": "domingo.benitezulpgc.es",
+            "profesor": "Benítez Díaz, Domingo",
+            "telefono": "(928) 45 45 66"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "8.00-14.00"
+        }
+    },
+    {
+        "id": 6,
+        "profesorado": {
+            "despacho": "s9",
+            "email": "jorge.cabreraulpgc.es",
+            "profesor": "Cabrera Gámez, Jorge",
+            "telefono": "(928) 45 87 47"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "9.00-10.30 / 14.00-14.30",
+            "MIÉRCOLES": "9.30-12.00",
+            "VIERNES": "10.00-11.30"
+        }
+    },
+    {
+        "id": 7,
+        "profesorado": {
+            "despacho": "d2-9",
+            "email": "cristina.carmonaulpgc.es",
+            "profesor": "Carmona Duarte, María Cristina",
+            "telefono": "(928) 45 87 34"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "9.30-12.30",
+            "MARTES": "9.30-12.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 8,
+        "profesorado": {
+            "despacho": "s7",
+            "email": "francisco.carrerasulpgc.es",
+            "profesor": "Carreras Riudavets, Francisco Javier",
+            "telefono": "(928) 45 87 29"
+        },
+        "tutorias": {
+            "JUEVES": "9.00-10.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "10.30-15.00",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 9,
+        "profesorado": {
+            "despacho": "d1-7",
+            "email": "modesto.castrillonulpgc.es",
+            "profesor": "Castrillón Santana, Modesto F.",
+            "telefono": "(928) 45 87 55"
+        },
+        "tutorias": {
+            "JUEVES": "9.30-10.30",
+            "LUNES": "9.30-10.30",
+            "MARTES": "9.30-10.30",
+            "MIÉRCOLES": "9.30-10.30",
+            "VIERNES": "9.30-11.30"
+        }
+    },
+    {
+        "id": 10,
+        "profesorado": {
+            "despacho": "d2-14",
+            "email": "beatriz.correasulpgc.es",
+            "profesor": "Correas Suárez, Beatriz",
+            "telefono": "(928) 45 98 59"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "10.00-12.00",
+            "MARTES": "---",
+            "MIÉRCOLES": "10.00-12.00",
+            "VIERNES": "10.00-12.00"
+        }
+    },
+    {
+        "id": 11,
+        "profesorado": {
+            "despacho": "d2-13",
+            "email": "carmelo.cuencaulpgc.es",
+            "profesor": "Cuenca Hernández, Carmelo",
+            "telefono": "(928) 45 87 37"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "8.30-10.30",
+            "MIÉRCOLES": "8.30-12.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 12,
+        "profesorado": {
+            "despacho": "d3-2",
+            "email": "gabriel.deblasioulpgc.es",
+            "profesor": "de Blasio García, Gabriel",
+            "telefono": "(928) 45 87 42"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.30-11.30",
+            "MARTES": "8.30-11.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 13,
+        "profesorado": {
+            "despacho": "d1-8",
+            "email": "antonio.dominguezulpgc.es",
+            "profesor": "Domínguez Brito, Antonio",
+            "telefono": "(928) 45 45 72"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "12.30-14.30",
+            "MARTES": "12.30-14.30",
+            "MIÉRCOLES": "12.30-14.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 14,
+        "profesorado": {
+            "despacho": "d1-6",
+            "email": "luis.doresteulpgc.es",
+            "profesor": "Doreste Blanco, Luis",
+            "telefono": "(928) 45 87 06"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.00-14.00",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 15,
+        "profesorado": {
+            "despacho": "d2-11",
+            "email": "juandedios.duqueulpgc.es",
+            "profesor": "Duque Martín de Oliva, Juan de Dios",
+            "telefono": "(928) 45 87 35"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.00-11.00",
+            "MARTES": "8.00-11.00",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 16,
+        "profesorado": {
+            "despacho": "s3",
+            "email": "julio.esclarinulpgc.es",
+            "profesor": "Esclarín Monreal, Julio",
+            "telefono": "(928) 45 87 09"
+        },
+        "tutorias": {
+            "JUEVES": "10.00-11.00",
+            "LUNES": "10.00-11.30",
+            "MARTES": "10.00-11.30",
+            "MIÉRCOLES": "10.00-11.00",
+            "VIERNES": "10.00-11.00"
+        }
+    },
+    {
+        "id": 17,
+        "profesorado": {
+            "despacho": "d2-1",
+            "email": "enrique.fernandezulpgc.es",
+            "profesor": "Fernández García, Enrique",
+            "telefono": "(928) 45 87 21"
+        },
+        "tutorias": {
+            "JUEVES": "12.30-15.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "11.30-14.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 18,
+        "profesorado": {
+            "despacho": "",
+            "email": "pablo.fernandezlopezulpgc.es",
+            "profesor": "Fernández López, Pablo Carmelo",
+            "telefono": "(928)"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-10.30",
+            "LUNES": "8.30-10.30",
+            "MARTES": "---",
+            "MIÉRCOLES": "8.30-10.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 19,
+        "profesorado": {
+            "despacho": "d2-4",
+            "email": "fortesdis.ulpgc.es",
+            "profesor": "Fortes Gálvez, José",
+            "telefono": "(928) 45 87 24"
+        },
+        "tutorias": {
+            "JUEVES": "10.00-12.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "17.30-19.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 20,
+        "profesorado": {
+            "despacho": "s10",
+            "email": "david.freireulpgc.es",
+            "profesor": "Freire Obregón, David Sebastián",
+            "telefono": "(928)"
+        },
+        "tutorias": {
+            "JUEVES": "11.00-13.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "11.00-13.30",
+            "VIERNES": "12.30-13.30"
+        }
+    },
+    {
+        "id": 21,
+        "profesorado": {
+            "despacho": "d2-3",
+            "email": "jesus.garciaulpgc.es",
+            "profesor": "García Quesada, Jesús",
+            "telefono": "(928) 45 87 23"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "11.30-13.30",
+            "MARTES": "11.30-13.30",
+            "MIÉRCOLES": "11.30-13.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 22,
+        "profesorado": {
+            "despacho": "d3-9",
+            "email": "ruben.garciaulpgc.es",
+            "profesor": "García Rodríguez, Carmelo Rubén",
+            "telefono": "(928) 45 87 53 / 45 86 51 (Director)"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.30-11.30",
+            "MARTES": "8.30-11.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 23,
+        "profesorado": {
+            "despacho": "s8",
+            "email": "josedaniel.gonzalezulpgc.es",
+            "profesor": "González Domínguez, José Daniel",
+            "telefono": "(928) 45 87 51"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-9.30",
+            "LUNES": "11.00-13.00",
+            "MARTES": "12.30-13.30",
+            "MIÉRCOLES": "8.30-10.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 24,
+        "profesorado": {
+            "despacho": "d1-1",
+            "email": "carlos.gonzalezulpgc.es",
+            "profesor": "González Muñoz, Carlos",
+            "telefono": "(928) 45 87 01"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "12.30-14.30 / 15.30-17.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "12.30-14.30"
+        }
+    },
+    {
+        "id": 25,
+        "profesorado": {
+            "despacho": "s3",
+            "email": "esther.gonzalezulpgc.es",
+            "profesor": "González Sánchez, María Esther",
+            "telefono": "(928) 45 87 09"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-14.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 26,
+        "profesorado": {
+            "despacho": "d3-3",
+            "email": "cayetano.guerraulpgc.es",
+            "profesor": "Guerra Artal, Cayetano",
+            "telefono": "(928) 45 87 43"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "11.30-13.30",
+            "MARTES": "---",
+            "MIÉRCOLES": "11.30-13.30",
+            "VIERNES": "11.30-13.30"
+        }
+    },
+    {
+        "id": 27,
+        "profesorado": {
+            "despacho": "d3-8",
+            "email": "josejuan.hernandezulpgc.es",
+            "profesor": "Hernández Cabrera, José Juan",
+            "telefono": "(928) 45 87 52"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "16.00-18.00",
+            "MARTES": "16.00-18.00",
+            "MIÉRCOLES": "16.00-18.00",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 28,
+        "profesorado": {
+            "despacho": "d2-8",
+            "email": "zenon.hernandezulpgc.es",
+            "profesor": "Hernández Figueroa, Zenón",
+            "telefono": "(928) 45 87 32"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-11.30",
+            "LUNES": "---",
+            "MARTES": "11.30-13.30",
+            "MIÉRCOLES": "12.30-13.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 29,
+        "profesorado": {
+            "despacho": "d1-1",
+            "email": "daniel.hernandezulpgc.es",
+            "profesor": "Hernández Sosa, José Daniel",
+            "telefono": "(928) 45 87 01"
+        },
+        "tutorias": {
+            "JUEVES": "8.00-9.00",
+            "LUNES": "8.00-9.30",
+            "MARTES": "8.00-9.30",
+            "MIÉRCOLES": "8.00-9.00",
+            "VIERNES": "8.00-9.00"
+        }
+    },
+    {
+        "id": 30,
+        "profesorado": {
+            "despacho": "d3-4",
+            "email": "mario.hernandezulpgc.es",
+            "profesor": "Hernández Tejera, Francisco Mario",
+            "telefono": "(928) 45 87 44"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "11.30-13.30",
+            "MARTES": "11.30-13.30",
+            "MIÉRCOLES": "11.30-13.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 31,
+        "profesorado": {
+            "despacho": "s9",
+            "email": "javier.lorenzoulpgc.es",
+            "profesor": "Lorenzo Navarro, José Javier",
+            "telefono": "(928) 45 87 47"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "9.00-11.00",
+            "MARTES": "9.00-11.00",
+            "MIÉRCOLES": "9.00-11.00",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 32,
+        "profesorado": {
+            "despacho": "d2-10",
+            "email": "octavio.mayorulpgc.es",
+            "profesor": "Mayor González, Octavio",
+            "telefono": "(928) 45 87 30"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "11.30-14.30",
+            "MIÉRCOLES": "8.30-10.30",
+            "VIERNES": "8.30-9.30"
+        }
+    },
+    {
+        "id": 33,
+        "profesorado": {
+            "despacho": "d2-2",
+            "email": "pedro.medinaulpgc.es",
+            "profesor": "Medina Rodríguez, Pedro",
+            "telefono": "(928) 45 87 22"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "11.30-14.30",
+            "MARTES": "---",
+            "MIÉRCOLES": "11.30-14.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 34,
+        "profesorado": {
+            "despacho": "d1-2",
+            "email": "maximo.mendezulpgc.es",
+            "profesor": "Méndez Babey, Máximo",
+            "telefono": "(928) 45 87 02"
+        },
+        "tutorias": {
+            "JUEVES": "8.00-9.00 / 14.00-15.00",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "8.00-8.30 / 12.30-14.30"
+        }
+    },
+    {
+        "id": 35,
+        "profesorado": {
+            "despacho": "s2",
+            "email": "nelson.monzonulpgc.es",
+            "profesor": "Monzón López, Nelson",
+            "telefono": "(928) 45 49 98"
+        },
+        "tutorias": {
+            "JUEVES": "8.00-12.00",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "8.00-10.00"
+        }
+    },
+    {
+        "id": 36,
+        "profesorado": {
+            "despacho": "d3-10",
+            "email": "joseantonio.munozulpgc.es",
+            "profesor": "Muñoz Blanco, José Antonio",
+            "telefono": "(928) 45 87 54"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-10.30 / 12.00-13.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "11.30-14.00"
+        }
+    },
+    {
+        "id": 37,
+        "profesorado": {
+            "despacho": "CICEI",
+            "email": "antonio.oconulpgc.es",
+            "profesor": "Ocón Carreras, Antonio",
+            "telefono": "(928) 45 10 45"
+        },
+        "tutorias": {
+            "JUEVES": "10.30-12.30",
+            "LUNES": "10.30-12.30",
+            "MARTES": "12.30-14.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 38,
+        "profesorado": {
+            "despacho": "d2-9",
+            "email": "francisco.zamoranoulpgc.es",
+            "profesor": "Ortega Zamorano, Francisco",
+            "telefono": "(928) 45 87 34"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "10.00-13.00",
+            "MIÉRCOLES": "10.00-13.00",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 39,
+        "profesorado": {
+            "despacho": "d3-7",
+            "email": "gabino.padronulpgc.es",
+            "profesor": "Padrón Morales, Gabino",
+            "telefono": "(928) 45 44 72"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "8.30-10.30",
+            "MARTES": "10.30-12.30",
+            "MIÉRCOLES": "10.30-12.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 40,
+        "profesorado": {
+            "despacho": "d3-5",
+            "email": "adrian.penateulpgc.es",
+            "profesor": "Peñate Sánchez, Adrián",
+            "telefono": "(928) 45 87 28"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "15.00-18.00",
+            "VIERNES": "15.00-18.00"
+        }
+    },
+    {
+        "id": 41,
+        "profesorado": {
+            "despacho": "d3-1",
+            "email": "miguelangel.perezulpgc.es",
+            "profesor": "Pérez Aguiar, Miguel Angel",
+            "telefono": "(928) 45 87 41"
+        },
+        "tutorias": {
+            "JUEVES": "9.30-10.30",
+            "LUNES": "11.30-13.30",
+            "MARTES": "11.30-13.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 42,
+        "profesorado": {
+            "despacho": "d2-12",
+            "email": "ricardo.perezulpgc.es",
+            "profesor": "Pérez García, Ricardo",
+            "telefono": "(928) 45 87 36"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "12.30-14.30",
+            "MARTES": "12.30-14.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "12.30-14.30"
+        }
+    },
+    {
+        "id": 43,
+        "profesorado": {
+            "despacho": "s1",
+            "email": "anamaria.placidoulpgc.es",
+            "profesor": "Plácido Castro, Ana María",
+            "telefono": "(928) 45 87 07"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "8.30-11.30",
+            "MIÉRCOLES": "8.30-11.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 44,
+        "profesorado": {
+            "despacho": "d1-8",
+            "email": "alexis.quesadaulpgc.es",
+            "profesor": "Quesada Arencibia, Alexis",
+            "telefono": "(928) 45 45 72"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-10.30",
+            "LUNES": "---",
+            "MARTES": "8.00-10.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 45,
+        "profesorado": {
+            "despacho": "d3-13",
+            "email": "juancarlos.quevedoulpgc.es",
+            "profesor": "Quevedo Losada, Juan Carlos",
+            "telefono": "(928) 45 87 57"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "9.30-12.30",
+            "MIÉRCOLES": "9.30-12.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 46,
+        "profesorado": {
+            "despacho": "s5",
+            "email": "francisca.quintanaulpgc.es",
+            "profesor": "Quintana Domínguez, Francisca",
+            "telefono": "(928) 45 87 03"
+        },
+        "tutorias": {
+            "JUEVES": "8.30-11.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "8.30-11.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 47,
+        "profesorado": {
+            "despacho": "s10",
+            "email": "eduardo.rodriguezulpgc.es",
+            "profesor": "Rodríguez Barrera, Eduardo Miguel",
+            "telefono": "(928) 45 98 62"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "9.30-12.30",
+            "MIÉRCOLES": "9.30-12.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 48,
+        "profesorado": {
+            "despacho": "s8",
+            "email": "jc.rodriguezdelpinoulpgc.es",
+            "profesor": "Rodríguez del Pino, Juan Carlos",
+            "telefono": "(928) 45 87 33"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "11.00-14.00",
+            "MIÉRCOLES": "11.00-14.00",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 49,
+        "profesorado": {
+            "despacho": "",
+            "email": "",
+            "profesor": "Rodríguez Rodríguez, José Carlos",
+            "telefono": "(928)"
+        },
+        "tutorias": {
+            "JUEVES": "16.30-19.30",
+            "LUNES": "---",
+            "MARTES": "16.30-19.30",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 50,
+        "profesorado": {
+            "despacho": "d1-5",
+            "email": "agustin.salgadoulpgc.es",
+            "profesor": "Salgado de la Nuez, Agustín",
+            "telefono": "(928) 45 87 05"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "---",
+            "MARTES": "9.00-12.00",
+            "MIÉRCOLES": "9.00-12.00",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 51,
+        "profesorado": {
+            "despacho": "CICEI",
+            "email": "javier.sanchezulpgc.es",
+            "profesor": "Sánchez Medina, Javier Jesús",
+            "telefono": "(928) 45 10 45"
+        },
+        "tutorias": {
+            "JUEVES": "12.30-14.30",
+            "LUNES": "---",
+            "MARTES": "12.30-14.30",
+            "MIÉRCOLES": "12.30-14.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 52,
+        "profesorado": {
+            "despacho": "s2",
+            "email": "jsanchezulpgc.es",
+            "profesor": "Sánchez Pérez, Javier",
+            "telefono": "(928) 45 87 10"
+        },
+        "tutorias": {
+            "JUEVES": "12.30-14.30",
+            "LUNES": "---",
+            "MARTES": "12.30-14.30",
+            "MIÉRCOLES": "12.30-14.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 53,
+        "profesorado": {
+            "despacho": "",
+            "email": "daniel.santanacedresulpgc.es",
+            "profesor": "Santana Cedrés, Daniel Elías",
+            "telefono": "(928)"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "9.00-10.30",
+            "MARTES": "9.00-12.00",
+            "MIÉRCOLES": "9.00-10.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 54,
+        "profesorado": {
+            "despacho": "d1-3",
+            "email": "oliverio.santanaulpgc.es",
+            "profesor": "Santana Jaria, Oliverio Jesús",
+            "telefono": "(928) 45 87 45"
+        },
+        "tutorias": {
+            "JUEVES": "9.30-11.30 / 13.30-15.30",
+            "LUNES": "---",
+            "MARTES": "---",
+            "MIÉRCOLES": "---",
+            "VIERNES": "13.30-15.30"
+        }
+    },
+    {
+        "id": 55,
+        "profesorado": {
+            "despacho": "d2-6",
+            "email": "fran.santanaulpgc.es",
+            "profesor": "Santana Pérez, Francisco José",
+            "telefono": "(928) 45 87 26"
+        },
+        "tutorias": {
+            "JUEVES": "10.30-12.30",
+            "LUNES": "12.30-14.30",
+            "MARTES": "---",
+            "MIÉRCOLES": "12.30-14.30",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 56,
+        "profesorado": {
+            "despacho": "s6",
+            "email": "josemiguel.santosulpgc.es",
+            "profesor": "Santos Espino, José Miguel",
+            "telefono": "(928) 45 87 83"
+        },
+        "tutorias": {
+            "JUEVES": "---",
+            "LUNES": "16.30-19.30",
+            "MARTES": "11.00-14.00",
+            "MIÉRCOLES": "---",
+            "VIERNES": "---"
+        }
+    },
+    {
+        "id": 57,
+        "profesorado": {
+            "despacho": "d2-5",
+            "email": "carmenpaz.suarezulpgc.es",
+            "profesor": "Suárez Araujo, Carmen Paz",
+            "telefono": "(928) 45 87 25"
+        },
+        "tutorias": {
+            "JUEVES": "10.00-11.30",
+            "LUNES": "13.00-14.30",
+            "MARTES": "10.00-11.30",
+            "MIÉRCOLES": "10.00-11.30",
+            "VIERNES": "---"
+        }
+    }
+]

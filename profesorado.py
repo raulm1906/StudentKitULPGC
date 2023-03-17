@@ -27,8 +27,6 @@ def leer_informacion(direccion):
         print(data.text.strip())
 
 
-
-
 #---------------------------------PROGRAMA PRINCIPAL----------------------------
 
 
