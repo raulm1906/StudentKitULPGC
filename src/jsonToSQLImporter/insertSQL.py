@@ -65,4 +65,5 @@ if __name__ == "__main__":
         dsDict = jsonFormatter.subjectFormatter(subject)
         insertSubject(connection, dsDict, saveLog)
 
+    connection.commit()
     DBConnection.DBDisconnect(connection)
