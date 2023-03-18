@@ -3,12 +3,6 @@ import data from '../../data/subjects.json';
 import '../../components/style.css'
 const Search = ({ searchTerm, onItemClick }) => {
     const filteredData = data.filter(item => item.asignatura.toLowerCase().includes(searchTerm?.toLowerCase()));
-
-
-    const handleClick = (e) => {
-        const text = e.target.textContent;
-        onItemClick(text);
-    }
   
     return (
      

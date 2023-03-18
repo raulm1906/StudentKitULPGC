@@ -1,23 +1,38 @@
 import React from "react";
-import Subjects from '../../data/profesorado.json'
+import data from '../../data/profesores.json'
 
 
 
-const SearchProfesores = ({searchTerm}) => {
-
-    const nombres= [];
-    const obj = Subjects.find(obj => obj.id === searchTerm);
-    obj.info.forEach(item => nombres.push(item.nombre));
-    const nombresUnicos = [...new Set(nombres)];
+const SearchProfesores = ({searchTerm, onItemClick}) => {
 
 
+    function filterByProfesor(data, searchTerm) {
+        const filteredData = data.filter((item) => {
+          const itemProfesor = item.profesorado.profesor.toLowerCase();
+          const searchProfesor = searchTerm.toLowerCase();
+          return itemProfesor.includes(searchProfesor);
+        });
+        return filteredData;
+    }
 
+    const hadleClick = (e) => {
+        const text = e.target.textContent;
+        onItemClick(text);
+       
+    }
+  
+    const filteredData = filterByProfesor(data, searchTerm);
     return (
-        <div className ="d-flex">
-            {nombresUnicos.map((nombre)=>(
-                <div className="p-2"> {nombre} </div>
-            ))}
+        
+
+        <div id="resultSearch">
+            {filteredData.map((item, index) => (
+            <div className="border m-2" key={index}>
+            <p onClick={() => onItemClick(item)}>{item.profesorado.profesor}</p>
+            
         </div>
+        ))}
+    </div>
     );
 }
 

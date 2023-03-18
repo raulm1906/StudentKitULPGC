@@ -5,10 +5,11 @@ import Asignatura from "../pages/Asignaturas";
 import LayaoutPublic from "./LayoutPublic";
 import NotFound from "./NotFound";
 import Profesorado from "../pages/Profesorado";
-import subject from "../data/subjects.json" 
-import profesores from "../data/profesorado.json" 
+import subject from "../data/subjects.json";
+import profesores from "../data/profesores.json"
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+[
     {
         path:"/",
         element: <LayaoutPublic/>,
@@ -24,7 +25,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/Profesorado",
-                element: <Profesorado profesor={profesores[0]} />,
+                element: <Profesorado profesor={profesores[0]}/>,
         
             },
         ],

@@ -1,27 +1,16 @@
 import React, { useState } from 'react';
 import '../components/style.css';
 import TableProf from '../components/tableAsignaturas';
-import data from '../data/subjects.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Search from '../components/Busqueda/Search';
+import Search from '../components/Busqueda/SearchAsignaturas';
 import SearchBar from '../components/Busqueda/SearchBar';
 import SearchProfesores from '../components/Busqueda/SearchProfesores'
 function Asignatura ({asignatura}){  
 
     const [newSubject, setAsignatura] = useState(asignatura)
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedItem, setSelectedItem] = useState(null);
-
-    const cambiarSubject = (varSubject) => {
-        setAsignatura(varSubject)
-    }
-
-    const handleSearchInputChange = (e) => {
-        setSearchTerm(e.target.value);
-    }
 
     const handleItemClick = (item) => {
-        setSelectedItem(item);
         setAsignatura(item)
     }
     
@@ -45,7 +34,7 @@ function Asignatura ({asignatura}){
                    <b>Profesorados</b>
                     <SearchProfesores searchTerm={newSubject.id}></SearchProfesores>
                 </div>
-                <div style={{ borderTop: "3px solid #707070 ", marginLeft: 20, marginRight: 20 }}></div>
+                <div style={{ borderTop: "3px solid #707070 "}}></div>
                 <TableProf />
             </section>
 
