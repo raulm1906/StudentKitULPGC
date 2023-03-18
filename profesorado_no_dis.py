@@ -3,38 +3,40 @@ from bs4 import BeautifulSoup
 import json
 import lxml
 
-
 def obtener_informacion(url):
     page = requests.get(url)
     soup = BeautifulSoup(page.text, 'lxml')
     # Find the data table on the page
     table = soup.find('table')
     # Find all rows in the table
-    rows = table.find_all('tr')
-    # Loop through all rows and get the name of the person in the first column
-    cont = 0
-    dicc = {}
-    for row in rows:
-        cols = row.find_all('td')
+    tr_elements = table.find_all('tr')
 
-        if len(cols) >= 2 and cont < 7:
-            if cont == 5:
-                cont += 1
+    # Initialize a list to store the data rows
+    data_rows = []
+    count = 0
+    # Loop through all rows and get the name of the person in the first column
+    for tr in tr_elements:
+        try:
+            cols = tr.find_all('td')
+            # Skip rows with less than two columns or with certain text
+            if len(cols) < 2 or 'CORREO ELECTRÓNICO' in cols[0].text:
                 continue
-                '''
-                el intento de sacar el correo electronico
-            if cont == 3:
-                datos = cols.find('td', string='CORREO ELECTRÓNICO').text.strip()
-                resultado = cols.find('td', string=' CORREO ELECTRÓNICO: ').find_next_sibling('td').text.strip()
-                print(datos, resultado)
-                dicc[datos] = resultado
-                '''
-            datos = cols[0].text.strip()
-            resultado = cols[1].text.strip()
-            # print(datos, resultado)
-            dicc[datos] = resultado
-            cont += 1
+            # Extract the data from the row
+            if len(cols) == 4:
+                data_rows.append((cols[0].text.strip(), cols[1].text.strip()))
+                data_rows.append((cols[2].text.strip(), cols[3].text.strip()))
+            else:
+                data_rows.append((cols[0].text.strip(), cols[1].text.strip()))
+            count += 1
+            if count >= 4:
+                break
+        except Exception as e:
+            print(f"Error processing row: {e}")
+
+    # Use a dictionary comprehension to build the dictionary from the data rows
+    dicc = {k: v for k, v in data_rows}
     return dicc
+
 
 
 
