@@ -1,7 +1,6 @@
 import csv
 import requests
 from bs4 import BeautifulSoup
-import pandas as pd
 import json
 import lxml
 
@@ -57,6 +56,8 @@ for endpoint in range(1, 58):
     despacho = soup.find('td', {'id': f'dos{endpoint}'})
     telefono = soup.find('td', {'id': f'tres{endpoint}'})
     correo = soup.find('td', {'id': f'cuatro{endpoint}'})
+    pattern = 'ulpgc.es'
+    formatted_email = f"{correo.text.split('.')[0]}@{pattern}"
 
     current_tutorias = getTutorias(a_link)
 
@@ -64,7 +65,7 @@ for endpoint in range(1, 58):
         'profesor': professor.text.strip(),
         'despacho': despacho.text.strip(),
         'telefono': telefono.text.strip(),
-        'email': correo.text.strip()
+        'email': formatted_email.strip()
     }
 
     jsonFormat = {

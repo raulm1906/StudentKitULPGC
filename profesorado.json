@@ -3,7 +3,7 @@
         "id": 1,
         "profesorado": {
             "despacho": "s7",
-            "email": "marilola.afonsoulpgc.es",
+            "email": "marilola@ulpgc.es",
             "profesor": "Afonso Suárez, María Dolores",
             "telefono": "(928) 45 87 27"
         },
@@ -19,7 +19,7 @@
         "id": 2,
         "profesorado": {
             "despacho": "d3-12",
-            "email": "francisco.alayonulpgc.es",
+            "email": "francisco@ulpgc.es",
             "profesor": "Alayón Hernández, Francisco",
             "telefono": "(928) 45 87 56"
         },
@@ -35,7 +35,7 @@
         "id": 3,
         "profesorado": {
             "despacho": "d1-4",
-            "email": "miguel.alemanulpgc.es",
+            "email": "miguel@ulpgc.es",
             "profesor": "Alemán Flores, Miguel",
             "telefono": "(928) 45 87 04"
         },
@@ -51,7 +51,7 @@
         "id": 4,
         "profesorado": {
             "despacho": "d1-9",
-            "email": "lalvarezulpgc.es",
+            "email": "lalvarezulpgc@ulpgc.es",
             "profesor": "Álvarez León, Luis",
             "telefono": "(928) 45 45 63"
         },
@@ -67,7 +67,7 @@
         "id": 5,
         "profesorado": {
             "despacho": "d3-6",
-            "email": "domingo.benitezulpgc.es",
+            "email": "domingo@ulpgc.es",
             "profesor": "Benítez Díaz, Domingo",
             "telefono": "(928) 45 45 66"
         },
@@ -83,7 +83,7 @@
         "id": 6,
         "profesorado": {
             "despacho": "s9",
-            "email": "jorge.cabreraulpgc.es",
+            "email": "jorge@ulpgc.es",
             "profesor": "Cabrera Gámez, Jorge",
             "telefono": "(928) 45 87 47"
         },
@@ -99,7 +99,7 @@
         "id": 7,
         "profesorado": {
             "despacho": "d2-9",
-            "email": "cristina.carmonaulpgc.es",
+            "email": "cristina@ulpgc.es",
             "profesor": "Carmona Duarte, María Cristina",
             "telefono": "(928) 45 87 34"
         },
@@ -115,7 +115,7 @@
         "id": 8,
         "profesorado": {
             "despacho": "s7",
-            "email": "francisco.carrerasulpgc.es",
+            "email": "francisco@ulpgc.es",
             "profesor": "Carreras Riudavets, Francisco Javier",
             "telefono": "(928) 45 87 29"
         },
@@ -131,7 +131,7 @@
         "id": 9,
         "profesorado": {
             "despacho": "d1-7",
-            "email": "modesto.castrillonulpgc.es",
+            "email": "modesto@ulpgc.es",
             "profesor": "Castrillón Santana, Modesto F.",
             "telefono": "(928) 45 87 55"
         },
@@ -147,7 +147,7 @@
         "id": 10,
         "profesorado": {
             "despacho": "d2-14",
-            "email": "beatriz.correasulpgc.es",
+            "email": "beatriz@ulpgc.es",
             "profesor": "Correas Suárez, Beatriz",
             "telefono": "(928) 45 98 59"
         },
@@ -163,7 +163,7 @@
         "id": 11,
         "profesorado": {
             "despacho": "d2-13",
-            "email": "carmelo.cuencaulpgc.es",
+            "email": "carmelo@ulpgc.es",
             "profesor": "Cuenca Hernández, Carmelo",
             "telefono": "(928) 45 87 37"
         },
@@ -179,7 +179,7 @@
         "id": 12,
         "profesorado": {
             "despacho": "d3-2",
-            "email": "gabriel.deblasioulpgc.es",
+            "email": "gabriel@ulpgc.es",
             "profesor": "de Blasio García, Gabriel",
             "telefono": "(928) 45 87 42"
         },
@@ -195,7 +195,7 @@
         "id": 13,
         "profesorado": {
             "despacho": "d1-8",
-            "email": "antonio.dominguezulpgc.es",
+            "email": "antonio@ulpgc.es",
             "profesor": "Domínguez Brito, Antonio",
             "telefono": "(928) 45 45 72"
         },
@@ -211,7 +211,7 @@
         "id": 14,
         "profesorado": {
             "despacho": "d1-6",
-            "email": "luis.doresteulpgc.es",
+            "email": "luis@ulpgc.es",
             "profesor": "Doreste Blanco, Luis",
             "telefono": "(928) 45 87 06"
         },
@@ -227,7 +227,7 @@
         "id": 15,
         "profesorado": {
             "despacho": "d2-11",
-            "email": "juandedios.duqueulpgc.es",
+            "email": "juandedios@ulpgc.es",
             "profesor": "Duque Martín de Oliva, Juan de Dios",
             "telefono": "(928) 45 87 35"
         },
@@ -243,7 +243,7 @@
         "id": 16,
         "profesorado": {
             "despacho": "s3",
-            "email": "julio.esclarinulpgc.es",
+            "email": "julio@ulpgc.es",
             "profesor": "Esclarín Monreal, Julio",
             "telefono": "(928) 45 87 09"
         },
@@ -259,7 +259,7 @@
         "id": 17,
         "profesorado": {
             "despacho": "d2-1",
-            "email": "enrique.fernandezulpgc.es",
+            "email": "enrique@ulpgc.es",
             "profesor": "Fernández García, Enrique",
             "telefono": "(928) 45 87 21"
         },
@@ -275,7 +275,7 @@
         "id": 18,
         "profesorado": {
             "despacho": "",
-            "email": "pablo.fernandezlopezulpgc.es",
+            "email": "pablo@ulpgc.es",
             "profesor": "Fernández López, Pablo Carmelo",
             "telefono": "(928)"
         },
@@ -291,7 +291,7 @@
         "id": 19,
         "profesorado": {
             "despacho": "d2-4",
-            "email": "fortesdis.ulpgc.es",
+            "email": "fortesdis@ulpgc.es",
             "profesor": "Fortes Gálvez, José",
             "telefono": "(928) 45 87 24"
         },
@@ -307,7 +307,7 @@
         "id": 20,
         "profesorado": {
             "despacho": "s10",
-            "email": "david.freireulpgc.es",
+            "email": "david@ulpgc.es",
             "profesor": "Freire Obregón, David Sebastián",
             "telefono": "(928)"
         },
@@ -323,7 +323,7 @@
         "id": 21,
         "profesorado": {
             "despacho": "d2-3",
-            "email": "jesus.garciaulpgc.es",
+            "email": "jesus@ulpgc.es",
             "profesor": "García Quesada, Jesús",
             "telefono": "(928) 45 87 23"
         },
@@ -339,7 +339,7 @@
         "id": 22,
         "profesorado": {
             "despacho": "d3-9",
-            "email": "ruben.garciaulpgc.es",
+            "email": "ruben@ulpgc.es",
             "profesor": "García Rodríguez, Carmelo Rubén",
             "telefono": "(928) 45 87 53 / 45 86 51 (Director)"
         },
@@ -355,7 +355,7 @@
         "id": 23,
         "profesorado": {
             "despacho": "s8",
-            "email": "josedaniel.gonzalezulpgc.es",
+            "email": "josedaniel@ulpgc.es",
             "profesor": "González Domínguez, José Daniel",
             "telefono": "(928) 45 87 51"
         },
@@ -371,7 +371,7 @@
         "id": 24,
         "profesorado": {
             "despacho": "d1-1",
-            "email": "carlos.gonzalezulpgc.es",
+            "email": "carlos@ulpgc.es",
             "profesor": "González Muñoz, Carlos",
             "telefono": "(928) 45 87 01"
         },
@@ -387,7 +387,7 @@
         "id": 25,
         "profesorado": {
             "despacho": "s3",
-            "email": "esther.gonzalezulpgc.es",
+            "email": "esther@ulpgc.es",
             "profesor": "González Sánchez, María Esther",
             "telefono": "(928) 45 87 09"
         },
@@ -403,7 +403,7 @@
         "id": 26,
         "profesorado": {
             "despacho": "d3-3",
-            "email": "cayetano.guerraulpgc.es",
+            "email": "cayetano@ulpgc.es",
             "profesor": "Guerra Artal, Cayetano",
             "telefono": "(928) 45 87 43"
         },
@@ -419,7 +419,7 @@
         "id": 27,
         "profesorado": {
             "despacho": "d3-8",
-            "email": "josejuan.hernandezulpgc.es",
+            "email": "josejuan@ulpgc.es",
             "profesor": "Hernández Cabrera, José Juan",
             "telefono": "(928) 45 87 52"
         },
@@ -435,7 +435,7 @@
         "id": 28,
         "profesorado": {
             "despacho": "d2-8",
-            "email": "zenon.hernandezulpgc.es",
+            "email": "zenon@ulpgc.es",
             "profesor": "Hernández Figueroa, Zenón",
             "telefono": "(928) 45 87 32"
         },
@@ -451,7 +451,7 @@
         "id": 29,
         "profesorado": {
             "despacho": "d1-1",
-            "email": "daniel.hernandezulpgc.es",
+            "email": "daniel@ulpgc.es",
             "profesor": "Hernández Sosa, José Daniel",
             "telefono": "(928) 45 87 01"
         },
@@ -467,7 +467,7 @@
         "id": 30,
         "profesorado": {
             "despacho": "d3-4",
-            "email": "mario.hernandezulpgc.es",
+            "email": "mario@ulpgc.es",
             "profesor": "Hernández Tejera, Francisco Mario",
             "telefono": "(928) 45 87 44"
         },
@@ -483,7 +483,7 @@
         "id": 31,
         "profesorado": {
             "despacho": "s9",
-            "email": "javier.lorenzoulpgc.es",
+            "email": "javier@ulpgc.es",
             "profesor": "Lorenzo Navarro, José Javier",
             "telefono": "(928) 45 87 47"
         },
@@ -499,7 +499,7 @@
         "id": 32,
         "profesorado": {
             "despacho": "d2-10",
-            "email": "octavio.mayorulpgc.es",
+            "email": "octavio@ulpgc.es",
             "profesor": "Mayor González, Octavio",
             "telefono": "(928) 45 87 30"
         },
@@ -515,7 +515,7 @@
         "id": 33,
         "profesorado": {
             "despacho": "d2-2",
-            "email": "pedro.medinaulpgc.es",
+            "email": "pedro@ulpgc.es",
             "profesor": "Medina Rodríguez, Pedro",
             "telefono": "(928) 45 87 22"
         },
@@ -531,7 +531,7 @@
         "id": 34,
         "profesorado": {
             "despacho": "d1-2",
-            "email": "maximo.mendezulpgc.es",
+            "email": "maximo@ulpgc.es",
             "profesor": "Méndez Babey, Máximo",
             "telefono": "(928) 45 87 02"
         },
@@ -547,7 +547,7 @@
         "id": 35,
         "profesorado": {
             "despacho": "s2",
-            "email": "nelson.monzonulpgc.es",
+            "email": "nelson@ulpgc.es",
             "profesor": "Monzón López, Nelson",
             "telefono": "(928) 45 49 98"
         },
@@ -563,7 +563,7 @@
         "id": 36,
         "profesorado": {
             "despacho": "d3-10",
-            "email": "joseantonio.munozulpgc.es",
+            "email": "joseantonio@ulpgc.es",
             "profesor": "Muñoz Blanco, José Antonio",
             "telefono": "(928) 45 87 54"
         },
@@ -579,7 +579,7 @@
         "id": 37,
         "profesorado": {
             "despacho": "CICEI",
-            "email": "antonio.oconulpgc.es",
+            "email": "antonio@ulpgc.es",
             "profesor": "Ocón Carreras, Antonio",
             "telefono": "(928) 45 10 45"
         },
@@ -595,7 +595,7 @@
         "id": 38,
         "profesorado": {
             "despacho": "d2-9",
-            "email": "francisco.zamoranoulpgc.es",
+            "email": "francisco@ulpgc.es",
             "profesor": "Ortega Zamorano, Francisco",
             "telefono": "(928) 45 87 34"
         },
@@ -611,7 +611,7 @@
         "id": 39,
         "profesorado": {
             "despacho": "d3-7",
-            "email": "gabino.padronulpgc.es",
+            "email": "gabino@ulpgc.es",
             "profesor": "Padrón Morales, Gabino",
             "telefono": "(928) 45 44 72"
         },
@@ -627,7 +627,7 @@
         "id": 40,
         "profesorado": {
             "despacho": "d3-5",
-            "email": "adrian.penateulpgc.es",
+            "email": "adrian@ulpgc.es",
             "profesor": "Peñate Sánchez, Adrián",
             "telefono": "(928) 45 87 28"
         },
@@ -643,7 +643,7 @@
         "id": 41,
         "profesorado": {
             "despacho": "d3-1",
-            "email": "miguelangel.perezulpgc.es",
+            "email": "miguelangel@ulpgc.es",
             "profesor": "Pérez Aguiar, Miguel Angel",
             "telefono": "(928) 45 87 41"
         },
@@ -659,7 +659,7 @@
         "id": 42,
         "profesorado": {
             "despacho": "d2-12",
-            "email": "ricardo.perezulpgc.es",
+            "email": "ricardo@ulpgc.es",
             "profesor": "Pérez García, Ricardo",
             "telefono": "(928) 45 87 36"
         },
@@ -675,7 +675,7 @@
         "id": 43,
         "profesorado": {
             "despacho": "s1",
-            "email": "anamaria.placidoulpgc.es",
+            "email": "anamaria@ulpgc.es",
             "profesor": "Plácido Castro, Ana María",
             "telefono": "(928) 45 87 07"
         },
@@ -691,7 +691,7 @@
         "id": 44,
         "profesorado": {
             "despacho": "d1-8",
-            "email": "alexis.quesadaulpgc.es",
+            "email": "alexis@ulpgc.es",
             "profesor": "Quesada Arencibia, Alexis",
             "telefono": "(928) 45 45 72"
         },
@@ -707,7 +707,7 @@
         "id": 45,
         "profesorado": {
             "despacho": "d3-13",
-            "email": "juancarlos.quevedoulpgc.es",
+            "email": "juancarlos@ulpgc.es",
             "profesor": "Quevedo Losada, Juan Carlos",
             "telefono": "(928) 45 87 57"
         },
@@ -723,7 +723,7 @@
         "id": 46,
         "profesorado": {
             "despacho": "s5",
-            "email": "francisca.quintanaulpgc.es",
+            "email": "francisca@ulpgc.es",
             "profesor": "Quintana Domínguez, Francisca",
             "telefono": "(928) 45 87 03"
         },
@@ -739,7 +739,7 @@
         "id": 47,
         "profesorado": {
             "despacho": "s10",
-            "email": "eduardo.rodriguezulpgc.es",
+            "email": "eduardo@ulpgc.es",
             "profesor": "Rodríguez Barrera, Eduardo Miguel",
             "telefono": "(928) 45 98 62"
         },
@@ -755,7 +755,7 @@
         "id": 48,
         "profesorado": {
             "despacho": "s8",
-            "email": "jc.rodriguezdelpinoulpgc.es",
+            "email": "jc@ulpgc.es",
             "profesor": "Rodríguez del Pino, Juan Carlos",
             "telefono": "(928) 45 87 33"
         },
@@ -771,7 +771,7 @@
         "id": 49,
         "profesorado": {
             "despacho": "",
-            "email": "",
+            "email": "@ulpgc.es",
             "profesor": "Rodríguez Rodríguez, José Carlos",
             "telefono": "(928)"
         },
@@ -787,7 +787,7 @@
         "id": 50,
         "profesorado": {
             "despacho": "d1-5",
-            "email": "agustin.salgadoulpgc.es",
+            "email": "agustin@ulpgc.es",
             "profesor": "Salgado de la Nuez, Agustín",
             "telefono": "(928) 45 87 05"
         },
@@ -803,7 +803,7 @@
         "id": 51,
         "profesorado": {
             "despacho": "CICEI",
-            "email": "javier.sanchezulpgc.es",
+            "email": "javier@ulpgc.es",
             "profesor": "Sánchez Medina, Javier Jesús",
             "telefono": "(928) 45 10 45"
         },
@@ -819,7 +819,7 @@
         "id": 52,
         "profesorado": {
             "despacho": "s2",
-            "email": "jsanchezulpgc.es",
+            "email": "jsanchezulpgc@ulpgc.es",
             "profesor": "Sánchez Pérez, Javier",
             "telefono": "(928) 45 87 10"
         },
@@ -835,7 +835,7 @@
         "id": 53,
         "profesorado": {
             "despacho": "",
-            "email": "daniel.santanacedresulpgc.es",
+            "email": "daniel@ulpgc.es",
             "profesor": "Santana Cedrés, Daniel Elías",
             "telefono": "(928)"
         },
@@ -851,7 +851,7 @@
         "id": 54,
         "profesorado": {
             "despacho": "d1-3",
-            "email": "oliverio.santanaulpgc.es",
+            "email": "oliverio@ulpgc.es",
             "profesor": "Santana Jaria, Oliverio Jesús",
             "telefono": "(928) 45 87 45"
         },
@@ -867,7 +867,7 @@
         "id": 55,
         "profesorado": {
             "despacho": "d2-6",
-            "email": "fran.santanaulpgc.es",
+            "email": "fran@ulpgc.es",
             "profesor": "Santana Pérez, Francisco José",
             "telefono": "(928) 45 87 26"
         },
@@ -883,7 +883,7 @@
         "id": 56,
         "profesorado": {
             "despacho": "s6",
-            "email": "josemiguel.santosulpgc.es",
+            "email": "josemiguel@ulpgc.es",
             "profesor": "Santos Espino, José Miguel",
             "telefono": "(928) 45 87 83"
         },
@@ -899,7 +899,7 @@
         "id": 57,
         "profesorado": {
             "despacho": "d2-5",
-            "email": "carmenpaz.suarezulpgc.es",
+            "email": "carmenpaz@ulpgc.es",
             "profesor": "Suárez Araujo, Carmen Paz",
             "telefono": "(928) 45 87 25"
         },
