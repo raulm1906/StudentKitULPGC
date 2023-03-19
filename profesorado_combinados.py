@@ -13,6 +13,6 @@ unique_data = list(set(json.dumps(d) for d in merged_data))
 # Convert the unique data back to a dictionary
 final_data = [json.loads(d) for d in unique_data]
 
-# Escribir los elementos únicos en un nuevo archivo JSON
+# Write the unique elements to a new JSON file
 with open('profesorado_combinados.json', 'w', encoding='utf-8') as f:
     json.dump(final_data, f, indent=4, ensure_ascii=False, sort_keys=True)
