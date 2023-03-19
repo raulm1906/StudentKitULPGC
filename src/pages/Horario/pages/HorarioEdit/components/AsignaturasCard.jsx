@@ -1,11 +1,11 @@
-import { Button } from '@chakra-ui/button'
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text, Button } from '@chakra-ui/react'
 import { Collapse } from '@chakra-ui/transition'
 import React from 'react'
 import { useState } from 'react'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { BsChevronLeft } from 'react-icons/bs'
 import { Icon } from '@chakra-ui/icon' 
+import YearDropdown from './YearDropdown'
 
 export default function FilterCard(props) {
 
@@ -54,37 +54,11 @@ export default function FilterCard(props) {
           <BsChevronLeft fontSize="15px"/>
         </Button>
       </Flex>
-      
-      <Flex flexDirection="column" h="100%">
-      <Button 
-        onClick={handleToggle} 
-        mb={2} display="flex" 
-        justifyContent="space-between" 
-      >
-        <Text>Año 1</Text>
-        <Icon as={AiFillCaretDown}/>
-      </Button>
-      <Collapse in={isOpen}>
-        <Text marginLeft="20px">Asignatura 1</Text>
-        <Text marginLeft="20px">Asignatura 2</Text>
-        <Text marginLeft="20px">Asignatura 3</Text>
-        <Text marginLeft="20px">Asignatura 4</Text>
-      </Collapse>
 
-      <Button 
-        onClick={handleToggle} 
-        mb={2} display="flex" 
-        justifyContent="space-between" 
-      >
-        <Text>Año 2</Text>
-        <Icon as={AiFillCaretDown}/>
-      </Button>
-      <Collapse in={isOpen}>
-        <Text marginLeft="20px">Asignatura 1</Text>
-        <Text marginLeft="20px">Asignatura 2</Text>
-        <Text marginLeft="20px">Asignatura 3</Text>
-        <Text marginLeft="20px">Asignatura 4</Text>
-      </Collapse>
+      <Flex flexDirection="column" h="100%">
+        
+        <YearDropdown year="Año 1"/>
+        <YearDropdown year="Año 2"/>
       </Flex>
     </Flex>
   )

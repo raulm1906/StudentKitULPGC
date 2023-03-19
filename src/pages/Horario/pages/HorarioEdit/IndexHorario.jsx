@@ -55,7 +55,7 @@ function Horario(){
                 />
             </GridItem>
             <GridItem gridRow={2} gridColumn={2}>
-                <Heading fontSize="xl">{horario.nombre}</Heading>
+                <Heading fontSize="xl" textAlign="center">{horario.nombre}</Heading>
             </GridItem>
             <GridItem marginLeft={styles.gridItem.marginLeft} gridRow={3} colSpan={3}>
                 <TablaHorario />
