@@ -1,22 +1,33 @@
-import React from 'react'
-import '../components/style.css';
-import {BiConversation} from 'react-icons/bi'
-import { ChakraProvider } from '@chakra-ui/react'
-import {router} from '../components/router'
-import {Link, RouterProvider} from 'react-router-dom'
+import { Navbar, Nav} from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 import { NavLink } from 'react-router-dom';
-function Header (){
-    return (
-          <nav id="cabecera">
-            <span  className="lefticon"> <BiConversation /></span>
-            <div className="centralnav">
-                <NavLink to="#">Horario</NavLink>
-                <NavLink to=".\Profesorado">Profesorado</NavLink>
-                <NavLink to=".\Asignatura">Asignaturas</NavLink>
+import { BiConversation } from 'react-icons/bi';
+import "../components/style.css"
+const Header = () => {
+  return (
+    <Navbar expand="lg" style={{ backgroundColor: "#0191CE" }}>
+      <Navbar.Brand href="#home">
+        <BiConversation size={30} />
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mx-auto ">
+          <NavLink to="/Horarios" style={{ fontWeight: "bold", color: "white" }}>
+            Horarios
+          </NavLink>
+          <NavLink to="/Profesorado" style={{ fontWeight: "bold", color: "white" }}>
+            Profesores
+          </NavLink>
+          <NavLink to="/Asignatura" style={{ fontWeight: "bold", color: "white" }}>
+            Asignaturas
+          </NavLink>
+        </Nav>
+        <Nav>
+          <Nav.Link href="#" className="mr-sm-2" >Sign In</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
+  );
+}
 
-            </div>
-            <label className="username" type="text">Nombre de Usuario</label>
-          </nav>
-      );
-    }
-export default Header
+export default Header;

@@ -24,7 +24,7 @@ function Profesorado ({profesor}){
     
 
     return (
-        <div id="mainprofesorado">
+        <div >
             <section className="scroll-box">
                 <h2 id="teachername" type="text" name="profesor_nombre">{newTeacher.profesorado.profesor}</h2>
                 <div id ="atributos_teacher">
@@ -35,12 +35,8 @@ function Profesorado ({profesor}){
                 <b>Horas Tutorías</b>
                 <div className='text-center tutoriasFrame'>
                     <TableProf className="center-x" tutorias={newTeacher.tutorias}/>
-                    {console.log(selectedTutorias)}
                 </div>
             </section>
-
-
-
             <section className="search_asignaturas">
                 <div className="nav_search">
                     <button type = "submit" className="material-icons">search</button>

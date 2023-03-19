@@ -9,7 +9,7 @@ const Search = ({ searchTerm, onItemClick }) => {
     <div id="resultSearch">
         {filteredData.map((item, index) => (
         <div className="border m-2" key={index}>
-        <p onClick={() => onItemClick(item)}>{item.asignatura}</p>
+        <p onClick={() => onItemClick(item)} className="hover">{item.asignatura}</p>
         </div>
         ))}
     </div>

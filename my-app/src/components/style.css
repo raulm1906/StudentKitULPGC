@@ -8,40 +8,15 @@
   width: 100%;
 }
 
-/* Cabecera */
-#cabecera {
-    background-color: #0191CE;
-    height: 7em;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-}
-
-.lefticon{
-  float:left;
-  margin: 1em;
-}
-
 nav a{
-  font-weight: bold;
   margin: 1em;
   text-decoration: none;
   color: white ;
 }
 
-a:focus{
-    color: orange;
-}
-
-.username{
-    color: white;
-    text-align:center;
-}
-
-
 .scroll-box {
   width: 70%;
-  height: 25em;
+  height: 33em;
   overflow: scroll;
   display: flex;
   margin: 1%;
@@ -52,14 +27,18 @@ a:focus{
   scrollbar-width: thin;
   padding: 1%;
 }
+
+.hover:hover {
+  background-color: #DADADA;
+  transition: background-color 0.3s ease;
+}
 .search_asignaturas{
   background-color: #F0F0F0;
   justify-content: center;
   float:right;
   margin: 1%;
   width: 25%;
-  height: 25em;
-  overflow: auto;
+  height: 33em;
 }
 
 .nav_search {
@@ -72,9 +51,6 @@ a:focus{
 }
 .nav_search i{
   float:left;
-}
-.centralnav{
-  text-align: center;
 }
 
  #subjectname{

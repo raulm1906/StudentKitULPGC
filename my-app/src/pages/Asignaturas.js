@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import '../components/style.css';
 import TableProf from '../components/tableAsignaturas';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from '../components/Busqueda/SearchAsignaturas';
 import SearchBar from '../components/Busqueda/SearchBar';
 import SearchProfesores from '../components/Busqueda/SearchProfesores'
+import SubjectProfes from '../components/Busqueda/SubjectProfes';
 function Asignatura ({asignatura}){  
 
     const [newSubject, setAsignatura] = useState(asignatura)
@@ -19,7 +19,7 @@ function Asignatura ({asignatura}){
       }
 
     return (
-        <div id="mainprofesorado">
+        <div>
             <section className="scroll-box">
                 <h2 id="subjectname" type="text" name="nombre_asignatura"><b> {newSubject.asignatura}</b></h2>
                 <div id ="atributos_subject">
@@ -32,7 +32,7 @@ function Asignatura ({asignatura}){
                 </div>
                 <div className="profesorado">
                    <b>Profesorados</b>
-                    <SearchProfesores searchTerm={newSubject.id}></SearchProfesores>
+                   <SubjectProfes id={newSubject.id}></SubjectProfes>
                 </div>
                 <div style={{ borderTop: "3px solid #707070 "}}></div>
                 <TableProf />

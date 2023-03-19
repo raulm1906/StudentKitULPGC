@@ -5,8 +5,12 @@ import Footer from "./Footer";
 const LayaoutPublic = () =>{
     return(
         <>
+        <header>
         <Header />
+        </header>
+        <body>
         <Outlet />
+        </body>
         <Footer />
         </>
     )
