@@ -3,7 +3,7 @@ const cors = require('cors')
 const app = express()
 app.get(cors())
 const PORT = 3001
-
+const { getHorario } = require('./src/utils')
 
 const conocimientos = [
     {
@@ -44,6 +44,19 @@ const profesores = [
     }
 ]
 
+const horarios = [
+    {
+        "id": 1,
+        "nombre": "Horario 1",
+        "asignaturas": "aa"
+    },
+    {
+        "id": 2,
+        "nombre": "Horario segundo cuatri",
+        "asignaturas": "aa"
+    },
+]
+
 
 app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -64,6 +77,24 @@ app.get('/profesores/:id', (req, res) => {
     }
     res.send(profesor)
 })
+
+
+
+
+app.get('/horarios', (req, res) => {
+    res.json(horarios)
+})
+
+app.get('/horarios/:id', (req, res) => {
+    const id = req.params.id
+    const horario = horarios.find(p => p.id == parseInt(id))
+    if (!horario){
+        return res.status(404)
+    }
+    res.send(horario)
+})
+
+
 
 app.listen(PORT, () => {
 console.log(`Server running on port ${PORT}`);
