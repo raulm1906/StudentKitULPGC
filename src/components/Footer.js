@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
 import { Image } from '@chakra-ui/react';
 
 import { BsTwitter } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
-
-import '../App.css';
 
 function Footer() {
 
