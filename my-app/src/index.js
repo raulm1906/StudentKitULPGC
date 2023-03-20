@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route, BrowserRouter, Routes } from 'react-router-dom'
 
 import { ChakraProvider } from '@chakra-ui/react'
 import { theme } from '@chakra-ui/theme';

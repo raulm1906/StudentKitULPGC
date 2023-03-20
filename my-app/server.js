@@ -3,7 +3,6 @@ const cors = require('cors')
 const app = express()
 app.get(cors())
 const PORT = 3001
-const { getHorario } = require('./src/utils')
 
 const conocimientos = [
     {
