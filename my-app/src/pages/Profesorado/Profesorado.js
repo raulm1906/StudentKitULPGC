@@ -1,20 +1,18 @@
 import React,  { useState } from 'react'
-import '../components/style.css';
-import TableProf from '../components/tablaProfesorado';
+import '../../components/style.css';
+import TableProf from './components/tablaProfesorado';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import SearchBar from '../components/Busqueda/SearchBar';
-import SearchProfesores from '../components/Busqueda/SearchProfesores';
+import SearchBar from '../../components/Busqueda/SearchBar';
+import SearchProfesores from '../../components/Busqueda/SearchProfesores';
 
 
 function Profesorado ({profesor}){
     const [newTeacher, setnewTeacher] = useState(profesor)
     const [searchTerm, setSearchTerm] = useState('');
-    const [selectedTutorias, setSelectedTutorias] = useState(null);
 
 
-
+    
     const handleItemClick = (item) => {
-        setSelectedTutorias(item.tutorias); // Aquí es donde se actualiza el estado selectedTutorias con el atributo tutorias del elemento seleccionado.
         setnewTeacher(item)
     }
     

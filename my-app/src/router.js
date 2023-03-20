@@ -1,12 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import App from "../App";
-import Asignatura from "../pages/Asignaturas";
-import LayaoutPublic from "./LayoutPublic";
-import NotFound from "./NotFound";
-import Profesorado from "../pages/Profesorado";
-import subject from "../data/subjects.json";
-import profesores from "../data/profesores.json"
+import App from "./App";
+import Asignatura from "./pages/Asignaturas/Asignaturas";
+import LayaoutPublic from "./pages/LayoutPublic";
+import NotFound from "./components/NotFound";
+import Profesorado from "./pages/Profesorado/Profesorado";
+import subject from "./data/subjects.json";
+import profesores from "./data/profesores.json"
 
 export const router = createBrowserRouter(
 [

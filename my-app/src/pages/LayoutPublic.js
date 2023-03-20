@@ -1,17 +1,19 @@
 import { Outlet } from "react-router-dom";
-import Header from "../pages/cabecera";
-import Footer from "./Footer";
+import Header from "./cabecera";
+import Footer from "../components/Footer";
 
 const LayaoutPublic = () =>{
     return(
         <>
         <header>
-        <Header />
+            <Header />
         </header>
         <body>
-        <Outlet />
+            <Outlet />
         </body>
-        <Footer />
+        <footer>
+            <Footer />
+        </footer>
         </>
     )
 }

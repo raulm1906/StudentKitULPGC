@@ -29,7 +29,6 @@ const SearchProfesores = ({searchTerm, onItemClick}) => {
             {filteredData.map((item, index) => (
             <div className="border m-2" key={index}>
             <p onClick={() => onItemClick(item)} className="hover">{item.profesorado.profesor}</p>
-            
         </div>
         ))}
     </div>

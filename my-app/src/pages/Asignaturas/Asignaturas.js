@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import '../components/style.css';
-import TableProf from '../components/tableAsignaturas';
-import Search from '../components/Busqueda/SearchAsignaturas';
-import SearchBar from '../components/Busqueda/SearchBar';
-import SearchProfesores from '../components/Busqueda/SearchProfesores'
-import SubjectProfes from '../components/Busqueda/SubjectProfes';
+import '../../components/style.css';
+import TableAsig from './components/tableAsignaturas';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Search from '../../components/Busqueda/SearchAsignaturas';
+import SearchBar from '../../components/Busqueda/SearchBar';
+import SearchProfesores from '../../components/Busqueda/SearchProfesores'
+import SubjectProfes from '../../components/Busqueda/SubjectProfes';
 function Asignatura ({asignatura}){  
 
     const [newSubject, setAsignatura] = useState(asignatura)
@@ -35,7 +36,7 @@ function Asignatura ({asignatura}){
                    <SubjectProfes id={newSubject.id}></SubjectProfes>
                 </div>
                 <div style={{ borderTop: "3px solid #707070 "}}></div>
-                <TableProf />
+                <TableAsig />
             </section>
 
             <section className="search_asignaturas">

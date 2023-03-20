@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import cabecera from './pages/cabecera';
-import Profesorado from './pages/Profesorado';
-import Asignatura from './pages/Asignaturas';
-import {router} from './components/router'
+import Profesorado from './pages/Profesorado/Profesorado';
+import Asignatura from './pages/Asignaturas/Asignaturas';
+import {router} from './router'
 import  {Route, RouterProvider} from "react-router-dom"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
   <RouterProvider router = {router} />
 );
 

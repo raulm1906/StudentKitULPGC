@@ -4,12 +4,9 @@ import {
     Table,
     Thead,
     Tbody,
-    Tfoot,
     Tr,
     Th,
     Td,
-    TableCaption,
-    TableContainer,
   } from '@chakra-ui/react'
 
 function TableProf({tutorias}){
@@ -39,7 +36,7 @@ function TableProf({tutorias}){
                 </Tr>
             </Tbody>
         </Table>
-        <h2> Segundo Semestres </h2>
+        <h2 className="m-10"> Segundo Semestres </h2>
         <Table variant="simple"  size="md">
             <Thead>
                 <Tr borderWidth={"0px"}>
