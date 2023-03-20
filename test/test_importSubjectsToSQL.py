@@ -5,7 +5,7 @@ class TestJsonDeserialize(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        with open("../src/scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
+        with open("../src/scrappers/json/subjects.json", 'r', encoding='utf-8') as subjectsJson:
             cls.subjectsList = json.load(subjectsJson)
 
     def test_subject_name(self):

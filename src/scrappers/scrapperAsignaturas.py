@@ -49,7 +49,7 @@ for endpoint in range(40951, 40991):
     print(f'Proyecto Docente: {subject["proyectoDocente"]}\n')
     '''
 
-with open('subjects.json', 'w', encoding='utf-8') as f:
+with open('json/subjects.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
 
 print('Done')

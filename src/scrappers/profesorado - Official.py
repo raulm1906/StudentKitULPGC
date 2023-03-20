@@ -1,8 +1,6 @@
-import csv
 import requests
 from bs4 import BeautifulSoup
 import json
-import lxml
 
 data = []
 
@@ -30,8 +28,6 @@ def getTutorias(url):
                     hours.append(td.text.strip())
                 else:
                     days.append(td.text.strip())
-    #print(days)
-    #print(hours)
 
     joined = zip(days, hours)
     result = {k: v for k, v in joined}
@@ -75,11 +71,5 @@ for endpoint in range(1, 58):
     }
     data.append(jsonFormat)
 
-    #Print current results
-    #print(professor)
-    #print(despacho.text)
-    #print(telefono.text)
-    #print(correo.text)
-
-with open('profesorado.json', 'w', encoding='utf-8') as f:
+with open('json/profesorado.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)

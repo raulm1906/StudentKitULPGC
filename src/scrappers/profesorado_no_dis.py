@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import lxml
 
 def obtener_informacion(url):
     page = requests.get(url)
@@ -53,7 +52,7 @@ for link in links:
     data.append(obtener_informacion(link.get('href')))
 
         # Store all the data in a JSON
-with open('teachers.json', 'w', encoding='utf-8') as f:
+with open('json/teachers.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
 
 
