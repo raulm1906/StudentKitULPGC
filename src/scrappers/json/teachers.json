@@ -1,575 +1,739 @@
 [
     {
         "APELLIDOS:": "AFONSO SUÁREZ",
+        "CATEGORÍA LABORAL:": "PROFESORA CONTRATADA DOCTORA, TIPO 1",
         "CORREO ELECTRÓNICO:": "marilola.afonso@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;LC EN INFORMÁTICA;DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA",
         "NOMBRE:": "MARÍA DOLORES",
         "TELÉFONO DE CONTACTO:": "928458723"
     },
     {
         "APELLIDOS:": "ALAYÓN HERNÁNDEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "francisco.alayon@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "FRANCISCO JAVIER",
         "TELÉFONO DE CONTACTO:": "928458756"
     },
     {
         "APELLIDOS:": "ALEMÁN FLORES",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "miguel.aleman@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "MIGUEL",
         "TELÉFONO DE CONTACTO:": "928458704"
     },
     {
         "APELLIDOS:": "ALONSO HERNÁNDEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "hector.alonso@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN CIENCIAS",
         "NOMBRE:": "HÉCTOR EULOGIO",
         "TELÉFONO DE CONTACTO:": "928454514"
     },
     {
         "APELLIDOS:": "ÁLVAREZ LEÓN",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "luismiguel.alvarez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN CIENCIAS MATEMÁTICAS;LC EN CIENCIAS MATEMÁTICAS",
         "NOMBRE:": "LUIS MIGUEL",
         "TELÉFONO DE CONTACTO:": "928454563"
     },
     {
         "APELLIDOS:": "BAÑOS RODRÍGUEZ",
+        "CATEGORÍA LABORAL:": "PROFESORA ASOCIADA",
         "CORREO ELECTRÓNICO:": "karina.banos@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "INGENIERO EN INFORMATICA",
         "NOMBRE:": "KARINA MARIBEL",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "BENÍTEZ DÍAZ",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "domingo.benitez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN INFORMÁTICA;LC EN CIENCIAS",
         "NOMBRE:": "DOMINGO JUAN",
         "TELÉFONO DE CONTACTO:": "928458700"
     },
     {
         "APELLIDOS:": "CABRERA BRITO",
+        "CATEGORÍA LABORAL:": "Venia Docendi",
         "CORREO ELECTRÓNICO:": "laura.brito@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Sin datos",
+        "FORMACIÓN ACADÉMICA:": "LICENCIADO EN FISICA",
         "NOMBRE:": "LAURA",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "CABRERA GÁMEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "jorge.cabrera@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN INFORMÁTICA;LC EN CIENCIAS",
         "NOMBRE:": "JORGE",
         "TELÉFONO DE CONTACTO:": "928458747"
     },
     {
         "APELLIDOS:": "CARMONA DUARTE",
+        "CATEGORÍA LABORAL:": "PROFESORA CONTRATADA DOCTORA, TIPO 1",
         "CORREO ELECTRÓNICO:": "cristina.carmona@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;INGENIERO DE TELECOMUNICACIÓN",
         "NOMBRE:": "MARÍA CRISTINA",
         "TELÉFONO DE CONTACTO:": "928458734"
     },
     {
         "APELLIDOS:": "CARRERAS RIUDAVETS",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "francisco.carreras@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "LC EN INFORMÁTICA;DOCTOR;LC EN CIENCIAS",
         "NOMBRE:": "FRANCISCO JAVIER",
         "TELÉFONO DE CONTACTO:": "928458729"
     },
     {
         "APELLIDOS:": "CASAÑAS BUENO",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "roberto.casanas@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "LICENCIADO EN FISICA",
         "NOMBRE:": "ROBERTO",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "CASTRILLÓN SANTANA",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "modesto.castrillon@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;DP EN INFORMÁTICA;LICENCIADO",
         "NOMBRE:": "MODESTO FERNANDO",
         "TELÉFONO DE CONTACTO:": "928458755"
     },
     {
         "APELLIDOS:": "CISNEROS AGUIRRE",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "jesus.cisneros@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR",
         "NOMBRE:": "JESÚS",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "CUENCA HERNÁNDEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "carmelo.cuenca@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN  CIENCIAS FÍSICAS",
         "NOMBRE:": "CARMELO",
         "TELÉFONO DE CONTACTO:": "928458713"
     },
     {
         "APELLIDOS:": "DE BLASIO",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "gabriel.deblasio@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LICENCIADO",
         "NOMBRE:": "GABRIELE SALVATORE",
         "TELÉFONO DE CONTACTO:": "928458742"
     },
     {
         "APELLIDOS:": "DE LA PUENTE ARRATE",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "fernando.puente@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO DE TELECOMUNICACIÓN",
         "NOMBRE:": "FERNANDO",
         "TELÉFONO DE CONTACTO:": "928458048"
     },
     {
         "APELLIDOS:": "DE LUQUE SÖLLHEIM",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "angel.luquesolheim@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN  CIENCIAS FÍSICAS",
         "NOMBRE:": "ÁNGEL LUIS",
         "TELÉFONO DE CONTACTO:": "928454510"
     },
     {
         "APELLIDOS:": "DOMÍNGUEZ BRITO",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "antonio.dominguez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "ANTONIO CARLOS",
         "TELÉFONO DE CONTACTO:": "928454572"
     },
     {
         "APELLIDOS:": "DORESTE BLANCO",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "luis.doreste@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "LUIS JESÚS",
         "TELÉFONO DE CONTACTO:": "928458706"
     },
     {
         "APELLIDOS:": "DUQUE MARTÍN DE OLIVA",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "juandedios.duque@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "LC EN INFORMÁTICA",
         "NOMBRE:": "JUAN DE DIOS",
         "TELÉFONO DE CONTACTO:": "928458735"
     },
     {
         "APELLIDOS:": "ESCLARÍN MONREAL",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "julio.esclarin@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN CIENCIAS",
         "NOMBRE:": "JULIO",
         "TELÉFONO DE CONTACTO:": "928458709"
     },
     {
         "APELLIDOS:": "ÉVORA GÓMEZ",
+        "CATEGORÍA LABORAL:": "PROFESORADO SUSTITUTO  TIEMPO PARCIAL",
         "CORREO ELECTRÓNICO:": "jose.evora@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "MÁSTER UNIVERSITARIO OFICIAL;INGENIERO EN INFORMATICA",
         "NOMBRE:": "JOSÉ",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "ÉVORA GÓMEZ",
+        "CATEGORÍA LABORAL:": "PROFESORADO SUSTITUTO  TIEMPO PARCIAL",
         "CORREO ELECTRÓNICO:": "jose.evora@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "MÁSTER UNIVERSITARIO OFICIAL;INGENIERO EN INFORMATICA",
         "NOMBRE:": "JOSÉ",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "FERNÁNDEZ DÍAZ",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "gabriel.fernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "INGENIERO EN INFORMATICA",
         "NOMBRE:": "GABRIEL ALEJANDRO",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "FERNÁNDEZ GARCÍA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "enrique.fernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO INDUSTRIAL",
         "NOMBRE:": "ENRIQUE",
         "TELÉFONO DE CONTACTO:": "928458721"
     },
     {
         "APELLIDOS:": "FERNÁNDEZ LÓPEZ",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "pablo.fernandezlopez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "PABLO CARMELO",
         "TELÉFONO DE CONTACTO:": "928458727"
     },
     {
         "APELLIDOS:": "FORTES GÁLVEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "jose.fortes@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO INDUSTRIAL",
         "NOMBRE:": "JOSÉ",
         "TELÉFONO DE CONTACTO:": "928458724"
     },
     {
         "APELLIDOS:": "FREIRE  OBREGÓN",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "david.freire@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;INGENIERO EN INFORMATICA",
         "NOMBRE:": "DAVID SEBASTIÁN",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "GALANTE SEMPERE",
+        "CATEGORÍA LABORAL:": "PROFESORADO SUSTITUTO  TIEMPO PARCIAL",
         "CORREO ELECTRÓNICO:": "david.galante@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "Sin datos",
         "NOMBRE:": "DAVID",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "GALANTE SEMPERE",
+        "CATEGORÍA LABORAL:": "PROFESORADO SUSTITUTO  TIEMPO PARCIAL",
         "CORREO ELECTRÓNICO:": "david.galante@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "Sin datos",
         "NOMBRE:": "DAVID",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "GARCÍA QUESADA",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "jesus.garcia@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN CIENCIAS MATEMÁTICAS",
         "NOMBRE:": "JESÚS",
         "TELÉFONO DE CONTACTO:": "928458723"
     },
     {
         "APELLIDOS:": "GARCÍA RODRÍGUEZ",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE ESCUELA UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "ruben.garcia@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;DP EN INFORMÁTICA",
         "NOMBRE:": "CARMELO RUBÉN",
         "TELÉFONO DE CONTACTO:": "928458753"
     },
     {
         "APELLIDOS:": "GARCÍA RUBIANO",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "jesus.garciarubiano@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN  CIENCIAS FÍSICAS",
         "NOMBRE:": "JESÚS",
         "TELÉFONO DE CONTACTO:": "928454495"
     },
     {
         "APELLIDOS:": "GONZÁLEZ DE LA ROSA",
+        "CATEGORÍA LABORAL:": "PROFESORA CONTRATADA DOCTORA, TIPO 1",
         "CORREO ELECTRÓNICO:": "mpilar.gonzalez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "C/ Pérez del Toro 1",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN FILOLOGÍA",
         "NOMBRE:": "MARÍA DEL PILAR",
         "TELÉFONO DE CONTACTO:": "928451740"
     },
     {
         "APELLIDOS:": "GONZÁLEZ DOMÍNGUEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "josedaniel.gonzalez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DP EN INFORMÁTICA",
         "NOMBRE:": "JOSÉ DANIEL",
         "TELÉFONO DE CONTACTO:": "928458751"
     },
     {
         "APELLIDOS:": "GONZÁLEZ MUÑOZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "carlos.gonzalez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "INGENIERO INDUSTRIAL",
         "NOMBRE:": "CARLOS ANTONIO",
         "TELÉFONO DE CONTACTO:": "928458701"
     },
     {
         "APELLIDOS:": "GONZÁLEZ SÁNCHEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "esther.gonzalez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "ESTHER",
         "TELÉFONO DE CONTACTO:": "928458709"
     },
     {
         "APELLIDOS:": "GUERRA ARTAL",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "cayetano.guerra@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "CAYETANO",
         "TELÉFONO DE CONTACTO:": "928458743"
     },
     {
         "APELLIDOS:": "HERNÁNDEZ ACOSTA",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "luismiguel.hernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO DE TELECOMUNICACIÓN",
         "NOMBRE:": "LUIS MIGUEL",
         "TELÉFONO DE CONTACTO:": "928451383"
     },
     {
         "APELLIDOS:": "HERNÁNDEZ CABRERA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "josejuan.hernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "JOSÉ JUAN",
         "TELÉFONO DE CONTACTO:": "928458752"
     },
     {
         "APELLIDOS:": "HERNÁNDEZ FIGUEROA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "zenon.hernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "ZENÓN JOSÉ",
         "TELÉFONO DE CONTACTO:": "928458732"
     },
     {
         "APELLIDOS:": "HERNÁNDEZ MORERA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "pablo.hernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR",
         "NOMBRE:": "PABLO VICENTE",
         "TELÉFONO DE CONTACTO:": "928452950"
     },
     {
         "APELLIDOS:": "HERNÁNDEZ SANTANA",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "javier.hernandezsantana@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "LC EN CIENCIAS ECONÓMICAS Y EMPRESARIALES",
         "NOMBRE:": "FRANCISCO JAVIER",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "HERNÁNDEZ SOSA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "daniel.hernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;LICENCIADO",
         "NOMBRE:": "JOSÉ DANIEL",
         "TELÉFONO DE CONTACTO:": "928458701"
     },
     {
         "APELLIDOS:": "HERNÁNDEZ TEJERA",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "mario.hernandez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN INFORMÁTICA",
         "NOMBRE:": "FRANCISCO MARIO",
         "TELÉFONO DE CONTACTO:": "928458744"
     },
     {
         "APELLIDOS:": "LÓPEZ RODRÍGUEZ",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "ignaciojose.lopez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;LC EN INFORMÁTICA",
         "NOMBRE:": "IGNACIO JOSÉ",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "MARTEL JORDÁN",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "ernestina.martel@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "ERNESTINA ÁNGELES",
         "TELÉFONO DE CONTACTO:": "928452876"
     },
     {
         "APELLIDOS:": "MAYOR GONZÁLEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "octavio.mayor@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DP EN INFORMÁTICA",
         "NOMBRE:": "OCTAVIO",
         "TELÉFONO DE CONTACTO:": "928458730"
     },
     {
         "APELLIDOS:": "MEDINA RODRÍGUEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "pedro.medina@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO INDUSTRIAL",
         "NOMBRE:": "PEDRO",
         "TELÉFONO DE CONTACTO:": "928458722"
     },
     {
         "APELLIDOS:": "MÉNDEZ BABEY",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "maximo.mendez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO INDUSTRIAL",
         "NOMBRE:": "MÁXIMO",
         "TELÉFONO DE CONTACTO:": "928458702"
     },
     {
         "APELLIDOS:": "MIRANDA GONZÁLEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "javier.miranda@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR",
         "NOMBRE:": "FRANCISCO JAVIER",
         "TELÉFONO DE CONTACTO:": "928451240"
     },
     {
         "APELLIDOS:": "MONZÓN LÓPEZ",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "nelson.monzon@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "INGENIERO EN INFORMATICA;DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;LCDO. EN INGENIERÍA INFORMÁTICA",
         "NOMBRE:": "NELSON MANUEL",
         "TELÉFONO DE CONTACTO:": "928454998"
     },
     {
         "APELLIDOS:": "MUÑOZ BLANCO",
+        "CATEGORÍA LABORAL:": "CATEDRATICO DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "joseantonio.munoz@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN INFORMÁTICA;LC EN  CIENCIAS FÍSICAS",
         "NOMBRE:": "JOSÉ ANTONIO",
         "TELÉFONO DE CONTACTO:": "928458754"
     },
     {
         "APELLIDOS:": "NIEVES RODRÍGUEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "julia.nieves@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN CIENCIAS ECONÓMICAS Y EMPRESARIALES",
         "NOMBRE:": "JULIA",
         "TELÉFONO DE CONTACTO:": "928458134"
     },
     {
         "APELLIDOS:": "OCÓN CARRERAS",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "antonio.ocon@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO INDUSTRIAL",
         "NOMBRE:": "ANTONIO ANDRÉS",
         "TELÉFONO DE CONTACTO:": "928451865"
     },
     {
         "APELLIDOS:": "ORTEGA ZAMORANO",
+        "CATEGORÍA LABORAL:": "Venia Docendi",
         "CORREO ELECTRÓNICO:": "francisco.zamorano@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Real de San Roque, 1",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR",
         "NOMBRE:": "FRANCISCO",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "OSORIO ACOSTA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "javier.osorio@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN CIENCIAS ECONÓMICAS Y EMPRESARIALES;INGENIERO INDUSTRIAL",
         "NOMBRE:": "JAVIER",
         "TELÉFONO DE CONTACTO:": "928452804"
     },
     {
         "APELLIDOS:": "PADRÓN MORALES",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "gabino.padron@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;LC EN INFORMÁTICA",
         "NOMBRE:": "GABINO",
         "TELÉFONO DE CONTACTO:": "928454472"
     },
     {
         "APELLIDOS:": "PALACIOS PÉREZ",
+        "CATEGORÍA LABORAL:": "PROFESORA ASOCIADA",
         "CORREO ELECTRÓNICO:": "olga.palacios@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "Sin datos",
         "NOMBRE:": "OLGA",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "PEÑATE SÁNCHEZ",
+        "CATEGORÍA LABORAL:": "Venia Docendi",
         "CORREO ELECTRÓNICO:": "adrian.penate@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Real de San Roque, 1",
+        "FORMACIÓN ACADÉMICA:": "DR;INGENIERO EN INFORMATICA;INGENIERO EN INFORMATICA",
         "NOMBRE:": "ADRIÁN",
         "TELÉFONO DE CONTACTO:": "928454413"
     },
     {
         "APELLIDOS:": "PÉREZ AGUIAR",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "miguelangel.perez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "LC EN INFORMÁTICA",
         "NOMBRE:": "MIGUEL ÁNGEL",
         "TELÉFONO DE CONTACTO:": "928458741"
     },
     {
         "APELLIDOS:": "PÉREZ GARCÍA",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "ricardo.perez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "LC EN INFORMÁTICA",
         "NOMBRE:": "RICARDO JAVIER",
         "TELÉFONO DE CONTACTO:": "928458736"
     },
     {
         "APELLIDOS:": "PLÁCIDO CASTRO",
+        "CATEGORÍA LABORAL:": "TITULAR DE ESCUELA  UNIVERSITARIA",
         "CORREO ELECTRÓNICO:": "anamaria.placido@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "ANA MARÍA",
         "TELÉFONO DE CONTACTO:": "928458707"
     },
     {
         "APELLIDOS:": "QUESADA ARENCIBIA",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "alexis.quesada@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "FRANCISCO ALEXIS",
         "TELÉFONO DE CONTACTO:": "928454572"
     },
     {
         "APELLIDOS:": "QUEVEDO LOSADA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "juancarlos.quevedo@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN INFORMÁTICA;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "JUAN CARLOS",
         "TELÉFONO DE CONTACTO:": "928458757"
     },
     {
         "APELLIDOS:": "QUINTANA DOMÍNGUEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "francisca.quintana@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "FRANCISCA CANDELARIA",
         "TELÉFONO DE CONTACTO:": "928458703"
     },
     {
         "APELLIDOS:": "QUINTEIRO GONZÁLEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "josemaria.quinteiro@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR",
         "NOMBRE:": "JOSÉ MARÍA",
         "TELÉFONO DE CONTACTO:": "928451236"
     },
     {
         "APELLIDOS:": "RAMÍREZ FIERRO",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "juan.ramirez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "GRADO EN TURISMO",
         "NOMBRE:": "JUAN CARLOS",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "RAMOS  DE MIGUEL",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "aramos.gcc@gmail.com",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;INGENIERO TÉC. INFORMÁTICA DE SISTEMAS;GRADUADO EN INGENIERÍA INFORMÁTICA",
         "NOMBRE:": "ÁNGEL",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "RODRÍGUEZ DEL PINO",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "jc.rodriguezdelpino@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;DP EN INFORMÁTICA",
         "NOMBRE:": "JUAN CARLOS",
         "TELÉFONO DE CONTACTO:": "928458733"
     },
     {
         "APELLIDOS:": "RODRÍGUEZ RODRÍGUEZ",
+        "CATEGORÍA LABORAL:": "PROFESOR CONTRATADO DOCTOR, TIPO 1",
         "CORREO ELECTRÓNICO:": "josecarlos.rodriguezrodriguez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "JOSÉ CARLOS",
         "TELÉFONO DE CONTACTO:": "928458742"
     },
     {
         "APELLIDOS:": "RONCAL ANDRÉS",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "octavio.roncal@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "GRADUADO EN INGENIERÍA INFORMÁTICA",
         "NOMBRE:": "OCTAVIO",
         "TELÉFONO DE CONTACTO:": "928453301"
     },
     {
         "APELLIDOS:": "SALGADO DE LA NUEZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "agustin.salgado@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO EN INFORMATICA",
         "NOMBRE:": "AGUSTÍN",
         "TELÉFONO DE CONTACTO:": "928458705"
     },
     {
         "APELLIDOS:": "SÁNCHEZ MEDINA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "javier.sanchez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;INGENIERO DE TELECOMUNICACIÓN",
         "NOMBRE:": "JAVIER JESÚS",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "SANTANA CEDRÉS",
+        "CATEGORÍA LABORAL:": "PROFESORADO SUSTITUTO  TIEMPO PARCIAL",
         "CORREO ELECTRÓNICO:": "daniel.santanacedres@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Sin datos",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;MÁSTER UNIVERSITARIO OFICIAL;INGENIERO EN INFORMATICA;DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA;MÁSTER UNIVERSITARIO OFICIAL;INGENIERO EN INFORMATICA",
         "NOMBRE:": "DANIEL ELÍAS",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "SANTANA JARIA",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "oliverio.santana@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "OLIVERIO JESÚS",
         "TELÉFONO DE CONTACTO:": "928458745"
     },
     {
         "APELLIDOS:": "SANTANA NÚÑEZ",
+        "CATEGORÍA LABORAL:": "PROFESOR ASOCIADO",
         "CORREO ELECTRÓNICO:": "miguel.santana@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR POR LA UNIVERSIDAD DE LAS PALMAS DE GRAN CANARIA",
         "NOMBRE:": "JOSÉ MIGUEL",
         "TELÉFONO DE CONTACTO:": ""
     },
     {
         "APELLIDOS:": "SANTANA PÉREZ",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "fran.santana@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA;DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "FRANCISCO J",
         "TELÉFONO DE CONTACTO:": "928458726"
     },
     {
         "APELLIDOS:": "SANTOS ESPINO",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "josemiguel.santos@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA",
         "NOMBRE:": "JOSÉ MIGUEL",
         "TELÉFONO DE CONTACTO:": "928458783"
     },
     {
         "APELLIDOS:": "SUÁREZ ARAUJO",
+        "CATEGORÍA LABORAL:": "CATEDRATICA DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "carmenpaz.suarez@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DR EN INFORMÁTICA",
         "NOMBRE:": "CARMEN PAZ",
         "TELÉFONO DE CONTACTO:": "928458725"
     },
     {
         "APELLIDOS:": "TRUJILLO PINO",
+        "CATEGORÍA LABORAL:": "TITULAR DE UNIVERSIDAD",
         "CORREO ELECTRÓNICO:": "agustin.trujillo@ulpgc.es",
         "DIRECCIÓN POSTAL:": "Campus Universitario de Tafira",
+        "FORMACIÓN ACADÉMICA:": "DOCTOR;LC EN INFORMÁTICA;DP EN INFORMÁTICA",
         "NOMBRE:": "AGUSTÍN RAFAEL",
         "TELÉFONO DE CONTACTO:": "928458750"
     }
