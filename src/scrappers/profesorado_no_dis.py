@@ -3,10 +3,12 @@ from bs4 import BeautifulSoup
 import json
 import lxml
 
+id = 1
 def teacherFormatter(diccionario):
-    id = 1
     cleandict = {}
-
+    finaldicc = {}
+    global id
+    finaldicc['id'] = id
     for key in diccionario:
         if key == 'CATEGORÍA LABORAL:' or key == 'DIRECCIÓN POSTAL:':
             continue
@@ -14,13 +16,18 @@ def teacherFormatter(diccionario):
             cleandict['profesor'] = diccionario[key].title()
         elif key == 'CORREO ELECTRÓNICO:':
             cleandict['email'] = diccionario[key]
-        elif key == 'teléfono de contacto:':
+        elif key == 'TELÉFONO DE CONTACTO:':
             cleandict['teléfono'] = diccionario[key]
         else:
-            cleandict[key.lower()] = diccionario[key].capitalize()
-
-    print(cleandict)
-    return cleandict
+            if diccionario[key] == 'Ciencia de la comp. e intel. artificial':
+                print('a')
+                cleandict[key.lower()] = 'Ciencia de la Computación e Inteligencia Artificial'
+            else:
+                cleandict[key.lower()] = diccionario[key].capitalize()
+    finaldicc['profesorado'] = cleandict
+    id += 1
+    print(finaldicc)
+    return finaldicc
 
 def obtener_informacion(url):
     page = requests.get(url)
@@ -75,6 +82,7 @@ table = soup.find('table')
 # Find all the a components in the page
 links = table.find_all('a')
 data = []
+
 for link in links:
     data.append(obtener_informacion(link.get('href')))
 
