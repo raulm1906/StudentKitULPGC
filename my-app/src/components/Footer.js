@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+=======
+import React, { useState } from 'react';
+>>>>>>> guille
 import { Image } from '@chakra-ui/react';
 
 import { BsTwitter } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> guille
 function Footer() {
 
   return (

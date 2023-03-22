@@ -1,0 +1,402 @@
+[
+    {
+        "asignatura": "40951 - ÁLGEBRA Y GEOMETRÍA",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40951",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40952 - MATEMÁTICA DISCRETA",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40952",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40953 - FUNDAMENTOS DE PROGRAMACIÓN I",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40953",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40954 - FUNDAMENTOS DE COMPUTADORES",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40954",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40955 - HABILIDADES PROFESIONALES PARA INGENIEROS",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "FILOLOGÍA MODERNA, TRADUCCIÓN E INTERPRETACIÓN,INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40955",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40956 - MATEMÁTICAS PARA LA COMPUTACIÓN",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40956",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40957 - FUNDAMENTOS FÍSICOS DE LA INFORMÁTICA",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "FÍSICA",
+        "duracion": "2ş semestre",
+        "id": "40957",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40958 - FUNDAMENTOS DE PROGRAMACIÓN II",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40958",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40959 - ESTRUCTURA DE COMPUTADORES",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40959",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40960 - LA EMPRESA Y SUS PROCESOS",
+        "año": "1",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "ECONOMÍA Y DIRECCIÓN DE EMPRESAS",
+        "duracion": "2ş semestre",
+        "id": "40960",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40961 - MÉTODOS ESTADÍSTICOS",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40961",
+        "tipo": "Básica",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40962 - ALGORITMOS Y PROGRAMACIÓN",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INGENIERÍA TELEMÁTICA",
+        "duracion": "1er. semestre",
+        "id": "40962",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40963 - TECNOLOGÍAS DE PROGRAMACIÓN",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40963",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40964 - PERIFÉRICOS E INTERFACES",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40964",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40965 - INGENIERÍA DEL SOFTWARE I",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40965",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40966 - MÉTODOS NUMÉRICOS",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40966",
+        "tipo": "Básica de rama",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40967 - ESTRUCTURAS DE DATOS Y PROGRAMACIÓN",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40967",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40968 - BASES DE DATOS I",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40968",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40969 - ARQUITECTURA DE COMPUTADORES",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40969",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40970 - FUNDAMENTOS DE LOS SISTEMAS OPERATIVOS",
+        "año": "2",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40970",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40971 - REDES DE COMPUTADORES",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40971",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40972 - ADMINISTRACIÓN DE SISTEMAS OPERATIVOS",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40972",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40973 - BASES DE DATOS II",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40973",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40974 - FUNDAMENTOS DE LOS SISTEMAS INTELIGENTES",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40974",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40975 - INGENIERÍA DEL SOFTWARE II",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40975",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40976 - ADMINISTRACIÓN DE SERVICIOS EN RED",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40976",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40977 - VIRTUALIZACIÓN Y PROCESAMIENTO DISTRIBUIDO",
+        "año": "3",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40977",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40978 - PROGRAMACIÓN WEB Y MÓVIL",
+        "año": "3",
+        "creditos": "Total: 9 (Teoría:  - Prácticas: 0)",
+        "departamento": "INGENIERÍA TELEMÁTICA",
+        "duracion": "2ş semestre",
+        "id": "40978",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40979 - PRODUCCIÓN DE SOFTWARE",
+        "año": "3",
+        "creditos": "Total: 9 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40979",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40980 - INFORMÁTICA GRÁFICA",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40980",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40981 - SISTEMAS ROBÓTICOS AUTÓNOMOS",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40981",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40982 - VISIÓN POR COMPUTADOR",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40982",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40983 - PROGRAMACIÓN DE APLICACIONES MÓVILES NATIVAS",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40983",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40984 - COMPUTACIÓN EN LA NUBE",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40984",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40985 - INTERNET DE LAS COSAS",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40985",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40986 - EMPRENDIMIENTO Y CREACIÓN DE EMPRESAS DE BASE TECNOLÓGICA",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "ECONOMÍA Y DIRECCIÓN DE EMPRESAS",
+        "duracion": "1er. semestre",
+        "id": "40986",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40987 - LOS SISTEMAS DE INFORMACIÓN EN LA ORGANIZACIÓN",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "1er. semestre",
+        "id": "40987",
+        "tipo": "Opcional",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40988 - SEGURIDAD DE LA INFORMACIÓN",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40988",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40989 - PROYECTOS DE INGENIERÍA Y GESTIÓN DEL SOFTWARE",
+        "año": "4",
+        "creditos": "Total: 6 (Teoría:  - Prácticas: 0)",
+        "departamento": "INFORMÁTICA Y SISTEMAS",
+        "duracion": "2ş semestre",
+        "id": "40989",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    },
+    {
+        "asignatura": "40990 - PRÁCTICAS EXTERNAS",
+        "año": "4",
+        "creditos": "Total: 12 (Teoría:  - Prácticas: 12)",
+        "departamento": " ",
+        "duracion": "Anual",
+        "id": "40990",
+        "tipo": "Obligatoria",
+        "titulacion": "Grado en Ingeniería Informática"
+    }
+]
