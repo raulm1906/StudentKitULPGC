@@ -1,7 +1,7 @@
 import os
 import sys
 import DBConnection
-import jsonFormatter
+from src.jsonUtils import jsonFormatter
 import json
 import mariadb
 import logging
