@@ -13,4 +13,17 @@
 .scrollbox {
     height: 600px;
     overflow: auto;
+    width: 60%;
+    float: left;
+}
+
+.filtros {
+    background-color: gray;
+    float: left;
+    flex-direction: column;
+    width: 40%;
+}
+
+.info h1, h2, h3 {
+    padding-bottom: 0.4em;
 }

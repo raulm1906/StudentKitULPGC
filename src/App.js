@@ -27,7 +27,7 @@ function App() {
 
 function DisplayPage() {
   return (
-    <Footer />
+    <Profesorado />
   )
 }
 
