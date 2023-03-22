@@ -27,4 +27,3 @@ with open("./horarios/" + input("Nombre del archivo (terminado en .json) : "), '
 
 print('Done')
 
-

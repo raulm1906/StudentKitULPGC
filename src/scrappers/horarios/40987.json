@@ -1,0 +1,26 @@
+[
+    {
+        "Classroom": "A3-2",
+        "Day": "MARTES",
+        "FHour": "9:30",
+        "Group": "1",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-2",
+        "Day": "MARTES",
+        "FHour": "10:30",
+        "Group": "17",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-5",
+        "Day": "VIERNES",
+        "FHour": "10:30",
+        "Group": "41",
+        "IHour": "8:30",
+        "Week": "ambos"
+    }
+]
