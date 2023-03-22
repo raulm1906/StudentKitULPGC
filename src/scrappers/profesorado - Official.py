@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 import json
 
 data = []
-area = []
+area_de_conocimiento = []
+cont = 0
 def getTutorias(url):
     url = f'https://www.dis.ulpgc.es/profesorado/{url}'
     # Send a request to the URL and get the HTML content
@@ -33,9 +34,7 @@ def getTutorias(url):
             td_col_elements = table.find_all('td', {'colspan':'6'})
             for td_col in td_col_elements:
                 if cont == 1:
-                    area_de_conocimiento = td_col.text.strip()
-                    print(area_de_conocimiento)
-
+                    area_de_conocimiento.append(td_col.text.strip())
                 cont += 1
 
     joined = zip(days, hours)
@@ -62,7 +61,8 @@ for endpoint in range(1, 58):
     telefono = soup.find('td', {'id': f'tres{endpoint}'})
     correo = soup.find('td', {'id': f'cuatro{endpoint}'})
     pattern = 'ulpgc.es'
-    formatted_email = f"{correo.text.split('.')[0]}@{pattern}"
+    formatted_email = f"{correo.text.split('ulpgc')[0] }@{pattern}"
+    print(formatted_email)
 
     current_tutorias = getTutorias(a_link)
 
@@ -70,7 +70,8 @@ for endpoint in range(1, 58):
         'profesor': professor.text.strip(),
         'despacho': despacho.text.strip(),
         'teléfono': telefono.text.strip(),
-        'email': formatted_email.strip()
+        'email': formatted_email.strip(),
+        'área de conocimiento': area_de_conocimiento[cont]
     }
 
     jsonFormat = {
@@ -78,6 +79,7 @@ for endpoint in range(1, 58):
         'profesorado': profesorado,
         'tutorias': current_tutorias
     }
+    cont += 1
     data.append(jsonFormat)
 
 with open('json/profesorado.json', 'w', encoding='utf-8') as f:

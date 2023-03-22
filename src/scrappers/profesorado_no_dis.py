@@ -4,22 +4,21 @@ import json
 import lxml
 
 def teacherFormatter(diccionario):
+    id = 1
     cleandict = {}
 
     for key in diccionario:
-        if key == "profesor":
+        if key == 'CATEGORÍA LABORAL:' or key == 'DIRECCIÓN POSTAL:':
+            continue
+        elif key == "profesor":
             cleandict['profesor'] = diccionario[key].title()
-        #if key == 'CATEGORÍA LABORAL:':
         elif key == 'CORREO ELECTRÓNICO:':
             cleandict['email'] = diccionario[key]
-        #elif key == ''
+        elif key == 'teléfono de contacto:':
+            cleandict['teléfono'] = diccionario[key]
         else:
             cleandict[key.lower()] = diccionario[key].capitalize()
-       # elif key == "CORREO ELECTRÓNICO":
-        #    diccionario[key] =
-        #else:
-         #   key = key.capitalize
-          #  diccionario[key] = key.capitalize() + ' ' + diccionario[key].lower()
+
     print(cleandict)
     return cleandict
 
@@ -80,7 +79,7 @@ for link in links:
     data.append(obtener_informacion(link.get('href')))
 
         # Store all the data in a JSON
-with open('teacherss.json', 'w', encoding='utf-8') as f:
+with open('json/teachers.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
 
 
