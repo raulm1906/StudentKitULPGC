@@ -8,9 +8,11 @@ const LayaoutPublic = () =>{
         <header>
             <Header />
         </header>
+        
         <body>
             <Outlet />
         </body>
+
         <footer>
             <Footer />
         </footer>

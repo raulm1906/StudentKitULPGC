@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../components/style.css';
-import TableAsig from './components/tableAsignaturas';
+import TimeTable from './components/tableAsignaturas';
 import Search from '../../components/Busqueda/SearchAsignaturas';
 import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores'
@@ -22,9 +22,9 @@ function Asignatura ({asignatura}){
       }
 
     return (
-        <div>
-            <section className="scroll-box">
-                <h2 id="subjectname" type="text" name="nombre_asignatura"><b> {newSubject.asignatura}</b></h2>
+        <div className="d-flex ">
+            <section className="d-flex scroll-box">
+                <h2 id="titlePage" type="text" name="nombre_asignatura"><b> {newSubject.asignatura}</b></h2>
                 <div id ="atributos_subject">
                     <div id="tipo_subject"><b>Tipo:</b><label name="tipo_subject"> {newSubject.tipo}</label></div>
                     <div id="titulacion_subject"><b>Titulacion:</b><label name="titulacion_subject">{newSubject.titulacion}</label></div>
@@ -38,10 +38,14 @@ function Asignatura ({asignatura}){
                    <SubjectProfes id={newSubject.id}></SubjectProfes>
                 </div>
                 <div style={{ borderTop: "3px solid #707070 "}}></div>
-                <TableAsig />
-                <Link href='https://chakra-ui.com' isExternal>
-                Chakra Design system <ExternalLinkIcon mx='2px' />
+
+                <Link href={newSubject.proyectoDocente} isExternal className="link">
+                Proyecto Docente de la Asignatura<ExternalLinkIcon mx='2px' />
                 </Link>
+                <TimeTable />
+
+
+
             </section>
 
             <section className="search_asignaturas">

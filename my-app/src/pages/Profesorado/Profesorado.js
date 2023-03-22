@@ -21,9 +21,9 @@ function Profesorado ({profesor}){
     
 
     return (
-        <div >
+        <div className='d-flex'>
             <section className="scroll-box">
-                <h2 id="teachername" type="text" name="profesor_nombre">{newTeacher.profesorado.profesor}</h2>
+                <h2 id="titlePage" type="text" name="profesor_nombre"><b>{newTeacher.profesorado.profesor}</b></h2>
                 <div id ="atributos_teacher">
                     <div className="Correo"><b>Correo electrónico:</b><label name="correo">{newTeacher.profesorado.email}</label></div>
                     <div className= "Despacho"><b>Departamento:</b><label name="despacho">{newTeacher.profesorado.despacho}</label></div>
