@@ -3,6 +3,25 @@ from bs4 import BeautifulSoup
 import json
 import lxml
 
+def teacherFormatter(diccionario):
+    cleandict = {}
+
+    for key in diccionario:
+        if key == "profesor":
+            cleandict['profesor'] = diccionario[key].title()
+        #if key == 'CATEGORÍA LABORAL:':
+        elif key == 'CORREO ELECTRÓNICO:':
+            cleandict['email'] = diccionario[key]
+        #elif key == ''
+        else:
+            cleandict[key.lower()] = diccionario[key].capitalize()
+       # elif key == "CORREO ELECTRÓNICO":
+        #    diccionario[key] =
+        #else:
+         #   key = key.capitalize
+          #  diccionario[key] = key.capitalize() + ' ' + diccionario[key].lower()
+    print(cleandict)
+    return cleandict
 
 def obtener_informacion(url):
     page = requests.get(url)
@@ -18,17 +37,21 @@ def obtener_informacion(url):
     for row in rows:
         cols = row.find_all('td')
 
+
+
         if len(cols) >= 2 and cont < 7:
             if cont == 5:
                 cont += 1
                 continue
+
+            datos = cols[0].text.strip()
+            resultado = cols[1].text.strip()
+
             if cont == 3:
+                dicc[datos] = resultado
                 datos = cols[2].text.strip()
                 resultado = cols[3].text.strip()
                 dicc[datos] = resultado
-            else:
-                datos = cols[0].text.strip()
-                resultado = cols[1].text.strip()
 
             if cont == 0:
                 nombre_completo += resultado + ' '
@@ -39,7 +62,8 @@ def obtener_informacion(url):
             elif cont > 1:
                 dicc[datos] = resultado
             cont += 1
-    return dicc
+    newdicc = teacherFormatter(dicc)
+    return newdicc
 
 
 
@@ -56,7 +80,7 @@ for link in links:
     data.append(obtener_informacion(link.get('href')))
 
         # Store all the data in a JSON
-with open('teachers.json', 'w', encoding='utf-8') as f:
+with open('teacherss.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, indent=4, ensure_ascii=False, sort_keys=True)
 
 

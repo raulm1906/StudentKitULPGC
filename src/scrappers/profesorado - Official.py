@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 
 data = []
-
+area = []
 def getTutorias(url):
     url = f'https://www.dis.ulpgc.es/profesorado/{url}'
     # Send a request to the URL and get the HTML content
@@ -28,11 +28,20 @@ def getTutorias(url):
                     hours.append(td.text.strip())
                 else:
                     days.append(td.text.strip())
+        elif(width) == '430':
+            cont = 0
+            td_col_elements = table.find_all('td', {'colspan':'6'})
+            for td_col in td_col_elements:
+                if cont == 1:
+                    area_de_conocimiento = td_col.text.strip()
+                    print(area_de_conocimiento)
+
+                cont += 1
 
     joined = zip(days, hours)
     result = {k: v for k, v in joined}
 
-    print(result)
+    #print(result)
     return result
 
 for endpoint in range(1, 58):
@@ -60,7 +69,7 @@ for endpoint in range(1, 58):
     profesorado = {
         'profesor': professor.text.strip(),
         'despacho': despacho.text.strip(),
-        'telefono': telefono.text.strip(),
+        'teléfono': telefono.text.strip(),
         'email': formatted_email.strip()
     }
 
