@@ -5,13 +5,13 @@ import cabecera from './pages/cabecera';
 import Profesorado from './pages/Profesorado/Profesorado';
 import Asignatura from './pages/Asignaturas/Asignaturas';
 import {router} from './router'
-import  {Route, RouterProvider} from "react-router-dom"
+import  {Route, Router, RouterProvider} from "react-router-dom"
 import subject from "./data/subjects.json";
 import profesores from "./data/profesores.json"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Profesorado profesor={profesores[0]}  />
+  <RouterProvider router = {router}/>
 );
 
 // If you want to start measuring performance in your app, pass a function

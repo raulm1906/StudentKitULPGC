@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.5.1",
     "@chakra-ui/theme": "^2.2.5",
     "@devexpress/dx-react-core": "^4.0.3",
@@ -24,6 +25,7 @@
     "framer-motion": "^10.0.2",
     "react": "^18.2.0",
     "react-big-calendar": "^1.6.8",
+    "react-bootstrap": "^2.7.2",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0",

@@ -1,7 +1,6 @@
 import React,  { useState } from 'react'
 import '../../components/style.css';
 import TableProf from './components/tablaProfesorado';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores';
 

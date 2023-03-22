@@ -12,7 +12,7 @@ const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto ">
-          <NavLink to="/Horarios" style={{ fontWeight: "bold", color: "white" }}>
+          <NavLink to="/horarios/" style={{ fontWeight: "bold", color: "white" }}>
             Horarios
           </NavLink>
           <NavLink to="/Profesorado" style={{ fontWeight: "bold", color: "white" }}>

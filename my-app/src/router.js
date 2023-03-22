@@ -6,7 +6,10 @@ import LayaoutPublic from "./pages/LayoutPublic";
 import NotFound from "./components/NotFound";
 import Profesorado from "./pages/Profesorado/Profesorado";
 import subject from "./data/subjects.json";
-import profesores from "./data/profesores.json"
+import profesores from "./data/profesores.json";
+import Sidebar from "./pages/Horario/ListHorario";
+import IndexHorario from "./pages/Horario/pages/HorarioEdit/IndexHorario"
+import ListHorario from './pages/Horario/ListHorario';
 
 export const router = createBrowserRouter(
 [
@@ -16,9 +19,15 @@ export const router = createBrowserRouter(
         errorElement: <NotFound />,
         children: [
             {
-                path:"/",
-                element: <App />,
-            },
+                path: 'horario/',
+                element: <ListHorario/>,
+                children:[
+                  {
+                    path: ':horarioid',
+                    element: <IndexHorario/>
+                  }
+                ]
+              },
             {
                 path:"/Asignatura",
                 element: <Asignatura asignatura={subject[0]} />,

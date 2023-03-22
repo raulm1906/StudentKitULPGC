@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import '../../components/style.css';
 import TableAsig from './components/tableAsignaturas';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Search from '../../components/Busqueda/SearchAsignaturas';
 import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores'
 import SubjectProfes from '../../components/Busqueda/SubjectProfes';
+import { Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+
 function Asignatura ({asignatura}){  
 
     const [newSubject, setAsignatura] = useState(asignatura)
@@ -37,6 +39,9 @@ function Asignatura ({asignatura}){
                 </div>
                 <div style={{ borderTop: "3px solid #707070 "}}></div>
                 <TableAsig />
+                <Link href='https://chakra-ui.com' isExternal>
+                Chakra Design system <ExternalLinkIcon mx='2px' />
+                </Link>
             </section>
 
             <section className="search_asignaturas">
