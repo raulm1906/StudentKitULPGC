@@ -100,10 +100,9 @@ nav a{
   padding-bottom:1em ;
 }
 #atributos_teacher{
-
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  grid-template-rows: 50% 50%;
   gap: 0.1em;
   width: 100%;
   height: 30%;
@@ -111,7 +110,7 @@ nav a{
   align-items: center;
   justify-items: start;
   justify-content: space-around;
-
+  font-size: 10-large;
 }
 .link{
   text-align: center;

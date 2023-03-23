@@ -25,9 +25,10 @@ function Profesorado ({profesor}){
             <section className="scroll-box">
                 <h2 id="titlePage" type="text" name="profesor_nombre"><b>{newTeacher.profesorado.profesor}</b></h2>
                 <div id ="atributos_teacher">
-                    <div className="Correo"><b>Correo electrónico:</b><label name="correo">{newTeacher.profesorado.email}</label></div>
-                    <div className= "Despacho"><b>Departamento:</b><label name="despacho">{newTeacher.profesorado.despacho}</label></div>
-                    <div className="Telefono"><b>telefono:</b><label name="telefono">{newTeacher.profesorado.telefono}</label></div>
+                    <div className="Correo"><b>Correo electrónico: </b><label name="correo">{newTeacher.profesorado.email}</label></div>
+                    <div className= "Despacho"><b>Departamento: </b><label name="despacho">{newTeacher.profesorado.despacho}</label></div>
+                    <div className="Telefono"><b>teléfono: </b><label name="telefono">{newTeacher.profesorado.teléfono}</label></div>
+                    <div className="AreaConocimiento"><b>Área de conocimiento: </b><label name="telefono">{newTeacher.profesorado.area_de_conocimiento}</label></div>
                 </div>
                 <b>Horas Tutorías</b>
                 <div className='text-center tutoriasFrame'>

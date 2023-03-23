@@ -11,6 +11,18 @@ import Sidebar from "./pages/Horario/ListHorario";
 import IndexHorario from "./pages/Horario/pages/HorarioEdit/IndexHorario"
 import ListHorario from './pages/Horario/ListHorario';
 
+
+
+function importarJSON(nombreArchivo) {
+  try {
+    const datos = require(`./datos/${nombreArchivo}.json`);
+    return datos;
+  } catch (error) {
+    console.error(`Error al importar archivo JSON: ${error}`);
+    return null;
+  }
+}
+
 export const router = createBrowserRouter(
 [
     {
