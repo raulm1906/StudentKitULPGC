@@ -3,9 +3,9 @@
         "id": 1,
         "profesorado": {
             "despacho": "s7",
-            "email": "marilola@ulpgc.es",
+            "email": "marilola.afonso@ulpgc.es",
             "profesor": "Afonso Suárez, María Dolores",
-            "teléfono": "(928) 45 87 27",
+            "teléfono": "928458727",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -20,9 +20,9 @@
         "id": 2,
         "profesorado": {
             "despacho": "d3-12",
-            "email": "francisco@ulpgc.es",
+            "email": "francisco.alayon@ulpgc.es",
             "profesor": "Alayón Hernández, Francisco",
-            "teléfono": "(928) 45 87 56",
+            "teléfono": "928458756",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -37,9 +37,9 @@
         "id": 3,
         "profesorado": {
             "despacho": "d1-4",
-            "email": "miguel@ulpgc.es",
+            "email": "miguel.aleman@ulpgc.es",
             "profesor": "Alemán Flores, Miguel",
-            "teléfono": "(928) 45 87 04",
+            "teléfono": "928458704",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -54,9 +54,9 @@
         "id": 4,
         "profesorado": {
             "despacho": "d1-9",
-            "email": "lalvarezulpgc@ulpgc.es",
+            "email": "lalvarez@ulpgc.es",
             "profesor": "Álvarez León, Luis",
-            "teléfono": "(928) 45 45 63",
+            "teléfono": "928454563",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -71,9 +71,9 @@
         "id": 5,
         "profesorado": {
             "despacho": "d3-6",
-            "email": "domingo@ulpgc.es",
+            "email": "domingo.benitez@ulpgc.es",
             "profesor": "Benítez Díaz, Domingo",
-            "teléfono": "(928) 45 45 66",
+            "teléfono": "928454566",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -88,9 +88,9 @@
         "id": 6,
         "profesorado": {
             "despacho": "s9",
-            "email": "jorge@ulpgc.es",
+            "email": "jorge.cabrera@ulpgc.es",
             "profesor": "Cabrera Gámez, Jorge",
-            "teléfono": "(928) 45 87 47",
+            "teléfono": "928458747",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -105,9 +105,9 @@
         "id": 7,
         "profesorado": {
             "despacho": "d2-9",
-            "email": "cristina@ulpgc.es",
+            "email": "cristina.carmona@ulpgc.es",
             "profesor": "Carmona Duarte, María Cristina",
-            "teléfono": "(928) 45 87 34",
+            "teléfono": "928458734",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -122,9 +122,9 @@
         "id": 8,
         "profesorado": {
             "despacho": "s7",
-            "email": "francisco@ulpgc.es",
+            "email": "francisco.carreras@ulpgc.es",
             "profesor": "Carreras Riudavets, Francisco Javier",
-            "teléfono": "(928) 45 87 29",
+            "teléfono": "928458729",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -139,9 +139,9 @@
         "id": 9,
         "profesorado": {
             "despacho": "d1-7",
-            "email": "modesto@ulpgc.es",
+            "email": "modesto.castrillon@ulpgc.es",
             "profesor": "Castrillón Santana, Modesto F.",
-            "teléfono": "(928) 45 87 55",
+            "teléfono": "928458755",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -156,9 +156,9 @@
         "id": 10,
         "profesorado": {
             "despacho": "d2-14",
-            "email": "beatriz@ulpgc.es",
+            "email": "beatriz.correas@ulpgc.es",
             "profesor": "Correas Suárez, Beatriz",
-            "teléfono": "(928) 45 98 59",
+            "teléfono": "928459859",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -173,9 +173,9 @@
         "id": 11,
         "profesorado": {
             "despacho": "d2-13",
-            "email": "carmelo@ulpgc.es",
+            "email": "carmelo.cuenca@ulpgc.es",
             "profesor": "Cuenca Hernández, Carmelo",
-            "teléfono": "(928) 45 87 37",
+            "teléfono": "928458737",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -190,9 +190,9 @@
         "id": 12,
         "profesorado": {
             "despacho": "d3-2",
-            "email": "gabriel@ulpgc.es",
+            "email": "gabriel.deblasio@ulpgc.es",
             "profesor": "de Blasio García, Gabriel",
-            "teléfono": "(928) 45 87 42",
+            "teléfono": "928458742",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -207,9 +207,9 @@
         "id": 13,
         "profesorado": {
             "despacho": "d1-8",
-            "email": "antonio@ulpgc.es",
+            "email": "antonio.dominguez@ulpgc.es",
             "profesor": "Domínguez Brito, Antonio",
-            "teléfono": "(928) 45 45 72",
+            "teléfono": "928454572",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -224,9 +224,9 @@
         "id": 14,
         "profesorado": {
             "despacho": "d1-6",
-            "email": "luis@ulpgc.es",
+            "email": "luis.doreste@ulpgc.es",
             "profesor": "Doreste Blanco, Luis",
-            "teléfono": "(928) 45 87 06",
+            "teléfono": "928458706",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -241,9 +241,9 @@
         "id": 15,
         "profesorado": {
             "despacho": "d2-11",
-            "email": "juandedios@ulpgc.es",
+            "email": "juandedios.duque@ulpgc.es",
             "profesor": "Duque Martín de Oliva, Juan de Dios",
-            "teléfono": "(928) 45 87 35",
+            "teléfono": "928458735",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -258,9 +258,9 @@
         "id": 16,
         "profesorado": {
             "despacho": "s3",
-            "email": "julio@ulpgc.es",
+            "email": "julio.esclarin@ulpgc.es",
             "profesor": "Esclarín Monreal, Julio",
-            "teléfono": "(928) 45 87 09",
+            "teléfono": "928458709",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -275,9 +275,9 @@
         "id": 17,
         "profesorado": {
             "despacho": "d2-1",
-            "email": "enrique@ulpgc.es",
+            "email": "enrique.fernandez@ulpgc.es",
             "profesor": "Fernández García, Enrique",
-            "teléfono": "(928) 45 87 21",
+            "teléfono": "928458721",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -292,9 +292,9 @@
         "id": 18,
         "profesorado": {
             "despacho": "",
-            "email": "pablo@ulpgc.es",
+            "email": "pablo.fernandezlopez@ulpgc.es",
             "profesor": "Fernández López, Pablo Carmelo",
-            "teléfono": "(928)",
+            "teléfono": "928",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -309,9 +309,9 @@
         "id": 19,
         "profesorado": {
             "despacho": "d2-4",
-            "email": "fortesdis@ulpgc.es",
+            "email": "fortesdis.@ulpgc.es",
             "profesor": "Fortes Gálvez, José",
-            "teléfono": "(928) 45 87 24",
+            "teléfono": "928458724",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -326,9 +326,9 @@
         "id": 20,
         "profesorado": {
             "despacho": "s10",
-            "email": "david@ulpgc.es",
+            "email": "david.freire@ulpgc.es",
             "profesor": "Freire Obregón, David Sebastián",
-            "teléfono": "(928)",
+            "teléfono": "928",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -343,9 +343,9 @@
         "id": 21,
         "profesorado": {
             "despacho": "d2-3",
-            "email": "jesus@ulpgc.es",
+            "email": "jesus.garcia@ulpgc.es",
             "profesor": "García Quesada, Jesús",
-            "teléfono": "(928) 45 87 23",
+            "teléfono": "928458723",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -360,9 +360,9 @@
         "id": 22,
         "profesorado": {
             "despacho": "d3-9",
-            "email": "ruben@ulpgc.es",
+            "email": "ruben.garcia@ulpgc.es",
             "profesor": "García Rodríguez, Carmelo Rubén",
-            "teléfono": "(928) 45 87 53 / 45 86 51 (Director)",
+            "teléfono": "928458753458651",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -377,9 +377,9 @@
         "id": 23,
         "profesorado": {
             "despacho": "s8",
-            "email": "josedaniel@ulpgc.es",
+            "email": "josedaniel.gonzalez@ulpgc.es",
             "profesor": "González Domínguez, José Daniel",
-            "teléfono": "(928) 45 87 51",
+            "teléfono": "928458751",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -394,9 +394,9 @@
         "id": 24,
         "profesorado": {
             "despacho": "d1-1",
-            "email": "carlos@ulpgc.es",
+            "email": "carlos.gonzalez@ulpgc.es",
             "profesor": "González Muñoz, Carlos",
-            "teléfono": "(928) 45 87 01",
+            "teléfono": "928458701",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -411,9 +411,9 @@
         "id": 25,
         "profesorado": {
             "despacho": "s3",
-            "email": "esther@ulpgc.es",
+            "email": "esther.gonzalez@ulpgc.es",
             "profesor": "González Sánchez, María Esther",
-            "teléfono": "(928) 45 87 09",
+            "teléfono": "928458709",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -428,9 +428,9 @@
         "id": 26,
         "profesorado": {
             "despacho": "d3-3",
-            "email": "cayetano@ulpgc.es",
+            "email": "cayetano.guerra@ulpgc.es",
             "profesor": "Guerra Artal, Cayetano",
-            "teléfono": "(928) 45 87 43",
+            "teléfono": "928458743",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -445,9 +445,9 @@
         "id": 27,
         "profesorado": {
             "despacho": "d3-8",
-            "email": "josejuan@ulpgc.es",
+            "email": "josejuan.hernandez@ulpgc.es",
             "profesor": "Hernández Cabrera, José Juan",
-            "teléfono": "(928) 45 87 52",
+            "teléfono": "928458752",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -462,9 +462,9 @@
         "id": 28,
         "profesorado": {
             "despacho": "d2-8",
-            "email": "zenon@ulpgc.es",
+            "email": "zenon.hernandez@ulpgc.es",
             "profesor": "Hernández Figueroa, Zenón",
-            "teléfono": "(928) 45 87 32",
+            "teléfono": "928458732",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -479,9 +479,9 @@
         "id": 29,
         "profesorado": {
             "despacho": "d1-1",
-            "email": "daniel@ulpgc.es",
+            "email": "daniel.hernandez@ulpgc.es",
             "profesor": "Hernández Sosa, José Daniel",
-            "teléfono": "(928) 45 87 01",
+            "teléfono": "928458701",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -496,9 +496,9 @@
         "id": 30,
         "profesorado": {
             "despacho": "d3-4",
-            "email": "mario@ulpgc.es",
+            "email": "mario.hernandez@ulpgc.es",
             "profesor": "Hernández Tejera, Francisco Mario",
-            "teléfono": "(928) 45 87 44",
+            "teléfono": "928458744",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -513,9 +513,9 @@
         "id": 31,
         "profesorado": {
             "despacho": "s9",
-            "email": "javier@ulpgc.es",
+            "email": "javier.lorenzo@ulpgc.es",
             "profesor": "Lorenzo Navarro, José Javier",
-            "teléfono": "(928) 45 87 47",
+            "teléfono": "928458747",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -530,9 +530,9 @@
         "id": 32,
         "profesorado": {
             "despacho": "d2-10",
-            "email": "octavio@ulpgc.es",
+            "email": "octavio.mayor@ulpgc.es",
             "profesor": "Mayor González, Octavio",
-            "teléfono": "(928) 45 87 30",
+            "teléfono": "928458730",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -547,9 +547,9 @@
         "id": 33,
         "profesorado": {
             "despacho": "d2-2",
-            "email": "pedro@ulpgc.es",
+            "email": "pedro.medina@ulpgc.es",
             "profesor": "Medina Rodríguez, Pedro",
-            "teléfono": "(928) 45 87 22",
+            "teléfono": "928458722",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -564,9 +564,9 @@
         "id": 34,
         "profesorado": {
             "despacho": "d1-2",
-            "email": "maximo@ulpgc.es",
+            "email": "maximo.mendez@ulpgc.es",
             "profesor": "Méndez Babey, Máximo",
-            "teléfono": "(928) 45 87 02",
+            "teléfono": "928458702",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -581,9 +581,9 @@
         "id": 35,
         "profesorado": {
             "despacho": "s2",
-            "email": "nelson@ulpgc.es",
+            "email": "nelson.monzon@ulpgc.es",
             "profesor": "Monzón López, Nelson",
-            "teléfono": "(928) 45 49 98",
+            "teléfono": "928454998",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -598,9 +598,9 @@
         "id": 36,
         "profesorado": {
             "despacho": "d3-10",
-            "email": "joseantonio@ulpgc.es",
+            "email": "joseantonio.munoz@ulpgc.es",
             "profesor": "Muñoz Blanco, José Antonio",
-            "teléfono": "(928) 45 87 54",
+            "teléfono": "928458754",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -615,9 +615,9 @@
         "id": 37,
         "profesorado": {
             "despacho": "CICEI",
-            "email": "antonio@ulpgc.es",
+            "email": "antonio.ocon@ulpgc.es",
             "profesor": "Ocón Carreras, Antonio",
-            "teléfono": "(928) 45 10 45",
+            "teléfono": "928451045",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -632,9 +632,9 @@
         "id": 38,
         "profesorado": {
             "despacho": "d2-9",
-            "email": "francisco@ulpgc.es",
+            "email": "francisco.zamorano@ulpgc.es",
             "profesor": "Ortega Zamorano, Francisco",
-            "teléfono": "(928) 45 87 34",
+            "teléfono": "928458734",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -649,9 +649,9 @@
         "id": 39,
         "profesorado": {
             "despacho": "d3-7",
-            "email": "gabino@ulpgc.es",
+            "email": "gabino.padron@ulpgc.es",
             "profesor": "Padrón Morales, Gabino",
-            "teléfono": "(928) 45 44 72",
+            "teléfono": "928454472",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -666,9 +666,9 @@
         "id": 40,
         "profesorado": {
             "despacho": "d3-5",
-            "email": "adrian@ulpgc.es",
+            "email": "adrian.penate@ulpgc.es",
             "profesor": "Peñate Sánchez, Adrián",
-            "teléfono": "(928) 45 87 28",
+            "teléfono": "928458728",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -683,9 +683,9 @@
         "id": 41,
         "profesorado": {
             "despacho": "d3-1",
-            "email": "miguelangel@ulpgc.es",
+            "email": "miguelangel.perez@ulpgc.es",
             "profesor": "Pérez Aguiar, Miguel Angel",
-            "teléfono": "(928) 45 87 41",
+            "teléfono": "928458741",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -700,9 +700,9 @@
         "id": 42,
         "profesorado": {
             "despacho": "d2-12",
-            "email": "ricardo@ulpgc.es",
+            "email": "ricardo.perez@ulpgc.es",
             "profesor": "Pérez García, Ricardo",
-            "teléfono": "(928) 45 87 36",
+            "teléfono": "928458736",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -717,9 +717,9 @@
         "id": 43,
         "profesorado": {
             "despacho": "s1",
-            "email": "anamaria@ulpgc.es",
+            "email": "anamaria.placido@ulpgc.es",
             "profesor": "Plácido Castro, Ana María",
-            "teléfono": "(928) 45 87 07",
+            "teléfono": "928458707",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -734,9 +734,9 @@
         "id": 44,
         "profesorado": {
             "despacho": "d1-8",
-            "email": "alexis@ulpgc.es",
+            "email": "alexis.quesada@ulpgc.es",
             "profesor": "Quesada Arencibia, Alexis",
-            "teléfono": "(928) 45 45 72",
+            "teléfono": "928454572",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -751,9 +751,9 @@
         "id": 45,
         "profesorado": {
             "despacho": "d3-13",
-            "email": "juancarlos@ulpgc.es",
+            "email": "juancarlos.quevedo@ulpgc.es",
             "profesor": "Quevedo Losada, Juan Carlos",
-            "teléfono": "(928) 45 87 57",
+            "teléfono": "928458757",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -768,9 +768,9 @@
         "id": 46,
         "profesorado": {
             "despacho": "s5",
-            "email": "francisca@ulpgc.es",
+            "email": "francisca.quintana@ulpgc.es",
             "profesor": "Quintana Domínguez, Francisca",
-            "teléfono": "(928) 45 87 03",
+            "teléfono": "928458703",
             "área de conocimiento": "Arquitectura de Computadores"
         },
         "tutorias": {
@@ -785,9 +785,9 @@
         "id": 47,
         "profesorado": {
             "despacho": "s10",
-            "email": "eduardo@ulpgc.es",
+            "email": "eduardo.rodriguez@ulpgc.es",
             "profesor": "Rodríguez Barrera, Eduardo Miguel",
-            "teléfono": "(928) 45 98 62",
+            "teléfono": "928459862",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -802,9 +802,9 @@
         "id": 48,
         "profesorado": {
             "despacho": "s8",
-            "email": "jc@ulpgc.es",
+            "email": "jc.rodriguezdelpino@ulpgc.es",
             "profesor": "Rodríguez del Pino, Juan Carlos",
-            "teléfono": "(928) 45 87 33",
+            "teléfono": "928458733",
             "área de conocimiento": "Lenguajes y Sistemas Informáticos"
         },
         "tutorias": {
@@ -821,7 +821,7 @@
             "despacho": "",
             "email": "@ulpgc.es",
             "profesor": "Rodríguez Rodríguez, José Carlos",
-            "teléfono": "(928)",
+            "teléfono": "928",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -836,9 +836,9 @@
         "id": 50,
         "profesorado": {
             "despacho": "d1-5",
-            "email": "agustin@ulpgc.es",
+            "email": "agustin.salgado@ulpgc.es",
             "profesor": "Salgado de la Nuez, Agustín",
-            "teléfono": "(928) 45 87 05",
+            "teléfono": "928458705",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -853,9 +853,9 @@
         "id": 51,
         "profesorado": {
             "despacho": "CICEI",
-            "email": "javier@ulpgc.es",
+            "email": "javier.sanchez@ulpgc.es",
             "profesor": "Sánchez Medina, Javier Jesús",
-            "teléfono": "(928) 45 10 45",
+            "teléfono": "928451045",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -870,9 +870,9 @@
         "id": 52,
         "profesorado": {
             "despacho": "s2",
-            "email": "jsanchezulpgc@ulpgc.es",
+            "email": "jsanchez@ulpgc.es",
             "profesor": "Sánchez Pérez, Javier",
-            "teléfono": "(928) 45 87 10",
+            "teléfono": "928458710",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -887,9 +887,9 @@
         "id": 53,
         "profesorado": {
             "despacho": "",
-            "email": "daniel@ulpgc.es",
+            "email": "daniel.santanacedres@ulpgc.es",
             "profesor": "Santana Cedrés, Daniel Elías",
-            "teléfono": "(928)",
+            "teléfono": "928",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -904,9 +904,9 @@
         "id": 54,
         "profesorado": {
             "despacho": "d1-3",
-            "email": "oliverio@ulpgc.es",
+            "email": "oliverio.santana@ulpgc.es",
             "profesor": "Santana Jaria, Oliverio Jesús",
-            "teléfono": "(928) 45 87 45",
+            "teléfono": "928458745",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -921,9 +921,9 @@
         "id": 55,
         "profesorado": {
             "despacho": "d2-6",
-            "email": "fran@ulpgc.es",
+            "email": "fran.santana@ulpgc.es",
             "profesor": "Santana Pérez, Francisco José",
-            "teléfono": "(928) 45 87 26",
+            "teléfono": "928458726",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -938,9 +938,9 @@
         "id": 56,
         "profesorado": {
             "despacho": "s6",
-            "email": "josemiguel@ulpgc.es",
+            "email": "josemiguel.santos@ulpgc.es",
             "profesor": "Santos Espino, José Miguel",
-            "teléfono": "(928) 45 87 83",
+            "teléfono": "928458783",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {
@@ -955,9 +955,9 @@
         "id": 57,
         "profesorado": {
             "despacho": "d2-5",
-            "email": "carmenpaz@ulpgc.es",
+            "email": "carmenpaz.suarez@ulpgc.es",
             "profesor": "Suárez Araujo, Carmen Paz",
-            "teléfono": "(928) 45 87 25",
+            "teléfono": "928458725",
             "área de conocimiento": "Ciencia de la Computación e Inteligencia Artificial"
         },
         "tutorias": {

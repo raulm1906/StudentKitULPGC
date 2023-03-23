@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import re
 
 data = []
 area_de_conocimiento = []
@@ -61,15 +62,15 @@ for endpoint in range(1, 58):
     telefono = soup.find('td', {'id': f'tres{endpoint}'})
     correo = soup.find('td', {'id': f'cuatro{endpoint}'})
     pattern = 'ulpgc.es'
-    formatted_email = f"{correo.text.split('ulpgc')[0] }@{pattern}"
-    print(formatted_email)
+    formatted_email = f"{correo.text.split(pattern)[0] }@{pattern}"
+    formatted_telefono = telefono = re.sub(r'\D', '', str(telefono.text.strip()))
 
     current_tutorias = getTutorias(a_link)
 
     profesorado = {
         'profesor': professor.text.strip(),
         'despacho': despacho.text.strip(),
-        'teléfono': telefono.text.strip(),
+        'teléfono': formatted_telefono,
         'email': formatted_email.strip(),
         'área de conocimiento': area_de_conocimiento[cont]
     }

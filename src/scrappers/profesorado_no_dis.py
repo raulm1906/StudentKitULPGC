@@ -19,8 +19,7 @@ def teacherFormatter(diccionario):
         elif key == 'TELÉFONO DE CONTACTO:':
             cleandict['teléfono'] = diccionario[key]
         else:
-            if diccionario[key] == 'Ciencia de la comp. e intel. artificial':
-                print('a')
+            if diccionario[key] == 'Ciencia De La Comp. E Intel. Artificial':
                 cleandict[key.lower()] = 'Ciencia de la Computación e Inteligencia Artificial'
             else:
                 cleandict[key.lower()] = diccionario[key].capitalize()
