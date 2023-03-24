@@ -4,29 +4,31 @@ import json
 import lxml
 
 id = 1
+
+
 def teacherFormatter(diccionario):
-    cleandict = {}
-    finaldicc = {}
     global id
-    finaldicc['id'] = id
-    for key in diccionario:
-        if key == 'CATEGORÍA LABORAL:' or key == 'DIRECCIÓN POSTAL:':
+    final_dict = {'id': id}
+    clean_dict = {
+        'profesor': diccionario.get('profesor', '').title(),
+        'email': diccionario.get('CORREO ELECTRÓNICO:', ''),
+        'teléfono': diccionario.get('TELÉFONO DE CONTACTO:', '')
+    }
+    for key, value in diccionario.items():
+        if key in ['CATEGORÍA LABORAL:', 'DIRECCIÓN POSTAL:', 'CORREO ELECTRÓNICO:', 'TELÉFONO DE CONTACTO:']:
             continue
-        elif key == "profesor":
-            cleandict['profesor'] = diccionario[key].title()
-        elif key == 'CORREO ELECTRÓNICO:':
-            cleandict['email'] = diccionario[key]
-        elif key == 'TELÉFONO DE CONTACTO:':
-            cleandict['teléfono'] = diccionario[key]
+        elif key == 'profesor':
+            continue
         else:
-            if diccionario[key] == 'Ciencia De La Comp. E Intel. Artificial':
-                cleandict[key.lower()] = 'Ciencia de la Computación e Inteligencia Artificial'
+            if value == 'Ciencia De La Comp. E Intel. Artificial':
+                value = 'Ciencia de la Computación e Inteligencia Artificial'
             else:
-                cleandict[key.lower()] = diccionario[key].capitalize()
-    finaldicc['profesorado'] = cleandict
+                value = value.capitalize()
+            clean_dict[key.lower()] = value
+    final_dict['profesorado'] = clean_dict
     id += 1
-    print(finaldicc)
-    return finaldicc
+    print(final_dict)
+    return final_dict
 
 def obtener_informacion(url):
     page = requests.get(url)
@@ -43,7 +45,6 @@ def obtener_informacion(url):
         cols = row.find_all('td')
 
 
-
         if len(cols) >= 2 and cont < 7:
             if cont == 5:
                 cont += 1
@@ -57,9 +58,8 @@ def obtener_informacion(url):
                 datos = cols[2].text.strip()
                 resultado = cols[3].text.strip()
                 dicc[datos] = resultado
-
             if cont == 0:
-                nombre_completo += resultado + ' '
+                nombre_completo += resultado
             elif cont == 1:
                 nombre_completo += ', ' + resultado
                 dicc['profesor'] = nombre_completo
