@@ -8,10 +8,14 @@ import {router} from './router'
 import  {Route, Router, RouterProvider} from "react-router-dom"
 import subject from "./data/subjects.json";
 import profesores from "./data/profesores.json"
+import { theme } from '@chakra-ui/theme';
+import { ChakraProvider } from '@chakra-ui/react';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router = {router}/>
+  <ChakraProvider theme={theme}>
+    <RouterProvider router = {router}/>
+  </ChakraProvider>  
 );
 
 // If you want to start measuring performance in your app, pass a function

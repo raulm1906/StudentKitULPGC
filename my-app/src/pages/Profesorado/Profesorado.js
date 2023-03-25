@@ -21,7 +21,7 @@ function Profesorado ({profesor}){
     
 
     return (
-        <div className='d-flex'>
+        <div className='d-flex'  style={{ gridColumn: 'span 3' }}>
             <section className="scroll-box">
                 <h2 id="titlePage" type="text" name="profesor_nombre"><b>{newTeacher.profesorado.profesor}</b></h2>
                 <div id ="atributos_teacher">

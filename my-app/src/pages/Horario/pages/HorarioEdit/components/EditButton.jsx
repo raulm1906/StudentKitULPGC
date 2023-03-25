@@ -1,6 +1,5 @@
 import { Button } from '@chakra-ui/button'
 import React from 'react'
-import { useState } from 'react'
 import { Icon } from '@chakra-ui/icon'
 import { MdOutlineEdit } from 'react-icons/md'
 

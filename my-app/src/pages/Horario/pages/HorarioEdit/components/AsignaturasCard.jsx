@@ -1,10 +1,6 @@
-import { Box, Flex, Heading, Text, Button } from '@chakra-ui/react'
-import { Collapse } from '@chakra-ui/transition'
+import { Flex, Heading, Button } from '@chakra-ui/react'
 import React from 'react'
-import { useState } from 'react'
-import { AiFillCaretDown } from 'react-icons/ai'
 import { BsChevronLeft } from 'react-icons/bs'
-import { Icon } from '@chakra-ui/icon' 
 import YearDropdown from './YearDropdown'
 
 export default function FilterCard(props) {
@@ -22,11 +18,6 @@ export default function FilterCard(props) {
   }
   props.onStylesChange(newStyles)
   }
-
-
-  const [isOpen, setIsOpen] = useState(false)
-  const handleToggle = () => setIsOpen(!isOpen)
-
 
   return (
     <Flex

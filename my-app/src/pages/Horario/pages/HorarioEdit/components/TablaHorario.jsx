@@ -1,36 +1,40 @@
-import React, {useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid"
-import { Flex, Button, Box } from "@chakra-ui/react"
+import { Box, Button } from "@chakra-ui/react"
+import AppContext from "../../../../../app/AppContext";
 
   
 
 function MyCalendar() {
 
-    
-    var today = new Date();
-    var mondayStart = new Date(today.getFullYear(), today.getMonth(), today.getDate() - today.getDay() + 1);
-    mondayStart.setHours(8)
-    mondayStart.setMinutes(30)
-    var mondayEnd = new Date(today.getFullYear(), today.getMonth(), today.getDate() - today.getDay() + 1);
-    mondayEnd.setHours(10)
-    mondayEnd.setMinutes(30)
+    const {events, setEvents} = useContext(AppContext)
 
-    const [events, setEvents] = useState([]);
-
-  const handleEventAdd = () => {
-    const newEvent = {
-      title: 'My Event',
-      start: mondayStart,
-      end: mondayEnd,
-    };
-    setEvents([...events, newEvent]);
-  };
-
+    function handleClick(){
+        const newEvent = 
+        {
+            title: 'Recurring Event',
+            startTime: '08:30',
+            endTime: '10:30',
+            daysOfWeek: [1], // 1 = Monday
+            startRecur: '2023-03-01T00:00:00', // start recurrence from today
+            endRecur: '2024-05-01T00:00:00', // end recurrence 1 year from now
+            // RRule object that defines the recurrence pattern
+            rrule: {
+              freq: 'weekly',
+              interval: 1,
+              byweekday: ['mo'] // use RRule.MO instead of 1 to specify Monday
+            }
+          }
+        setEvents([...events, newEvent])
+        console.log(newEvent)
+    }
 
     return (
+        
         <Box maxW="100%" margin={5} transition="0.5s ease all">
+            <Button onClick={handleClick}></Button>
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin]}
                 initialView="timeGridWeek"

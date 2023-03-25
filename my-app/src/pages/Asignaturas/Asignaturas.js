@@ -40,7 +40,7 @@ function Asignatura ({asignatura}){
     }
     return (
 
-        <div className="d-flex ">
+        <div className="d-flex "  style={{ gridColumn: 'span 3' }}>
             <section className="d-flex scroll-box">
                 <h2 id="titlePage" type="text" name="nombre_asignatura"><b> {newSubject.asignatura}</b></h2>
                 <div id ="atributos_subject">

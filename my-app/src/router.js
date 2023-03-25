@@ -2,14 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "./App";
 import Asignatura from "./pages/Asignaturas/Asignaturas";
-import LayaoutPublic from "./pages/LayoutPublic";
+import LayoutPublic from "./pages/LayoutPublic";
 import NotFound from "./components/NotFound";
 import Profesorado from "./pages/Profesorado/Profesorado";
 import subject from "./data/subjects.json";
 import profesores from "./data/profesores.json";
-import Sidebar from "./pages/Horario/ListHorario";
-import IndexHorario from "./pages/Horario/pages/HorarioEdit/IndexHorario"
-import ListHorario from './pages/Horario/ListHorario';
+import ListHorarios from './pages/Horario/ListHorarios';
+import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
 
 
 
@@ -27,16 +26,16 @@ export const router = createBrowserRouter(
 [
     {
         path:"/",
-        element: <LayaoutPublic/>,
+        element: <LayoutPublic/>,
         errorElement: <NotFound />,
         children: [
             {
                 path: 'horario/',
-                element: <ListHorario/>,
+                element: <ListHorarios/>,
                 children:[
                   {
                     path: ':horarioid',
-                    element: <IndexHorario/>
+                    element: <PageHorario/>
                   }
                 ]
               },
