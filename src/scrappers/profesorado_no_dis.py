@@ -9,26 +9,19 @@ id = 1
 def teacherFormatter(diccionario):
     global id
     final_dict = {'id': id}
+    if diccionario['área de conocimiento'] == 'Ciencia De La Comp. E Intel. Artificial':
+        diccionario['área de conocimiento'] = 'Ciencia de la Computación e Inteligencia Artificial'
+
     clean_dict = {
         'profesor': diccionario.get('profesor', '').title(),
-        'email': diccionario.get('CORREO ELECTRÓNICO:', ''),
-        'teléfono': diccionario.get('TELÉFONO DE CONTACTO:', '')
+        'email': diccionario.get('email', ''),
+        'teléfono': diccionario.get('teléfono', ''),
+        'área de conocimiento': diccionario.get('área de conocimiento', '')
     }
-    for key, value in diccionario.items():
-        if key in ['CATEGORÍA LABORAL:', 'DIRECCIÓN POSTAL:', 'CORREO ELECTRÓNICO:', 'TELÉFONO DE CONTACTO:']:
-            continue
-        elif key == 'profesor':
-            continue
-        else:
-            if value == 'Ciencia De La Comp. E Intel. Artificial':
-                value = 'Ciencia de la Computación e Inteligencia Artificial'
-            else:
-                value = value.capitalize()
-            clean_dict[key.lower()] = value
     final_dict['profesorado'] = clean_dict
     id += 1
-    print(final_dict)
     return final_dict
+
 
 def obtener_informacion(url):
     page = requests.get(url)
@@ -37,37 +30,32 @@ def obtener_informacion(url):
     table = soup.find('table')
     # Find all rows in the table
     rows = table.find_all('tr')
-    # Loop through all rows and get the name of the person in the first column
-    cont = 0
+    # Create a dictionary to store the data
     dicc = {}
-    nombre_completo = ''
+    # Initialize variable to store name
+    nombre = ''
+    # Loop through all rows and get the data
     for row in rows:
         cols = row.find_all('td')
-
-
-        if len(cols) >= 2 and cont < 7:
-            if cont == 5:
-                cont += 1
-                continue
-
+        if len(cols) >= 2:
             datos = cols[0].text.strip()
             resultado = cols[1].text.strip()
+            if datos == 'APELLIDOS:':
+                nombre = resultado
+            elif datos == 'NOMBRE:':
+                nombre = nombre + ', ' + resultado
+                dicc['profesor'] = nombre
+            elif datos == 'TELÉFONO DE CONTACTO:':
+                dicc['teléfono'] = resultado
+                correo = cols[3].text.strip()
+                dicc['email'] = correo
+            elif datos == 'ÁREA DE CONOCIMIENTO:':
+                dicc['área de conocimiento'] = resultado
 
-            if cont == 3:
-                dicc[datos] = resultado
-                datos = cols[2].text.strip()
-                resultado = cols[3].text.strip()
-                dicc[datos] = resultado
-            if cont == 0:
-                nombre_completo += resultado
-            elif cont == 1:
-                nombre_completo += ', ' + resultado
-                dicc['profesor'] = nombre_completo
 
-            elif cont > 1:
-                dicc[datos] = resultado
-            cont += 1
+    # Store the formatted teacher information in the dictionary
     newdicc = teacherFormatter(dicc)
+    print(newdicc)
     return newdicc
 
 
