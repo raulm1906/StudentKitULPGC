@@ -5,8 +5,6 @@ import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { Icon } from '@chakra-ui/icon' 
 import AppContext from '../../../../../app/AppContext'
-import { v4 as uuidv4 } from 'uuid'
-
 
 const daysOfWeek = {
         "LUNES": 1,
@@ -18,7 +16,7 @@ const daysOfWeek = {
 
 function createEvents(sessions, id){
     return sessions.map(session =>({
-        id: uuidv4(),
+        id: id,
         title: `${id} Grupo ${session.Group}`,
         startTime: session.IHour,
         endTime: session.FHour,
@@ -66,13 +64,15 @@ export default function AsignaturaCheckbox({ id, name }) {
     }
 
     function handleDeleteEvents(id){
-        setEvents(prevEvents => prevEvents.filter(event => event.id !== id));
+        setEvents(events.filter(event => event.id !== id));
     }
 
     function handleCheckBoxChange(e){
         setIsChecked(e.target.checked)
         if(e.target.checked) {
             handleNewEvents()
+        }else{
+            handleDeleteEvents(id)
         }
     } 
 

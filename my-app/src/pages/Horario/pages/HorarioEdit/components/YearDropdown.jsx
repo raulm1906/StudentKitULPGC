@@ -12,6 +12,7 @@ export default function YearDropdown(props) {
 
     const [isOpen, setIsOpen] = useState(false)
     const handleToggle = () => setIsOpen(!isOpen)
+    const { year, subjectIds } = props;
 
   return (
     <>
@@ -20,10 +21,11 @@ export default function YearDropdown(props) {
         mb={2} display="flex" 
         justifyContent="space-between" 
       >
-        <Text> {props.year}</Text>
+        <Text> {year}</Text>
         <Icon as={AiFillCaretDown}/>
       </Button>
       <Collapse in={isOpen}>
+
         <AsignaturaCheckbox id="40951" name="AG"/>
         <AsignaturaCheckbox id="40952" name="BD2"/>
         <AsignaturaCheckbox id="40953" name="EC"/>

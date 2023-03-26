@@ -11,30 +11,9 @@ function MyCalendar() {
 
     const {events, setEvents} = useContext(AppContext)
 
-    function handleClick(){
-        const newEvent = 
-        {
-            title: 'Recurring Event',
-            startTime: '08:30',
-            endTime: '10:30',
-            daysOfWeek: [1], // 1 = Monday
-            startRecur: '2023-03-01T00:00:00', // start recurrence from today
-            endRecur: '2024-05-01T00:00:00', // end recurrence 1 year from now
-            // RRule object that defines the recurrence pattern
-            rrule: {
-              freq: 'weekly',
-              interval: 1,
-              byweekday: ['mo'] // use RRule.MO instead of 1 to specify Monday
-            }
-          }
-        setEvents([...events, newEvent])
-        console.log(newEvent)
-    }
-
     return (
         
         <Box maxW="100%" margin={5} transition="0.5s ease all">
-            <Button onClick={handleClick}></Button>
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin]}
                 initialView="timeGridWeek"

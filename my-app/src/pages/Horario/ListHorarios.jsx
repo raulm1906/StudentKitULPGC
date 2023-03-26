@@ -43,7 +43,7 @@ const ListHorarios = () => {
       <Drawer isOpen={isOpen} placement="right" onClose={handleToggle}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton color="white"/>
+          <DrawerCloseButton bg="#DADADA"/>
           <DrawerHeader color="white">Mis horarios</DrawerHeader>
           <DrawerBody display="flex" flexDirection="column">
             <Stack spacing="24px">
