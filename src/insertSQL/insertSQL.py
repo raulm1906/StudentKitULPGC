@@ -1,7 +1,7 @@
 import os
 import sys
 import DBConnection
-import jsonFormatter
+from src.jsonUtils import jsonFormatter
 import json
 import mariadb
 import logging
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     logging.basicConfig(filename="../../logs/insertSQL.log", encoding="UTF-8",
                         format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
-    with open("../scrappers/subjects.json", 'r', encoding='utf-8') as subjectsJson:
+    with open("../scrappers/json/subjects.json", 'r', encoding='utf-8') as subjectsJson:
         subjectsList = json.load(subjectsJson)
 
     #insertDegree(connection,jsonFormatter.subjectFormatter(subjectsList[0])['degree'],saveLog)
