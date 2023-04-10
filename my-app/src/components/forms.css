@@ -1,0 +1,42 @@
+/* GENERAL FORM*/
+.form {
+    height: 100vh;
+}
+
+.form button {
+    min-width: 100%;
+    margin-top: 1.6em;
+}
+
+.form h1 {
+    font-size: 36px;
+    margin-bottom: 0.65em;
+    color: #F89A36;
+    font-weight: 500;
+}
+/* REGISTER FORM*/
+
+.registerForm h1 {
+    font-size: 32px;
+}
+
+/* REGISTER PAGE*/
+.registerPortada {
+    color: #F89A36;
+    background-color: #0066A1;
+    height: 100vh;
+}
+
+.registerPortada h1 {
+    font-size: 48px;
+}
+
+.registerPortada h4 {
+    font-size: 24px;
+}
+
+.registerPortada h5 {
+    font-size: 16px;
+}
+
+/* LOGIN PAGE*/
