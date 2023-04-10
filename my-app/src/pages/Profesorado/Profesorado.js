@@ -3,6 +3,7 @@ import '../../components/style.css';
 import TableProf from './components/tablaProfesorado';
 import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores';
+import { Grid, GridItem } from '@chakra-ui/react'
 
 
 function Profesorado ({profesor}){
@@ -24,12 +25,16 @@ function Profesorado ({profesor}){
         <div className='d-flex'  style={{ gridColumn: 'span 3' }}>
             <section className="scroll-box">
                 <h2 id="titlePage" type="text" name="profesor_nombre"><b>{newTeacher.profesorado.profesor}</b></h2>
-                <div id ="atributos_teacher">
-                    <div className="Correo"><b>Correo electrónico: </b><label name="correo">{newTeacher.profesorado.email}</label></div>
-                    <div className= "Despacho"><b>Departamento: </b><label name="despacho">{newTeacher.profesorado.despacho}</label></div>
-                    <div className="Telefono"><b>teléfono: </b><label name="telefono">{newTeacher.profesorado.teléfono}</label></div>
-                    <div className="AreaConocimiento"><b>Área de conocimiento: </b><label name="telefono">{newTeacher.profesorado.area_de_conocimiento}</label></div>
-                </div>
+                <Grid templateColumns='repeat(2, 1fr)' gap={2}>
+                    <GridItem w='100%' h='10' textAlign><b>Correo electrónica:</b>{newTeacher.profesorado.emial}</GridItem>
+
+                    <GridItem w='100%' h='10'><b>Departamento: </b>{newTeacher.profesorado.despacho}</GridItem>
+
+                    <GridItem w='100%' h='10'><b>Teléfono: </b>{newTeacher.profesorado.teléfono}</GridItem>
+
+                    <GridItem w='100%' h='10'> <b>Área de conocimiento: </b>{newTeacher.profesorado.area_de_conocimiento}</GridItem>
+                </Grid>
+
                 <b>Horas Tutorías</b>
                 <div className='text-center tutoriasFrame'>
                     <TableProf className="center-x" tutorias={newTeacher.tutorias}/>
