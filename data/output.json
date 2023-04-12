@@ -1,0 +1,3419 @@
+[
+    {
+        "id": "40951",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "14:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "15:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "19",
+                "classroom": "A3-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "20",
+                "classroom": "A3-3",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "21",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "18:30",
+                "finishHour": "20:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "22",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "16:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40952",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "18:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "18:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "19",
+                "classroom": "A3-4",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "20",
+                "classroom": "A3-3",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "21",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "14:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "22",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "18:30",
+                "finishHour": "20:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40953",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "17:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "17:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-2",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L1-3",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-2",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "49",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "50",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "51",
+                "classroom": "L1-2",
+                "day": "LUNES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "52",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40954",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "16:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "14:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-2",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L1-3",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-2",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "49",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "50",
+                "classroom": "L1-1",
+                "day": "LUNES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "51",
+                "classroom": "L1-2",
+                "day": "LUNES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "52",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40955",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "15:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "16:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "19",
+                "classroom": "A3-4",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "20",
+                "classroom": "A3-3",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "21",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "16:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "22",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "14:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40956",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "LUNES",
+                "startHour": "16:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "16:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-3",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A3-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "19",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "20",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "21",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "16:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "22",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "14:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40957",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "LUNES",
+                "startHour": "15:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "15:30",
+                "finishHour": "16:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "14:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "42",
+                "classroom": "",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "par"
+            },
+            {
+                "groupId": "43",
+                "classroom": "",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "44",
+                "classroom": "",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "par"
+            },
+            {
+                "groupId": "45",
+                "classroom": "",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "46",
+                "classroom": "",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "par"
+            },
+            {
+                "groupId": "47",
+                "classroom": "",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "48",
+                "classroom": "",
+                "day": "par",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "par"
+            },
+            {
+                "groupId": "49",
+                "classroom": "",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "50",
+                "classroom": "",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "par"
+            },
+            {
+                "groupId": "51",
+                "classroom": "18:30",
+                "day": "JUEVES",
+                "startHour": "18:30",
+                "finishHour": "20:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "52",
+                "classroom": "",
+                "day": "MIERCOLES",
+                "startHour": "18:30",
+                "finishHour": "20:30",
+                "week": "par"
+            }
+        ]
+    },
+    {
+        "id": "40958",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "LUNES",
+                "startHour": "17:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "17:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-2",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L1-3",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-2",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-3",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "49",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "50",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "51",
+                "classroom": "L1-2",
+                "day": "JUEVES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "52",
+                "classroom": "L1-3",
+                "day": "JUEVES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40959",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "LUNES",
+                "startHour": "14:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "14:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-2",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-2",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-2",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-2",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "49",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "50",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "15:30",
+                "finishHour": "17:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "51",
+                "classroom": "L1-2",
+                "day": "JUEVES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "52",
+                "classroom": "L1-3",
+                "day": "JUEVES",
+                "startHour": "17:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40960",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "LUNES",
+                "startHour": "18:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "3",
+                "classroom": "A3-4",
+                "day": "MARTES",
+                "startHour": "18:30",
+                "finishHour": "19:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-3",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A3-4",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "19",
+                "classroom": "A3-3",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "20",
+                "classroom": "A3-4",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "21",
+                "classroom": "A3-3",
+                "day": "MIERCOLES",
+                "startHour": "18:30",
+                "finishHour": "20:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "22",
+                "classroom": "A3-4",
+                "day": "MIERCOLES",
+                "startHour": "16:30",
+                "finishHour": "18:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40961",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-4",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-5",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-3",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-3",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "MARTES",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-5",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-3",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40962",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "42",
+                "classroom": "L2-1",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L2-3",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-4",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-2",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-5",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10.30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L3-2",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-3",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L3-4",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40963",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "42",
+                "classroom": "L2-1",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-3",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L2-3",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-2",
+                "day": "MERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-3",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L2-2",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-2",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-3",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40964",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-4",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-3",
+                "day": "",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-3",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-2",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L3-4",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-3",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L3-4",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-2",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40965",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "44",
+                "classroom": "L2-5",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L2-3",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-3",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-4",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L2-2",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-5",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-3",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-3",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40966",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MARTES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "42",
+                "classroom": "L3-2",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-3",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-4",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-3",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L3-3",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L3-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-4",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-3",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40967",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "LUNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "10:30",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L2-2",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L2-2",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-4",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L1-2",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L3-3",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L2-3",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L3-4",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40968",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-3",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "32",
+                "classroom": "L2-2",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-4",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-2",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-2",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L3-4",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L1-1",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L3-2",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40969",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L2-4",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-4",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L2-4",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-4",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-4",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L2-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L2-4",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40970",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "LUNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "42",
+                "classroom": "L3-2",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-2",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-3",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-3",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-2",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "47",
+                "classroom": "L2-4",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "46",
+                "classroom": "L2-3",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "48",
+                "classroom": "L2-2",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40971",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-3",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "MARTES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "VIERNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "42",
+                "classroom": "L3-1",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-1",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-1",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-1",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-1",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40972",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L2-2",
+                "day": "MARTES",
+                "startHour": "10.30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-2",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-2",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-2",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-3",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40973",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "42",
+                "classroom": "L1-2",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-1",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L1-2",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-2",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40974",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-3",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "VIERNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A2-4",
+                "day": "LUNES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L2-2",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-3",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "par"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-1",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A2-6",
+                "day": "LUNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-3",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "par"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-2",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            }
+        ]
+    },
+    {
+        "id": "40975",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-6",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambod"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A2-3",
+                "day": "MIERCOLES",
+                "startHour": "10.30",
+                "finishHour": "12:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L1-1",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L1-2",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "11:30",
+                "week": "par"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-2",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "13:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A2-6",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "par"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L1-2",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "par"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L2-2",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            }
+        ]
+    },
+    {
+        "id": "40976",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L2-2",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-3",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-5",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-3",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40977",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "32",
+                "classroom": "L3-5",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-1",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L1-3",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "impar"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-5",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "par"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-1",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-5",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-3",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-5",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "par"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-3",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "impar"
+            }
+        ]
+    },
+    {
+        "id": "40978",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-5",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-1",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L2-2",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-3",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-5",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-3",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-5",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-3",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40979",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A2-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "JUEVES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "2",
+                "classroom": "A2-5",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L1-3",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-5",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L2-1",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L2-2",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L1-3",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L2-5",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L3-3",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "44",
+                "classroom": "L3-5",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "45",
+                "classroom": "L1-3",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40980",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "L3-5",
+                "day": "LUNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "L3-5",
+                "day": "MARTES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40981",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "LUNES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "MARTES",
+                "startHour": "14:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L2-4",
+                "day": "VIERNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40982",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "MARTES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "JUEVES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40983",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "LUNES",
+                "startHour": "13:30",
+                "finishHour": "15:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L2-1",
+                "day": "JUEVES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40984",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "L3-2",
+                "day": "LUNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "L3-2",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-2",
+                "day": "JUEVES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40985",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "LUNES",
+                "startHour": "11:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "11:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L2-4",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40986",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-6",
+                "day": "MIERCOLES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-2",
+                "day": "VIERNES",
+                "startHour": "12:30",
+                "finishHour": "13:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "VIERNES",
+                "startHour": "13:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40987",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A3-2",
+                "day": "MARTES",
+                "startHour": "8:30",
+                "finishHour": "9:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A3-2",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-5",
+                "day": "VIERNES",
+                "startHour": "8:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40988",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-1",
+                "day": "LUNES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "41",
+                "classroom": "L3-3",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-2",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-2",
+                "day": "MIERCOLES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            }
+        ]
+    },
+    {
+        "id": "40989",
+        "theoryGroups": [
+            {
+                "groupId": "1",
+                "classroom": "A2-1",
+                "day": "LUNES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            }
+        ],
+        "practiceGroups": [
+            {
+                "groupId": "17",
+                "classroom": "A2-1",
+                "day": "MARTES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "41",
+                "classroom": "L3-3",
+                "day": "MARTES",
+                "startHour": "12:30",
+                "finishHour": "14:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "42",
+                "classroom": "L3-2",
+                "day": "MARTES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "18",
+                "classroom": "A2-1",
+                "day": "MIERCOLES",
+                "startHour": "9:30",
+                "finishHour": "10:30",
+                "week": "ambos"
+            },
+            {
+                "groupId": "43",
+                "classroom": "L3-2",
+                "day": "MIERCOLES",
+                "startHour": "10:30",
+                "finishHour": "12:30",
+                "week": "ambos"
+            }
+        ]
+    }
+]
