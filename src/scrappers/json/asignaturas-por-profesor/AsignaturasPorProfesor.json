@@ -1,0 +1,718 @@
+[
+    {
+        "id": "40951",
+        "info": [
+            {
+                "grupos": "Pr. Aulas 01.02, Pr. Aulas 01.01",
+                "nombre": "GABRIELE SALVATORE DE BLASIO"
+            },
+            {
+                "grupos": "Pr. Aulas 02.01, Pr. Aulas 03.02, Teoría 03, Pr. Aulas 03.01, Pr. Aulas 02.02, Pr. Aulas 01.01",
+                "nombre": "JESÚS GARCÍA QUESADA"
+            },
+            {
+                "grupos": "Teoría 02, Teoría 01",
+                "nombre": "KARINA MARIBEL BAŃOS RODRÍGUEZ"
+            },
+            {
+                "grupos": "Teoría 02, Teoría 01",
+                "nombre": "KARINA MARIBEL BAŃOS RODRÍGUEZ"
+            }
+        ]
+    },
+    {
+        "id": "40952",
+        "info": [
+            {
+                "grupos": "Pr. Aulas 01.02, Teoría 02, Teoría 03, Pr. Aulas 01.01, Teoría 01",
+                "nombre": "CARMEN PAZ SUÁREZ ARAUJO"
+            },
+            {
+                "grupos": "Pr. Aulas 01.02, Pr. Aulas 01.01",
+                "nombre": "JAVIER JESÚS SÁNCHEZ MEDINA"
+            },
+            {
+                "grupos": "Pr. Aulas 03.01, Pr. Aulas 03.02, Pr. Aulas 02.01, Pr. Aulas 02.02",
+                "nombre": "PABLO CARMELO FERNÁNDEZ LÓPEZ"
+            }
+        ]
+    },
+    {
+        "id": "40953",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 02.04, Pr. Laboratorio 03.01, Pr. Laboratorio 03.03",
+                "nombre": "JOSÉ FORTES GÁLVEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 03.02, Pr. Laboratorio 03.04",
+                "nombre": "JUAN CARLOS RODRÍGUEZ DEL PINO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.03, Teoría 02, Pr. Laboratorio 02.01",
+                "nombre": "ZENÓN JOSÉ HERNÁNDEZ FIGUEROA"
+            },
+            {
+                "grupos": "Teoría 03, Pr. Laboratorio 02.02, Pr. Laboratorio 01.02, Pr. Laboratorio 01.04",
+                "nombre": "JOSÉ DANIEL GONZÁLEZ DOMÍNGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 01.03, Teoría 01",
+                "nombre": "MIGUEL ÁNGEL PÉREZ AGUIAR"
+            }
+        ]
+    },
+    {
+        "id": "40954",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.04, Teoría 03, Teoría 02, Pr. Laboratorio 01.01, Pr. Laboratorio 03.01, Pr. Laboratorio 03.03",
+                "nombre": "CARLOS ANTONIO GONZÁLEZ MUŃOZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 01.02, Pr. Laboratorio 02.04, Pr. Laboratorio 03.04, Pr. Laboratorio 01.03, Pr. Laboratorio 03.02",
+                "nombre": "LUIS JESÚS DORESTE BLANCO"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 02.03",
+                "nombre": "RICARDO JAVIER PÉREZ GARCÍA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.03, Pr. Laboratorio 02.01",
+                "nombre": "MARÍA CRISTINA CARMONA DUARTE"
+            }
+        ]
+    },
+    {
+        "id": "40955",
+        "info": [
+            {
+                "grupos": "Pr. Aulas 02.02, Pr. Aulas 03.02, Pr. Aulas 01.02, Teoría 03, Pr. Aulas 01.01, Pr. Aulas 03.01",
+                "nombre": "JOSÉ MIGUEL SANTANA NÚŃEZ"
+            },
+            {
+                "grupos": "Teoría 01, Teoría 02",
+                "nombre": "MARÍA DOLORES AFONSO SUÁREZ"
+            },
+            {
+                "grupos": "Pr. Aulas 01.02, Pr. Aulas 02.01, Teoría 03, Teoría 01, Pr. Aulas 03.01, Pr. Aulas 03.02, Teoría 02, Pr. Aulas 02.02, Pr. Aulas 01.01",
+                "nombre": "MARÍA DEL PILAR GONZÁLEZ DE LA ROSA"
+            }
+        ]
+    },
+    {
+        "id": "40956",
+        "info": [
+            {
+                "grupos": "Teoría 02, Teoría 01, Teoría 03",
+                "nombre": "AGUSTÍN RAFAEL TRUJILLO PINO"
+            },
+            {
+                "grupos": "Pr. Aulas 02.01, Pr. Aulas 01.01, Pr. Aulas 01.02",
+                "nombre": "MÁXIMO MÉNDEZ BABEY"
+            },
+            {
+                "grupos": "Pr. Aulas 02.02",
+                "nombre": "OLIVERIO JESÚS SANTANA JARIA"
+            },
+            {
+                "grupos": "Pr. Aulas 03.02, Pr. Aulas 03.01",
+                "nombre": "KARINA MARIBEL BAŃOS RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Aulas 03.02, Pr. Aulas 03.01",
+                "nombre": "KARINA MARIBEL BAŃOS RODRÍGUEZ"
+            }
+        ]
+    },
+    {
+        "id": "40957",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 02.03, Pr. Laboratorio 01.04, Pr. Laboratorio 03.04",
+                "nombre": "LAURA CABRERA BRITO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.04, Teoría 01, Pr. Laboratorio 01.01, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "JESÚS GARCÍA RUBIANO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 03.02, Pr. Laboratorio 03.03, Pr. Laboratorio 02.02, Pr. Laboratorio 02.01, Pr. Laboratorio 02.03, Pr. Laboratorio 03.04, Teoría 02, Teoría 03, Pr. Laboratorio 02.04, Pr. Laboratorio 01.02",
+                "nombre": "HÉCTOR EULOGIO ALONSO HERNÁNDEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 03.04",
+                "nombre": "JESÚS CISNEROS AGUIRRE"
+            },
+            {
+                "grupos": "Pr. Laboratorio 03.01, Pr. Laboratorio 03.02, Pr. Laboratorio 03.03",
+                "nombre": "ÁNGEL LUIS DE LUQUE SÖLLHEIM"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.04, Pr. Laboratorio 01.03",
+                "nombre": "ROBERTO CASAŃAS BUENO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 03.01, Pr. Laboratorio 03.02, Pr. Laboratorio 03.03",
+                "nombre": "ÁNGEL LUIS DE LUQUE SÖLLHEIM"
+            }
+        ]
+    },
+    {
+        "id": "40958",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 03.01, Pr. Laboratorio 02.01, Pr. Laboratorio 03.03",
+                "nombre": "JOSÉ FORTES GÁLVEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.04, Teoría 02",
+                "nombre": "JUAN CARLOS RODRÍGUEZ DEL PINO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.03, Pr. Laboratorio 01.01",
+                "nombre": "MIGUEL ÁNGEL PÉREZ AGUIAR"
+            },
+            {
+                "grupos": "Teoría 01, Teoría 03, Pr. Laboratorio 02.03",
+                "nombre": "IGNACIO JOSÉ LÓPEZ RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01, Pr. Laboratorio 02.04",
+                "nombre": "ÁNGEL RAMOS  DE MIGUEL"
+            },
+            {
+                "grupos": "Pr. Laboratorio 03.02, Pr. Laboratorio 03.04",
+                "nombre": "FRANCISCO JAVIER CARRERAS RIUDAVETS"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 02.04",
+                "nombre": "DAVID SEBASTIÁN FREIRE  OBREGÓN"
+            }
+        ]
+    },
+    {
+        "id": "40959",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 03.02, Pr. Laboratorio 03.04, Pr. Laboratorio 01.04",
+                "nombre": "PEDRO MEDINA RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 03.03, Pr. Laboratorio 03.01",
+                "nombre": "ENRIQUE FERNÁNDEZ GARCÍA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02",
+                "nombre": "CARMELO CUENCA HERNÁNDEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01",
+                "nombre": "FRANCISCA CANDELARIA QUINTANA DOMÍNGUEZ"
+            },
+            {
+                "grupos": "Teoría 03, Pr. Laboratorio 02.04",
+                "nombre": "CARLOS ANTONIO GONZÁLEZ MUŃOZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.03, Pr. Laboratorio 02.03, Pr. Laboratorio 03.04",
+                "nombre": "LUIS JESÚS DORESTE BLANCO"
+            },
+            {
+                "grupos": "Teoría 01, Teoría 02, Pr. Laboratorio 01.02",
+                "nombre": "RICARDO JAVIER PÉREZ GARCÍA"
+            }
+        ]
+    },
+    {
+        "id": "40960",
+        "info": [
+            {
+                "grupos": "Teoría 02, Teoría 01, Pr. Aulas 02.01, Pr. Aulas 02.02, Pr. Aulas 03.01",
+                "nombre": "JULIA NIEVES RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Aulas 01.02",
+                "nombre": "JAVIER OSORIO ACOSTA"
+            },
+            {
+                "grupos": "Pr. Aulas 01.01",
+                "nombre": "OLGA PALACIOS PÉREZ"
+            },
+            {
+                "grupos": "Pr. Aulas 03.01, Teoría 03, Pr. Aulas 03.02",
+                "nombre": "JUAN CARLOS RAMÍREZ FIERRO"
+            }
+        ]
+    },
+    {
+        "id": "40961",
+        "info": [
+            {
+                "grupos": "Teoría 02, Teoría 01",
+                "nombre": "ADRIÁN PEŃATE SÁNCHEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 02.02, Pr. Laboratorio 02.04, Pr. Laboratorio 01.01, Pr. Laboratorio 02.03, Pr. Laboratorio 01.03",
+                "nombre": "ESTHER GONZÁLEZ SÁNCHEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.04",
+                "nombre": "KARINA MARIBEL BAŃOS RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.04",
+                "nombre": "KARINA MARIBEL BAŃOS RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01",
+                "nombre": "JOSÉ CARLOS RODRÍGUEZ RODRÍGUEZ"
+            }
+        ]
+    },
+    {
+        "id": "40962",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 02.01, TeorÝa 02, Pr. Laboratorio 01.02, TeorÝa 01, Pr. Laboratorio 02.02",
+                "nombre": "FRANCISCO JAVIER MIRANDA GONZ┴LEZ"
+            },
+            {
+                "grupos": "TeorÝa 01, TeorÝa 02, Pr. Laboratorio 01.01, Pr. Laboratorio 01.03, Pr. Laboratorio 01.04",
+                "nombre": "JOS╔ MAR═A QUINTEIRO GONZ┴LEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.04, Pr. Laboratorio 02.03",
+                "nombre": "LUIS MIGUEL HERN┴NDEZ ACOSTA"
+            }
+        ]
+    },
+    {
+        "id": "40963",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.04, Pr. Laboratorio 01.01",
+                "nombre": "IGNACIO JOSÉ LÓPEZ RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 02.01, Teoría 02",
+                "nombre": "ÁNGEL RAMOS  DE MIGUEL"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 02.03, Pr. Laboratorio 01.03, Pr. Laboratorio 02.04",
+                "nombre": "DAVID SEBASTIÁN FREIRE  OBREGÓN"
+            }
+        ]
+    },
+    {
+        "id": "40964",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.03, Pr. Laboratorio 01.04, Pr. Laboratorio 01.02, Teoría 02, Pr. Laboratorio 02.04",
+                "nombre": "PEDRO MEDINA RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 01.01, Teoría 01, Teoría 02, Pr. Laboratorio 02.01, Pr. Laboratorio 02.03",
+                "nombre": "ENRIQUE FERNÁNDEZ GARCÍA"
+            }
+        ]
+    },
+    {
+        "id": "40965",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.04, Pr. Laboratorio 02.02, Pr. Laboratorio 02.04",
+                "nombre": "AGUSTÍN SALGADO DE LA NUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.01, Teoría 01, Pr. Laboratorio 01.03, Pr. Laboratorio 02.03, Teoría 02, Pr. Laboratorio 02.01",
+                "nombre": "ANA MARÍA PLÁCIDO CASTRO"
+            }
+        ]
+    },
+    {
+        "id": "40966",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.03, Pr. Laboratorio 02.03, Teoría 02, Pr. Laboratorio 02.01, Pr. Laboratorio 01.01, Pr. Laboratorio 02.02, Pr. Laboratorio 01.04, Pr. Laboratorio 02.04, Teoría 01",
+                "nombre": "LUIS MIGUEL ÁLVAREZ LEÓN"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 02.01, Pr. Laboratorio 02.02, Pr. Laboratorio 02.03, Teoría 02, Pr. Laboratorio 01.04, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03, Pr. Laboratorio 01.01, Pr. Laboratorio 02.04",
+                "nombre": "JULIO ESCLARÍN MONREAL"
+            }
+        ]
+    },
+    {
+        "id": "40967",
+        "info": [
+            {
+                "grupos": "Teoría 02, Pr. Laboratorio 01.01, Pr. Laboratorio 02.01, Pr. Laboratorio 02.02, Pr. Laboratorio 02.04",
+                "nombre": "ZENÓN JOSÉ HERNÁNDEZ FIGUEROA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 02.03, Pr. Laboratorio 02.01, Pr. Laboratorio 01.03, Teoría 01, Pr. Laboratorio 01.04",
+                "nombre": "JOSÉ DANIEL GONZÁLEZ DOMÍNGUEZ"
+            }
+        ]
+    },
+    {
+        "id": "40968",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 02.04, Pr. Laboratorio 02.02, Pr. Laboratorio 01.02",
+                "nombre": "JUAN DE DIOS DUQUE MARTÍN DE OLIVA"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01, Pr. Laboratorio 02.01, Pr. Laboratorio 01.03, Teoría 02, Pr. Laboratorio 01.02",
+                "nombre": "OCTAVIO MAYOR GONZÁLEZ"
+            }
+        ]
+    },
+    {
+        "id": "40969",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.01, Teoría 02, Pr. Laboratorio 01.03, Pr. Laboratorio 02.01, Pr. Laboratorio 02.03, Teoría 01, Pr. Laboratorio 01.04",
+                "nombre": "DOMINGO JUAN BENÍTEZ DÍAZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 02.04, Pr. Laboratorio 01.04, Pr. Laboratorio 01.02",
+                "nombre": "RICARDO JAVIER PÉREZ GARCÍA"
+            }
+        ]
+    },
+    {
+        "id": "40970",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 02.01, Pr. Laboratorio 01.01, Pr. Laboratorio 02.03, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "FRANCISCO J SANTANA PÉREZ"
+            },
+            {
+                "grupos": "Teoría 01, Teoría 02",
+                "nombre": "JOSÉ MIGUEL SANTOS ESPINO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.04",
+                "nombre": "FRANCISCO ALEXIS QUESADA ARENCIBIA"
+            },
+            {
+                "grupos": "Teoría 02, Pr. Laboratorio 02.04, Pr. Laboratorio 02.02, Teoría 01",
+                "nombre": "JOSÉ CARLOS RODRÍGUEZ RODRÍGUEZ"
+            }
+        ]
+    },
+    {
+        "id": "40971",
+        "info": [
+            {
+                "grupos": "Teoría 02, Pr. Laboratorio 02.01, Teoría 01, Pr. Laboratorio 01.02, Pr. Laboratorio 02.02, Pr. Laboratorio 01.01, Pr. Laboratorio 01.03",
+                "nombre": "JUAN CARLOS QUEVEDO LOSADA"
+            }
+        ]
+    },
+    {
+        "id": "40972",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "FRANCISCO ORTEGA ZAMORANO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "CARMELO RUBÉN GARCÍA RODRÍGUEZ"
+            },
+            {
+                "grupos": "Teoría 02, Teoría 01",
+                "nombre": "JOSÉ MIGUEL SANTOS ESPINO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 02.01",
+                "nombre": "OLIVERIO JESÚS SANTANA JARIA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02",
+                "nombre": "JESÚS GARCÍA QUESADA"
+            }
+        ]
+    },
+    {
+        "id": "40973",
+        "info": [
+            {
+                "grupos": "Teoría 01, Teoría 02, Pr. Laboratorio 02.02",
+                "nombre": "JUAN DE DIOS DUQUE MARTÍN DE OLIVA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 01.03, Pr. Laboratorio 02.01, Pr. Laboratorio 01.01",
+                "nombre": "OCTAVIO MAYOR GONZÁLEZ"
+            }
+        ]
+    },
+    {
+        "id": "40974",
+        "info": [
+            {
+                "grupos": "Teoría 02, Teoría 01",
+                "nombre": "FRANCISCO MARIO HERNÁNDEZ TEJERA"
+            },
+            {
+                "grupos": "Pr. Aulas 01.01",
+                "nombre": "JOSÉ DANIEL HERNÁNDEZ SOSA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 01.02",
+                "nombre": "CAYETANO GUERRA ARTAL"
+            },
+            {
+                "grupos": "Pr. Aulas 02.01, Pr. Laboratorio 01.03, Pr. Laboratorio 02.02, Pr. Laboratorio 02.01",
+                "nombre": "JOSÉ CARLOS RODRÍGUEZ RODRÍGUEZ"
+            }
+        ]
+    },
+    {
+        "id": "40975",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.02, Teoría 01, Teoría 02, Pr. Laboratorio 01.01, Pr. Aulas 01.01, Pr. Aulas 02.01, Pr. Laboratorio 02.01, Pr. Laboratorio 01.03, Pr. Laboratorio 02.02",
+                "nombre": "JOSÉ JUAN HERNÁNDEZ CABRERA"
+            },
+            {
+                "grupos": "Pr. Aulas 01.01, Pr. Laboratorio 01.02, Pr. Laboratorio 02.01, Teoría 02, Pr. Laboratorio 02.02, Pr. Aulas 02.01, Pr. Laboratorio 01.01, Teoría 01, Pr. Laboratorio 01.03",
+                "nombre": "PABLO CARMELO FERNÁNDEZ LÓPEZ"
+            }
+        ]
+    },
+    {
+        "id": "40976",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.01, Teoría 01, Teoría 02, Pr. Laboratorio 01.02, Pr. Laboratorio 02.02, Pr. Laboratorio 01.03",
+                "nombre": "JOSÉ ANTONIO MUŃOZ BLANCO"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01",
+                "nombre": "FRANCISCO JAVIER ALAYÓN HERNÁNDEZ"
+            }
+        ]
+    },
+    {
+        "id": "40977",
+        "info": [
+            {
+                "grupos": "Teoría 01, Teoría 02",
+                "nombre": "CARMELO RUBÉN GARCÍA RODRÍGUEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "GABRIEL ALEJANDRO FERNÁNDEZ DÍAZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01, Pr. Laboratorio 01.02, Pr. Laboratorio 02.02",
+                "nombre": "JOSÉ ÉVORA GÓMEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01, Pr. Laboratorio 01.02, Pr. Laboratorio 02.02",
+                "nombre": "JOSÉ ÉVORA GÓMEZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "GABRIEL ALEJANDRO FERNÁNDEZ DÍAZ"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01, Pr. Laboratorio 01.02, Pr. Laboratorio 02.02",
+                "nombre": "JOSÉ ÉVORA GÓMEZ"
+            }
+        ]
+    },
+    {
+        "id": "40978",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.01",
+                "nombre": "PABLO VICENTE HERNÁNDEZ MORERA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.01",
+                "nombre": "ERNESTINA ÁNGELES MARTEL JORDÁN"
+            },
+            {
+                "grupos": "Teoría 02, Pr. Laboratorio 01.01, Teoría 01",
+                "nombre": "LUIS MIGUEL HERNÁNDEZ ACOSTA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.03, Pr. Laboratorio 01.01",
+                "nombre": "FERNANDO  DE LA PUENTE ARRATE"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.02, Pr. Laboratorio 02.02",
+                "nombre": "DAVID GALANTE SEMPERE"
+            }
+        ]
+    },
+    {
+        "id": "40979",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 02.01",
+                "nombre": "DANIEL ELÍAS SANTANA CEDRÉS"
+            },
+            {
+                "grupos": "Pr. Laboratorio 02.02, Pr. Laboratorio 02.01",
+                "nombre": "OCTAVIO RONCAL ANDRÉS"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Laboratorio 01.02, Teoría 02, Teoría 01, Pr. Laboratorio 01.03",
+                "nombre": "NELSON MANUEL MONZÓN LÓPEZ"
+            }
+        ]
+    },
+    {
+        "id": "40980",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "MODESTO FERNANDO CASTRILLÓN SANTANA"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "AGUSTÍN RAFAEL TRUJILLO PINO"
+            }
+        ]
+    },
+    {
+        "id": "40981",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "JOSÉ DANIEL HERNÁNDEZ SOSA"
+            },
+            {
+                "grupos": "Pr. Laboratorio 01.01, Teoría 01",
+                "nombre": "ANTONIO CARLOS DOMÍNGUEZ BRITO"
+            }
+        ]
+    },
+    {
+        "id": "40982",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "MODESTO FERNANDO CASTRILLÓN SANTANA"
+            }
+        ]
+    },
+    {
+        "id": "40983",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.01, Teoría 01",
+                "nombre": "MARÍA DOLORES AFONSO SUÁREZ"
+            }
+        ]
+    },
+    {
+        "id": "40984",
+        "info": [
+            {
+                "grupos": "Teoría 01",
+                "nombre": "FRANCISCA CANDELARIA QUINTANA DOMÍNGUEZ"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "GABRIEL ALEJANDRO FERNÁNDEZ DÍAZ"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "GABRIEL ALEJANDRO FERNÁNDEZ DÍAZ"
+            }
+        ]
+    },
+    {
+        "id": "40985",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.01, Teoría 01",
+                "nombre": "JORGE CABRERA GÁMEZ"
+            },
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "ANTONIO CARLOS DOMÍNGUEZ BRITO"
+            }
+        ]
+    },
+    {
+        "id": "40986",
+        "info": [
+            {
+                "grupos": "Pr. Aulas 01.01, Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "FRANCISCO JAVIER HERNÁNDEZ SANTANA"
+            },
+            {
+                "grupos": "Pr. Aulas 01.01, Teoría 01, Pr. Laboratorio 01.01",
+                "nombre": "FRANCISCO JAVIER HERNÁNDEZ SANTANA"
+            }
+        ]
+    },
+    {
+        "id": "40987",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.01, Pr. Aulas 01.01",
+                "nombre": "GABINO PADRÓN MORALES"
+            }
+        ]
+    },
+    {
+        "id": "40988",
+        "info": [
+            {
+                "grupos": "Teoría 01, Pr. Laboratorio 01.03, Pr. Laboratorio 01.02, Pr. Laboratorio 01.01",
+                "nombre": "ANTONIO ANDRÉS OCÓN CARRERAS"
+            }
+        ]
+    },
+    {
+        "id": "40989",
+        "info": [
+            {
+                "grupos": "Pr. Laboratorio 01.01, Pr. Aulas 01.02, Teoría 01, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03, Pr. Aulas 01.01",
+                "nombre": "MIGUEL ALEMÁN FLORES"
+            },
+            {
+                "grupos": "Pr. Aulas 01.02, Pr. Laboratorio 01.01, Teoría 01, Pr. Aulas 01.01, Pr. Laboratorio 01.02, Pr. Laboratorio 01.03",
+                "nombre": "MARÍA DOLORES AFONSO SUÁREZ"
+            }
+        ]
+    },
+    {
+        "id": "40990",
+        "info": [
+            {
+                "grupos": "Tutoría 06",
+                "nombre": "CARMEN PAZ SUÁREZ ARAUJO"
+            },
+            {
+                "grupos": "Tutoría 01",
+                "nombre": "DOMINGO JUAN BENÍTEZ DÍAZ"
+            },
+            {
+                "grupos": "Tutoría 04, Teoría01-Coord",
+                "nombre": "JOSÉ DANIEL HERNÁNDEZ SOSA"
+            },
+            {
+                "grupos": "Tutoría 03",
+                "nombre": "ZENÓN JOSÉ HERNÁNDEZ FIGUEROA"
+            },
+            {
+                "grupos": "Tutoría 05",
+                "nombre": "FRANCISCA CANDELARIA QUINTANA DOMÍNGUEZ"
+            },
+            {
+                "grupos": "Tutoría 02",
+                "nombre": "FRANCISCO JAVIER CARRERAS RIUDAVETS"
+            }
+        ]
+    }
+]

@@ -1,0 +1,42 @@
+header {
+    background-color: #0066a1;
+    grid-column: span 3;
+}
+
+ #navbar {
+    background-color: #0066a1;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+#navbar ul{
+    display: flex;
+    flex: 2;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#userButton{
+    flex: 1;
+    padding: 17px 0px 0px 0px;
+    color: white;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#navbar ul {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#navbar ul li {
+    color: white;
+    list-style-type: none;
+}
+
+#logoContainer {
+    flex: 1;
+    margin: 5px;
+}

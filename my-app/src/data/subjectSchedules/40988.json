@@ -1,0 +1,34 @@
+[
+    {
+        "Classroom": "A2-1",
+        "Day": "LUNES",
+        "FHour": "12:30",
+        "Group": "1",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-3",
+        "Day": "MARTES",
+        "FHour": "12:30",
+        "Group": "41",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-2",
+        "Day": "MARTES",
+        "FHour": "14:30",
+        "Group": "42",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-2",
+        "Day": "MIERCOLES",
+        "FHour": "14:30",
+        "Group": "43",
+        "IHour": "12:30",
+        "Week": "ambos"
+    }
+]

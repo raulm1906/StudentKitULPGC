@@ -1,0 +1,50 @@
+[
+    {
+        "Classroom": "A2-1",
+        "Day": "LUNES",
+        "FHour": "10:30",
+        "Group": "1",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-1",
+        "Day": "MARTES",
+        "FHour": "10:30",
+        "Group": "17",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-3",
+        "Day": "MARTES",
+        "FHour": "14:30",
+        "Group": "41",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-2",
+        "Day": "MARTES",
+        "FHour": "12:30",
+        "Group": "42",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-1",
+        "Day": "MIERCOLES",
+        "FHour": "10:30",
+        "Group": "18",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-2",
+        "Day": "MIERCOLES",
+        "FHour": "12:30",
+        "Group": "43",
+        "IHour": "10:30",
+        "Week": "ambos"
+    }
+]

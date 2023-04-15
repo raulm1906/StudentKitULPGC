@@ -15,8 +15,13 @@ nav a{
 }
 
 .scroll-box {
+<<<<<<< HEAD
   width: 70%;
   height: 33em;
+=======
+  width: 100%;
+  height: 70vh;
+>>>>>>> main
   overflow: scroll;
   display: flex;
   margin: 1%;
@@ -26,6 +31,10 @@ nav a{
   float: left;
   scrollbar-width: thin;
   padding: 1%;
+<<<<<<< HEAD
+=======
+  font-size: large;
+>>>>>>> main
 }
 
 .hover:hover {
@@ -38,11 +47,19 @@ nav a{
   float:right;
   margin: 1%;
   width: 25%;
+<<<<<<< HEAD
   height: 33em;
 }
 
 .nav_search {
   height: 15%;
+=======
+  height: 70vh;
+}
+
+.nav_search {
+  height: 10%;  
+>>>>>>> main
   border-bottom: 1px solid white;
   display: grid;
   grid-template-columns: 20% 80%;  
@@ -70,6 +87,10 @@ nav a{
   align-items: center;
   justify-items: start;
   justify-content: space-around;
+<<<<<<< HEAD
+=======
+  font-size: 10-large;
+>>>>>>> main
  }
 
  .profesorado {
@@ -80,7 +101,11 @@ nav a{
 /*ScrollBar*/
 
 #resultSearch{
+<<<<<<< HEAD
   max-height: 85%;
+=======
+  max-height: 90%;
+>>>>>>> main
   overflow: auto;
 }
 
@@ -98,10 +123,16 @@ nav a{
   padding-bottom:1em ;
 }
 #atributos_teacher{
+<<<<<<< HEAD
 
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
+=======
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 50% 50%;
+>>>>>>> main
   gap: 0.1em;
   width: 100%;
   height: 30%;
@@ -109,10 +140,19 @@ nav a{
   align-items: center;
   justify-items: start;
   justify-content: space-around;
+<<<<<<< HEAD
 
 }
 
 #teachername{
+=======
+  font-size: 10-large;
+}
+.link{
+  text-align: center;
+}
+#titlePage{
+>>>>>>> main
   align-items: center;
   padding: 0.5em;
   text-align: center;}

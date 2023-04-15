@@ -8,7 +8,11 @@ const SearchBar = ({ searchTerm, handleChange, Placeholder }) => {
         value={searchTerm}
         onChange={handleChange}
         placeholder={Placeholder}
+<<<<<<< HEAD
         className='w-100 h-100 bg-transparent'
+=======
+        className='w-100 h-100 bg-transparent border-0'
+>>>>>>> main
       />
     
   );

@@ -4,7 +4,10 @@ import { Image } from '@chakra-ui/react';
 import { BsTwitter } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 function Footer() {
 
   return (
