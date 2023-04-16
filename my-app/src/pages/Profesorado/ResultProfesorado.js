@@ -1,21 +1,22 @@
-import React,  { useState } from 'react'
+import React,  { useState,useEffect } from 'react'
 import '../../components/style.css';
 import TableProf from './components/tablaProfesorado';
-<<<<<<< HEAD
-import 'bootstrap/dist/css/bootstrap.min.css';
-import SearchBar from '../../components/Busqueda/SearchBar';
-import SearchProfesores from '../../components/Busqueda/SearchProfesores';
-=======
 import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores';
 import { Grid, GridItem } from '@chakra-ui/react'
->>>>>>> main
+import { useParams } from 'react-router-dom'
+import { Link } from '@chakra-ui/react'
+import profesores from '../../data/profesores.json'
 
-
-function Profesorado ({profesor}){
-    const [newTeacher, setnewTeacher] = useState(profesor)
+function Profesorado (){
+    const {id} = useParams();
+    const [newTeacher, setnewTeacher] = useState({})
     const [searchTerm, setSearchTerm] = useState('');
 
+
+    useEffect(() =>{
+        setnewTeacher(profesores.find(profesor => profesor.id == id));
+    },[id])
 
     
     const handleItemClick = (item) => {
@@ -26,18 +27,12 @@ function Profesorado ({profesor}){
         setSearchTerm(event.target.value);
       }
     
-
+    if (!newTeacher.profesorado) {
+        return <div>Cargando información del profesor...</div>;
+    }
+    
     return (
-<<<<<<< HEAD
-        <div >
-            <section className="scroll-box">
-                <h2 id="teachername" type="text" name="profesor_nombre">{newTeacher.profesorado.profesor}</h2>
-                <div id ="atributos_teacher">
-                    <div className="Correo"><b>Correo electrónico:</b><label name="correo">{newTeacher.profesorado.email}</label></div>
-                    <div className= "Despacho"><b>Departamento:</b><label name="despacho">{newTeacher.profesorado.despacho}</label></div>
-                    <div className="Telefono"><b>telefono:</b><label name="telefono">{newTeacher.profesorado.telefono}</label></div>
-                </div>
-=======
+        
         <div className='d-flex'  style={{ gridColumn: 'span 3' }}>
             <section className="scroll-box">
                 <h2 id="titlePage" type="text" name="profesor_nombre"><b>{newTeacher.profesorado.profesor}</b></h2>
@@ -51,7 +46,6 @@ function Profesorado ({profesor}){
                     <GridItem w='100%' h='10'> <b>Área de conocimiento: </b>{newTeacher.profesorado.area_de_conocimiento}</GridItem>
                 </Grid>
 
->>>>>>> main
                 <b>Horas Tutorías</b>
                 <div className='text-center tutoriasFrame'>
                     <TableProf className="center-x" tutorias={newTeacher.tutorias}/>

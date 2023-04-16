@@ -1,11 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "my-app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@chakra-ui/react": "^2.5.1",
-=======
   "name": "studio-kit",
   "version": "0.1.0",
   "private": true,
@@ -47,7 +40,6 @@
     "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
     "start-server": "node server.js",
     "start-react": "react-scripts start",
->>>>>>> main
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
@@ -66,14 +58,7 @@
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.8.2",
     "react-scripts": "5.0.1",
-<<<<<<< HEAD
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-=======
     "web-vitals": "^2.1.4",
->>>>>>> main
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -96,8 +81,4 @@
       "last 1 safari version"
     ]
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main
