@@ -19,7 +19,7 @@ const SearchHomeProfesorado = ({ searchTerm, onItemClick }) => {
           <div className="hover">
             <h2 onClick={() => onItemClick(item)} id="titleItemBusqueda">{item.profesorado.profesor}</h2>
             <p>{item.profesorado.email}</p>
-            <p>{item.profesorado.despacho.toUpperCase()}</p>
+            <p>Despacho: {item.profesorado.despacho.toUpperCase()}</p>
             <hr />
           </div>
         </Link>

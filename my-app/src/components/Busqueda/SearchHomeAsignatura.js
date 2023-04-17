@@ -1,6 +1,5 @@
 import React from 'react';
 import data from '../../data/subjects.json';
-import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const SearchHomeAsignatura = ({ searchTerm, onItemClick }) => {
@@ -19,7 +18,7 @@ const SearchHomeAsignatura = ({ searchTerm, onItemClick }) => {
           <div className="hover">
             <h2 onClick={() => onItemClick(item)} id="titleItemBusqueda">{item.asignatura}</h2>
             <p>Coordinador:</p>
-            <p>Curso de la asignatura - Semestre de la asignatura</p>
+            <p>Curso: {item.duracion}</p>
             <hr />
           </div>
         </Link>

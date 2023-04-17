@@ -5,7 +5,6 @@ import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores';
 import { Grid, GridItem } from '@chakra-ui/react'
 import { useParams } from 'react-router-dom'
-import { Link } from '@chakra-ui/react'
 import profesores from '../../data/profesores.json'
 
 function Profesorado (){

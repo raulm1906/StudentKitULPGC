@@ -1,5 +1,4 @@
 import { Navbar, Nav} from 'react-bootstrap';
-import {Link} from 'react-router-dom'
 import { NavLink } from 'react-router-dom';
 import { BiConversation } from 'react-icons/bi';
 import "../components/style.css"
