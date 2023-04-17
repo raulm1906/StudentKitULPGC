@@ -11,11 +11,16 @@ import profesores from "./data/profesores.json"
 import { theme } from '@chakra-ui/theme';
 import { ChakraProvider } from '@chakra-ui/react';
 
+import data from "./data/profesores.json";
+
+import Profesor from './pages/Profesorado/Profesor';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ChakraProvider theme={theme}>
+ /* <ChakraProvider theme={theme}>
     <RouterProvider router = {router}/>
-  </ChakraProvider>  
+  </ChakraProvider>  */
+  <Profesor  profesor={data[0]}></Profesor>
 );
 
 // If you want to start measuring performance in your app, pass a function
