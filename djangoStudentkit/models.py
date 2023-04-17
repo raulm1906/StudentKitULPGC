@@ -3,7 +3,7 @@
 #   * Rearrange models' order
 #   * Make sure each model has one field with primary_key=True
 #   * Make sure each ForeignKey and OneToOneField has `on_delete` set to the desired behavior
-#   * Remove `managed = False` lines if you wish to allow Django to create, modify, and delete the table
+#   * Remov` lines if you wish to allow Django to create, modify, and delete the table
 # Feel free to rename the models, but don't rename db_table values or field names.
 from django.db import models
 
@@ -12,7 +12,6 @@ class Degree(models.Model):
     degree = models.CharField(unique=True, max_length=255)
 
     class Meta:
-        managed = False
         db_table = 'DEGREE'
 
 
@@ -20,7 +19,6 @@ class Department(models.Model):
     department = models.CharField(unique=True, max_length=255)
 
     class Meta:
-        managed = False
         db_table = 'DEPARTMENT'
 
 
@@ -29,7 +27,6 @@ class Groups(models.Model):
     type = models.CharField(max_length=11)
 
     class Meta:
-        managed = False
         db_table = 'GROUPS'
 
 
@@ -37,7 +34,6 @@ class Knowledgearea(models.Model):
     knowledgearea = models.CharField(db_column='knowledgeArea', unique=True, max_length=255)  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'KNOWLEDGEAREA'
 
 
@@ -46,7 +42,6 @@ class Subjectdepartments(models.Model):
     department = models.ForeignKey(Department, models.DO_NOTHING, db_column='department')
 
     class Meta:
-        managed = False
         db_table = 'SUBJECTDEPARTMENTS'
         unique_together = (('subjectcode', 'department'),)
 
@@ -62,7 +57,6 @@ class Subjects(models.Model):
     semester = models.CharField(max_length=7)
 
     class Meta:
-        managed = False
         db_table = 'SUBJECTS'
 
 
@@ -72,7 +66,6 @@ class Subjectschedules(models.Model):
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'SUBJECTSCHEDULES'
         unique_together = (('subjectcode', 'groupcode'),)
 
@@ -86,7 +79,6 @@ class Teachers(models.Model):
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'TEACHERS'
 
 
@@ -95,7 +87,6 @@ class Teaching(models.Model):
     subjectcode = models.ForeignKey(Subjects, models.DO_NOTHING, db_column='subjectCode')  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'TEACHING'
         unique_together = (('teacherid', 'subjectcode'),)
 
@@ -107,7 +98,6 @@ class Users(models.Model):
     preferencespath = models.CharField(db_column='preferencesPath', unique=True, max_length=1023)  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'USERS'
 
 
@@ -117,6 +107,5 @@ class Userschedules(models.Model):
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023)  # Field name made lowercase.
 
     class Meta:
-        managed = False
         db_table = 'USERSCHEDULES'
         unique_together = (('code', 'id'),)
