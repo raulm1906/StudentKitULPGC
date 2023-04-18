@@ -1,5 +1,5 @@
 from django.db import models
-from Subjects.models import Subjects
+from subjects.models import Subject
 
 # Create your models here.
 
@@ -24,7 +24,7 @@ class Teachers(models.Model):
 
 class Teaching(models.Model):
     teacherid = models.OneToOneField(Teachers, models.DO_NOTHING, db_column='teacherId', primary_key=True)  # Field name made lowercase. The composite primary key (teacherId, subjectCode) found, that is not supported. The first column is selected.
-    subjectcode = models.ForeignKey(Subjects, models.DO_NOTHING, db_column='subjectCode')  # Field name made lowercase.
+    subjectcode = models.ForeignKey(Subject, models.DO_NOTHING, db_column='subjectCode')  # Field name made lowercase.
 
     class Meta:
         db_table = 'TEACHING'
