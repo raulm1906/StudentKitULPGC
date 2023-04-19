@@ -1,0 +1,138 @@
+[
+    {
+        "asignatura": "Álgebra y Geometría (P. N.)",
+        "coordinador": "de Blasio García, Gabriel"
+    },
+    {
+        "asignatura": "Estructura de Computadores (P.N.)",
+        "coordinador": "Pérez García, Ricardo"
+    },
+    {
+        "asignatura": "Fundamentos de la Programación I (P. N.)",
+        "coordinador": "Hernández Figueroa, Zenón"
+    },
+    {
+        "asignatura": "Fundamentos de la Programación II (P. N.)",
+        "coordinador": "Rodríguez del Pino, Juan Carlos"
+    },
+    {
+        "asignatura": "Fundamentos de los Computadores (P. N.)",
+        "coordinador": "González Muñoz, Carlos"
+    },
+    {
+        "asignatura": "Habilidades Profesionales para Ingenieros",
+        "coordinador": "Afonso Suárez, María Dolores"
+    },
+    {
+        "asignatura": "Matemática Discreta (P. N.)",
+        "coordinador": "Suárez Araujo, Carmen Paz"
+    },
+    {
+        "asignatura": "Matemáticas para la Computación (P. N.)",
+        "coordinador": "Trujillo Pino, Agustín"
+    },
+    {
+        "asignatura": "Arquitectura de Computadores (P. N.)",
+        "coordinador": "Benítez Díaz, Domingo"
+    },
+    {
+        "asignatura": "Bases de Datos I (P. N.)",
+        "coordinador": "Mayor González, Octavio"
+    },
+    {
+        "asignatura": "Estructuras de Datos y Programación",
+        "coordinador": "Hernández Figueroa, Zenón"
+    },
+    {
+        "asignatura": "Fundamentos de los Sistemas Operativos",
+        "coordinador": "Santos Espino, José Miguel"
+    },
+    {
+        "asignatura": "Ingeniería del Software I (P. N.)",
+        "coordinador": "Plácido Castro, Ana María"
+    },
+    {
+        "asignatura": "Métodos Estadísticos (P. N.)",
+        "coordinador": "Rodríguez Rodríguez, José Carlos"
+    },
+    {
+        "asignatura": "Métodos Numéricos (P. N.)",
+        "coordinador": "Esclarín Monreal, Julio"
+    },
+    {
+        "asignatura": "Periféricos e Interfaces",
+        "coordinador": "Medina Rodríguez, Pedro"
+    },
+    {
+        "asignatura": "Tecnologías de Programación",
+        "coordinador": "Freire Obregón, David Sebastián"
+    },
+    {
+        "asignatura": "Administración de Servicios en Red",
+        "coordinador": "Muñoz Blanco, José Antonio"
+    },
+    {
+        "asignatura": "Administración de Sistemas Operativos",
+        "coordinador": "Santana Jaria, Oliverio Jesús"
+    },
+    {
+        "asignatura": "Bases de Datos II",
+        "coordinador": "Duque Martín de Oliva, Juan de Dios"
+    },
+    {
+        "asignatura": "Fundamentos de los Sistemas Inteligentes",
+        "coordinador": "Guerra Artal, Cayetano"
+    },
+    {
+        "asignatura": "Ingeniería del Software II",
+        "coordinador": "Hernández Cabrera, José Juan"
+    },
+    {
+        "asignatura": "Producción de Software",
+        "coordinador": "Monzón López, Nelson"
+    },
+    {
+        "asignatura": "Redes de Computadores",
+        "coordinador": "Quevedo Losada, Juan Carlos"
+    },
+    {
+        "asignatura": "Virtualización y Procesamiento Distribuido",
+        "coordinador": "García Rodríguez, Carmelo Rubén"
+    },
+    {
+        "asignatura": "Computación en la Nube",
+        "coordinador": "Quintana Domínguez, Francisca"
+    },
+    {
+        "asignatura": "Informática Gráfica",
+        "coordinador": "Trujillo Pino, Agustín"
+    },
+    {
+        "asignatura": "Internet de las Cosas (ATC)",
+        "coordinador": "Domínguez Brito, Antonio"
+    },
+    {
+        "asignatura": "Los Sistemas de Información en la Organización",
+        "coordinador": "Padrón Morales, Gabino"
+    },
+    {
+        "asignatura": "Metodologías del Desarrollo Ágil",
+        "coordinador": "Monzón López, Nelson"
+    },
+    {
+        "asignatura": "Programación de Aplicaciones Móviles Nativas",
+        "coordinador": "Afonso Suárez, María Dolores"
+    },
+    {
+        "asignatura": "Proyectos de Ingeniería y Gestión del Software",
+        "coordinador": "Alemán Flores, Miguel"
+    },
+    {
+        "asignatura": "Seguridad de la Información",
+        "coordinador": "Ocón Carreras, Antonio"
+    },
+    {
+        "asignatura": "Sistemas Robóticos Autónomos (CCIA)",
+        "coordinador": "Hernández Sosa, José Daniel"
+    }
+]
