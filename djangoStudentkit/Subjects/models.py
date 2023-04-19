@@ -14,7 +14,7 @@ class Department(models.Model):
     class Meta:
         db_table = 'DEPARTMENT'
 
-class Subjects(models.Model):
+class Subject(models.Model):
     code = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=255)
     degree = models.ForeignKey(Degree, models.DO_NOTHING, db_column='degree')
@@ -27,8 +27,8 @@ class Subjects(models.Model):
     class Meta:
         db_table = 'SUBJECTS'
 
-class Subjectdepartments(models.Model):
-    subjectcode = models.OneToOneField('Subjects', models.DO_NOTHING, db_column='subjectCode', primary_key=True)  # Field name made lowercase. The composite primary key (subjectCode, department) found, that is not supported. The first column is selected.
+class SubjectDepartment(models.Model):
+    subjectcode = models.OneToOneField('Subject', models.DO_NOTHING, db_column='subjectCode', primary_key=True)  # Field name made lowercase. The composite primary key (subjectCode, department) found, that is not supported. The first column is selected.
     department = models.ForeignKey(Department, models.DO_NOTHING, db_column='department')
 
     class Meta:

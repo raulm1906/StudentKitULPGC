@@ -1,6 +1,6 @@
 from django.db import models
-from Subjects.models import Subjects
-from Users.models import Users
+from subjects.models import Subject
+from users.models import Users
 
 
 # Create your models here.
@@ -14,7 +14,7 @@ class Groups(models.Model):
 
 
 class Subjectschedules(models.Model):
-    subjectcode = models.OneToOneField(Subjects, models.DO_NOTHING, db_column='subjectCode', primary_key=True)  # Field name made lowercase. The composite primary key (subjectCode, groupCode) found, that is not supported. The first column is selected.
+    subjectcode = models.OneToOneField('subjects.Subject', models.DO_NOTHING, db_column='subjectCode', primary_key=True)  # Field name made lowercase. The composite primary key (subjectCode, groupCode) found, that is not supported. The first column is selected.
     groupcode = models.ForeignKey(Groups, models.DO_NOTHING, db_column='groupCode')  # Field name made lowercase.
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023, blank=True, null=True)  # Field name made lowercase.
 

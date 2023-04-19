@@ -1,18 +1,17 @@
 from rest_framework import serializers
-from .models import Contact, Subject
-
-class ContactSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Contact
-        fields = ['id', 'name', 'surname', 'email']
+from .models import Teacher, Knowledgearea
 
 
-class SubjectSerializer(serializers.Serializer):
-    class Meta:
-        model = Subject
-        fields = ['id', ]
+class KnowledgeAreaSerializer(serializers.Serializer):
+    class  Meta:
+        model = Knowledgearea
+        fields = ['id', 'name']
 
-class Teacher(serializers.Serializer):
+
+
+class TeacherSerializer(serializers.Serializer):
+    knowledgeArea = KnowledgeAreaSerializer()
     class Meta:
         model = Teacher
+        fields = ['name', 'knowledgearea', 'email', 'phonenumber', 'office']
         

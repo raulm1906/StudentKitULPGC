@@ -10,7 +10,7 @@ class Knowledgearea(models.Model):
         db_table = 'KNOWLEDGEAREA'
 
 
-class Teachers(models.Model):
+class Teacher(models.Model):
     name = models.CharField(unique=True, max_length=255)
     knowledgearea = models.ForeignKey(Knowledgearea, models.DO_NOTHING, db_column='KNOWLEDGEAREA', blank=True, null=True)  # Field name made lowercase.
     email = models.CharField(unique=True, max_length=255)
@@ -23,7 +23,7 @@ class Teachers(models.Model):
 
 
 class Teaching(models.Model):
-    teacherid = models.OneToOneField(Teachers, models.DO_NOTHING, db_column='teacherId', primary_key=True)  # Field name made lowercase. The composite primary key (teacherId, subjectCode) found, that is not supported. The first column is selected.
+    teacherid = models.OneToOneField(Teacher, models.DO_NOTHING, db_column='teacherId', primary_key=True)  # Field name made lowercase. The composite primary key (teacherId, subjectCode) found, that is not supported. The first column is selected.
     subjectcode = models.ForeignKey(Subject, models.DO_NOTHING, db_column='subjectCode')  # Field name made lowercase.
 
     class Meta:
