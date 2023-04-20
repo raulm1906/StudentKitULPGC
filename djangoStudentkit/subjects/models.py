@@ -27,8 +27,8 @@ class Subject(models.Model):
     credits = models.PositiveSmallIntegerField()
     year = models.PositiveSmallIntegerField()
     linkpd = models.URLField(max_length=200, blank=True)
-    subject_type = models.CharField(max_length=14)
-    semester = models.CharField(max_length=7)
+    subject_type = models.CharField(max_length=30)
+    semester = models.CharField(max_length=30)
 
 
     class Meta:
