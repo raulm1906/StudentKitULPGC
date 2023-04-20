@@ -7,10 +7,7 @@ class DegreeSerializer(serializers.Serializer):
         model = Degree
         fields = '__all__'
 
-class SubjectSerializer(serializers.Serializer):
-    #code = serializers
-    #departments = serializers.StringRelatedField(many=True)
-    #degree = DegreeSerializer()
+class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subject
         fields = ['asignatura']
