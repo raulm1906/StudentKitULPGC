@@ -10,6 +10,7 @@ class Degree(models.Model):
 
 class Department(models.Model):
     department = models.CharField(unique=True, max_length=255)
+    subjects = models.ManyToManyField('Subject', related_name='departments')
 
     class Meta:
         db_table = 'DEPARTMENT'
@@ -34,3 +35,6 @@ class SubjectDepartment(models.Model):
     class Meta:
         db_table = 'SUBJECTDEPARTMENTS'
         unique_together = (('subjectcode', 'department'),)
+
+class SubjectTeacher(models.Model):
+    pass
