@@ -4,7 +4,7 @@ from rest_framework import routers
 from .views import SubjectViewSet
 
 router = routers.DefaultRouter()
-router.register(r'asignaturas', SubjectViewSet)
+router.register(r'', SubjectViewSet, basename="asignaturas")
 
 urlpatterns = [
     path('', include(router.urls)),
