@@ -3,7 +3,7 @@ from .models import Teacher, Knowledgearea
 
 
 class KnowledgeAreaSerializer(serializers.Serializer):
-    class  Meta:
+    class Meta:
         model = Knowledgearea
         fields = ['id', 'name']
 
