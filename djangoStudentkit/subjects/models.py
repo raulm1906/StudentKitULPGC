@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Degree(models.Model):
@@ -29,8 +30,17 @@ class Subject(models.Model):
     linkpd = models.URLField(max_length=200, blank=True)
     subject_type = models.CharField(max_length=30)
     semester = models.CharField(max_length=30)
+    teachers = models.ManyToManyField('teachers.Teacher', through='SubjectTeacher')
 
 
     class Meta:
         db_table = 'subject'
+
+class SubjectTeacher(models.Model):
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
+    teacher = models.ForeignKey("teachers.Teacher", on_delete=models.CASCADE)
+    group = models.CharField(max_length=255)
+
+    class Meta:
+        db_table = 'subjectTeacher'
 
