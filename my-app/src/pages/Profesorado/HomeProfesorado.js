@@ -1,10 +1,10 @@
 import './HomeProfesorado.css'
-import React, {useState} from 'react'
+import React, {useState,useEffect} from 'react'
 import SearchBar from '../../components/Busqueda/SearchBar';
 import { SearchIcon }  from '@chakra-ui/icons'
 import { HamburgerIcon }  from '@chakra-ui/icons'
 import SearchHomeProfesorado from '../../components/Busqueda/SearchHomeProfesorado'
-import { Box, Checkbox, CheckboxGroup } from '@chakra-ui/react'
+import { Box} from '@chakra-ui/react'
 import {
     Menu,
     MenuButton,
@@ -12,26 +12,44 @@ import {
     MenuItem,
 
   } from '@chakra-ui/react'
-
+import FilterHomeProfesores from './FilterHomeProfesores';
+import profesores from '../../data/profesores.json';
 
 function HomeProfesorado (){
+
+
     const [searchTerm, setSearchTerm] = useState('');
     const [newSubject, setAsignatura] = useState('')
     const [selected, setSelected] = useState("");
+    const [selectedAsignatura, setSelectedAsignatura] = useState([]);
+
+    const handleAsignaturaSelect = (asignatura) => {
+      setSelectedAsignatura(selectedAsignatura => [...selectedAsignatura, asignatura]);
+    };
+    useEffect(() => {
+      // Actualiza el título del documento usando la API del navegador
+      console.log(selectedAsignatura)
+    },[selectedAsignatura]);
 
     const handleItemClick = (item) => {
       setAsignatura(item)
   
   }
-  const handleCheckboxChange = (value) => {
-    setSelected(value);
-    console.log(value)
-  }
+
     const handleChange = event => {
       setSearchTerm(event.target.value);
     }
+
+  function getAsignaturasSinParentesis() {
+    const asignaturasSinParentesis = profesores
+      .map((element) => element.asignaturas)
+      .flat()
+      .filter((asignatura) => !/\(|\)/.test(asignatura))
+      .sort()
+      return [...new Set(asignaturasSinParentesis)];
+  }
   return (
-    
+
     <div id = "HomeAsignatura">
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
@@ -56,10 +74,7 @@ function HomeProfesorado (){
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
             </Box>
             <Box>
-            <CheckboxGroup value={selected}>
-            <Checkbox value="option1" onChange={() => handleCheckboxChange("option1")}>Opción 1</Checkbox>
-            <Checkbox value="option2" onChange={() => handleCheckboxChange("option2")}>Opción 2</Checkbox>
-          </CheckboxGroup>
+              <FilterHomeProfesores  onAsignaturaSelect={handleAsignaturaSelect} asignaturas={getAsignaturasSinParentesis()}></FilterHomeProfesores>
             </Box> 
 
         </Box>
