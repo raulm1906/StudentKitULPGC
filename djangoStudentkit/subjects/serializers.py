@@ -10,8 +10,4 @@ class DegreeSerializer(serializers.Serializer):
 class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subject
-        fields = '__all__'
-'''
-    def create(self, validated_data):
-        return Subject.objects.create(**validated_data)
-'''
+        fields = ['code', 'name', 'degree', 'credits', 'year', 'linkpd', 'subject_type', 'semester']

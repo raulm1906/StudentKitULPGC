@@ -11,12 +11,11 @@ class Knowledgearea(models.Model):
 
 
 class Teacher(models.Model):
-    name = models.CharField(unique=True, max_length=255)
-    knowledgearea = models.ForeignKey(Knowledgearea, models.DO_NOTHING, db_column='KNOWLEDGEAREA', blank=True, null=True)  # Field name made lowercase.
-    email = models.CharField(unique=True, max_length=255)
-    phonenumber = models.CharField(db_column='phoneNumber', unique=True, max_length=255, blank=True, null=True)  # Field name made lowercase.
-    office = models.CharField(max_length=255, blank=True, null=True)
-    schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023, blank=True, null=True)  # Field name made lowercase.
+    name = models.CharField(max_length=255, unique=True, verbose_name='Name')
+    knowledge_area = models.CharField(unique=True, max_length=255, verbose_name='Knowledge Area')
+    email = models.EmailField(max_length=255, unique=True, verbose_name='Email')
+    phone_number = models.CharField(max_length=255, unique=True, null=True, blank=True, verbose_name='Phone Number')
+    office = models.CharField(max_length=255, null=True, blank=True, verbose_name='Office')
 
     class Meta:
         db_table = 'teachers'
@@ -29,4 +28,5 @@ class Teaching(models.Model):
     class Meta:
         db_table = 'TEACHING'
         unique_together = (('teacherid', 'subjectcode'),)
-
+        verbose_name = 'Teacher'
+        verbose_name_plural = 'Teachers'

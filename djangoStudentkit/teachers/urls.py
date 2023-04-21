@@ -1,11 +1,10 @@
 from django.urls import path, include
 from rest_framework import routers
-from .views import KnowledgeAreaViewSet, TeacherViewSet
+from .views import TeacherViewSet
 
 
 
 router = routers.DefaultRouter()
-router.register(r'areas', KnowledgeAreaViewSet)
 router.register(r'teachers', TeacherViewSet)
 
 urlpatterns = [

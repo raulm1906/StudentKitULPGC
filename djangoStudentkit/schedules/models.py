@@ -1,5 +1,4 @@
 from django.db import models
-from subjects.models import Subject
 from users.models import Users
 
 
