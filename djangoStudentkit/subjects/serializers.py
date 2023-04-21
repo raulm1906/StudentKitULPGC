@@ -11,7 +11,7 @@ class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subject
         fields = '__all__'
-
+'''
     def create(self, validated_data):
         return Subject.objects.create(**validated_data)
-
+'''

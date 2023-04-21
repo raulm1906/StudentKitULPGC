@@ -7,7 +7,7 @@ class Knowledgearea(models.Model):
     knowledgearea = models.CharField(db_column='knowledgeArea', unique=True, max_length=255)  # Field name made lowercase.
 
     class Meta:
-        db_table = 'KNOWLEDGEAREA'
+        db_table = 'knowledgearea'
 
 
 class Teacher(models.Model):
@@ -19,7 +19,7 @@ class Teacher(models.Model):
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023, blank=True, null=True)  # Field name made lowercase.
 
     class Meta:
-        db_table = 'TEACHERS'
+        db_table = 'teachers'
 
 
 class Teaching(models.Model):

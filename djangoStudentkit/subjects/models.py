@@ -18,12 +18,13 @@ class Department(models.Model):
 class Subject(models.Model):
     code = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=255)
+    '''
     degree = models.ForeignKey(
         'Degree',
         on_delete=models.DO_NOTHING,
         db_column='degree',
         related_name='subjects'
-    )
+    )'''
     credits = models.PositiveSmallIntegerField()
     year = models.PositiveSmallIntegerField()
     linkpd = models.URLField(max_length=200, blank=True)

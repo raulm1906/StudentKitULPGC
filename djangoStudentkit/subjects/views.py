@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
-from .serializers import SubjectSerializer
-from .models import Subject
+from .serializers import SubjectSerializer, DegreeSerializer
+from .models import Subject, Degree
 
 
 # Create your views here.
@@ -18,3 +18,7 @@ class SubjectViewSet(viewsets.ModelViewSet):
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)'''
+    
+class DegreeViewSet(viewsets.ModelViewSet):
+    queryset = Degree.objects.all()
+    serializer_class = DegreeSerializer
