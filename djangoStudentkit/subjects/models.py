@@ -1,7 +1,16 @@
 from django.db import models
 
 
+DAY_OF_WEEK_CHOICES = (
+    (1, 'Monday'),
+    (2, 'Tuesday'),
+    (3, 'Wednesday'),
+    (4, 'Thursday'),
+    (5, 'Friday'),
+)
+
 # Create your models here.
+
 
 class Degree(models.Model):
     degree = models.CharField(unique=True, max_length=255)
@@ -47,3 +56,17 @@ class SubjectTeacher(models.Model):
 
     class Meta:
         db_table = 'subjectTeacher'
+
+
+class Lesson(models.Model):
+    classroom = models.CharField(max_length=255)
+    group = models.PositiveSmallIntegerField()
+    day = models.IntegerField(choices=DAY_OF_WEEK_CHOICES)
+    start_time = models.TimeField()
+    ending_time = models.TimeField()
+    week = models.CharField(max_length=255)
+    subject = models.ForeignKey(
+        'Subject', on_delete=models.CASCADE, related_name='lessons')
+
+    class Meta:
+        db_table = 'lesson'
