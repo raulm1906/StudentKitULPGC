@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
-from .serializers import SubjectSerializer
-from .models import Subject
+from .serializers import SubjectSerializer, DegreeSerializer
+from .models import Subject, Degree
 
 
 
@@ -10,3 +10,6 @@ class SubjectViewSet(viewsets.ModelViewSet):
     queryset = Subject.objects.all()
     serializer_class = SubjectSerializer
 
+class DegreeViewSet(viewsets.ModelViewSet):
+    queryset = Degree.objects.all()
+    serializer_class = DegreeSerializer
