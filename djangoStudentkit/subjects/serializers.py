@@ -2,11 +2,11 @@ from rest_framework import serializers
 from .models import Subject, Degree
 
 
-class DegreeSerializer(serializers.Serializer):
+class DegreeSerializer(serializers.ModelSerializer):
     # degree = serializers.StringRelatedField()
     class Meta:
         model = Degree
-        fields = '__all__'
+        fields = ['degree']
 
 
 class SubjectSerializer(serializers.ModelSerializer):
