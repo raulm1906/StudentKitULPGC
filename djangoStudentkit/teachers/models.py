@@ -3,30 +3,60 @@ from subjects.models import Subject
 
 # Create your models here.
 
-class Knowledgearea(models.Model):
-    knowledgearea = models.CharField(db_column='knowledgeArea', unique=True, max_length=255)  # Field name made lowercase.
+
+DAY_OF_WEEK_CHOICES = (
+    (1, 'Monday'),
+    (2, 'Tuesday'),
+    (3, 'Wednesday'),
+    (4, 'Thursday'),
+    (5, 'Friday'),
+)
+
+
+class KnowledgeArea(models.Model):
+    # Field name made lowercase.
+    knowledge_area = models.CharField(unique=True, max_length=255)
 
     class Meta:
-        db_table = 'knowledgearea'
+        db_table = 'knowledge_area'
+
+
+class tutoringHour(models.Model):
+    semester = models.CharField(max_length=30)
+    day = models.IntegerField(choices=DAY_OF_WEEK_CHOICES)
+    start_time = models.TimeField()
+    ending_time = models.TimeField()
+    teacher = models.ForeignKey(
+        'Teacher', on_delete=models.CASCADE, related_name='tutoring_hours')
+
+    class Meta:
+        db_table = 'tutoring_hour'
 
 
 class Teacher(models.Model):
-    name = models.CharField(max_length=255, unique=True, verbose_name='Name')
-    knowledge_area = models.CharField(unique=True, max_length=255, verbose_name='Knowledge Area')
-    email = models.EmailField(max_length=255, unique=True, verbose_name='Email')
-    phone_number = models.CharField(max_length=255, unique=True, null=True, blank=True, verbose_name='Phone Number')
-    office = models.CharField(max_length=255, null=True, blank=True, verbose_name='Office')
+    name = models.CharField(max_length=255, unique=True)
+    knowledge_area = models.ForeignKey(
+        'KnowledgeArea',
+        on_delete=models.DO_NOTHING,
+        db_column='knowledge_area',
+        related_name='teachers'
+    )
+    email = models.EmailField(max_length=255, unique=True)
+    phone_number = models.CharField(
+        max_length=255, unique=True, null=True)
+    office = models.CharField(max_length=255, null=True)
 
     class Meta:
-        db_table = 'teachers'
+        db_table = 'teacher'
 
 
 class Teaching(models.Model):
-    teacherid = models.OneToOneField(Teacher, models.DO_NOTHING, db_column='teacherId', primary_key=True)  # Field name made lowercase. The composite primary key (teacherId, subjectCode) found, that is not supported. The first column is selected.
-    subjectcode = models.ForeignKey(Subject, models.DO_NOTHING, db_column='subjectCode')  # Field name made lowercase.
+    # Field name made lowercase. The composite primary key (teacherId, subjectCode) found, that is not supported. The first column is selected.
+    teacherid = models.OneToOneField(
+        Teacher, models.DO_NOTHING, db_column='teacherId', primary_key=True)
+    # Field name made lowercase.
+    subjectcode = models.ForeignKey(
+        Subject, models.DO_NOTHING, db_column='subjectCode')
 
     class Meta:
-        db_table = 'TEACHING'
-        unique_together = (('teacherid', 'subjectcode'),)
-        verbose_name = 'Teacher'
-        verbose_name_plural = 'Teachers'
+        db_table = 'teaching'

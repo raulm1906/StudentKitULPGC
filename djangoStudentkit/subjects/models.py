@@ -30,7 +30,6 @@ class Department(models.Model):
 class Subject(models.Model):
     code = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=255)
-
     degree = models.ForeignKey(
         'Degree',
         on_delete=models.DO_NOTHING,
