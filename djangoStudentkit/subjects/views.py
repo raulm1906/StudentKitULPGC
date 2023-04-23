@@ -2,22 +2,25 @@ import statistics
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
-from .serializers import SubjectSerializer, DegreeSerializer
-from .models import Subject, Degree
+from .serializers import LessonSerializer, SubjectSerializer, DegreeSerializer, SubjectTeacherSerializer
+from .models import Lesson, Subject, Degree, SubjectTeacher
 
-
-# Create your views here.
 
 class SubjectViewSet(viewsets.ModelViewSet):
     queryset = Subject.objects.all()
     serializer_class = SubjectSerializer
 
+
 class DegreeViewSet(viewsets.ModelViewSet):
     queryset = Degree.objects.all()
     serializer_class = DegreeSerializer
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        degree = serializer.save()
-        headers = self.get_success_headers(serializer.data)
-        return Response(self.get_serializer(degree).data, status=statistics.HTTP_201_CREATED, headers=headers)
+
+
+class SubjectTeacherViewSet(viewsets.ModelViewSet):
+    queryset = SubjectTeacher.objects.all()
+    serializer_class = SubjectTeacherSerializer
+
+
+class LessonViewSet(viewsets.ModelViewSet):
+    queryset = Lesson.objects.all()
+    serializer_class = LessonSerializer
