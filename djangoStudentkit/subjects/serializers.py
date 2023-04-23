@@ -10,4 +10,4 @@ class DegreeSerializer(serializers.Serializer):
 class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subject
-        fields = ['code', 'name', 'degree', 'credits', 'year', 'linkpd', 'subject_type', 'semester']
+        fields = '__all__'

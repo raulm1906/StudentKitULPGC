@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Teacher
+from .models import Teacher, Knowledgearea
 
 
 
@@ -8,7 +8,12 @@ from .models import Teacher
 class TeacherSerializer(serializers.Serializer):
     class Meta:
         model = Teacher
-        fields = ['name', 'knowledgearea', 'email', 'phonenumber', 'office']
+        fields = '__all__'
+
+class KnowledgeAreaSerializer(serializers.Serializer):
+    class Meta:
+        model = Knowledgearea
+        fields = '__all__'
 
 
         
