@@ -14,6 +14,8 @@ import {
   } from '@chakra-ui/react'
 import FilterHomeProfesores from './FilterHomeProfesores';
 import profesores from '../../data/profesores.json';
+import i18n from 'i18next';
+import { useTranslation, initReactI18next } from 'react-i18next';
 
 function HomeProfesorado (){
 
