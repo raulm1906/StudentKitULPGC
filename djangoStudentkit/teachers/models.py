@@ -48,15 +48,3 @@ class Teacher(models.Model):
 
     class Meta:
         db_table = 'teacher'
-
-
-class Teaching(models.Model):
-    # Field name made lowercase. The composite primary key (teacherId, subjectCode) found, that is not supported. The first column is selected.
-    teacherid = models.OneToOneField(
-        Teacher, models.DO_NOTHING, db_column='teacherId', primary_key=True)
-    # Field name made lowercase.
-    subjectcode = models.ForeignKey(
-        Subject, models.DO_NOTHING, db_column='subjectCode')
-
-    class Meta:
-        db_table = 'teaching'

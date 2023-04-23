@@ -1,6 +1,5 @@
 from django.db import models
 
-
 DAY_OF_WEEK_CHOICES = (
     (1, 'Monday'),
     (2, 'Tuesday'),
@@ -19,17 +18,10 @@ class Degree(models.Model):
         db_table = 'degree'
 
 
-class Department(models.Model):
-    department = models.CharField(unique=True, max_length=255)
-    subjects = models.ManyToManyField('Subject', related_name='departments')
-
-    class Meta:
-        db_table = 'department'
-
-
 class Subject(models.Model):
     code = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=255)
+    department = models.CharField(max_length=255)
     degree = models.ForeignKey(
         'Degree',
         on_delete=models.DO_NOTHING,
@@ -49,12 +41,14 @@ class Subject(models.Model):
 
 
 class SubjectTeacher(models.Model):
-    subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
-    teacher = models.ForeignKey("teachers.Teacher", on_delete=models.CASCADE)
+    subject = models.ForeignKey(
+        'Subject', on_delete=models.CASCADE, related_name='teachers_in_subject')
+    teacher = models.ForeignKey(
+        'teachers.Teacher', on_delete=models.CASCADE, related_name='subjects_of_teacher')
     group = models.CharField(max_length=255)
 
     class Meta:
-        db_table = 'subjectTeacher'
+        db_table = 'subject_teacher'
 
 
 class Lesson(models.Model):
