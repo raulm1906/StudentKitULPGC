@@ -11,17 +11,7 @@ function Profesorado() {
     const { id } = useParams();
     const [newTeacher, setnewTeacher] = useState({})
     const [searchTerm, setSearchTerm] = useState('');
-
-    const renderAsignaturas = () => {
-        return (
-            <div style={{ display: '', }}>
-                {newTeacher.asignaturas.map((asignatura) => (
-                    <div key={newTeacher.id}>{asignatura}</div>
-                ))}
-            </div>
-        );
-    };
-
+    
     useEffect(() => {
         setnewTeacher(profesores.find(profesor => profesor.id == id));
     }, [id])
@@ -49,7 +39,7 @@ function Profesorado() {
 
                     <GridItem w='100%' h='10'><b>Departamento: </b>{newTeacher.profesorado.despacho}</GridItem>
 
-                    <GridItem w='100%' h='10'><b>Teléfono: </b>{newTeacher.profesorado.telfono}</GridItem>
+                    <GridItem w='100%' h='10'><b>Teléfono: </b>{newTeacher.profesorado.teléfono}</GridItem>
 
                     <GridItem w='100%' h='10'> <b>Área de conocimiento: </b>{newTeacher.profesorado.area_de_conocimiento}</GridItem>
                 </Grid>

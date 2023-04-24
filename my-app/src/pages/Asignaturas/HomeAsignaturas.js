@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './HomeAsignatura.css'
 import SearchBar from '../../components/Busqueda/SearchBar';
 import { SearchIcon }  from '@chakra-ui/icons'
-import { ChevronDownIcon, HamburgerIcon }  from '@chakra-ui/icons'
+import {HamburgerIcon }  from '@chakra-ui/icons'
 import SearchHomeAsignatura from '../../components/Busqueda/SearchHomeAsignatura'
 
 import {
@@ -10,16 +10,13 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
+    Box
   } from '@chakra-ui/react'
 
 export default function HomeAsignaturas() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [Button, setButton] = useState('');
-  const [newSubject, setAsignatura] = useState('')
+  const [Button, ] = useState('');
+  const [, setAsignatura] = useState('')
 
   const handleItemClick = (item) => {
     setAsignatura(item)
@@ -47,12 +44,15 @@ export default function HomeAsignaturas() {
                 <SearchHomeAsignatura searchTerm={searchTerm} onItemClick={handleItemClick}></SearchHomeAsignatura>
             </div>
         </section>
-        <div id="FilterHomeAsignatura">
-            <header className='d-flex justify-content-between m-3' >
+        <Box p={2} m={2} w='25%' borderRadius={"10px"} direction={['column', 'row']} background='#EDECEC'>
+        <Box className='d-flex justify-content-between m-2' >
             <h2>Filtros</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
-            </header>
-        </div>
+            </Box>
+            <Box>
+              
+            </Box> 
+        </Box>
     </div>
   )
 }
