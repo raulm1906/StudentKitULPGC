@@ -47,7 +47,7 @@ function Asignatura (){
         <div className="d-flex "  style={{ gridColumn: 'span 3' }}>
             <section className="d-flex scroll-box">
                 <h2 id="titlePage" type="text" name="nombre_asignatura"><b> {newSubject.asignatura}</b></h2>
-                <Grid templateColumns='repeat(3, 1fr)' gap={2}>
+                <Grid templateColumns='repeat(3, 1fr)' gap={2} border={"0px"}>
                     <GridItem w='100%' h='10'><b>Tipo: </b>{newSubject.tipo}</GridItem>
 
                     <GridItem w='100%' h='10'><b>Titulacion: </b>{newSubject.titulacion}</GridItem>

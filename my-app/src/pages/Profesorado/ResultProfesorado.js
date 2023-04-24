@@ -61,7 +61,9 @@ function Profesorado (){
                 <div className='flex-wrap'>
                 <b>Asignaturas:</b>
                 <br></br>
-                {newTeacher.asignaturas}
+                {newTeacher.asignaturas.map((asignatura, index) => (
+                        <li key={index}>{asignatura}</li>
+                    ))}
                 </div>
             </section>
             <section className="search_asignaturas">
