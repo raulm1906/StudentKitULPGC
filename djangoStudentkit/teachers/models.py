@@ -3,16 +3,6 @@ from subjects.models import Subject
 
 # Create your models here.
 
-
-DAY_OF_WEEK_CHOICES = (
-    (1, 'Monday'),
-    (2, 'Tuesday'),
-    (3, 'Wednesday'),
-    (4, 'Thursday'),
-    (5, 'Friday'),
-)
-
-
 class KnowledgeArea(models.Model):
     # Field name made lowercase.
     knowledge_area = models.CharField(unique=True, max_length=255)
@@ -23,7 +13,7 @@ class KnowledgeArea(models.Model):
 
 class tutoringHour(models.Model):
     semester = models.CharField(max_length=30)
-    day = models.IntegerField(choices=DAY_OF_WEEK_CHOICES)
+    day = models.CharField(max_length=30)
     start_time = models.TimeField()
     ending_time = models.TimeField()
     teacher = models.ForeignKey(
