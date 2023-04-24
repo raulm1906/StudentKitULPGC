@@ -1,5 +1,4 @@
 import { Navbar, Nav} from 'react-bootstrap';
-import {Link} from 'react-router-dom'
 import { NavLink } from 'react-router-dom';
 import { BiConversation } from 'react-icons/bi';
 import "../components/style.css"
@@ -15,10 +14,10 @@ const Header = () => {
           <NavLink to="/horario" style={{ fontWeight: "bold", color: "white" }}>
             Horarios
           </NavLink>
-          <NavLink to="/Profesorado" style={{ fontWeight: "bold", color: "white" }}>
+          <NavLink to="/HomeProfesorado" style={{ fontWeight: "bold", color: "white" }}>
             Profesores
           </NavLink>
-          <NavLink to="/Asignatura" style={{ fontWeight: "bold", color: "white" }}>
+          <NavLink to="/HomeAsignatura" style={{ fontWeight: "bold", color: "white" }}>
             Asignaturas
           </NavLink>
         </Nav>
