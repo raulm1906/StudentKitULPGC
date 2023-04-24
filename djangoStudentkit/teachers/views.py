@@ -11,11 +11,8 @@ class TeacherViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         id = self.request.query_params.get('id')
-        semester = self.request.query_params.get('semester')
         if id is not None:
             queryset = Teacher.objects.filter(id=id)
-            if semester is not None:
-                queryset = queryset.filter(tutoring_hours__semester=semester)
             return queryset
         else:
             return Teacher.objects.all()
