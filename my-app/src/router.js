@@ -8,7 +8,8 @@ import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
 import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
-
+import RegisterHome from './pages/Register/RegisterHome';
+import LoginForm from "./pages/Login/LoginForm";
 
 export const router = createBrowserRouter(
   [
@@ -26,6 +27,14 @@ export const router = createBrowserRouter(
               element: <PageHorario />
             }
           ]
+        },
+        {
+          path: "/Login",
+          element: <LoginForm />
+        },
+        {
+          path: "/Register",
+          element: <RegisterHome />
         },
         {
           path: "/HomeAsignatura",

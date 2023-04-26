@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input } from "@chakra-ui/react";
 import { Button, Center } from "@chakra-ui/react";
 
-import './forms.css'
 
 function RegisterForm() {
     const [usuarioInput, setUsuarioInput] = useState('');
@@ -22,7 +21,7 @@ function RegisterForm() {
     const isEmailError = emailInput === '';
   
     return (
-    <Center>
+    <Center width={"50%"}>
       <div className="form">
         <h1>Crea una cuenta</h1>
         <FormControl>
