@@ -8,21 +8,23 @@ import {
     Th,
     Td,
   } from '@chakra-ui/react'
+  import { useTranslation } from 'react-i18next';
 
 function TableProf({tutorias}){
+    const [t, i18n] = useTranslation('common');
     return (
         
         <ChakraProvider>
-        <h2> Primer Semestre</h2>
+        <h2>{t('tablaProfesorado.1')}</h2>
 
         <Table variant="simple"  size="md">
             <Thead>
                 <Tr borderWidth={"0px"}>
-                    <Th border= {"0px"} borderRight={"2px"} borderRadius borderRightColor="white" textAlign >Lunes</Th>
-                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >Martes</Th>
-                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >Miércoles</Th>
-                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >Jueves</Th>
-                    <Th border={"0px"} textAlign>Viernes</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRadius borderRightColor="white" textAlign >{t('Day.Monday')}</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >{t('Day.Tuesday')}</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >{t('Day.Wednesday')}</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >{t('Day.Thursday')}</Th>
+                    <Th border={"0px"} textAlign>{t('Day.Friday')}</Th>
                 </Tr>    
             </Thead>
             <Tbody>
@@ -35,15 +37,15 @@ function TableProf({tutorias}){
                 </Tr>
             </Tbody>
         </Table>
-        <h2 className="m-10"> Segundo Semestres </h2>
+        <h2 className="m-10">{t('tablaProfesorado.2')}</h2>
         <Table variant="simple"  size="md">
             <Thead>
                 <Tr borderWidth={"0px"}>
-                    <Th border= {"0px"} borderRight={"2px"} borderRadius borderRightColor="white" textAlign >Lunes</Th>
-                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >Martes</Th>
-                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >Miércoles</Th>
-                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >Jueves</Th>
-                    <Th border={"0px"} textAlign>Viernes</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRadius borderRightColor="white" textAlign >{t('Day.Monday')}</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >{t('Day.Tuesday')}</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >{t('Day.Wednesday')}</Th>
+                    <Th border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign >{t('Day.Thursday')}</Th>
+                    <Th border={"0px"} textAlign>{t('Day.Friday')}</Th>
                 </Tr>    
             </Thead>
             <Tbody>

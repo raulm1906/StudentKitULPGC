@@ -5,6 +5,8 @@ import { SearchIcon }  from '@chakra-ui/icons'
 import {HamburgerIcon }  from '@chakra-ui/icons'
 import SearchHomeAsignatura from '../../components/Busqueda/SearchHomeAsignatura'
 
+import {useTranslation} from "react-i18next";
+
 import {
     Menu,
     MenuButton,
@@ -15,9 +17,10 @@ import {
 
 export default function HomeAsignaturas() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [Button, ] = useState('');
-  const [, setAsignatura] = useState('')
-
+  const [Button, setButton] = useState('');
+  const [newSubject, setAsignatura] = useState('')
+  const [t, i18n] = useTranslation('common');
+  
   const handleItemClick = (item) => {
     setAsignatura(item)
 
@@ -29,13 +32,13 @@ export default function HomeAsignaturas() {
     <div id = "HomeAsignatura">
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
-                <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={"buscar..."}></SearchBar ></div>
+            <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
                 <div id ="OrderBy"><Menu>
                     <MenuButton as={Button} >
-                        Ordenador por:
+                    {t('profesorado.ordenar')}
                     </MenuButton>
                     <MenuList>
-                        <MenuItem>Item de Ordenación</MenuItem>
+                        <MenuItem>{t('profesorado.itemOrder')}</MenuItem>
                         <MenuItem>....</MenuItem>
                     </MenuList>
                     </Menu></div>

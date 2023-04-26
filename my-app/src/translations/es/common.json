@@ -1,0 +1,63 @@
+{
+    "general": {
+        "placeholderBuscar": "Buscar..."
+    },
+    "footer": {
+        "eiiStudent": "Estudiante EII",
+        "aboutUs": "Sobre Nosotros",
+        "terms": "Términos",
+        "contact": "Contacto"
+    }, 
+    "header": {
+        "horarios": "Horarios",
+        "profesorado": "Profesorado",
+        "asignaturas": "Asignaturas"
+    },
+    "profesorado": {
+        "ordenar": "Ordenar Por",
+        "itemorder": "Item de Ordenación",
+        "filters": "Filters"
+    },
+    "SearchHomeProfesorado": {
+        "correo": "Correo",
+        "despacho": "Despacho"
+    },
+    "HomeAsignatura": {
+        "coordinador": "Coordinador",
+        "curso": "Curso"
+    },
+    "ResultProfesorado": {
+        "email": "Correo",
+        "departamento": "Deparmento",
+        "phone": "Teléfono",
+        "conocimiento": "Área de conocimiento",
+        "horasTutorias": "Horas de Tutorías",
+        "asignaturas": "Asignaturas",
+        "buscar": "Buscar",
+        "profesores": "Profesores"
+    },
+    "ResultAsignaturas": {
+        "tipo": "tipo",
+        "title": "Título",
+        "departamento": "Deparmento",
+        "duracion": "Duración",
+        "creditos": "Créditos",
+        "year": "Año",
+        "profesorado": "Profesorado",
+        "docente": "Proyecto Docente de la Asignatura",
+        "subjects": "Asignaturas"
+    },
+    "Day": {
+        "Monday": "Lunes",
+        "Tuesday": "Martes",
+        "Wednesday": "Miércoles",
+        "Thursday": "Jueves",
+        "Friday": "Viernes",
+        "Schedule": "Mañana/Tarde" 
+    },
+    "tablaProfesorado": {
+        "1": "Primer Semestre",
+        "2": "Segundo Semestre"
+    }
+
+}
