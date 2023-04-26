@@ -1,5 +1,4 @@
 import React,{useState} from "react";
-import { Checkbox, CheckboxGroup } from "@chakra-ui/react";
 import {
   Menu,
   MenuButton,
@@ -35,7 +34,7 @@ function FilterHomeProfesores({ asignaturas, onAsignaturaSelect}) {
 
 
 
-  return <Menu closeOnSelect={false}>
+  return <Menu closeOnSelect={false} >
   <MenuButton as={Button}>
   {t('ResultAsignaturas.subjects')} <ChevronDownIcon></ChevronDownIcon>
   </MenuButton>

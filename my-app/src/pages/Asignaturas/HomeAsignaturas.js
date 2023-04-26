@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './HomeAsignatura.css'
 import SearchBar from '../../components/Busqueda/SearchBar';
 import { SearchIcon }  from '@chakra-ui/icons'
-import { ChevronDownIcon, HamburgerIcon }  from '@chakra-ui/icons'
+import {HamburgerIcon }  from '@chakra-ui/icons'
 import SearchHomeAsignatura from '../../components/Busqueda/SearchHomeAsignatura'
 
 import {useTranslation} from "react-i18next";
@@ -12,6 +12,7 @@ import {
     MenuButton,
     MenuList,
     MenuItem,
+    Box
   } from '@chakra-ui/react'
 
 export default function HomeAsignaturas() {
@@ -46,12 +47,15 @@ export default function HomeAsignaturas() {
                 <SearchHomeAsignatura searchTerm={searchTerm} onItemClick={handleItemClick}></SearchHomeAsignatura>
             </div>
         </section>
-        <div id="FilterHomeAsignatura">
-            <header className='d-flex justify-content-between m-3' >
-            <h2>{t('profesorado.filters')}</h2>
+        <Box p={2} m={2} w='25%' borderRadius={"10px"} direction={['column', 'row']} background='#EDECEC'>
+        <Box className='d-flex justify-content-between m-2' >
+            <h2>Filtros</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
-            </header>
-        </div>
+            </Box>
+            <Box>
+              
+            </Box> 
+        </Box>
     </div>
   )
 }

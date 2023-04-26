@@ -20,7 +20,7 @@ const SearchHomeAsignatura = ({ searchTerm, onItemClick }) => {
         >
           <div className="hover">
             <h2 onClick={() => onItemClick(item)} id="titleItemBusqueda">{item.asignatura}</h2>
-            <p>{t('profesorado.ordenar')}</p>
+            <p>{t('HomeAsignatura.coordinador')}</p>
             <p>{t('HomeAsignatura.curso')}:{item.duracion}</p>
             <hr />
           </div>

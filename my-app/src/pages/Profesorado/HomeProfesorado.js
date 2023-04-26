@@ -20,17 +20,19 @@ function HomeProfesorado () {
 
     const [t, i18n] = useTranslation('common');
     const [searchTerm, setSearchTerm] = useState('');
-    const [newSubject, setAsignatura] = useState('')
-    const [selected, setSelected] = useState("");
+    const [, setAsignatura] = useState('')
     const [selectedAsignatura, setSelectedAsignatura] = useState([]);
 
     const handleAsignaturaSelect = (asignatura) => {
       setSelectedAsignatura(selectedAsignatura => [...selectedAsignatura, asignatura]);
     };
+
+
     useEffect(() => {
       // Actualiza el título del documento usando la API del navegador
       console.log(selectedAsignatura)
     },[selectedAsignatura]);
+
 
     const handleItemClick = (item) => {
       setAsignatura(item)
@@ -50,8 +52,9 @@ function HomeProfesorado () {
       return [...new Set(asignaturasSinParentesis)];
   }
   return (
-
+    
     <div id = "HomeAsignatura">
+
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
                 <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
@@ -69,7 +72,7 @@ function HomeProfesorado () {
                 <SearchHomeProfesorado searchTerm={searchTerm} onItemClick={handleItemClick}></SearchHomeProfesorado>
             </div>
         </section>
-        <Box p={2} m={2} w='25%' direction={['column', 'row']} background='#EDECEC'>
+        <Box p={2} m={2} w='25%' borderRadius={"10px"} direction={['column', 'row']} background='#EDECEC'>
             <Box className='d-flex justify-content-between m-2' >
             <h2>{t('profesorado.filters')}</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
