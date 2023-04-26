@@ -5,22 +5,21 @@ import { SearchIcon }  from '@chakra-ui/icons'
 import { ChevronDownIcon, HamburgerIcon }  from '@chakra-ui/icons'
 import SearchHomeAsignatura from '../../components/Busqueda/SearchHomeAsignatura'
 
+import {useTranslation} from "react-i18next";
+
 import {
     Menu,
     MenuButton,
     MenuList,
     MenuItem,
-    MenuItemOption,
-    MenuGroup,
-    MenuOptionGroup,
-    MenuDivider,
   } from '@chakra-ui/react'
 
 export default function HomeAsignaturas() {
   const [searchTerm, setSearchTerm] = useState('');
   const [Button, setButton] = useState('');
   const [newSubject, setAsignatura] = useState('')
-
+  const [t, i18n] = useTranslation('common');
+  
   const handleItemClick = (item) => {
     setAsignatura(item)
 
@@ -32,13 +31,13 @@ export default function HomeAsignaturas() {
     <div id = "HomeAsignatura">
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
-                <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={"buscar..."}></SearchBar ></div>
+            <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
                 <div id ="OrderBy"><Menu>
                     <MenuButton as={Button} >
-                        Ordenador por:
+                    {t('profesorado.ordenar')}
                     </MenuButton>
                     <MenuList>
-                        <MenuItem>Item de Ordenación</MenuItem>
+                        <MenuItem>{t('profesorado.itemOrder')}</MenuItem>
                         <MenuItem>....</MenuItem>
                     </MenuList>
                     </Menu></div>
@@ -49,7 +48,7 @@ export default function HomeAsignaturas() {
         </section>
         <div id="FilterHomeAsignatura">
             <header className='d-flex justify-content-between m-3' >
-            <h2>Filtros</h2>
+            <h2>{t('profesorado.filters')}</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
             </header>
         </div>

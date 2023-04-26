@@ -9,9 +9,11 @@ import {
     Th,
     Td,
   } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next';
 
 
 function TimeTable({horas}){
+  const [t, i18n] = useTranslation('common');
 
   const initialDayState = {
     "8:30": "",
@@ -87,12 +89,12 @@ function TimeTable({horas}){
       <Table variant="simple"  size="md" textAlign={"center"} borderRadius="md" border="1px solid"> 
           <Thead>
               <Tr alignContent={"center"} border="1px solid">
-                  <Th border="1px solid" >Mañana/Tarde</Th>
-                  <Th border="1px solid">Lunes</Th>
-                  <Th border="1px solid">Martes</Th>    
-                  <Th border="1px solid">Miercoles</Th>    
-                  <Th border="1px solid">Jueves</Th>    
-                  <Th border="1px solid">Viernes</Th>
+                  <Th border="1px solid" >{t('Day.Schedule')}</Th>
+                  <Th border="1px solid">{t('Day.Monday')}</Th>
+                  <Th border="1px solid">{t('Day.Tuesday')}</Th>    
+                  <Th border="1px solid">{t('Day.Wednesday')}</Th>    
+                  <Th border="1px solid">{t('Day.Thursday')}</Th>    
+                  <Th border="1px solid">{t('Day.Friday')}</Th>
               </Tr>    
           </Thead>
           <Tbody>

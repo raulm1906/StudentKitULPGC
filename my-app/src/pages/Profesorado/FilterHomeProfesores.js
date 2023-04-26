@@ -9,8 +9,11 @@ import {
   Button,
 } from '@chakra-ui/react'
 import { ChevronDownIcon } from '@chakra-ui/icons'
+import {useTranslation} from "react-i18next";
+
 function FilterHomeProfesores({ asignaturas, onAsignaturaSelect}) {
   const [selectedAsignaturas, setSelectedAsignaturas] = useState([]);
+  const [t, i18n] = useTranslation('common');
 
   const checkboxes = asignaturas.map((string) => (
     <MenuItemOption
@@ -34,10 +37,10 @@ function FilterHomeProfesores({ asignaturas, onAsignaturaSelect}) {
 
   return <Menu closeOnSelect={false}>
   <MenuButton as={Button}>
-    Asignaturas <ChevronDownIcon></ChevronDownIcon>
+  {t('ResultAsignaturas.subjects')} <ChevronDownIcon></ChevronDownIcon>
   </MenuButton>
   <MenuList minWidth="240px" maxHeight="20rem" overflowY="scroll">
-    <MenuOptionGroup title="Country" type="checkbox">
+    <MenuOptionGroup title="" type="checkbox">
       {checkboxes}
     </MenuOptionGroup>
   </MenuList>

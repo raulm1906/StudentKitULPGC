@@ -14,12 +14,11 @@ import {
   } from '@chakra-ui/react'
 import FilterHomeProfesores from './FilterHomeProfesores';
 import profesores from '../../data/profesores.json';
-import i18n from 'i18next';
-import { useTranslation, initReactI18next } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
-function HomeProfesorado (){
+function HomeProfesorado () {
 
-
+    const [t, i18n] = useTranslation('common');
     const [searchTerm, setSearchTerm] = useState('');
     const [newSubject, setAsignatura] = useState('')
     const [selected, setSelected] = useState("");
@@ -55,13 +54,13 @@ function HomeProfesorado (){
     <div id = "HomeAsignatura">
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
-                <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={"buscar..."}></SearchBar ></div>
+                <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
                 <div id ="OrderBy"><Menu>
                     <MenuButton>
-                        Ordenador por:
+                    {t('profesorado.ordenar')}
                     </MenuButton>
                     <MenuList>
-                        <MenuItem>Item de Ordenación</MenuItem>
+                        <MenuItem>{t('profesorado.itemOrder')}</MenuItem>
                         <MenuItem>....</MenuItem>
                     </MenuList>
                     </Menu></div>
@@ -72,7 +71,7 @@ function HomeProfesorado (){
         </section>
         <Box p={2} m={2} w='25%' direction={['column', 'row']} background='#EDECEC'>
             <Box className='d-flex justify-content-between m-2' >
-            <h2>Filtros</h2>
+            <h2>{t('profesorado.filters')}</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
             </Box>
             <Box>

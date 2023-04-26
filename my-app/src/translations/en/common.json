@@ -1,0 +1,62 @@
+{
+    "general": {
+        "placeholderBuscar": "Search..."
+    },
+    "footer": {
+        "eiiStudent": "EII Student",
+        "aboutUs": "About Us",
+        "terms": "Terms",
+        "contact": "Contact"
+    }, 
+    "header": {
+        "horarios": "Schedules",
+        "profesorado": "Faculty",
+        "asignaturas": "Subjects"
+    }, 
+    "profesorado": {
+        "ordenar": "Sort By",
+        "itemOrder": "Item Order",
+        "filters": "Filters"
+    },
+    "SearchHomeProfesorado": {
+        "correo": "Email",
+        "despacho": "Office"
+    },
+    "HomeAsignatura": {
+        "coordinador": "Coordinator",
+        "curso": "Course"
+    },
+    "ResultProfesorado": {
+        "email": "Email",
+        "departamento": "Deparment",
+        "phone": "Phone Number",
+        "conocimiento": "Knowledge area",
+        "horasTutorias": "Tutorial Hours",
+        "asignaturas": "Subjects",
+        "buscar": "Search",
+        "profesores": "Teachers"
+    },
+    "ResultAsignaturas": {
+        "tipo": "Type",
+        "title": "Title",
+        "departamento": "Deparment",
+        "duracion": "Duration",
+        "creditos": "Credits",
+        "year": "Year",
+        "profesorado": "Teachers",
+        "docente": "Subject Teaching Project",
+        "subjects": "Subjects"
+    },
+    "Day": {
+        "Monday": "Monday",
+        "Tuesday": "Tuesday",
+        "Wednesday": "Wednesday",
+        "Thursday": "Thursday",
+        "Friday": "Friday"   ,
+        "Schedule": "Morning/Evening" 
+    },
+    "tablaProfesorado": {
+        "1": "First Semestre",
+        "2": "Second Semestre"
+    }
+}
