@@ -9,9 +9,8 @@ import asignaturas from '../../data/subjects.json';
 import { Link } from '@chakra-ui/react';
 import { Grid, GridItem } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
+import { ExternalLinkIcon,Search2Icon } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
-
 function Asignatura (){  
     const {id} = useParams();
     const [newSubject, setAsignatura] = useState({})
@@ -76,8 +75,8 @@ function Asignatura (){
             </section>
 
             <section className="search_asignaturas ">
-                <div className="nav_search">
-                    <button type = "submit" className="border-0 material-icons"></button>
+                <div className="d-flex nav_search">
+                    <Search2Icon margin={"5"}></Search2Icon>
                     <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('ResultAsignaturas.subjects')}/>
                 </div>
                 <Search searchTerm={searchTerm} onItemClick={handleItemClick}/>

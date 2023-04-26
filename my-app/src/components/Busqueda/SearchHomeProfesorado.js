@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import {useTranslation} from "react-i18next";
 
-const SearchHomeProfesorado = ({ searchTerm, onItemClick }) => {
+const SearchHomeProfesorado = ({ searchTerm }) => {
   const filteredData = data.filter(item => item.profesorado.profesor.toLowerCase().includes(searchTerm?.toLowerCase()));
   const [t, i18n] = useTranslation('common');
 
@@ -20,7 +20,7 @@ const SearchHomeProfesorado = ({ searchTerm, onItemClick }) => {
           key={item.id}
         >
           <div className="hover">
-            <h2 onClick={() => onItemClick(item)} id="titleItemBusqueda">{item.profesorado.profesor}</h2>
+            <h2 id="titleItemBusqueda">{item.profesorado.profesor}</h2>
             <p>{t('SearchHomeProfesorado.correo')}: {item.profesorado.email}</p>
             <p>{t('SearchHomeProfesorado.despacho')}: {item.profesorado.despacho.toUpperCase()}</p>
             <hr />

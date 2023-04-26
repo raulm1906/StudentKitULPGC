@@ -7,6 +7,8 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 import profesores from '../../data/profesores.json';
 import { useTranslation } from 'react-i18next';
+import {Search2Icon} from '@chakra-ui/icons'
+import axios from 'axios';
 
 function Profesorado() {
     const { id } = useParams();
@@ -14,21 +16,11 @@ function Profesorado() {
     const [searchTerm, setSearchTerm] = useState('');
     const [t, i18n] = useTranslation('common');
 
-    const renderAsignaturas = () => {
-        return (
-            <div style={{ display: '', }}>
-                {newTeacher.asignaturas.map((asignatura) => (
-                    <div key={newTeacher.id}>{asignatura}</div>
-                ))}
-            </div>
-        );
-    };
-
     useEffect(() => {
         setnewTeacher(profesores.find(profesor => profesor.id == id));
     }, [id])
 
-
+ 
     const handleItemClick = (item) => {
         setnewTeacher(item)
     }
@@ -71,8 +63,8 @@ function Profesorado() {
                 
             </section>
             <section className="search_asignaturas">
-                <div className="nav_search">
-                    <button type="submit" className="material-icons"></button>
+                <div className="d-flex nav_search">
+                    <Search2Icon margin={"5"}></Search2Icon>
                     <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('ResultProfesorado.profesores')} />
                 </div>
                 <SearchProfesores searchTerm={searchTerm} onItemClick={handleItemClick} />

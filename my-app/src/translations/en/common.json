@@ -24,7 +24,9 @@
     },
     "HomeAsignatura": {
         "coordinador": "Coordinator",
-        "curso": "Course"
+        "curso": "Course",
+        "filters": "Filters"
+
     },
     "ResultProfesorado": {
         "email": "Email",

@@ -18,13 +18,9 @@ import {
 export default function HomeAsignaturas() {
   const [searchTerm, setSearchTerm] = useState('');
   const [Button, setButton] = useState('');
-  const [newSubject, setAsignatura] = useState('')
   const [t, i18n] = useTranslation('common');
   
-  const handleItemClick = (item) => {
-    setAsignatura(item)
 
-}
   const handleChange = event => {
     setSearchTerm(event.target.value);
   }
@@ -44,12 +40,12 @@ export default function HomeAsignaturas() {
                     </Menu></div>
             </header>
             <div id ="ResultadoBusquedaHomeAsignatura">
-                <SearchHomeAsignatura searchTerm={searchTerm} onItemClick={handleItemClick}></SearchHomeAsignatura>
+                <SearchHomeAsignatura searchTerm={searchTerm} ></SearchHomeAsignatura>
             </div>
         </section>
         <Box p={2} m={2} w='25%' borderRadius={"10px"} direction={['column', 'row']} background='#EDECEC'>
         <Box className='d-flex justify-content-between m-2' >
-            <h2>Filtros</h2>
+            <h2>{t('HomeAsignatura.filters')}</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
             </Box>
             <Box>

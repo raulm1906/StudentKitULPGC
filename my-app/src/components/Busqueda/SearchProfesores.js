@@ -1,28 +1,36 @@
-import React from "react";
-import data from '../../data/profesores.json'
+import React,{useEffect,useState} from "react";
 import { Link } from 'react-router-dom';
+import axios from "axios";
 
 
+const SearchProfesores = ({searchTerm}) => {
+    const [data, setData] = useState([]);
+    const [filteredData, setFilteredData] = useState([]);
 
-const SearchProfesores = ({searchTerm, onItemClick}) => {
+    useEffect(()=>{
+      axios.get('http://127.0.0.1:8000/profesores/teacher/')
+      .then(response => {
+        setData(response.data);
+      })
+      .catch(error => {
+          console.error(error);
+      });
+    },[]);
 
+        
 
-    function filterByProfesor(data, searchTerm) {
-        const filteredData = data.filter((item) => {
-          const itemProfesor = item.profesorado.profesor.toLowerCase();
-          const searchProfesor = searchTerm.toLowerCase();
-          return itemProfesor.includes(searchProfesor);
-        });
-        return filteredData;
-    }
+    useEffect(() => {
+      if (searchTerm) {
+        setFilteredData(
+          data.filter((item) =>
+            item.name.toLowerCase().includes(searchTerm?.toLowerCase())
+          )
+        );
+      } else {
+        setFilteredData(data);
+      }
+    }, [data, searchTerm]);
 
-    const hadleClick = (e) => {
-        const text = e.target.textContent;
-        onItemClick(text);
-       
-    }
-  
-    const filteredData = filterByProfesor(data, searchTerm);
     return (
         
 
@@ -35,11 +43,12 @@ const SearchProfesores = ({searchTerm, onItemClick}) => {
             }}
             key={item.id}
             >
-            <div className='border m-2'>
-              <p onClick={() => onItemClick(item)} className='hover'>
-                {item.profesorado.profesor}
-              </p>
+
+            <div className="hover border w-100 p-1" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}} key={index}>
+              <h2 className='fs-5'>{item.name}</h2>
+              <p className='mt-1 mb-1 fs-6'>Correo: {item.email}</p>
             </div>
+
           </Link>
         ))}
     </div>

@@ -3,7 +3,7 @@ import data from '../../data/subjects.json';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const SearchHomeAsignatura = ({ searchTerm, onItemClick }) => {
+const SearchHomeAsignatura = ({ searchTerm }) => {
   const filteredData = data.filter(item => item.asignatura.toLowerCase().includes(searchTerm?.toLowerCase()));
   const [t, i18n] = useTranslation('common');
   
@@ -19,7 +19,7 @@ const SearchHomeAsignatura = ({ searchTerm, onItemClick }) => {
           key={item.id}
         >
           <div className="hover">
-            <h2 onClick={() => onItemClick(item)} id="titleItemBusqueda">{item.asignatura}</h2>
+            <h2 id="titleItemBusqueda">{item.asignatura}</h2>
             <p>{t('HomeAsignatura.coordinador')}</p>
             <p>{t('HomeAsignatura.curso')}:{item.duracion}</p>
             <hr />

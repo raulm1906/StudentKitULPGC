@@ -20,24 +20,13 @@ function HomeProfesorado () {
 
     const [t, i18n] = useTranslation('common');
     const [searchTerm, setSearchTerm] = useState('');
-    const [, setAsignatura] = useState('')
-    const [selectedAsignatura, setSelectedAsignatura] = useState([]);
+    const [, setSelectedAsignatura] = useState([]);
 
     const handleAsignaturaSelect = (asignatura) => {
       setSelectedAsignatura(selectedAsignatura => [...selectedAsignatura, asignatura]);
     };
 
-
-    useEffect(() => {
-      // Actualiza el título del documento usando la API del navegador
-      console.log(selectedAsignatura)
-    },[selectedAsignatura]);
-
-
-    const handleItemClick = (item) => {
-      setAsignatura(item)
-  
-  }
+ 
 
     const handleChange = event => {
       setSearchTerm(event.target.value);
@@ -54,7 +43,6 @@ function HomeProfesorado () {
   return (
     
     <div id = "HomeAsignatura">
-
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
                 <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
@@ -69,7 +57,7 @@ function HomeProfesorado () {
                     </Menu></div>
             </header>
             <div id ="ResultadoBusquedaHomeAsignatura">
-                <SearchHomeProfesorado searchTerm={searchTerm} onItemClick={handleItemClick}></SearchHomeProfesorado>
+                <SearchHomeProfesorado searchTerm={searchTerm} ></SearchHomeProfesorado>
             </div>
         </section>
         <Box p={2} m={2} w='25%' borderRadius={"10px"} direction={['column', 'row']} background='#EDECEC'>
