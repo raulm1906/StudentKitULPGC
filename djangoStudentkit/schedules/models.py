@@ -1,5 +1,6 @@
 from django.db import models
 from users.models import User
+from config.settings.base import AUTH_USER_MODEL
 
 
 # Create your models here.
@@ -25,8 +26,12 @@ class Subjectschedules(models.Model):
 class Userschedules(models.Model):
     code = models.AutoField(primary_key=True)  # The composite primary key (code, id) found, that is not supported. The first column is selected.
     id = models.IntegerField()
+    '''
+    user = models.ForeignKey(
+        AUTH_USER_MODEL,
+        on_delete=models.CASCADE,)
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023)  # Field name made lowercase.
-
+    '''
     class Meta:
         db_table = 'USERSCHEDULES'
         unique_together = (('code', 'id'),)
