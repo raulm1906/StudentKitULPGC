@@ -5,12 +5,13 @@ from config.settings.base import AUTH_USER_MODEL
 
 # Create your models here.
 
+
 class Groups(models.Model):
     groupcode = models.IntegerField(db_column='groupCode', primary_key=True)  # Field name made lowercase.
     type = models.CharField(max_length=11)
 
     class Meta:
-        db_table = 'GROUPS'
+        db_table = 'groups'
 
 
 class Subjectschedules(models.Model):
@@ -23,6 +24,7 @@ class Subjectschedules(models.Model):
         unique_together = (('subjectcode', 'groupcode'),)
 
 
+
 class Userschedules(models.Model):
     code = models.AutoField(primary_key=True)  # The composite primary key (code, id) found, that is not supported. The first column is selected.
     id = models.IntegerField()
@@ -33,7 +35,7 @@ class Userschedules(models.Model):
     schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023)  # Field name made lowercase.
     '''
     class Meta:
-        db_table = 'USERSCHEDULES'
+        db_table = 'userschedules'
         unique_together = (('code', 'id'),)
 
 class Event(models.Model):
