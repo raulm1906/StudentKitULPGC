@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { ChakraProvider } from '@chakra-ui/react';
 import {
     Table,
@@ -9,12 +9,20 @@ import {
     Td,
   } from '@chakra-ui/react'
   import { useTranslation } from 'react-i18next';
-
+  import axios from 'axios';
 function TableProf({tutorias}){
     const [t, i18n] = useTranslation('common');
+
+    useEffect(() => {
+        console.log(tutorias);
+    }, [tutorias]);
+
+
+    
     return (
         
         <ChakraProvider>
+            
         <h2>{t('tablaProfesorado.1')}</h2>
 
         <Table variant="simple"  size="md">
@@ -37,6 +45,7 @@ function TableProf({tutorias}){
                 </Tr>
             </Tbody>
         </Table>
+        {/*
         <h2 className="m-10">{t('tablaProfesorado.2')}</h2>
         <Table variant="simple"  size="md">
             <Thead>
@@ -57,7 +66,7 @@ function TableProf({tutorias}){
                 <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.VIERNES}</Td>
                 </Tr>
             </Tbody>
-        </Table>
+    </Table>*/}
     </ChakraProvider>
     )
 }
