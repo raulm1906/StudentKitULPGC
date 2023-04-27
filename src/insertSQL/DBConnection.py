@@ -7,7 +7,7 @@ def DBConnect (user: str, password: str, saveLog: bool = False):
         conn = mariadb.connect(
             user=user,
             password=password,
-            host="localhost",
+            host="webmin.narurm.eu",
             port=3306,
             database="psulpgcstudentkit",
         )
