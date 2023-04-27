@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Lesson, Subject, Degree, SubjectTeacher
-
+from teachers.serializers import TeacherSerializer
 
 class DegreeSerializer(serializers.ModelSerializer):
     # degree = serializers.StringRelatedField()
@@ -17,6 +17,8 @@ class LessonSerializer(serializers.ModelSerializer):
 
 
 class SubjectTeacherSerializer(serializers.ModelSerializer):
+    teacher = TeacherSerializer()
+
     class Meta:
         model = SubjectTeacher
         fields = ['subject', 'teacher', 'group']

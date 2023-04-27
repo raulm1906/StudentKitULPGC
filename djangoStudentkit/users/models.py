@@ -1,8 +1,9 @@
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionsMixin
 from django.db import models
+from django import forms
 
 class UserManager(BaseUserManager):
-    def create_user(self, email, password=None, **extra_fields):
+    def create_user(self, email, password, **extra_fields):
         if not email:
             raise ValueError('El email es obligatorio.')
         email = self.normalize_email(email)
@@ -20,13 +21,15 @@ class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
     first_name = models.CharField(max_length=30, blank=True)
     last_name = models.CharField(max_length=30, blank=True)
+    username = models.CharField(max_length=50, blank=False, default=first_name)
+    password = models.CharField(max_length=30, blank = False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
 
     USERNAME_FIELD = 'email'
-    #REQUIRED_FIELDS = ['username', 'password']
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username']
+    #REQUIRED_FIELDS = []
 
     objects = UserManager()
 

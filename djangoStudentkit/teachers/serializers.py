@@ -11,8 +11,7 @@ class KnowledgeAreaSerializer(serializers.ModelSerializer):
 class TutoringHourSerializer(serializers.ModelSerializer):
     class Meta:
         model = tutoringHour
-        fields = ['id', 'semester', 'day',
-                  'start_time', 'ending_time', 'teacher']
+        fields = ['id', 'semester', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday']
 
 
 class TeacherSerializer(serializers.ModelSerializer):
