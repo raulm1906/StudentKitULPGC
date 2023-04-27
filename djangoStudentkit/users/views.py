@@ -21,9 +21,9 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-'''
+
 class LoginView(ObtainAuthToken):
     queryset = User.objects.all()
-    serializer_class = LoginSerializer
-'''
+    serializer_class = User
+
 
