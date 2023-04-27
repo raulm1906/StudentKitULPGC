@@ -1,10 +1,11 @@
 import { Flex, Heading, Button } from '@chakra-ui/react'
 import React from 'react'
 import { BsChevronLeft } from 'react-icons/bs'
-import YearDropdown from './YearDropdown'
+import YearDropdown from './YearDropdown';
+import { useTranslation } from 'react-i18next';
 
 export default function FilterCard(props) {
-
+  const [t, i18n] = useTranslation('common');
   const handleCloseButton =() => {
     const newStyles = {
       box: {
@@ -34,7 +35,7 @@ export default function FilterCard(props) {
       marginLeft={props.marginCard}
     >
       <Flex justifyContent="space-between" alignItems="center">
-        <Heading marginLeft="20px" fontSize="lg">Asignaturas</Heading>
+        <Heading marginLeft="20px" fontSize="lg">{t('ResultAsignaturas.subjects')}</Heading>
         <Button 
           bg="#DADADA" 
           borderRadius="full" 
@@ -48,8 +49,8 @@ export default function FilterCard(props) {
 
       <Flex flexDirection="column" h="100%">
         
-        <YearDropdown year="Año 1" />
-        <YearDropdown year="Año 2"/>
+        <YearDropdown year={t('ResultAsignaturas.Year1')}/>
+        <YearDropdown year={t('ResultAsignaturas.Year2')}/>
       </Flex>
     </Flex>
   )
