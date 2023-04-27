@@ -28,3 +28,5 @@ hs_err_pid*
 /djangoStudentkit/teachers/migrations
 /djangoStudentkit/subjects/migrations
 /djangoStudentkit/users/migrations
+
+.idea/

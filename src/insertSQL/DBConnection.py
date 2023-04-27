@@ -1,13 +1,13 @@
 import mariadb
 import sys
 
-def DBConnect (user: str, password: str, saveLog: bool = False):
+def DBConnect (user: str, password: str, host: str = "localhost", saveLog: bool = False):
     # Connect to MariaDB Platform
     try:
         conn = mariadb.connect(
             user=user,
             password=password,
-            host="webmin.narurm.eu",
+            host=host,
             port=3306,
             database="psulpgcstudentkit",
         )
