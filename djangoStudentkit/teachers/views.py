@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import statistics
 from rest_framework import viewsets
 
 from .models import KnowledgeArea, Teacher, tutoringHour

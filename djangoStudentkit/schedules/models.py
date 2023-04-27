@@ -1,5 +1,6 @@
 from django.db import models
-from users.models import Users
+from users.models import User
+from config.settings.base import AUTH_USER_MODEL
 
 
 # Create your models here.
@@ -24,7 +25,7 @@ class Event(models.Model):
     
 
 class Schedule(models.Model):
-    userId = models.ForeignKey(Users, on_delete=models.CASCADE)
+    userId = models.ForeignKey(User, on_delete=models.CASCADE)
     events = models.ManyToManyField('Event')
 
     class Meta:
