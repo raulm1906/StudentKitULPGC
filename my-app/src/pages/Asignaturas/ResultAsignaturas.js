@@ -3,7 +3,6 @@ import '../../components/style.css';
 import TimeTable from './components/tableAsignaturas';
 import Search from '../../components/Busqueda/SearchAsignaturas';
 import SearchBar from '../../components/Busqueda/SearchBar';
-import SearchProfesores from '../../components/Busqueda/SearchProfesores'
 import SubjectProfes from '../../components/Busqueda/SubjectProfes';
 import asignaturas from '../../data/subjects.json';
 import { Link } from '@chakra-ui/react';

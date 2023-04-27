@@ -5,11 +5,14 @@ import SearchBar from '../../components/Busqueda/SearchBar';
 import SearchProfesores from '../../components/Busqueda/SearchProfesores';
 import { Grid, GridItem } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
-import profesores from '../../data/profesores.json';
 import { useTranslation } from 'react-i18next';
-import {Search2Icon} from '@chakra-ui/icons'
+import {Search2Icon,ChevronRightIcon} from '@chakra-ui/icons'
 import axios from 'axios';
-
+import {
+    List,
+    ListItem,
+    ListIcon,
+  } from '@chakra-ui/react'
 function Profesorado() {
     const { id } = useParams();
     const [newTeacher, setnewTeacher] = useState({})
@@ -17,7 +20,8 @@ function Profesorado() {
     const [t, i18n] = useTranslation('common');
     const [knowledge_area,setKnowledge] = useState('');
     const[subjectTeacher,setSubjectTeacher] =useState({});
-    
+    const [subjects, setSubjects] = useState([]);
+
     useEffect(() => {
         axios.get(`http://127.0.0.1:8000/profesores/teacher/?id=${id}`)
         .then(response => {
@@ -42,39 +46,24 @@ function Profesorado() {
         .then(response => {
             setSubjectTeacher(response.data)
         })
-
-
         }
     }, [newTeacher]);
 
 
-    const AsignaturasProfesor = () => {
-        console.log(subjectTeacher);
-        if (subjectTeacher && subjectTeacher.length > 0) {
-          return axios.get(`http://127.0.0.1:8000/asignaturas/subject_teacher/?teacher=${newTeacher.id}`)
-            .then(response => {
-              if (response.data.length > 0) {
-                const subjectNames = response.data.map(item => {
-                  return axios.get(`http://127.0.0.1:8000/asignaturas/subject/?name=${item.subject}`)
-                    .then(response => response.data[0].name)
-                    .catch(error => console.error(error));
-                });
-                return Promise.all(subjectNames)
-                  .then(subjectNames => {
-                    const uniqueSubjectNames = subjectNames.filter((subjectName, index, self) => self.indexOf(subjectName) === index);
-                    console.log(uniqueSubjectNames);
-                    return uniqueSubjectNames;
-                  })
-                  .catch(error => console.error(error));
-              } else {
-                console.log('No se encontraron asignaturas para el profesor.');
-              }
-            })
-            .catch(error => console.error(error));
-        } else {
-          console.log('subjectTeacher está vacío');
-        }
-      };
+
+    useEffect(() => {
+        
+        if (Array.isArray(subjectTeacher)) { // Verifica que subjectTeacher sea un array
+            subjectTeacher.map(element => {
+              axios.get(`http://127.0.0.1:8000/asignaturas/subject/?code=${element.subject}`)
+                .then(response => {
+                  console.log(response.data) // accede al arreglo de datos del response
+                  setSubjects(prevState => [...prevState, response.data]) // agrega el response al arreglo de subjects
+                })
+            });
+          }
+      }, [subjectTeacher]);
+      
       
       
 
@@ -93,7 +82,7 @@ function Profesorado() {
 
         <div className='d-flex' style={{ gridColumn: 'span 3' }}>
             <section className="scroll-box">
-                <h2 id="titlePage" type="text" name="profesor_nombre"><b>{newTeacher.name}</b></h2>
+                <h1 className='text-center fs-3 mb-3' type="text" name="profesor_nombre"><b>{newTeacher.name}</b></h1>
                 <Grid templateColumns='repeat(2, 1fr)' gap={2}>
                     <GridItem w='100%' h='10' textAlign><b>{t('ResultProfesorado.email')}:</b>{newTeacher.email}</GridItem>
 
@@ -107,16 +96,20 @@ function Profesorado() {
                <b>{t('ResultProfesorado.horasTutorias')}:</b>
                 <div className='text-center tutoriasFrame'>
                     <TableProf className="center-x" tutorias={newTeacher.tutoring_hours}/>
-                </div>*/}
-           
-               <div>
-                    <b>{t('ResultProfesorado.asignaturas')}:</b>
-                    <br></br>
-                    {AsignaturasProfesor().map((asignatura, index) => (
-                        <li key={index}>{asignatura}</li>
-                    ))}
                 </div>
-              {/*
+             */}
+                <div>
+                    <b>{t('ResultProfesorado.asignaturas')}:</b>
+                    <List spacing={3} marginLeft={"2"}>                    
+                    {subjects.map((element, index) => (
+                    <ListItem key={index}>
+                        <ListIcon as={ChevronRightIcon} color='green.500' />
+                        {element[0].name}
+                    </ListItem>
+                    ))}
+                    </List>
+                </div>
+              
             </section>
             
             <section className="search_asignaturas">
@@ -124,7 +117,7 @@ function Profesorado() {
                     <Search2Icon margin={"5"}></Search2Icon>
                     <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('ResultProfesorado.profesores')} />
                 </div>
-                <SearchProfesores searchTerm={searchTerm} onItemClick={handleItemClick} />*/}
+                <SearchProfesores searchTerm={searchTerm} onItemClick={handleItemClick} />
             </section>
 
         </div>
