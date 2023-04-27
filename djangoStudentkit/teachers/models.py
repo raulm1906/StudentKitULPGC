@@ -13,9 +13,12 @@ class KnowledgeArea(models.Model):
 
 class tutoringHour(models.Model):
     semester = models.CharField(max_length=30)
+    monday = models.CharField(max_length=30)
+    tuesday = models.CharField(max_length=30)
+    wednesday = models.CharField(max_length=30)
+    thursday = models.CharField(max_length=30)
+    friday = models.CharField(max_length=30)
     day = models.CharField(max_length=30)
-    start_time = models.TimeField()
-    ending_time = models.TimeField()
     teacher = models.ForeignKey(
         'Teacher', on_delete=models.CASCADE, related_name='tutoring_hours')
 

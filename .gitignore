@@ -24,3 +24,7 @@ hs_err_pid*
 
 /djangoStudentkit/my.cnf
 /djangoStudentkit/config/settings/db.sqlite3
+/djangoStudentkit/schedules/migrations
+/djangoStudentkit/teachers/migrations
+/djangoStudentkit/subjects/migrations
+/djangoStudentkit/users/migrations
