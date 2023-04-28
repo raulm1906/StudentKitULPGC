@@ -16,17 +16,26 @@ import { GrSchedules } from "react-icons/gr"
 import { GridItem } from '@chakra-ui/layout';
 import { Outlet } from 'react-router';
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 
-const ListHorarios = () => {
+export default function ListHorarios() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scheduleData, setScheduleData] = useState([])
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
 
-  const [horarios, setHorarios] = useState([])
   useEffect(() => { 
-    setHorarios(require("../../data/subjectSchedules/horarios.json"))
+    axios
+    .get("http://127.0.0.1:8000/horarios/schedule/")
+    .then((response) => {
+      setScheduleData(response.data)
+      console.log(scheduleData)
+    })
+    .catch((error) => {
+      console.log(error)
+    })
   }, [])
   
   return (
@@ -47,8 +56,8 @@ const ListHorarios = () => {
           <DrawerHeader color="white">Mis horarios</DrawerHeader>
           <DrawerBody display="flex" flexDirection="column">
             <Stack spacing="24px">
-              {horarios.map((horario) => (
-                <Link to={`/horario/${horario.id}`} state={{data: horario}} key={horario.id}><Button w="100%">{horario.name}</Button></Link>
+              {scheduleData.map((horario) => (
+                <Link to={`/horario/${horario.id}`} state={{data: horario}} key={horario.id}><Button w="100%">{horario.title}</Button></Link>
               ))}
             </Stack>
             <Button marginTop="24px"><AiOutlinePlus/ ></Button>
@@ -59,4 +68,3 @@ const ListHorarios = () => {
   )
 }
 
-export default ListHorarios;
