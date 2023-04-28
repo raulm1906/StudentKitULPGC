@@ -8,6 +8,7 @@ import { useState } from 'react';
 import FilterCard from './components/AsignaturasCard';
 import EditButton from './components/EditButton';
 import AppContext from '../../../../app/AppContext';
+import axios from 'axios'
 
 function PageHorario(){
 
@@ -20,6 +21,17 @@ function PageHorario(){
         const matchingHorario = horarios.find(h => h.id == parseInt(horarioid))
         setHorario(matchingHorario)   
     }, [horarioid])
+
+    useEffect(() => {
+        axios
+        .get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
+        .then((response) => {
+            setHorario(response.data)
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    })
 
     const [styles, setStyles] = useState({
         box: {
