@@ -1,5 +1,4 @@
 from django.db import models
-from subjects.models import Subject
 
 # Create your models here.
 
