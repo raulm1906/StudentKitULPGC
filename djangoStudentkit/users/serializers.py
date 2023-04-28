@@ -16,11 +16,12 @@ class UserSerializer(serializers.ModelSerializer):
     def update(self, instance, validated_data):
         password = validated_data.pop('password', None)
         user = super().update(instance, validated_data)
-        if password:
-        #if 'password' in validated_data:
+        #if password:
+        if 'password' in validated_data:
             user.set_password(password)
             user.save()
         return user  
     
     
+#class LoginSerializer(serializers.ModelSerializer):
 
