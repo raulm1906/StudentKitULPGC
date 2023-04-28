@@ -1,0 +1,114 @@
+[
+    {
+        "Classroom": "L1-3",
+        "Day": "LUNES",
+        "FHour": "14:30",
+        "Group": "41",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-5",
+        "Day": "LUNES",
+        "FHour": "12:30",
+        "Group": "42",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L2-1",
+        "Day": "LUNES",
+        "FHour": "10:30",
+        "Group": "43",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-5",
+        "Day": "MARTES",
+        "FHour": "12:30",
+        "Group": "41",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L2-2",
+        "Day": "MARTES",
+        "FHour": "14:30",
+        "Group": "42",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L1-3",
+        "Day": "MARTES",
+        "FHour": "10:30",
+        "Group": "43",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-4",
+        "Day": "JUEVES",
+        "FHour": "13:30",
+        "Group": "1",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-4",
+        "Day": "VIERNES",
+        "FHour": "11:30",
+        "Group": "1",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L2-5",
+        "Day": "LUNES",
+        "FHour": "14:30",
+        "Group": "44",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-3",
+        "Day": "LUNES",
+        "FHour": "12:30",
+        "Group": "45",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-5",
+        "Day": "MIERCOLES",
+        "FHour": "12:30",
+        "Group": "44",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L1-3",
+        "Day": "MIERCOLES",
+        "FHour": "14:30",
+        "Group": "45",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-5",
+        "Day": "JUEVES",
+        "FHour": "10:30",
+        "Group": "2",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-5",
+        "Day": "VIERNES",
+        "FHour": "13:30",
+        "Group": "2",
+        "IHour": "12:30",
+        "Week": "ambos"
+    }
+]
