@@ -22,15 +22,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     first_name = models.CharField(max_length=30, blank=True)
     last_name = models.CharField(max_length=30, blank=True)
     username = models.CharField(max_length=50, blank=False, default=first_name)
-    #password = forms.CharField(max_length=30, blank = False, widget=forms.PasswordInput())
-    password = models.CharField(max_length=50, blank=False)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
     date_joined = models.DateTimeField(auto_now_add=True)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['username']
-    #REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['first_name']
 
     objects = UserManager()
 

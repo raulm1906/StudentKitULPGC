@@ -26,6 +26,7 @@ semestersNames = ("firstSemester", "secondSemester")
 cursor = connection.cursor()
 for teacher in teachersList:
 
+
     try:
         cursor.execute(f"SELECT id FROM teacher WHERE name='{teacher['profesorado']['profesor']}'")
         teacher_id = cursor.fetchone()[0]
@@ -33,7 +34,6 @@ for teacher in teachersList:
         DBConnection.DBDisconnect(connection)
         print("Error in database select")
         sys.exit(1)
-
     days = ("LUNES", "MARTES", "MIÉRCOLES", "JUEVES", "VIERNES")
     tutoring = teacher["tutorias"]
     for semester in range(2):
