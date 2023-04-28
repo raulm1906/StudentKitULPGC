@@ -15,7 +15,6 @@ import {
 import FilterHomeProfesores from './FilterHomeProfesores';
 import profesores from '../../data/profesores.json';
 import { useTranslation } from 'react-i18next';
-
 function HomeProfesorado () {
 
     const [t, i18n] = useTranslation('common');
@@ -26,12 +25,10 @@ function HomeProfesorado () {
       setSelectedAsignatura(selectedAsignatura => [...selectedAsignatura, asignatura]);
     };
 
- 
-
     const handleChange = event => {
       setSearchTerm(event.target.value);
     }
-
+  /*
   function getAsignaturasSinParentesis() {
     const asignaturasSinParentesis = profesores
       .map((element) => element.asignaturas)
@@ -39,7 +36,7 @@ function HomeProfesorado () {
       .filter((asignatura) => !/\(|\)/.test(asignatura))
       .sort()
       return [...new Set(asignaturasSinParentesis)];
-  }
+  }*/
   return (
     
     <div id = "HomeAsignatura">
@@ -65,9 +62,9 @@ function HomeProfesorado () {
             <h2>{t('profesorado.filters')}</h2>
             <HamburgerIcon style={{marginTop: "auto", marginBottom: "auto"}} />
             </Box>
-            <Box>
+            {/*<Box>
               <FilterHomeProfesores  onAsignaturaSelect={handleAsignaturaSelect} asignaturas={getAsignaturasSinParentesis()}></FilterHomeProfesores>
-            </Box> 
+            </Box> */}
 
         </Box>
     </div>

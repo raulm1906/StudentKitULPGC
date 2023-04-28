@@ -13,6 +13,7 @@ import {
     ListItem,
     ListIcon,
   } from '@chakra-ui/react'
+import LoadingIcon from '../../LoadingIcon';
 function Profesorado() {
     
     const { id } = useParams();
@@ -24,8 +25,9 @@ function Profesorado() {
     const [subjects, setSubjects] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://127.0.0.1:8000/profesores/teacher/?id=${id}`)
+        axios.get(`https://django.narurm.eu/profesores/teacher/?id=${id}`)
         .then(response => {
+            console.log(id)
             setnewTeacher(response.data[0]);
         })
         .catch(error => {
@@ -35,7 +37,7 @@ function Profesorado() {
 
     useEffect(() => {
         if (newTeacher.id) { // Verifica que newTeacher tenga un valor válido
-            axios.get(`http://127.0.0.1:8000/profesores/knowledge_area/?id=${newTeacher.id}`)
+            axios.get(`https://django.narurm.eu/profesores/knowledge_area/?id=${newTeacher.id}`)
                 .then(response => {
                     setKnowledge(response.data[0].knowledge_area); // Accede al valor de knowledge_area en la respuesta
                 })
@@ -43,7 +45,7 @@ function Profesorado() {
                     console.error(error);
                 });
         //Zona para obtener los subject del profesor
-        axios.get(`http://127.0.0.1:8000/asignaturas/subject_teacher/?teacher=${newTeacher.id}`)
+        axios.get(`https://django.narurm.eu/asignaturas/subject_teacher/?teacher=${newTeacher.id}`)
         .then(response => {
             setSubjectTeacher(response.data)
         })
@@ -56,7 +58,7 @@ function Profesorado() {
         
         if (Array.isArray(subjectTeacher)) { // Verifica que subjectTeacher sea un array
             subjectTeacher.map(element => {
-              axios.get(`http://127.0.0.1:8000/asignaturas/subject/?code=${element.subject}`)
+              axios.get(`https://django.narurm.eu/asignaturas/subject/?code=${element.subject}`)
                 .then(response => {
                   console.log(response.data) // accede al arreglo de datos del response
                   setSubjects(prevState => [...prevState, response.data]) // agrega el response al arreglo de subjects
@@ -77,7 +79,7 @@ function Profesorado() {
     }
 
     if (!newTeacher.name) {
-        return <div>Cargando información del profesor...</div>;
+        return <LoadingIcon></LoadingIcon>
     }
     return (
 
