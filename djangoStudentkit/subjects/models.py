@@ -1,5 +1,4 @@
 from django.db import models
-from teachers.models import Teacher
 
 DAY_OF_WEEK_CHOICES = (
     (1, 'Monday'),
@@ -54,7 +53,7 @@ class SubjectTeacher(models.Model):
         'teachers.Teacher', on_delete=models.CASCADE, related_name='subjects_of_teacher')
 
     class Meta:
-        unique_toguether = ('subject', 'teacher')
+        unique_together = ('subject', 'teacher')
         db_table = 'subject_teacher'
 
 

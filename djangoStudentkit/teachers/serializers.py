@@ -1,4 +1,6 @@
 from rest_framework import serializers
+
+from .models import DAY_OF_WEEK_CHOICES
 from .models import KnowledgeArea, Teacher, tutoringHour
 
 
@@ -9,9 +11,11 @@ class KnowledgeAreaSerializer(serializers.ModelSerializer):
 
 
 class TutoringHourSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = tutoringHour
-        fields = ['id', 'semester', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+        fields = ['id', 'semester', 'day', 'start_time', 'ending_time', 'teacher']
+
 
 
 class TeacherSerializer(serializers.ModelSerializer):
