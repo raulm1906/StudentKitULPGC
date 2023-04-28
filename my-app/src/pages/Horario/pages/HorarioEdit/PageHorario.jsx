@@ -8,6 +8,7 @@ import { useState } from 'react';
 import FilterCard from './components/AsignaturasCard';
 import EditButton from './components/EditButton';
 import AppContext from '../../../../app/AppContext';
+import axios from 'axios'
 
 function PageHorario(){
 
@@ -16,10 +17,17 @@ function PageHorario(){
     const [horario, setHorario] = useState([])
     const horarios = require("../../../../data/subjectSchedules/horarios.json")
     
+
     useEffect(() => {
-        const matchingHorario = horarios.find(h => h.id == parseInt(horarioid))
-        setHorario(matchingHorario)   
-    }, [horarioid])
+        axios
+        .get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
+        .then((response) => {
+            setHorario(response.data[0])
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+    }, [])
 
     const [styles, setStyles] = useState({
         box: {
@@ -45,7 +53,7 @@ function PageHorario(){
                     />
                 </GridItem>
                 <GridItem gridRow={2} gridColumn={2}>
-                    <Heading fontSize="xl" textAlign="center">{horario.name}</Heading>
+                    <Heading fontSize="xl" textAlign="center">{horario.title}</Heading>
                 </GridItem>
                 <GridItem marginLeft={styles.gridItem.marginLeft} gridRow={3} colSpan={3}>
                     <TablaHorario />

@@ -1,0 +1,98 @@
+[
+    {
+        "Classroom": "A3-3",
+        "Day": "MARTES",
+        "FHour": "9:30",
+        "Group": "1",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-3",
+        "Day": "MIERCOLES",
+        "FHour": "9:30",
+        "Group": "1",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-3",
+        "Day": "JUEVES",
+        "FHour": "14:30",
+        "Group": "17",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "JUEVES",
+        "FHour": "12:30",
+        "Group": "18",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "MARTES",
+        "FHour": "10:30",
+        "Group": "2",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "MIERCOLES",
+        "FHour": "10:30",
+        "Group": "2",
+        "IHour": "9:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "VIERNES",
+        "FHour": "12:30",
+        "Group": "19",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-3",
+        "Day": "VIERNES",
+        "FHour": "14:30",
+        "Group": "20",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "MARTES",
+        "FHour": "15:30",
+        "Group": "3",
+        "IHour": "14:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "MIERCOLES",
+        "FHour": "16:30",
+        "Group": "3",
+        "IHour": "15:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-4",
+        "Day": "JUEVES",
+        "FHour": "20:30",
+        "Group": "21",
+        "IHour": "18:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A3-3",
+        "Day": "JUEVES",
+        "FHour": "18:30",
+        "Group": "22",
+        "IHour": "16:30",
+        "Week": "ambos"
+    }
+]

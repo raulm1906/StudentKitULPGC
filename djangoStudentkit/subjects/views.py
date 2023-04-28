@@ -1,3 +1,4 @@
+import statistics
 from django.shortcuts import render
 from rest_framework import viewsets
 from rest_framework.response import Response
@@ -24,6 +25,21 @@ class DegreeViewSet(viewsets.ModelViewSet):
 class SubjectTeacherViewSet(viewsets.ModelViewSet):
     queryset = SubjectTeacher.objects.all()
     serializer_class = SubjectTeacherSerializer
+
+    def get_queryset(self):
+        subject_id = self.request.query_params.get('subject')
+        teacher_id = self.request.query_params.get('teacher')
+
+        if subject_id and teacher_id:
+            queryset = SubjectTeacher.objects.filter(subject=subject_id, teacher=teacher_id).select_related('subject', 'teacher')
+        
+        elif subject_id:
+            queryset = SubjectTeacher.objects.filter(subject=subject_id)
+        
+        elif teacher_id:
+            queryset = SubjectTeacher.objects.filter(teacher=teacher_id)
+
+        return queryset
 
 
 class LessonViewSet(viewsets.ModelViewSet):
