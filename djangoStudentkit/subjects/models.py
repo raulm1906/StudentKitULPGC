@@ -34,7 +34,7 @@ class Subject(models.Model):
         'teachers.Teacher',
         on_delete=models.DO_NOTHING,
         db_column='id',
-        related_name='subject'
+        related_name='subjects'
         )
     linkpd = models.URLField(max_length=200, blank=True)
     subject_type = models.CharField(max_length=30)
