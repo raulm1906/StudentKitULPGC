@@ -37,7 +37,7 @@
         "profesores": "Profesores"
     },
     "ResultAsignaturas": {
-        "tipo": "tipo",
+        "tipo": "Tipo",
         "title": "Título",
         "departamento": "Deparmento",
         "duracion": "Duración",
@@ -45,7 +45,10 @@
         "year": "Año",
         "profesorado": "Profesorado",
         "docente": "Proyecto Docente de la Asignatura",
-        "subjects": "Asignaturas"
+        "subjects": "Asignaturas",
+        "Year1": "Año 1",
+        "Year2": "Año 2",
+        "editarHorario": "Editar Horario"
     },
     "Day": {
         "Monday": "Lunes",
@@ -58,6 +61,14 @@
     "tablaProfesorado": {
         "1": "Primer Semestre",
         "2": "Segundo Semestre"
+    },
+    "listHorarios": {
+        "mishorarios": "Mis Horarios"
+    },
+    "AsignaturasCard": {
+        "teoria": "Toería",
+        "practice": "Práctica",
+        "group": "Grupo"
     }
 
 }

@@ -47,7 +47,10 @@
         "year": "Year",
         "profesorado": "Teachers",
         "docente": "Subject Teaching Project",
-        "subjects": "Subjects"
+        "subjects": "Subjects",
+        "Year1": "Year 1",
+        "Year2": "Year 2",
+        "editarHorario": "Edit Schedule"
     },
     "Day": {
         "Monday": "Monday",
@@ -60,5 +63,13 @@
     "tablaProfesorado": {
         "1": "First Semestre",
         "2": "Second Semestre"
+    },
+    "listHorarios": {
+        "mishorarios": "My Schedules"
+    },
+    "AsignaturasCard": {
+        "teoria": "Theory",
+        "practice": "Practice",
+        "group": "Group"
     }
 }
