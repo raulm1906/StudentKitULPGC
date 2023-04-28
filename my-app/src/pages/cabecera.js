@@ -26,7 +26,7 @@ const Header = () => {
           </NavLink>
         </Nav>
         <Nav>
-          <Nav.Link href="#" className="mr-sm-2" >Sign In</Nav.Link>
+          <NavLink  to="/Register" className="mr-sm-2" >Sign In</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -14,6 +14,7 @@ import {
     ListIcon,
   } from '@chakra-ui/react'
 function Profesorado() {
+    
     const { id } = useParams();
     const [newTeacher, setnewTeacher] = useState({})
     const [searchTerm, setSearchTerm] = useState('');
