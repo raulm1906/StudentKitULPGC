@@ -32,10 +32,10 @@ class Subject(models.Model):
     credits = models.PositiveSmallIntegerField()
     year = models.PositiveSmallIntegerField()
     coordinator = models.ForeignKey(
-        'Teacher',
+        'teachers.Teacher',
         on_delete=models.DO_NOTHING,
         db_column='id',
-        related_name='subjects'
+        related_name='subject'
         )
     linkpd = models.URLField(max_length=200, blank=True)
     subject_type = models.CharField(max_length=30)
@@ -52,7 +52,6 @@ class SubjectTeacher(models.Model):
         'Subject', on_delete=models.CASCADE, related_name='teachers_in_subject')
     teacher = models.ForeignKey(
         'teachers.Teacher', on_delete=models.CASCADE, related_name='subjects_of_teacher')
-    #group = models.CharField(max_length=255)
 
     class Meta:
         unique_toguether = ('subject', 'teacher')
