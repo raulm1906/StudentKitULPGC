@@ -2,9 +2,8 @@ import sys
 import mariadb
 import DBConnection
 
-def getTeacher_id(tacherName) -> int:
+def getTeacher_id(tacherName, connection: DBConnection) -> int:
 
-    connection = DBConnection.DBConnect(input("Username: "), input("Password: "), input("Host: "))
     cursor = connection.cursor()
     try:
         cursor.execute(f"SELECT id FROM teacher WHERE name='{tacherName}'")
@@ -16,9 +15,9 @@ def getTeacher_id(tacherName) -> int:
     DBConnection.DBDisconnect(connection)
     return teacher_id
 
-def getSubject_id(subjectName) -> int:
+def getSubject_id(subjectName, connection: DBConnection) -> int:
+
     subjectName = subjectName.upper()
-    connection = DBConnection.DBConnect(input("Username: "), input("Password: "), input("Host: "))
     cursor = connection.cursor()
     try:
         cursor.execute(f"SELECT code FROM subject WHERE name='{subjectName}'")
