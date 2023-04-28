@@ -31,8 +31,8 @@ class TeacherSerializer(serializers.ModelSerializer):
         
     def get_tutoring_hours(self, obj):
         semesters = {
-            "1er. semestre": {},
-            "2do. semestre": {}
+            "firstSemester": {},
+            "secondSemester": {}
         }
         tutoring_hours = obj.tutoring_hours.all()
         for semester in semesters:
