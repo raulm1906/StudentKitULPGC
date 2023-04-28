@@ -26,6 +26,7 @@ class Event(models.Model):
 
 class Schedule(models.Model):
     userId = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=30)
     events = models.ManyToManyField('Event')
 
     class Meta:
