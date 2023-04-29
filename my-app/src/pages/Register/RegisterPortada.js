@@ -6,7 +6,7 @@ import imagen from "./Group 22.svg";
 function RegisterPortada() {
   
     return (
-    <div className=" text-center w-50 registerPortada">
+    <div className=" text-center w-100 registerPortada">
         <h1>La mejor herramienta como <br></br> estudiante de la ULPGC</h1>
         <h5>(y también la última)</h5>
         <h4>

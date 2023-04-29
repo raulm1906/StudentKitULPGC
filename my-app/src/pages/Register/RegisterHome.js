@@ -23,7 +23,7 @@ function RegisterHome() {
 
     return (
       <Box colSpan={2} display={"flex"}>
-        <div className=" text-center w-50 register">
+        <div className=" text-center w-100 register">
           <h1>Crea una cuenta</h1>
           <FormControl>
             <FormLabel className="usuario-label">Nombre de usuario</FormLabel>

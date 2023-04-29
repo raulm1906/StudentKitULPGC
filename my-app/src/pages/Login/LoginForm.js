@@ -19,7 +19,7 @@ function LoginForm() {
   
     return (
     <Box colSpan={2} display={"flex"}>
-      <div className=" text-center w-50 form">
+      <div className=" text-center w-100 form">
         <h1>Bienvenido de <br></br> vuelta!</h1>
         <FormControl>
         <FormLabel className="email-label">Email</FormLabel>
