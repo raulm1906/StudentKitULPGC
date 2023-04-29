@@ -17,7 +17,6 @@ import {
 
 export default function HomeAsignaturas() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [Button, setButton] = useState('');
   const [t, i18n] = useTranslation('common');
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -29,7 +28,8 @@ export default function HomeAsignaturas() {
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
             <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
-                <div id ="OrderBy"><Menu>
+                <div id ="OrderBy">
+                  <Menu>
                     <MenuButton as={Button} >
                     {t('profesorado.ordenar')}
                     </MenuButton>
@@ -40,7 +40,8 @@ export default function HomeAsignaturas() {
                     <Button ml={4} colorScheme="teal" size="sm" onClick={onOpen}>
                         Use Filters
                     </Button>
-                    </Menu></div>
+                    </Menu>
+                  </div>
             </header>
             <div id ="ResultadoBusquedaHomeAsignatura">
                 <SearchHomeAsignatura searchTerm={searchTerm} ></SearchHomeAsignatura>

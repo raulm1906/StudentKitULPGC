@@ -46,8 +46,9 @@ function HomeProfesorado () {
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
                 <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
-                <div id ="OrderBy"><Menu>
-                    <MenuButton>
+                <div id ="OrderBy">
+                  <Menu>
+                    <MenuButton as={Button}>
                     {t('profesorado.ordenar')}
                     </MenuButton>
                     <MenuList>
@@ -57,7 +58,8 @@ function HomeProfesorado () {
                     <Button ml={4} colorScheme="teal" size="sm" onClick={onOpen}>
                         Use Filters
                     </Button>
-                    </Menu></div>
+                    </Menu>
+                </div>
             </header>
             <div id ="ResultadoBusquedaHomeAsignatura">
                 <SearchHomeProfesorado searchTerm={searchTerm} ></SearchHomeProfesorado>
