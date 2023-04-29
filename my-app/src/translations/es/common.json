@@ -15,8 +15,9 @@
     },
     "profesorado": {
         "ordenar": "Ordenar Por",
-        "itemorder": "Item de Ordenación",
-        "filters": "Filtros"
+        "itemOrder": "Item de Ordenación",
+        "filters": "Filtros",
+        "useFilters": "Usar Filtros"
     },
     "SearchHomeProfesorado": {
         "correo": "Correo",
@@ -24,7 +25,8 @@
     },
     "HomeAsignatura": {
         "coordinador": "Coordinador",
-        "curso": "Curso"
+        "curso": "Curso",
+        "filters": "Filtros"
     },
     "ResultProfesorado": {
         "email": "Correo",

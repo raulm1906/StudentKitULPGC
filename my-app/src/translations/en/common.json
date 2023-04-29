@@ -16,7 +16,8 @@
     "profesorado": {
         "ordenar": "Sort By",
         "itemOrder": "Item Order",
-        "filters": "Filters"
+        "filters": "Filters",
+        "useFilters": "Use Filters"
     },
     "SearchHomeProfesorado": {
         "correo": "Email",
