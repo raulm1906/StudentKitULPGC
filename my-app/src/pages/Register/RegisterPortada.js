@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Image, Center } from "@chakra-ui/react";
+import imagen from "./Group 22.svg";
 
 
 function RegisterPortada() {
@@ -14,7 +15,7 @@ function RegisterPortada() {
         </h4>
         <Center>
         <Box>
-            <Image src='https://via.placeholder.com/150' alt='Dan Abramov' />
+            <img src={imagen} alt="ULPGC" />
         </Box>
         </Center>
     </div>
