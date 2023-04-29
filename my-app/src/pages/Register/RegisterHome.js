@@ -1,49 +1,76 @@
-import "./Register.css"
+import React from "react";
+import { useState } from "react";
+import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Checkbox } from "@chakra-ui/react";
+import { Button, Box } from "@chakra-ui/react";
+import '../../components/forms.css'
 import imagen from "./Group 22.svg";
+import RegisterPortada from "./RegisterPortada";
 import { Link } from "react-router-dom";
+
 function RegisterHome() {
-    return(
-<div className="App">
-      <div className="split left">
-        <h1>Crea una cuenta</h1>
-        <main>
-          <form action="procesar_registro.php" method="post">
-            <div>
-              <label htmlFor="nombre">Nombre de usuario</label>
-              <input type="text" id="nombre" name="nombre" required />
-            </div>
-            <div>
-              <label htmlFor="correo">Email</label>
-              <input type="text" id="correo" name="correo" required />
-            </div>
-            <div>
-              <label htmlFor="contraseña">Contraseña</label>
-              <input type="password" id="contraseña" name="contraseña" required />
-            </div>
-            <div>
-              <label htmlFor="confirmar-contraseña">Confirmar contraseña</label>
-              <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required />
-            </div>
-            <button type="submit">Registrarse</button>
-          </form>
-          <div>
-            <label htmlFor="mensaje-login">¿Ya tienes una cuenta?</label>
-            <Link to="/Login">Login</Link>
-          </div>
-        </main>
-      </div>
-      <div className="split right">
-        <h1>La mejor herramienta como estudiante de la ULPGC</h1>
-        <p>(Y también la única)</p>
-        <h2>Accede de forma rápida a la información del profesorado, asignaturas y cursos, y crea un horario personal.</h2>
-        <main>
-          <form action="procesar_imagen.php" method="post">
-            <img src={imagen} alt="ULPGC" />
-          </form>
-        </main>
-      </div>
-    </div>
+    const [usuarioInput, setUsuarioInput] = useState('');
+    const [emailInput, setEmailInput] = useState('');
+    const [passwordInput, setPasswordInput] = useState('');
+    const [confirmPasswordInput, setConfirmPasswordInput] = useState('');
+
+    const handleUsuarioInputChange = (e) => setUsuarioInput(e.target.value);
+    const handleEmailInputChange = (e) => setEmailInput(e.target.value);
+    const handlePasswordInput = (e) => setPasswordInput(e.target.value);
+    const handleConfirmPasswordInput = (e) => setConfirmPasswordInput(e.target.value);
+
+    const isUsuarioError = usuarioInput === ''
+    const isEmailError = emailInput === ''
+
+    return (
+      <Box colSpan={2} display={"flex"}>
+        <div className=" text-center w-50 register">
+          <h1>Crea una cuenta</h1>
+          <FormControl>
+            <FormLabel className="usuario-label">Nombre de usuario</FormLabel>
+            <Input type='usuario' value={usuarioInput} onChange={handleUsuarioInputChange}/>
+            {!isUsuarioError ? (
+              <FormHelperText>
+                Enter your username.
+              </FormHelperText>
+            ) : (
+              <FormErrorMessage>Username is required.</FormErrorMessage>
+            )}
+            <FormLabel className="email-label">Email</FormLabel>
+              <Input placeholder="pepe.fernandez110@alu.ulpgc.es" type="email" value={emailInput} onChange={handleEmailInputChange} />
+              {!isEmailError ? (
+                <FormHelperText>
+                  Enter the email you'd like to receive the newsletter on.
+                </FormHelperText>
+              ) : (
+                <FormErrorMessage>Email is required.</FormErrorMessage>
+              )}
+            <FormLabel className="contraseña-label">Contraseña</FormLabel>
+            <Input type='password' value={passwordInput} onChange={handlePasswordInput} />
+            {!isEmailError ? (
+              <FormHelperText>
+                Enter the email you'd like to receive the newsletter on.
+              </FormHelperText>
+            ) : (
+              <FormErrorMessage>Email is required.</FormErrorMessage>
+            )}
+            <FormLabel className="confirmarContraseña-label">Confirmar contraseña</FormLabel>
+            <Input type='password' value={confirmPasswordInput} onChange={handleConfirmPasswordInput} />
+            {!isEmailError ? (
+              <FormHelperText>
+                Enter the email you'd like to receive the newsletter on.
+              </FormHelperText>
+            ) : (
+              <FormErrorMessage>Email is required.</FormErrorMessage>
+            )}
+          </FormControl>
+          <Button>Registrarse</Button>
+          <p>¿Ya tienes una cuenta?</p>
+          <Link to="/Login">Login</Link>
+        </div>
+        <RegisterPortada></RegisterPortada>
+      </Box>
     )
+
 }
 
 export default RegisterHome
