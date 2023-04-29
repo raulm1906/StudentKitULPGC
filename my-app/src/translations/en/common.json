@@ -72,5 +72,38 @@
         "teoria": "Theory",
         "practice": "Practice",
         "group": "Group"
+    },
+    "Registro": {
+        "mensajeRegistro": "Create an account",
+        "nombreDeUsuario": "Username",
+        "email": "Email",
+        "contraseña": "Password",
+        "confirmarContraseña": "Confirm Password",
+        "registrarse": "Check in",
+        "mensajeLogin": "Do you already have an account?",
+        "login": "Login"
+    },
+    "Portada": {
+        "mensajePortada1": "The best tool as a ULPGC student",
+        "mensajePortada2": "(and also the last one)",
+        "mensajePortada3": "Quickly access faculty, subject and course information, and create a personal schedule!"
+    },
+    "InicioSesion": {
+        "mensajeInicioSesion1": "Welcome back!",
+        "email": "Email",
+        "contraseña": "Password",
+        "login": "Login",
+        "recuerdame": "Remember me",
+        "mensajeInicioSesion2": "Don't have an account yet?",
+        "registrate": "Sign up"
+    },
+    "mensajeErrorRegistro": {
+        "mensajeRegistro1": "Passwords do not match",
+        "mensajeRegistro2": "Form submitted",
+        "mensajeRegistro3": "Form not valid"
+    },
+    "mensajeErrorLogin": {
+        "mensajeErrorLogin1": "Enter the email you'd like to receive the newsletter on.",
+        "mensajeErrorLogin2": "Email is required."
     }
 }
