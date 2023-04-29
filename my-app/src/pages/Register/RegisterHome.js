@@ -5,6 +5,7 @@ import '../../components/forms.css'
 import imagen from "./Group 22.svg";
 import RegisterPortada from "./RegisterPortada";
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
 
 function RegisterHome() {
   const [usuarioInput, setUsuarioInput] = useState('');
@@ -13,6 +14,7 @@ function RegisterHome() {
   const [confirmPasswordInput, setConfirmPasswordInput] = useState('');
   const [isPasswordMatch, setIsPasswordMatch] = useState(true);
   const [isFormValid, setIsFormValid] = useState(false);
+  const [t, i18n] = useTranslation('common');
 
   const handleUsuarioInputChange = (e) => setUsuarioInput(e.target.value);
   const handleEmailInputChange = (e) => setEmailInput(e.target.value);
@@ -28,9 +30,9 @@ function RegisterHome() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormValid) {
-      console.log("Form submitted");
+      console.log(t('mensajeErrorRegistro.mensajeRegistro2'));
     } else {
-      console.log("Form not valid");
+      console.log(t('mensajeErrorRegistro.mensajeRegistro3'));
     }
   }
 
@@ -62,23 +64,23 @@ function RegisterHome() {
   return (
     <Box colSpan={2} display={"flex"}>
       <div className=" text-center w-100 register">
-        <h1>Crea una cuenta</h1>
+        <h1>{t('Registro.mensajeRegistro')}</h1>
         <form onSubmit={handleSubmit}>
           <FormControl>
-            <FormLabel className="usuario-label">Nombre de usuario</FormLabel>
+            <FormLabel className="usuario-label">{t('Registro.nombreDeUsuario')}</FormLabel>
             <Input placeholder="Pepe Fernandez" type='text' value={usuarioInput} onChange={handleUsuarioInputChange} onBlur={handleFormChange} required/>
-            <FormLabel className="email-label">Email</FormLabel>
+            <FormLabel className="email-label">{t('Registro.email')}</FormLabel>
             <Input placeholder="pepe.fernandez110@alu.ulpgc.es" type="email" value={emailInput} onChange={handleEmailInputChange} onBlur={handleFormChange} required/>
-            <FormLabel className="contraseña-label">Contraseña</FormLabel>
+            <FormLabel className="contraseña-label">{t('Registro.contraseña')}</FormLabel>
             <Input type='password' value={passwordInput} onChange={handlePasswordInputChange} onBlur={handleFormChange} required/>
-            <FormLabel className="confirmarContraseña-label">Confirmar contraseña</FormLabel>
+            <FormLabel className="confirmarContraseña-label">{t('Registro.confirmarContraseña')}</FormLabel>
             <Input type='password' value={confirmPasswordInput} onChange={handleConfirmPasswordInputChange} onBlur={handleFormChange} required/>
-            {!isPasswordMatch && <Text color="red">Las contraseñas no coinciden</Text>}
+            {!isPasswordMatch && <Text color="red">{t('mensajeErrorRegistro.mensajeRegistro1')}</Text>}
           </FormControl>
-          <Button type="submit" disabled={!isFormValid}>Registrarse</Button>
+          <Button type="submit" disabled={!isFormValid}>{t('Registro.registrarse')}</Button>
         </form>
-        <p>¿Ya tienes una cuenta?</p>
-        <Link to="/Login">Login</Link>      
+        <p>{t('Registro.mensajeLogin')}</p>
+        <Link to="/Login">{t('Registro.login')}</Link>     
         </div>
       <RegisterPortada />
     </Box>
