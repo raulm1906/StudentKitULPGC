@@ -51,7 +51,6 @@ class SubjectTeacher(models.Model):
         'Subject', on_delete=models.CASCADE, related_name='teachers_in_subject')
     teacher = models.ForeignKey(
         'teachers.Teacher', on_delete=models.CASCADE, related_name='subjects_of_teacher')
-    #group = models.CharField(max_length=255)
 
     class Meta:
         unique_together = ('subject', 'teacher')
