@@ -9,29 +9,31 @@ import FilterCard from './components/AsignaturasCard';
 import EditButton from './components/EditButton';
 import AppContext from '../../../../app/AppContext';
 import axios from 'axios'
+import { v4 as uuidv4 } from 'uuid'
+
 
 function PageHorario(){
 
     const [events, setEvents] = useState([])
     const {horarioid } = useParams()
-    const [horario, setHorario] = useState([])
-    const horarios = require("../../../../data/subjectSchedules/horarios.json")
-    
+    const [horario, setHorario] = useState({})
+
+
     useEffect(() => {
-        const matchingHorario = horarios.find(h => h.id == parseInt(horarioid))
-        setHorario(matchingHorario)   
+        async function fetchData() {
+            const response = await axios.get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
+            setHorario(response.data[0])
+        }    
+        fetchData()
     }, [horarioid])
 
     useEffect(() => {
-        axios
-        .get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
-        .then((response) => {
-            setHorario(response.data)
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-    })
+        if (horario && horario.events) {
+          setEvents(horario.events)
+        }
+      }, [horario])
+
+
 
     const [styles, setStyles] = useState({
         box: {
@@ -57,7 +59,7 @@ function PageHorario(){
                     />
                 </GridItem>
                 <GridItem gridRow={2} gridColumn={2}>
-                    <Heading fontSize="xl" textAlign="center">{horario.name}</Heading>
+                    <Heading fontSize="xl" textAlign="center">{horario.title}</Heading>
                 </GridItem>
                 <GridItem marginLeft={styles.gridItem.marginLeft} gridRow={3} colSpan={3}>
                     <TablaHorario />
