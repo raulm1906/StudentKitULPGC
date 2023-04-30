@@ -9,25 +9,31 @@ import FilterCard from './components/AsignaturasCard';
 import EditButton from './components/EditButton';
 import AppContext from '../../../../app/AppContext';
 import axios from 'axios'
+import { v4 as uuidv4 } from 'uuid'
+
 
 function PageHorario(){
 
     const [events, setEvents] = useState([])
     const {horarioid } = useParams()
-    const [horario, setHorario] = useState([])
-    const horarios = require("../../../../data/subjectSchedules/horarios.json")
-    
+    const [horario, setHorario] = useState({})
+
 
     useEffect(() => {
-        axios
-        .get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
-        .then((response) => {
+        async function fetchData() {
+            const response = await axios.get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
             setHorario(response.data[0])
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-    }, [])
+        }    
+        fetchData()
+    }, [horarioid])
+
+    useEffect(() => {
+        if (horario && horario.events) {
+          setEvents(horario.events)
+        }
+      }, [horario])
+
+
 
     const [styles, setStyles] = useState({
         box: {

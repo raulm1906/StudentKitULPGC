@@ -17,11 +17,12 @@ class LessonSerializer(serializers.ModelSerializer):
 
 
 class SubjectTeacherSerializer(serializers.ModelSerializer):
-    teacher = TeacherSerializer()
+    
+    #teacher = TeacherSerializer()
 
     class Meta:
         model = SubjectTeacher
-        fields = ['subject', 'teacher', 'group']
+        fields = ['subject', 'teacher',]
 
 
 class SubjectSerializer(serializers.ModelSerializer):
@@ -31,4 +32,4 @@ class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subject
         fields = ['code', 'name', 'department', 'degree', 'credits',
-                  'year', 'linkpd', 'subject_type', 'semester', 'lessons', 'teachers_in_subject']
+                  'year', 'coordinator', 'linkpd', 'subject_type', 'semester', 'lessons', 'teachers_in_subject']

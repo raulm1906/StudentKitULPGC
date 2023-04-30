@@ -44,7 +44,7 @@ export default function AsignaturaCheckbox({ id, name }) {
     }
 
     function handleDeleteEvents(id){
-        setEvents(events.filter(event => event.id !== id));
+        setEvents(events.filter(event => event.subject_code !== id));
     }
 
     function handleCheckBoxChange(e){
