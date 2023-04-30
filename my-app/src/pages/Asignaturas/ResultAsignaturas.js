@@ -31,6 +31,7 @@ function Asignatura (){
       
 
     const handleItemClick = (item) => {
+      
         setAsignatura(item)
 
     }

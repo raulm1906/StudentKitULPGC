@@ -13,7 +13,8 @@ import { useTranslation } from 'react-i18next';
 
 function TimeTable({horas}){
   const [t, i18n] = useTranslation('common');
- 
+
+
   const initialDayState = {
     "08:30:00": "",
     "09:30:00": "",
@@ -29,55 +30,58 @@ function TimeTable({horas}){
     "19:30:00": "",
     "20:30:00": "",
   };
+ 
+  const [lunes, setLunes] = useState(initialDayState);
+  const [martes, setMartes] = useState(initialDayState);
+  const [miercoles, setMiercoles] = useState(initialDayState);
+  const [jueves, setJueves] = useState(initialDayState);
+  const [viernes, setViernes] = useState(initialDayState);
 
-  const [lunes, setLunes] = useState({});
-  const [martes, setMartes] = useState({});
-  const [miercoles, setMiercoles] = useState({});
-  const [jueves, setJueves] = useState({});
-  const [viernes, setViernes] = useState({});
+  const fillHours = (day, start, end, value) => {
+    day = { ...day };
+    const startIdx = Object.keys(day).indexOf(start);
+    const endIdx = Object.keys(day).indexOf(end);
+
+    for (let i = startIdx; i <= endIdx; i++) {
+      day[Object.keys(day)[i]] = value;
+    }
+
+    return day;
+  };
 
   useEffect(() => {
+
     setLunes(initialDayState);
     setMartes(initialDayState);
     setMiercoles(initialDayState);
     setJueves(initialDayState);
     setViernes(initialDayState);
-    for(let i in horas){
+
+    for (let i in horas) {
       switch (horas[i].day) {
         case 1:
-          setLunes(prevState => ({
-            ...prevState,
-            [horas[i].start_time]: horas[i].classroom
-          }));
+          setLunes(fillHours(lunes, horas[i].start_time, horas[i].ending_time, horas[i].classroom));
           break;
         case 2:
-          setMartes(prevState => ({
-            ...prevState,
-            [horas[i].start_time]: horas[i].classroom
-          }));
+          setMartes(fillHours(martes, horas[i].start_time, horas[i].ending_time, horas[i].classroom));
           break;
         case 3:
-          setMiercoles(prevState => ({
-            ...prevState,
-            [horas[i].start_time]: horas[i].classroom
-          }));
+          setMiercoles(fillHours(miercoles, horas[i].start_time, horas[i].ending_time, horas[i].classroom));
           break;
         case 4:
-          setJueves(prevState => ({
-            ...prevState,
-            [horas[i].start_time]: horas[i].classroom
-          }));
+          setJueves(fillHours(jueves, horas[i].start_time, horas[i].ending_time, horas[i].classroom));
+          break;
         case 5:
-          setJueves(prevState => ({
-            ...prevState,
-            [horas[i].start_time]: horas[i].classroom
-          }));
+          setViernes(fillHours(viernes, horas[i].start_time, horas[i].ending_time, horas[i].classroom));
+          break;
         default:
           //Declaraciones ejecutadas cuando ninguno de los valores coincide con el valor de la expresión
           break;
       }
-    };
-  }, [horas])
+    }
+  }, [horas]);
+
+
 
   const coloredCell = (value) => {
     if (value == null) {
@@ -88,8 +92,8 @@ function TimeTable({horas}){
     if(value.charAt(0) === 'L'){
       return value ? <Box bg="#FDD85A" p={0} margin={0} height={"100%"}>{value}</Box> : "";
     }
-    return value ? <Box bg="#99BC59" p={0} margin={0} height={"100%"}>{value}</Box> : "";
-  };
+      return value ? <Box bg="#99BC59" p={0} margin={0} height={"100%"}>{value}</Box> : "";
+    };
 
    return (
       <ChakraProvider>
@@ -146,7 +150,7 @@ function TimeTable({horas}){
                    <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(viernes['12:30:00'])}</Td>
               </Tr>
               <Tr>
-                  <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>13:30:00-14:30</Td>
+                  <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>13:30:-14:30</Td>
                   <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(lunes["13:30:00"])}</Td>
                    <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(martes['13:30:00'])}</Td>
                    <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(miercoles['13:30:00'])}</Td>
@@ -186,7 +190,7 @@ function TimeTable({horas}){
                    <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(viernes['17:30:00'])}</Td>
               </Tr>
               <Tr>
-                  <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>18:30:00-19:30</Td>
+                  <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>18:30-19:30</Td>
                   <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(lunes["18:30:00"])}</Td>
                    <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(martes['18:30:00'])}</Td>
                    <Td height={"2rem"} margin={5} p={0} border="1px solid" textAlign>{coloredCell(miercoles['18:30:00'])}</Td>
