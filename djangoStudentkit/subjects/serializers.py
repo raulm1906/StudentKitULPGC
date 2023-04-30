@@ -31,4 +31,4 @@ class SubjectSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subject
         fields = ['code', 'name', 'department', 'degree', 'credits',
-                  'year', 'linkpd', 'subject_type', 'semester', 'lessons', 'teachers_in_subject']
+                  'year', 'coordinator', 'linkpd', 'subject_type', 'semester', 'lessons', 'teachers_in_subject']
