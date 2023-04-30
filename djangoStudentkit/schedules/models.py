@@ -7,11 +7,12 @@ from config.settings.base import AUTH_USER_MODEL
 
 
 class Event(models.Model):
+    id = models.UUIDField(primary_key=True)
     title = models.CharField(max_length=255)
-    subject_code = models.IntegerField()
-    start_time = models.CharField(max_length=255)
-    end_time = models.CharField(max_length=255)
-    days_of_week = models.IntegerField(choices=(
+    subject_code = models.CharField(max_length=30)
+    startTime = models.CharField(max_length=255)
+    endTime = models.CharField(max_length=255)
+    daysOfWeek = models.IntegerField(choices=(
         (1, 'Monday'),
         (2, 'Tuesday'),
         (3, 'Wednesday'),
@@ -21,6 +22,9 @@ class Event(models.Model):
         (7, 'Sunday'),
     ))
     schedule = models.ForeignKey('Schedule', on_delete=models.CASCADE, related_name='events')
+    startRecur = models.CharField(max_length=255, default= "2023-03-01T00:00:00")
+    endRecur = models.CharField(max_length=255, default="2024-05-01T00:00:00")
+    rrule = models.JSONField(default=dict(freq='weekly', interval=1))
 
     class Meta:
         db_table = 'event'

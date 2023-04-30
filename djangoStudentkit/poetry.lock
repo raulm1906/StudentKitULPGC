@@ -68,6 +68,22 @@ django = ">=3.0"
 pytz = "*"
 
 [[package]]
+name = "drf-nested-routers"
+version = "0.93.4"
+description = "Nested resources for the Django Rest Framework"
+category = "main"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "drf-nested-routers-0.93.4.tar.gz", hash = "sha256:01aa556b8c08608bb74fb34f6ca065a5183f2cda4dc0478192cc17a2581d71b0"},
+    {file = "drf_nested_routers-0.93.4-py2.py3-none-any.whl", hash = "sha256:996b77f3f4dfaf64569e7b8f04e3919945f90f95366838ca5b8bed9dd709d6c5"},
+]
+
+[package.dependencies]
+Django = ">=1.11"
+djangorestframework = ">=3.6.0"
+
+[[package]]
 name = "mysql"
 version = "0.0.3"
 description = "Virtual package for MySQL-python"
@@ -150,4 +166,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c2e02fbb46e2afe08d6e188080acf07fa36ae5aae489f8dbb7c6122b93bd28f8"
+content-hash = "8a1ae2555ef10783b633a2e2a89f41bb1c98b90131436673a85f9c37ded777ea"
