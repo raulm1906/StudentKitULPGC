@@ -1,15 +1,14 @@
 import * as React from 'react';
 
 import TablaHorario from './components/TablaHorario';
-import { GridItem, Grid, Flex, Heading } from '@chakra-ui/layout';
-import { useLocation, useParams } from 'react-router';
+import { GridItem, Heading } from '@chakra-ui/layout';
+import {useParams } from 'react-router';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import FilterCard from './components/AsignaturasCard';
 import EditButton from './components/EditButton';
 import AppContext from '../../../../app/AppContext';
 import axios from 'axios'
-import { v4 as uuidv4 } from 'uuid'
 
 
 function PageHorario(){
@@ -18,6 +17,15 @@ function PageHorario(){
     const {horarioid } = useParams()
     const [horario, setHorario] = useState({})
 
+
+    const postData = async (data) => {
+        try {
+          const response = await axios.post('http://127.0.0.1:8000/horarios/schedule/', data);
+          console.log(response)
+        } catch (error) {
+          console.error(error)
+        }
+      }
 
     useEffect(() => {
         async function fetchData() {

@@ -9,7 +9,8 @@ import {
   DrawerBody,
   Button,
   Stack,
-  Icon
+  Icon,
+  Input
 } from '@chakra-ui/react';
 import { AiOutlinePlus } from 'react-icons/ai'
 import { GrSchedules } from "react-icons/gr"
@@ -21,23 +22,61 @@ import axios from 'axios'
 export default function ListHorarios() {
   const [isOpen, setIsOpen] = useState(false);
   const [scheduleData, setScheduleData] = useState([])
+  const [title, setTitle] = useState("")
+  const [showInput, setShowInput] = useState(false)
+  const [scheduleCreated, setScheduleCreated] = useState(false)
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const handleTitleChange = (event) => {
+    setTitle(event.target.value);
+  };
+
+  const handleCreateHorario = () => {
+    setShowInput(true);
+  }
+
+  const handleSaveHorario = () => {
+    const newHorario = {
+      title: title,
+      events: [],
+    };
+
+    setShowInput(false)
+    createSchedule(title)
+  }
+
+  const createSchedule = async (scheduleTitle) => {
+    try {
+      const response = await axios.post("http://127.0.0.1:8000/horarios/schedule/", {
+        userId: 1,
+        title: scheduleTitle,
+      });
+      setScheduleCreated(true)
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      return null;
+    }
+  }
 
   useEffect(() => { 
     axios
     .get("http://127.0.0.1:8000/horarios/schedule/")
     .then((response) => {
       setScheduleData(response.data)
+      setScheduleCreated(false)
       console.log(scheduleData)
     })
     .catch((error) => {
       console.log(error)
     })
-  }, [])
+  }, [scheduleCreated])
   
+
+
   return (
     <>
     <Outlet/>
@@ -60,7 +99,14 @@ export default function ListHorarios() {
                 <Link to={`/horario/${horario.id}`} state={{data: horario}} key={horario.id}><Button w="100%">{horario.title}</Button></Link>
               ))}
             </Stack>
-            <Button marginTop="24px"><AiOutlinePlus/ ></Button>
+            {showInput ? (
+        <Stack>
+          <Input marginY="24px" placeholder="Enter title" value={title} onChange={handleTitleChange} />
+          <Button onClick={handleSaveHorario}>Save</Button>
+        </Stack>
+      ) : (
+        <Button marginTop="24px" onClick={handleCreateHorario}><AiOutlinePlus /></Button>
+      )}
           </DrawerBody>
         </DrawerContent>
       </Drawer>
