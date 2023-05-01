@@ -11,9 +11,12 @@ import {
   Stack,
   Icon,
   Input,
-  Text
+  Text,
+  Flex,
+  Box
 } from '@chakra-ui/react';
 import { AiOutlinePlus } from 'react-icons/ai'
+import { BsTrash } from 'react-icons/bs'
 import { GrSchedules } from "react-icons/gr"
 import { GridItem } from '@chakra-ui/layout';
 import { Outlet } from 'react-router';
@@ -91,7 +94,10 @@ export default function ListHorarios() {
           <DrawerBody display="flex" flexDirection="column">
             <Stack spacing="24px">
               {scheduleData.map((horario) => (
-                <Link to={`/horario/${horario.id}`} state={{data: horario}} key={horario.id}><Button w="100%">{horario.title}</Button></Link>
+                <Box key={horario.id}>
+                  <Link to={`/horario/${horario.id}`} state={{data: horario}}><Button w="75%">{horario.title}</Button></Link>
+                  <Button marginLeft={5}><BsTrash/></Button>
+                </Box>
               ))}
             </Stack>
             {showInput ? (
