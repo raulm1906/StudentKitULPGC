@@ -10,7 +10,8 @@ import {
   Button,
   Stack,
   Icon,
-  Input
+  Input,
+  Text
 } from '@chakra-ui/react';
 import { AiOutlinePlus } from 'react-icons/ai'
 import { GrSchedules } from "react-icons/gr"
@@ -24,7 +25,6 @@ export default function ListHorarios() {
   const [scheduleData, setScheduleData] = useState([])
   const [title, setTitle] = useState("")
   const [showInput, setShowInput] = useState(false)
-  const [scheduleCreated, setScheduleCreated] = useState(false)
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -38,15 +38,11 @@ export default function ListHorarios() {
     setShowInput(true);
   }
 
-  const handleSaveHorario = () => {
-    const newHorario = {
-      title: title,
-      events: [],
-    };
-
+  const handleSaveHorario = () => { 
     setShowInput(false)
     createSchedule(title)
   }
+
 
   const createSchedule = async (scheduleTitle) => {
     try {
@@ -54,11 +50,11 @@ export default function ListHorarios() {
         userId: 1,
         title: scheduleTitle,
       });
-      setScheduleCreated(true)
-      return response.data;
+      setScheduleData([...scheduleData, response.data])
+      return response.data
     } catch (error) {
-      console.error(error);
-      return null;
+      console.error(error)
+      return null
     }
   }
 
@@ -67,13 +63,12 @@ export default function ListHorarios() {
     .get("http://127.0.0.1:8000/horarios/schedule/")
     .then((response) => {
       setScheduleData(response.data)
-      setScheduleCreated(false)
       console.log(scheduleData)
     })
     .catch((error) => {
       console.log(error)
     })
-  }, [scheduleCreated])
+  }, [])
   
 
 
