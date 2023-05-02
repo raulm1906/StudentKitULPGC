@@ -48,8 +48,10 @@ export default function FilterCard(props) {
 
       <Flex flexDirection="column" h="100%">
         
-        <YearDropdown year="Año 1" />
-        <YearDropdown year="Año 2"/>
+        <YearDropdown year={1} />
+        <YearDropdown year={2}/>
+        <YearDropdown year={3}/>
+        <YearDropdown year={4}/>
       </Flex>
     </Flex>
   )
