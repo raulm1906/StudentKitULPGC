@@ -8,9 +8,9 @@ import AppContext from '../../../../../app/AppContext'
 import { createEvents } from '../utils/utils'
 
 
-export default function AsignaturaCheckbox({ id, name }) {
-    const datos = require(`/src/data/subjectSchedules/${id}.json`)
-
+export default function AsignaturaCheckbox({ subject }) {
+    console.log(subject)
+    const datos = "assds"
     {/* Handles state of the checkbox */}
     const [isChecked, setIsChecked] = useState(false)
 
@@ -35,14 +35,14 @@ export default function AsignaturaCheckbox({ id, name }) {
         const sessionsTheory = datos.filter(item => item.Group === groupTheory)
         const sessionsPractice = datos.filter(item => item.Group === groupPractice)
 
-        const eventsTheory = createEvents(sessionsTheory, id)
-        const eventsPractice = createEvents(sessionsPractice, id)
+        const eventsTheory = createEvents(sessionsTheory, 40951)
+        const eventsPractice = createEvents(sessionsPractice, 40951)
 
         setEvents([...events, ...eventsTheory, ...eventsPractice])
     }
 
     function handleDeleteEvents(id){
-        setEvents(events.filter(event => event.subject_code !== id));
+        setEvents(events.filter(event => event.subject_code !== 40951));
     }
 
     function handleCheckBoxChange(e){
@@ -50,7 +50,7 @@ export default function AsignaturaCheckbox({ id, name }) {
         if(e.target.checked) {
             handleNewEvents()
         }else{
-            handleDeleteEvents(id)
+            handleDeleteEvents(40951)
         }
     } 
 
@@ -58,7 +58,7 @@ export default function AsignaturaCheckbox({ id, name }) {
     <Flex flexDirection="row" justifyContent="space-between">
             <Checkbox marginLeft="10px" checked={isChecked} onChange={handleCheckBoxChange}>
                 <Text fontWeight="semibold" color="#919191">
-                    {name}
+                    {subject.code}
                 </Text>
             </Checkbox>
             <Flex>
@@ -82,9 +82,7 @@ export default function AsignaturaCheckbox({ id, name }) {
                             {groupTheory}
                         </MenuButton>
                         <MenuList>
-                            <MenuItem onClick={() => handleTheory("1")}>Grupo 1</MenuItem>
-                            <MenuItem onClick={() => handleTheory("2")}>Grupo 2</MenuItem>
-                        </MenuList>
+                           </MenuList>
                     </Menu>
                 </Flex>
                 <Flex flexDirection="column" marginLeft="10px" marginRight="10px" alignItems="center">
@@ -107,11 +105,7 @@ export default function AsignaturaCheckbox({ id, name }) {
                             {groupPractice}
                         </MenuButton>
                         <MenuList>
-                            <MenuItem onClick={() => handlePractice("17")}>Grupo 17</MenuItem>
-                            <MenuItem onClick={() => handlePractice("18")}>Grupo 18</MenuItem>
-                            <MenuItem onClick={() => handlePractice("19")}>Grupo 19</MenuItem>
-                            <MenuItem onClick={() => handlePractice("20")}>Grupo 20</MenuItem>
-                            <MenuItem onClick={() => handlePractice("22")}>Grupo 22</MenuItem>
+
                         </MenuList>
                     </Menu>
                 </Flex>

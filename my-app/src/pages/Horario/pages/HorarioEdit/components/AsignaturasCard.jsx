@@ -27,7 +27,7 @@ export default function FilterCard(props) {
       h="70%" 
       bg="#f0f0f0"
       borderRadius="20px"
-      position="fixed" 
+      position="absolute" 
       zIndex="20"
       transition="0.5s ease all"
       margin="20px"
@@ -48,10 +48,8 @@ export default function FilterCard(props) {
 
       <Flex flexDirection="column" h="100%">
         
-        <YearDropdown year={1} />
-        <YearDropdown year={2}/>
-        <YearDropdown year={3}/>
-        <YearDropdown year={4}/>
+        <YearDropdown year={1}/>
+        
       </Flex>
     </Flex>
   )
