@@ -10,7 +10,7 @@
     }, 
     "header": {
         "horarios": "Schedules",
-        "profesorado": "Faculty",
+        "profesorado": "Teachers",
         "asignaturas": "Subjects"
     }, 
     "profesorado": {
