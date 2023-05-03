@@ -36,6 +36,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     
 
 '''
-class User(AbstractUser, PermissionsMixin):
+class Login(models.Model):
+
     pass
 '''
