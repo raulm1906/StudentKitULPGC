@@ -40,37 +40,6 @@ export const router = createBrowserRouter(
           element: <ListHorarios />,
           children: [
             {
-<<<<<<< HEAD
-                path: 'horario/',
-                element: <ListHorarios/>,
-                children:[
-                  {
-                    path: ':horarioid',
-                    element: <PageHorario/>
-                  }
-                ]
-              },
-            {
-                path:"/Asignatura",
-                element: <Asignatura asignatura={subject[0]} />,
-            },
-            {
-                path:"/Profesorado",
-                element: <Profesorado profesor={profesores[0]}/>,
-        
-            },
-        ],
-    },
-{
-    path: "/register",
-    element: <RegisterForm />,
-  },
-  {
-    path: "/login",
-    element: <LoginForm />,
-  },
-])
-=======
               path: ':horarioid',
               element: <PageHorario />
             }
@@ -105,4 +74,3 @@ export const router = createBrowserRouter(
       element: <RegisterHome />
     }
   ])
->>>>>>> main
