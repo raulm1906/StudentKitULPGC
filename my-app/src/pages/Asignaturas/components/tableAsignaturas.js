@@ -11,7 +11,7 @@ import {
   } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next';
 
-function TimeTable({horas}){
+function TimeTable({horas,id}){
   const [t, i18n] = useTranslation('common');
 
 
