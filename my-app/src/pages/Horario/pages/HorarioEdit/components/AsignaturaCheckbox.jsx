@@ -10,6 +10,7 @@ import { createEvents, getInitials } from '../utils/utils'
 
 export default function AsignaturaCheckbox({ subject }) {
     const initials = getInitials(subject.name)
+    console.log(subject)
     const lessons = subject.lessons
     const groupMapping = {
         41: 17,
@@ -50,9 +51,9 @@ export default function AsignaturaCheckbox({ subject }) {
         const sessionsPracticeInClassroom = lessons.filter(item => item.group === groupPractice)
 
 
-        const eventsTheory = createEvents(sessionsTheory, subject.code.toString(), "#FEAD57")
-        const eventsPractice = createEvents(sessionsPractice, subject.code.toString(), "#1FACE8")
-        const eventsPracticeInClassroom = createEvents(sessionsPracticeInClassroom, subject.code.toString(), "#71D359")
+        const eventsTheory = createEvents(sessionsTheory, initials, "#FEAD57")
+        const eventsPractice = createEvents(sessionsPractice, initials, "#1FACE8")
+        const eventsPracticeInClassroom = createEvents(sessionsPracticeInClassroom, initials, "#71D359")
 
         setEvents([...events, ...eventsTheory, ...eventsPractice, ...eventsPracticeInClassroom])
 
