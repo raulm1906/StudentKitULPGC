@@ -12,7 +12,7 @@ class Event(models.Model):
     subject_code = models.CharField(max_length=30)
     startTime = models.CharField(max_length=255)
     endTime = models.CharField(max_length=255)
-    daysOfWeek = models.IntegerField(choices=(
+    days_of_week = models.IntegerField(choices=(
         (1, 'Monday'),
         (2, 'Tuesday'),
         (3, 'Wednesday'),
