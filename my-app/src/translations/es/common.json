@@ -1,0 +1,108 @@
+{
+    "general": {
+        "placeholderBuscar": "Buscar..."
+    },
+    "footer": {
+        "eiiStudent": "Estudiante EII",
+        "aboutUs": "Sobre Nosotros",
+        "terms": "Términos",
+        "contact": "Contacto"
+    }, 
+    "header": {
+        "horarios": "Horarios",
+        "profesorado": "Profesorado",
+        "asignaturas": "Asignaturas"
+    },
+    "profesorado": {
+        "ordenar": "Ordenar Por",
+        "itemOrder": "Item de Ordenación",
+        "filters": "Filtros",
+        "useFilters": "Usar Filtros"
+    },
+    "SearchHomeProfesorado": {
+        "correo": "Correo",
+        "despacho": "Despacho"
+    },
+    "HomeAsignatura": {
+        "coordinador": "Coordinador",
+        "curso": "Curso",
+        "filters": "Filtros"
+    },
+    "ResultProfesorado": {
+        "email": "Correo",
+        "departamento": "Deparmento",
+        "phone": "Teléfono",
+        "conocimiento": "Área de conocimiento",
+        "horasTutorias": "Horas de Tutorías",
+        "asignaturas": "Asignaturas",
+        "buscar": "Buscar",
+        "profesores": "Profesores"
+    },
+    "ResultAsignaturas": {
+        "tipo": "Tipo",
+        "title": "Título",
+        "departamento": "Deparmento",
+        "duracion": "Duración",
+        "creditos": "Créditos",
+        "year": "Año",
+        "profesorado": "Profesorado",
+        "docente": "Proyecto Docente de la Asignatura",
+        "subjects": "Asignaturas",
+        "Year1": "Año 1",
+        "Year2": "Año 2",
+        "editarHorario": "Editar Horario"
+    },
+    "Day": {
+        "Monday": "Lunes",
+        "Tuesday": "Martes",
+        "Wednesday": "Miércoles",
+        "Thursday": "Jueves",
+        "Friday": "Viernes",
+        "Schedule": "Mañana/Tarde" 
+    },
+    "tablaProfesorado": {
+        "1": "Primer Semestre",
+        "2": "Segundo Semestre"
+    },
+    "listHorarios": {
+        "mishorarios": "Mis Horarios"
+    },
+    "AsignaturasCard": {
+        "teoria": "Toería",
+        "practice": "Práctica",
+        "group": "Grupo"
+    },
+    "Registro": {
+        "mensajeRegistro": "Crea una cuenta",
+        "nombreDeUsuario": "Nombre de Usuario",
+        "email": "Correo electrónico",
+        "contraseña": "Contraseña",
+        "confirmarContraseña": "Confirmar contraseña",
+        "registrarse": "Registrarse",
+        "mensajeLogin": "¿Ya tienes una cuenta?",
+        "login": "Iniciar sesión"
+    },
+    "Portada": {
+        "mensajePortada1": "La mejor herramienta como estudiante de la ULPGC",
+        "mensajePortada2": "(y también la última)",
+        "mensajePortada3": "Accede de forma rápida a la información del profesorado, asignaturas y cursos, y create un horario personal!"
+    },
+    "InicioSesion": {
+        "mensajeInicioSesion1": "Bienvenido de vuelta!",
+        "email": "Correo electrónico",
+        "contraseña": "Contraseña",
+        "login": "Iniciar sesión",
+        "recuerdame": "Recuérdame",
+        "mensajeInicioSesion2": "¿Todavía no tienes una cuenta?",
+        "registrate": "Regístrate"
+    },
+    "mensajeErrorRegistro": {
+        "mensajeRegistro1": "Las contraseñas no coinciden",
+        "mensajeRegistro2": "Formulario enviado",
+        "mensajeRegistro3": "Formulario no válido"
+    },
+    "mensajeErrorLogin": {
+        "mensajeErrorLogin1": "Introduzca la dirección de correo electrónico en la que desea recibir el boletín.",
+        "mensajeErrorLogin2": "El correo electrónico es obligatorio."
+    }
+}

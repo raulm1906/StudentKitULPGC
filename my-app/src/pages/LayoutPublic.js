@@ -1,11 +1,12 @@
 import { Outlet } from "react-router-dom";
 import Header from "./cabecera";
 import Footer from "../components/Footer";
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem } from '@chakra-ui/react'
 
 const LayoutPublic = () =>{
     return(
-         <Grid
+    <>
+        <Grid
                 h="100vh"
                 templateRows="auto auto 1fr auto"
                 templateColumns="repeat(3, 1fr)"
@@ -19,6 +20,8 @@ const LayoutPublic = () =>{
                     <Footer />
                 </GridItem>
             </Grid>
+
+    </>
     )
 }
 export default LayoutPublic;

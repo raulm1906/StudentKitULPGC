@@ -1,0 +1,11 @@
+#leftFrame{
+    width: 100%;
+    height: 70vh;
+}
+
+#filterFrame{
+    width: 25%;
+    height: 70vh;
+    background-color: #F0F0F0;
+
+}

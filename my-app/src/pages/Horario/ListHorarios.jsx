@@ -21,10 +21,12 @@ import { GrSchedules } from "react-icons/gr"
 import { GridItem } from '@chakra-ui/layout';
 import { Outlet } from 'react-router';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import axios from 'axios'
 
 export default function ListHorarios() {
   const [isOpen, setIsOpen] = useState(false);
+  const [t, i18n] = useTranslation('common');
   const [scheduleData, setScheduleData] = useState([])
   const [title, setTitle] = useState("")
   const [showInput, setShowInput] = useState(false)
@@ -84,7 +86,7 @@ export default function ListHorarios() {
         leftIcon={<Icon as={GrSchedules} color="white.500" />} 
         bg="#DADADA"
         borderRadius="20px"
-        >Mis Horarios</Button>
+        >{t('listHorarios.mishorarios')}</Button>
     </GridItem>
       <Drawer isOpen={isOpen} placement="right" onClose={handleToggle}>
         <DrawerOverlay />

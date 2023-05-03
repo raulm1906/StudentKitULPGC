@@ -1,23 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import cabecera from './pages/cabecera';
-import Profesorado from './pages/Profesorado/Profesorado';
-import Asignatura from './pages/Asignaturas/Asignaturas';
 import {router} from './router'
-import  {Route, Router, RouterProvider} from "react-router-dom"
-import subject from "./data/subjects.json";
-import profesores from "./data/profesores.json"
+import  {RouterProvider} from "react-router-dom"
+
 import { theme } from '@chakra-ui/theme';
 import { ChakraProvider } from '@chakra-ui/react';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <ChakraProvider theme={theme}>
-    <RouterProvider router = {router}/>
-  </ChakraProvider>  
-);
+import {I18nextProvider} from "react-i18next";
+import i18next from "i18next";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+import common_es from "./translations/es/common.json";
+import common_en from "./translations/en/common.json";
+
+i18next.init({
+    interpolation: { escapeValue: false },  // React already does escaping
+    lng: 'en',                              // language to use
+    resources: {
+        en: {
+            common: common_en               // 'common' is our custom namespace
+        },
+        es: {
+            common: common_es
+        },
+    },
+});
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+root.render(
+      <ChakraProvider theme={theme}>
+        <I18nextProvider i18n={i18next}>
+          <RouterProvider router={router}/>
+        </I18nextProvider>
+      </ChakraProvider>
+);

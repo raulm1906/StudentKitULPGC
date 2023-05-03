@@ -1,14 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import App from "./App";
-import Asignatura from "./pages/Asignaturas/Asignaturas";
+import Asignatura from "./pages/Asignaturas/ResultAsignaturas";
 import LayoutPublic from "./pages/LayoutPublic";
 import NotFound from "./components/NotFound";
-import Profesorado from "./pages/Profesorado/Profesorado";
-import subject from "./data/subjects.json";
-import profesores from "./data/profesores.json";
+import Profesorado from "./pages/Profesorado/ResultProfesorado";
 import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
+<<<<<<< HEAD
 import LoginForm from "./pages/Login/LoginForm";
 import RegisterForm from "./pages/Register/RegisterForm";
 
@@ -24,14 +22,25 @@ function importarJSON(nombreArchivo) {
   }
 }
 
+=======
+import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
+import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
+import RegisterHome from './pages/Register/RegisterHome';
+import LoginForm from "./pages/Login/LoginForm";
+>>>>>>> main
 export const router = createBrowserRouter(
-[
+  [
     {
-        path:"/",
-        element: <LayoutPublic/>,
-        errorElement: <NotFound />,
-        children: [
+      path: "/",
+      element: <LayoutPublic />,
+      errorElement: <NotFound />,
+      children: [
+        {
+          path: 'horario/',
+          element: <ListHorarios />,
+          children: [
             {
+<<<<<<< HEAD
                 path: 'horario/',
                 element: <ListHorarios/>,
                 children:[
@@ -61,3 +70,39 @@ export const router = createBrowserRouter(
     element: <LoginForm />,
   },
 ])
+=======
+              path: ':horarioid',
+              element: <PageHorario />
+            }
+          ]
+        },
+        {
+          path: "/HomeAsignatura",
+          element: <HomeAsignaturas />,
+
+        },
+        {
+          path: "/HomeAsignatura/:id",
+          element: <Asignatura />,
+        },
+        {
+          path: "/HomeProfesorado",
+          element: <HomeProfesorado />,
+
+        },
+        {
+          path: "/HomeProfesorado/:id",
+          element: <Profesorado />,
+        },
+      ],
+    },
+    {
+      path: "/Login",
+      element: <LoginForm />
+    },
+    {
+      path: "/Register",
+      element: <RegisterHome />
+    }
+  ])
+>>>>>>> main

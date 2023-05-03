@@ -1,14 +1,16 @@
 import React, { useContext } from 'react'
 import { Flex, Text, Button, Checkbox } from '@chakra-ui/react'
-import { useState } from 'react'
+import { useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
-import { AiFillCaretDown } from 'react-icons/ai'
-import { Icon } from '@chakra-ui/icon' 
-import AppContext from '../../../../../app/AppContext'
-import { createEvents } from '../utils/utils'
+import { AiFillCaretDown } from 'react-icons/ai';
+import { Icon } from '@chakra-ui/icon';
+import AppContext from '../../../../../app/AppContext';
+import { useTranslation } from 'react-i18next';
+import { createEvents } from '../utils/utils';
 
 
 export default function AsignaturaCheckbox({ id, name }) {
+    const [t, i18n] = useTranslation('common');
     const datos = require(`/src/data/subjectSchedules/${id}.json`)
 
     {/* Handles state of the checkbox */}
@@ -63,7 +65,7 @@ export default function AsignaturaCheckbox({ id, name }) {
             </Checkbox>
             <Flex>
                 <Flex flexDirection="column" marginLeft="10px" marginRight="10px" alignItems="center">
-                    <Text fontSize="xs">Teoría</Text>
+                    <Text fontSize="xs">{t('AsignaturasCard.teoria')}</Text>
                     <Menu>
                         <MenuButton 
                             as={Button} 
@@ -82,13 +84,13 @@ export default function AsignaturaCheckbox({ id, name }) {
                             {groupTheory}
                         </MenuButton>
                         <MenuList>
-                            <MenuItem onClick={() => handleTheory("1")}>Grupo 1</MenuItem>
-                            <MenuItem onClick={() => handleTheory("2")}>Grupo 2</MenuItem>
+                            <MenuItem onClick={() => handleTheory("1")}>{t('AsignaturasCard.group')} 1</MenuItem>
+                            <MenuItem onClick={() => handleTheory("2")}>{t('AsignaturasCard.group')} 2</MenuItem>
                         </MenuList>
                     </Menu>
                 </Flex>
                 <Flex flexDirection="column" marginLeft="10px" marginRight="10px" alignItems="center">
-                    <Text fontSize="xs">Práctica</Text>
+                    <Text fontSize="xs">{t('AsignaturasCard.practice')}</Text>
                     <Menu>
                         <MenuButton 
                             as={Button} 
@@ -107,11 +109,11 @@ export default function AsignaturaCheckbox({ id, name }) {
                             {groupPractice}
                         </MenuButton>
                         <MenuList>
-                            <MenuItem onClick={() => handlePractice("17")}>Grupo 17</MenuItem>
-                            <MenuItem onClick={() => handlePractice("18")}>Grupo 18</MenuItem>
-                            <MenuItem onClick={() => handlePractice("19")}>Grupo 19</MenuItem>
-                            <MenuItem onClick={() => handlePractice("20")}>Grupo 20</MenuItem>
-                            <MenuItem onClick={() => handlePractice("22")}>Grupo 22</MenuItem>
+                            <MenuItem onClick={() => handlePractice("17")}>{t('AsignaturasCard.group')} 17</MenuItem>
+                            <MenuItem onClick={() => handlePractice("18")}>{t('AsignaturasCard.group')} 18</MenuItem>
+                            <MenuItem onClick={() => handlePractice("19")}>{t('AsignaturasCard.group')} 19</MenuItem>
+                            <MenuItem onClick={() => handlePractice("20")}>{t('AsignaturasCard.group')} 20</MenuItem>
+                            <MenuItem onClick={() => handlePractice("22")}>{t('AsignaturasCard.group')} 22</MenuItem>
                         </MenuList>
                     </Menu>
                 </Flex>
