@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input } from "@chakra-ui/react";
-import { Button, Center } from "@chakra-ui/react";
+import { Button, Box } from "@chakra-ui/react";
 
-import './forms.css'
-
+//import '../../components/forms.css'
+import RegisterPortada from "../Register/RegisterPortada";
 function LoginForm() {
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
@@ -15,8 +15,10 @@ function LoginForm() {
     const isEmailError = emailInput === '';
   
     return (
-    <Center>
-      <div className="form">
+    <Box colSpan={2} display={"flex"}>
+      <RegisterPortada></RegisterPortada>
+      
+      <div className=" form">
         <h1>Bienvenido de <br></br> vuelta!</h1>
         <FormControl>
           <FormLabel>Email</FormLabel>
@@ -53,7 +55,7 @@ function LoginForm() {
           <p>Todavía no tienes una cuenta?</p>
           <p><a href="">Regístrate</a></p>
         </div>
-      </Center>
+      </Box>
     )
 }
 

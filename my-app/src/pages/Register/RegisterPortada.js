@@ -1,12 +1,11 @@
 import React from "react";
 import { Box, Image, Center } from "@chakra-ui/react";
 
-import './forms.css';
 
 function RegisterPortada() {
   
     return (
-    <div className="registerPortada">
+    <div className=" text-center w-50 registerPortada">
         <h1>La mejor herramienta como <br></br> estudiante de la ULPGC</h1>
         <h5>(y también la última)</h5>
         <h4>

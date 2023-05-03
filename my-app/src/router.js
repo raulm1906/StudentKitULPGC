@@ -9,6 +9,8 @@ import subject from "./data/subjects.json";
 import profesores from "./data/profesores.json";
 import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
+import LoginForm from "./pages/Login/LoginForm";
+import RegisterForm from "./pages/Register/RegisterForm";
 
 
 
@@ -50,6 +52,12 @@ export const router = createBrowserRouter(
             },
         ],
     },
-    
-
+{
+    path: "/register",
+    element: <RegisterForm />,
+  },
+  {
+    path: "/login",
+    element: <LoginForm />,
+  },
 ])
