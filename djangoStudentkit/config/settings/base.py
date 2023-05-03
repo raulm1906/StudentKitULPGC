@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'subjects',
     'teachers',
     'users',
+    'rest_framework.authtoken',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
