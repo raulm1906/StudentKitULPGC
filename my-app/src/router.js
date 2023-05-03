@@ -48,11 +48,11 @@ export const router = createBrowserRouter(
       ],
     },
     {
-      path: "/Login",
+      path: "/login",
       element: <LoginForm />
     },
     {
-      path: "/Register",
+      path: "/register",
       element: <RegisterHome />
     }
   ])
