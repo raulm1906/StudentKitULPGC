@@ -5,14 +5,12 @@ import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { Icon } from '@chakra-ui/icon' 
 import AppContext from '../../../../../app/AppContext'
-import { createEvents } from '../utils/utils'
+import { createEvents, getInitials } from '../utils/utils'
 
 
 export default function AsignaturaCheckbox({ subject }) {
-    
+    const initials = getInitials(subject.name)
     const lessons = subject.lessons
-    console.log(lessons)
-
     const groupMapping = {
         41: 17,
         42: 17,
@@ -46,13 +44,22 @@ export default function AsignaturaCheckbox({ subject }) {
     }    
 
     function handleNewEvents(){
-        console.log("New event")
+        console.log(lessons)
         const sessionsTheory = lessons.filter(item => item.group === groupTheory)
-        const sessionsPractice = lessons.filter(item => item.Group === getActualGroup(groupPractice))
+        const sessionsPractice = lessons.filter(item => item.group === 17)
+        const sessionsPracticeInClassroom = lessons.filter(item => item.group === groupPractice)
+
+
+        const eventsTheory = createEvents(sessionsTheory, subject.code.toString(), "#FEAD57")
+        const eventsPractice = createEvents(sessionsPractice, subject.code.toString(), "#1FACE8")
+        const eventsPracticeInClassroom = createEvents(sessionsPracticeInClassroom, subject.code.toString(), "#71D359")
+
+        setEvents([...events, ...eventsTheory, ...eventsPractice, ...eventsPracticeInClassroom])
+
     }
 
-    function handleDeleteEvents(id){
-        console.log("Delete event")
+    function handleDeleteEvents(){
+        setEvents(events.filter(event => event.subject_code !== subject.code.toString()))
     }
 
     function handleCheckBoxChange(e){
@@ -60,7 +67,7 @@ export default function AsignaturaCheckbox({ subject }) {
         if(e.target.checked) {
             handleNewEvents()
         }else{
-            handleDeleteEvents(40951)
+            handleDeleteEvents()
         }
     } 
 
@@ -68,7 +75,7 @@ export default function AsignaturaCheckbox({ subject }) {
     <Flex flexDirection="row" justifyContent="space-between">
             <Checkbox marginLeft="10px" checked={isChecked} onChange={handleCheckBoxChange}>
                 <Text fontWeight="semibold" color="#919191">
-                    {subject.code}
+                    {initials}
                 </Text>
             </Checkbox>
             <Flex>

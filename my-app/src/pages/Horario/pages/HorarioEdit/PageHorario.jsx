@@ -43,7 +43,9 @@ function PageHorario(){
                 startRecur: event.startRecur,
                 endRecur: event.endRecur,
                 rrule: event.rrule,
-                schedule: horario.id
+                schedule: horario.id,
+                backgroundColor: event.backgroundColor,
+                color: event.color
             });
             return response.data;
         } catch (error) {

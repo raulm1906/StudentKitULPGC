@@ -24,7 +24,7 @@ export default function FilterCard(props) {
       as="section"
       flexDirection="column"
       w="300px"
-      h="70%" 
+      h="65%" 
       bg="#f0f0f0"
       borderRadius="20px"
       position="absolute" 
@@ -46,9 +46,12 @@ export default function FilterCard(props) {
         </Button>
       </Flex>
 
-      <Flex flexDirection="column" h="100%">
+      <Flex flexDirection="column" h="90%" pb={3} px={1} overflowY="scroll">
         
         <YearDropdown year={1}/>
+        <YearDropdown year={2}/>
+        <YearDropdown year={3}/>
+        <YearDropdown year={4}/>
         
       </Flex>
     </Flex>

@@ -61,6 +61,17 @@ export default function ListHorarios() {
     }
   }
 
+  const deleteSchedule = async (scheduleId) => {
+    try {
+      const response = await axios.delete(`http://127.0.0.1:8000/horarios/schedule/${scheduleId}`)
+      const currentSchedules = scheduleData.filter((schedule) => schedule.id !== scheduleId)
+      console.log(currentSchedules)
+      setScheduleData(currentSchedules)
+    }catch(error){
+      console.error(error)
+    }
+  }
+
   useEffect(() => { 
     axios
     .get("http://127.0.0.1:8000/horarios/schedule/")
@@ -96,7 +107,7 @@ export default function ListHorarios() {
               {scheduleData.map((horario) => (
                 <Box key={horario.id}>
                   <Link to={`/horario/${horario.id}`} state={{data: horario}}><Button w="75%">{horario.title}</Button></Link>
-                  <Button marginLeft={5}><BsTrash/></Button>
+                  <Button marginLeft={5} value={horario.id}  onClick={() => deleteSchedule(horario.id)}><BsTrash/></Button>
                 </Box>
               ))}
             </Stack>

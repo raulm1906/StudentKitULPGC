@@ -33,13 +33,15 @@ export default function YearDropdown(props) {
     <>
         <Button 
         onClick={handleToggle} 
-        mb={2} display="flex" 
+        my={2}
+        py={2} 
+        display="flex" 
         justifyContent="space-between" 
       >
         <Text> Año {year}</Text>
         <Icon as={AiFillCaretDown}/>
       </Button>
-      <Collapse in={isOpen}>
+      <Collapse in={isOpen} style={{ display: 'contents' }}>
         { Array.from({length: subjects.length }, (_, i) => {
           return <AsignaturaCheckbox subject={subjects[i]}/>
         })}

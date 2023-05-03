@@ -50,6 +50,4 @@ export const router = createBrowserRouter(
             },
         ],
     },
-    
-
 ])
