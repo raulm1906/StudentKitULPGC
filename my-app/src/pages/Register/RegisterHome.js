@@ -1,5 +1,6 @@
 import "./Register.css"
 import imagen from "./Group 22.svg";
+import { Link } from "react-router-dom";
 function RegisterHome() {
     return(
 <div className="App">
@@ -27,7 +28,7 @@ function RegisterHome() {
           </form>
           <div>
             <label htmlFor="mensaje-login">¿Ya tienes una cuenta?</label>
-            <a href="">Login</a>
+            <Link to="/Login">Login</Link>
           </div>
         </main>
       </div>
