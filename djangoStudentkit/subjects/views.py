@@ -20,6 +20,8 @@ class SubjectViewSet(viewsets.ModelViewSet):
             queryset = Subject.objects.filter(code=id)
         elif year:
             queryset = Subject.objects.filter(year=year)
+        else:
+            queryset = Subject.objects.all()
         return queryset
 
 

@@ -8,14 +8,33 @@ const daysOfWeek = {
     "VIERNES": 5
 }
 
-export function createEvents(sessions, id){
+export function getInitials(text) {
+    const words = text.split(' ')
+      let initials = ''
+  
+      words.forEach(word => {
+        if(word == "I" || word == "II"){
+            initials += word
+        }
+        else if (word.length > 3) {
+            initials += word.charAt(0)
+        }
+    });
+      return initials.toUpperCase()
+  }
+
+
+export function createEvents(sessions, code, color){
+    console.log(sessions)
 return sessions.map(session =>({
     id: uuidv4(),
-    title: `${id} Grupo ${session.Group}`,
-    subject_code: id,
-    startTime: session.IHour,
-    endTime: session.FHour,
-    daysOfWeek: [daysOfWeek[`${session.Day}`]], // 1 = Monday
+    title: `${code} - grupo ${session.group} ${session.classroom}`,
+    subject_code: session.subject.toString(),
+    startTime: session.start_time.substring(0,5),
+    endTime: session.ending_time.substring(0,5),
+    daysOfWeek: [session.day],
+    backgroundColor: color,
+    color: color,
     startRecur: '2023-03-01T00:00:00', 
     endRecur: '2024-05-01T00:00:00',
     rrule: {
