@@ -1,14 +1,16 @@
 from .base import *
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "OPTIONS": {
+            "read_default_file": os.path.join(BASE_DIR, 'config/settings/my.cnf'),
+        },
     }
 }
 REST_FRAMEWORK = {
         'DEFAULT_RENDERER_CLASSES': (
             'rest_framework.renderers.JSONRenderer',
-            'rest_framework.renderers.BrowsableAPIRenderer',
+        	'rest_framework.renderers.BrowsableAPIRenderer',
         ),
     }

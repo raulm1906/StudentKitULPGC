@@ -25,10 +25,10 @@ export default function FilterCard(props) {
       as="section"
       flexDirection="column"
       w="300px"
-      h="70%" 
+      h="65%" 
       bg="#f0f0f0"
       borderRadius="20px"
-      position="fixed" 
+      position="absolute" 
       zIndex="20"
       transition="0.5s ease all"
       margin="20px"
@@ -47,10 +47,13 @@ export default function FilterCard(props) {
         </Button>
       </Flex>
 
-      <Flex flexDirection="column" h="100%">
+      <Flex flexDirection="column" h="90%" pb={3} px={1} overflowY="scroll">
         
-        <YearDropdown year={t('ResultAsignaturas.Year1')}/>
-        <YearDropdown year={t('ResultAsignaturas.Year2')}/>
+        <YearDropdown year={1}/>
+        <YearDropdown year={2}/>
+        <YearDropdown year={3}/>
+        <YearDropdown year={4}/>
+        
       </Flex>
     </Flex>
   )

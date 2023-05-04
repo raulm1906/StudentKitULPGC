@@ -25,6 +25,8 @@ class Event(models.Model):
     startRecur = models.CharField(max_length=255, default= "2023-03-01T00:00:00")
     endRecur = models.CharField(max_length=255, default="2024-05-01T00:00:00")
     rrule = models.JSONField(default=dict(freq='weekly', interval=1))
+    backgroundColor = models.CharField(max_length=255, default="#FEAD57")
+    color = models.CharField(max_length=255, default="#FEAD57")
 
     class Meta:
         db_table = 'event'
