@@ -6,7 +6,6 @@ import NotFound from "./components/NotFound";
 import Profesorado from "./pages/Profesorado/ResultProfesorado";
 import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
-<<<<<<< HEAD
 import LoginForm from "./pages/Login/LoginForm";
 import RegisterForm from "./pages/Register/RegisterForm";
 
@@ -22,12 +21,10 @@ function importarJSON(nombreArchivo) {
   }
 }
 
-=======
 import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
 import RegisterHome from './pages/Register/RegisterHome';
 import LoginForm from "./pages/Login/LoginForm";
->>>>>>> main
 export const router = createBrowserRouter(
   [
     {
