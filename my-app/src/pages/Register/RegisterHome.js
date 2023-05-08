@@ -6,7 +6,7 @@ import imagen from "./Group 22.svg";
 import RegisterPortada from "./RegisterPortada";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
-
+import axios from 'axios';
 function RegisterHome() {
   const [usuarioInput, setUsuarioInput] = useState('');
   const [emailInput, setEmailInput] = useState('');
@@ -27,10 +27,22 @@ function RegisterHome() {
     setIsPasswordMatch(e.target.value === passwordInput);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     if (isFormValid) {
-      console.log(t('mensajeErrorRegistro.mensajeRegistro2'));
+
+      const data = {
+        "first_name": usuarioInput,
+        "email": emailInput,
+        "password": passwordInput,
+      };
+      console.log(data)
+      try {
+        const response = await axios.post('https://django.narurm.eu/usuarios/', data);
+        console.log(response.data);
+      } catch (error) {
+        console.log(error);
+      }
     } else {
       console.log(t('mensajeErrorRegistro.mensajeRegistro3'));
     }
@@ -60,6 +72,7 @@ function RegisterHome() {
   const handleFormChange = () => {
     setIsFormValid(validateForm());
   }
+
 
   return (
     <Box colSpan={2} display={"flex"}>
