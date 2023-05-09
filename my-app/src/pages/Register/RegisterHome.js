@@ -6,8 +6,11 @@ import imagen from "./Group 22.svg";
 import RegisterPortada from "./RegisterPortada";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import { Navigate } from 'react-router-dom';
+
 import axios from 'axios';
 function RegisterHome() {
+  const [redirect, setRedirect] = useState(false);
   const [usuarioInput, setUsuarioInput] = useState('');
   const [emailInput, setEmailInput] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
@@ -15,7 +18,7 @@ function RegisterHome() {
   const [isPasswordMatch, setIsPasswordMatch] = useState(true);
   const [isFormValid, setIsFormValid] = useState(false);
   const [t, i18n] = useTranslation('common');
-
+  
   const handleUsuarioInputChange = (e) => setUsuarioInput(e.target.value);
   const handleEmailInputChange = (e) => setEmailInput(e.target.value);
   const handlePasswordInputChange = (e) => {
@@ -39,13 +42,20 @@ function RegisterHome() {
       console.log(data)
       try {
         const response = await axios.post('https://django.narurm.eu/usuarios/', data);
-        console.log(response.data);
+        setRedirect(true);
       } catch (error) {
-        console.log(error);
-      }
+        if (error.response) {
+          const errorMessages = Object.values(error.response.data).join('\n');
+          console.log(errorMessages)
+          alert(errorMessages);
+        } else {
+          console.log(error);
+        }
+    }
     } else {
       console.log(t('mensajeErrorRegistro.mensajeRegistro3'));
-    }
+    } 
+
   }
 
   const validateEmail = (email) => {
@@ -73,6 +83,10 @@ function RegisterHome() {
     setIsFormValid(validateForm());
   }
 
+
+  if (redirect) {
+    return <Navigate to="/" replace={true} />;
+  }
 
   return (
     <Box colSpan={2} display={"flex"}>
