@@ -15,6 +15,7 @@ const SearchProfesores = ({searchTerm}) => {
       .catch(error => {
           console.error(error);
       });
+      
     },[]);
 
         

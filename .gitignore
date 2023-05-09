@@ -23,3 +23,8 @@
 hs_err_pid*
 
 /djangoStudentkit/my.cnf
+/djangoStudentkit/config/db.sqlite3
+
+
+.idea/
+/djangoStudentkit/config/settings/my.cnf

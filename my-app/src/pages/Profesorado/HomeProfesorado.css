@@ -1,7 +1,7 @@
-
 #HomeAsignatura{
     display: flex;
     justify-content: space-evenly;
+    grid-column: span 3;
 }
 #CabeceraHomeSearch{
     margin: 1%;
@@ -26,7 +26,7 @@
 }
 #SearchHomeAsignatura{
     height: 70vh;
-    width: 75%;
+    width: 100%;
     margin: 1%;
     position: sticky;
 
