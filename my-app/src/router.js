@@ -3,13 +3,14 @@ import { createBrowserRouter } from "react-router-dom";
 import Asignatura from "./pages/Asignaturas/ResultAsignaturas";
 import LayoutPublic from "./pages/LayoutPublic";
 import NotFound from "./components/NotFound";
-import Profesorado from "./pages/Profesorado/ResultProfesorado";
+import Profesorado from "./pages/Users/editUsers";
 import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
 import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
 import RegisterHome from './pages/Register/RegisterHome';
 import LoginForm from "./pages/Login/LoginForm";
+import a from "./pages/Horario/ListHorarios";
 export const router = createBrowserRouter(
   [
     {
@@ -26,6 +27,10 @@ export const router = createBrowserRouter(
               element: <PageHorario />
             }
           ]
+        },
+        {
+          path: "/editUser",
+          element: <editUsers />,
         },
         {
           path: "/HomeAsignatura",
@@ -54,5 +59,6 @@ export const router = createBrowserRouter(
     {
       path: "/Register",
       element: <RegisterHome />
-    }
+    },
+
   ])
