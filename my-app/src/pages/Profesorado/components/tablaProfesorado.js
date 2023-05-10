@@ -14,7 +14,7 @@ function TableProf({tutorias}){
     const [t, i18n] = useTranslation('common');
 
     useEffect(() => {
-        console.log(tutorias);
+    console.log(tutorias[0]);
     }, [tutorias]);
 
 
@@ -37,15 +37,15 @@ function TableProf({tutorias}){
             </Thead>
             <Tbody>
                 <Tr>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.LUNES}</Td>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.MARTES}</Td>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.MIERCOLES}</Td>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.JUEVES}</Td>
-                    <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.VIERNES}</Td>
+                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Monday}</Td>
+                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Tuesday}</Td>
+                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Wednesday}</Td>
+                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Thursday}</Td>
+                    <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.Friday}</Td>
                 </Tr>
             </Tbody>
         </Table>
-        {/*
+        
         <h2 className="m-10">{t('tablaProfesorado.2')}</h2>
         <Table variant="simple"  size="md">
             <Thead>
@@ -59,14 +59,14 @@ function TableProf({tutorias}){
             </Thead>
             <Tbody>
                 <Tr>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.LUNES}</Td>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.MARTES}</Td>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.MIERCOLES}</Td>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.JUEVES}</Td>
-                <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.VIERNES}</Td>
+                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Monday}</Td>
+                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Tuesday}</Td>
+                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Wednesday}</Td>
+                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Thursday}</Td>
+                <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.Friday}</Td>
                 </Tr>
             </Tbody>
-    </Table>*/}
+    </Table>
     </ChakraProvider>
     )
 }

@@ -95,23 +95,13 @@ function Profesorado() {
 
                     <GridItem w='100%' h='10'> <b>{t('ResultProfesorado.conocimiento')}: </b>{knowledge_area}</GridItem>
                 </Grid>
-                {/*
+                
                <b>{t('ResultProfesorado.horasTutorias')}:</b>
                 <div className='text-center tutoriasFrame'>
                     <TableProf className="center-x" tutorias={newTeacher.tutoring_hours}/>
                 </div>
-             */}
-                <div>
-                    <b>{t('ResultProfesorado.asignaturas')}:</b>
-                    <List spacing={3} marginLeft={"2"}>                    
-                    {subjects.map((element, index) => (
-                    <ListItem key={index}>
-                        <ListIcon as={ChevronRightIcon} color='green.500' />
-                        {element[0].name}
-                    </ListItem>
-                    ))}
-                    </List>
-                </div>
+             
+
               
             </section>
             
