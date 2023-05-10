@@ -13,7 +13,7 @@ function MyCalendar() {
 
     return (
         
-        <Box maxW="100%" margin={5} transition="0.5s ease all">
+        <Box maxW="100%" maxH="100%" margin={5} transition="0.5s ease all">
             <FullCalendar
                 plugins={[dayGridPlugin, timeGridPlugin]}
                 initialView="timeGridWeek"

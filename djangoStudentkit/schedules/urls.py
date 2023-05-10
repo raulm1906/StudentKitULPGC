@@ -10,6 +10,7 @@ router = routers.DefaultRouter()
 router.register(r'schedule', ScheduleViewSet, basename="schedules")
 router.register(r'event', EventViewSet, basename="events")
 
+
 urlpatterns = [
     path('', include(router.urls)),
 ]

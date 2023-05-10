@@ -21,7 +21,7 @@ function TimeTable({ horas }) {
     "19:30:00": "",
     "20:30:00": "",
   };
-
+ 
   const [lunes, setLunes] = useState(initialDayState);
   const [martes, setMartes] = useState(initialDayState);
   const [miercoles, setMiercoles] = useState(initialDayState);
@@ -108,7 +108,6 @@ function TimeTable({ horas }) {
   useEffect(() => {
     loopTrough();
   }, [horas]);  
-
   
   const coloredCell = (value) => {
     console.log(value)
@@ -118,8 +117,8 @@ function TimeTable({ horas }) {
     if (value.charAt(0) === 'L') {
       return value ? <Box bg="#FDD85A" p={0} margin={0} height={"100%"}>{value}</Box> : "";
     }
-    return value ? <Box bg="#99BC59" p={0} margin={0} height={"100%"}>{value}</Box> : "";
-  };
+      return value ? <Box bg="#99BC59" p={0} margin={0} height={"100%"}>{value}</Box> : "";
+    };
 
   return ( 
     <ChakraProvider>
