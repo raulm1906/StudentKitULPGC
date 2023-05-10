@@ -10,7 +10,7 @@ User = get_user_model()
 def enviar_correo_confirmacion(usuario_email):
     msg = EmailMessage()
     msg['Subject'] = 'Confirmacion de registro'
-    msg['From'] = 'ulpgcstudentkit@gmail.com'
+    msg['From'] = 'ulpgcstudentkit@outlook.es'
     msg['To'] = usuario_email
     msg.set_content('Gracias por registrarte en nuestro sitio web.')
 
@@ -19,7 +19,7 @@ def enviar_correo_confirmacion(usuario_email):
         smtp.starttls()
         smtp.ehlo()
 
-        smtp.login('ulpgcstudentkit@gmail.com', 'KANAK45.9')
+        smtp.login('ulpgcstudentkit@outlook.es', 'KANAK45.9')
         smtp.send_message(msg)
 
 class UserSerializer(serializers.ModelSerializer):
