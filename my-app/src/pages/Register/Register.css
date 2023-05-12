@@ -1,0 +1,150 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .left {
+    left: 0;
+    display: flex;
+    background: #FFFFFF;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  
+  .left h1 { 
+    color: #F89A36;
+    font-size: 40px;
+  }
+  
+  .left p {
+    color: #F89A36;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .left a {
+    display:contents;
+  }
+  
+  .left label {
+    display: flex;
+    text-align: justify;
+    margin-left: 295px;
+    font-size: 17px;
+  }
+  
+  .left label[for="mensaje-login"] {
+    margin-left: 392px;
+  }
+  
+  .left input {
+    margin-bottom: 25px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #767676;
+    width: 350px;
+    font-size:larger;
+  }
+  
+  .left input:hover {
+    background: #EFF4FD;
+    border: 1px solid #0066A1;
+  }
+  
+  .left input:focus {
+    outline: none;
+  }
+  
+  .left input[type="password"] {
+    letter-spacing: 5px;
+  }
+  
+  .left button {
+    margin: 20px;
+    background-color: #F89A36;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    width: 368px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .right {
+    right: 0;
+    background: #0066A1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right h1 { 
+    color: #F89A36;
+    font-size: 53px;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  .right p {
+    color: #F89A36;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .right h2 {
+    color: #F89A36;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .right img {
+    width: 80%;
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .split {
+      width: 100%;
+    }
+  
+    .left {
+      padding-top: 80px;
+    }
+  }

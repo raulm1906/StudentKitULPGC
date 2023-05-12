@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -153,3 +152,13 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+
+CORS_ALLOW_CREDENTIALS = True
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ulpgcstudentkit@outlook.es'
+EMAIL_HOST_PASSWORD = 'KANAK45.9'
+EMAIL_CHARSET = 'utf-8'

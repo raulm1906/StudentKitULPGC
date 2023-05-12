@@ -52,6 +52,25 @@ files = [
 Django = ">=3.2"
 
 [[package]]
+name = "django-rest-auth"
+version = "0.9.5"
+description = "Create a set of REST API endpoints for Authentication and Registration"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "django-rest-auth-0.9.5.tar.gz", hash = "sha256:f11e12175dafeed772f50d740d22caeab27e99a3caca24ec65e66a8d6de16571"},
+]
+
+[package.dependencies]
+Django = ">=1.8.0"
+djangorestframework = ">=3.1.3"
+six = ">=1.9.0"
+
+[package.extras]
+with-social = ["django-allauth (>=0.25.0)"]
+
+[[package]]
 name = "djangorestframework"
 version = "3.14.0"
 description = "Web APIs for Django, made easy."
@@ -183,6 +202,18 @@ files = [
 ]
 
 [[package]]
+name = "six"
+version = "1.16.0"
+description = "Python 2 and 3 compatibility utilities"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+files = [
+    {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
+    {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -214,4 +245,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "956f704ff1e830ccbbddbad1aa564c5b12e35903cd8c15a4859abf4cd5fde048"
+content-hash = "cc658aef4ce8b0e017e9532d653c86cd422b237c8509a1a22719eb5f69695988"
