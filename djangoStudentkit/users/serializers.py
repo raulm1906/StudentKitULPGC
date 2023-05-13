@@ -4,17 +4,22 @@ from django.contrib.auth import get_user_model
 from django.contrib.auth.password_validation import validate_password
 import smtplib
 from email.message import EmailMessage
+from django.urls import reverse
+from django.conf import settings
+import uuid
 
 User = get_user_model()
 
-def enviar_correo_confirmacion(usuario_email):
+def enviar_correo_confirmacion(usuario_email, activation_token):
+    user = User.objects.get(email=usuario_email)
+    activation_link = f'{settings.ACTIVATION_URL}?token={activation_token}'
     msg = EmailMessage()
     msg['Subject'] = 'Confirmacion de registro'
     msg['From'] = 'ulpgcstudentkit@outlook.es'
     msg['To'] = usuario_email
-    msg.set_content('Gracias por registrarte en nuestro sitio web.')
+    msg.set_content(f'Hola {user.get_username()},\n\nPor favor, haga clic en el siguiente enlace para activar su cuenta:\n\n{activation_link}\n\nGracias por registrarse en nuestro sitio web.')
 
-    with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
+    with smtplib.SMTP('smtp.office365.com', 587) as smtp:
         smtp.ehlo()
         smtp.starttls()
         smtp.ehlo()
@@ -34,7 +39,8 @@ class UserSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         password = validated_data.pop('password')
-        enviar_correo_confirmacion(validated_data['email'])
+        activation_token = str(uuid.uuid4())
+        enviar_correo_confirmacion(validated_data['email'], activation_token)
         return user
     
     def update(self, instance, validated_data):

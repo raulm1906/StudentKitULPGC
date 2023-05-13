@@ -165,3 +165,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'ulpgcstudentkit@outlook.es'
 EMAIL_HOST_PASSWORD = 'KANAK45.9'
 EMAIL_CHARSET = 'utf-8'
+
+ACTIVATION_URL = 'http://localhost:8000/usuarios/activate/'
