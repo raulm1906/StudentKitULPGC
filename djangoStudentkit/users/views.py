@@ -25,6 +25,7 @@ Hay que solucionar que la url de la vista no es captada con el token
 '''
 class ActivateAccountView(View):
     def get(self, request, *args, **kwargs):
+            print(kwargs['activation_token'])
             try:
                 #user = User.objects.get(activation_token=kwargs['token'])
                 user = User.objects.get(activation_token=kwargs['activation_token'])

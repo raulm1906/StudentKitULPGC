@@ -24,7 +24,7 @@ def enviar_correo_confirmacion(usuario_email, activation_token):
         smtp.starttls()
         smtp.ehlo()
 
-        smtp.login('ulpgcstudentkit@outlook.es', 'KANAK45.9')
+        smtp.login('ulpgcstudentkit@outlook.es', 'A')
         smtp.send_message(msg)
 
 class UserSerializer(serializers.ModelSerializer):
