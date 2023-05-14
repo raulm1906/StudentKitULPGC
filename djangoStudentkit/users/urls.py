@@ -10,7 +10,7 @@ urlpatterns = [
     path('', UserList.as_view(), name='user-list'),
     path('<int:pk>/', UserDetail.as_view(), name='user-detail'),
     path('login/', obtain_auth_token, name='api_token_auth'),  
-    path('activate/', ActivateAccountView.as_view(), name='activate')
+    path('activate/<str:activation_token>/', ActivateAccountView.as_view(), name='activate')
 
 ]
  

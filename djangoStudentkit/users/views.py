@@ -7,6 +7,8 @@ from django.views.generic.base import View
 from rest_framework.response import Response
 from django.http import HttpResponse
 from django.contrib.auth import get_user_model
+from rest_framework.authtoken.views import obtain_auth_token  
+
 
 
 User = get_user_model()
@@ -25,7 +27,6 @@ Hay que solucionar que la url de la vista no es captada con el token
 '''
 class ActivateAccountView(View):
     def get(self, request, *args, **kwargs):
-            print(kwargs['activation_token'])
             try:
                 #user = User.objects.get(activation_token=kwargs['token'])
                 user = User.objects.get(activation_token=kwargs['activation_token'])
@@ -35,6 +36,7 @@ class ActivateAccountView(View):
             user.is_active = True
             user.activation_token = ''
             user.save()
-            return redirect(reverse('login'))
+            #return redirect(reverse('login'))
+            return redirect(reverse(obtain_auth_token))
 
 
