@@ -193,4 +193,17 @@ nav a{
   padding-bottom: 25px;
 }
 
+.footer.dark {
+  background-color: black;
+  color: #fff;
+}
+
+.footer button {
+  margin-right: 3em;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
 

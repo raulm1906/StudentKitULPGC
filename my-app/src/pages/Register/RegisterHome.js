@@ -7,6 +7,7 @@ import RegisterPortada from "./RegisterPortada";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import { Navigate } from 'react-router-dom';
+import { useColorMode } from '@chakra-ui/react';
 
 import axios from 'axios';
 function RegisterHome() {
@@ -18,6 +19,7 @@ function RegisterHome() {
   const [isPasswordMatch, setIsPasswordMatch] = useState(true);
   const [isFormValid, setIsFormValid] = useState(false);
   const [t, i18n] = useTranslation('common');
+  const { colorMode } = useColorMode();
   
   const handleUsuarioInputChange = (e) => setUsuarioInput(e.target.value);
   const handleEmailInputChange = (e) => setEmailInput(e.target.value);
@@ -90,7 +92,7 @@ function RegisterHome() {
 
   return (
     <Box colSpan={2} display={"flex"}>
-      <div className=" text-center w-100 register">
+      <div className={` text-center w-100 register ${colorMode === 'dark' ? 'dark' : ''}`}>
         <h1>{t('Registro.mensajeRegistro')}</h1>
         <form onSubmit={handleSubmit}>
           <FormControl>

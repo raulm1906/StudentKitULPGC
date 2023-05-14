@@ -4,6 +4,7 @@ import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Checkb
 import { Button, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
+import { useColorMode } from '@chakra-ui/react';
 import '../../components/forms.css'
 import RegisterPortada from "../Register/RegisterPortada";
 import axios from 'axios';
@@ -13,6 +14,7 @@ function LoginForm() {
     const [passwordInput, setPasswordInput] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
     const [t, i18n] = useTranslation('common');
+    const { colorMode } = useColorMode();
   
     const handleEmailInputChange = (e) => setEmailInput(e.target.value);
     const handlePasswordInput = (e) => setPasswordInput(e.target.value);
@@ -41,7 +43,7 @@ function LoginForm() {
 
     return (
     <Box colSpan={2} display={"flex"}>
-      <div className=" text-center w-100 form">
+      <div className={` text-center w-100 form ${colorMode === 'dark' ? 'dark' : ''}`}>
         <h1>{t('InicioSesion.mensajeInicioSesion1')}</h1>
         <form onSubmit={handleSubmit}>
         <FormControl>

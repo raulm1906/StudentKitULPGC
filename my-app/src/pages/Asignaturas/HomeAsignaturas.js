@@ -6,6 +6,7 @@ import {HamburgerIcon }  from '@chakra-ui/icons'
 import SearchHomeAsignatura from '../../components/Busqueda/SearchHomeAsignatura'
 import { Drawer, DrawerBody, Button, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, useDisclosure } from '@chakra-ui/react';
 import {useTranslation} from "react-i18next";
+import { useColorMode } from '@chakra-ui/react';
 
 import {
     Menu,
@@ -19,6 +20,7 @@ export default function HomeAsignaturas() {
   const [searchTerm, setSearchTerm] = useState('');
   const [t, i18n] = useTranslation('common');
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { colorMode } = useColorMode();
 
   const handleChange = event => {
     setSearchTerm(event.target.value);
@@ -27,7 +29,7 @@ export default function HomeAsignaturas() {
     <div id = "HomeAsignatura">
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
-            <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
+            <div id = "SearchBar" className={colorMode === 'dark' ? 'dark' : ''}> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
                 <div id ="OrderBy">
                   <Menu>
                     <MenuButton as={Button} >
