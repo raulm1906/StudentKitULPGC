@@ -82,6 +82,7 @@ function PageHorario(){
     useEffect(() => {
         if (horario && horario.events) {
           setEvents(horario.events)
+          setOriginalEvents(horario.events)
         }
       }, [horario])
 

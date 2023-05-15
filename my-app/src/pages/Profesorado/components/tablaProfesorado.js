@@ -18,19 +18,11 @@ function TableProf({tutorias}){
     const [Fjueves,setFjueves] = useState({})
     const [Fviernes,setFviernes] = useState({})
 
-<<<<<<< HEAD
-    useEffect(() => {
-    console.log(tutorias[0]);
-    }, [tutorias]);
-
-
-=======
     const [Slunes,setSlunes] = useState({})
     const [Smartes,setSmartes] = useState({})
     const [Smiercoles,setSmiercoles] = useState({})
     const [Sjueves,setSjueves] = useState({})
     const [Sviernes,setSviernes] = useState({})
->>>>>>> 8768211cd65c6a70c39caf27dfd49e68350c57c4
     
     useEffect(() => {
 
@@ -70,17 +62,6 @@ function TableProf({tutorias}){
    
             <Tbody>
                 <Tr>
-<<<<<<< HEAD
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Monday}</Td>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Tuesday}</Td>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Wednesday}</Td>
-                    <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].firstSemester.Thursday}</Td>
-                    <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.Friday}</Td>
-                </Tr>
-            </Tbody>
-        </Table>
-        
-=======
                     <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign maxW='20'>
                     {`${Flunes[0]?.start_time || '----'} - ${Flunes[0]?.ending_time || '----'}`}
                     </Td>
@@ -99,7 +80,6 @@ function TableProf({tutorias}){
                 </Tr>
             </Tbody>
         </Table>
->>>>>>> 8768211cd65c6a70c39caf27dfd49e68350c57c4
         <h2 className="m-10">{t('tablaProfesorado.2')}</h2>
         <Table variant="simple"  size="md">
             <Thead>
@@ -113,19 +93,11 @@ function TableProf({tutorias}){
             </Thead>
             <Tbody>
                 <Tr>
-<<<<<<< HEAD
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Monday}</Td>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Tuesday}</Td>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Wednesday}</Td>
-                <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign>{tutorias[0].secondSemester.Thursday}</Td>
-                <Td border= {"0px"} textAlign>{tutorias[0].firstSemester.Friday}</Td>
-=======
                 <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign maxW='20'>{`${Slunes[0]?.start_time || '----'} - ${Slunes[0]?.ending_time || '----'}`}</Td>
                 <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign maxW='20'>{`${Smartes[0]?.start_time || '----'} - ${Smartes[0]?.ending_time || '----'}`}</Td>
                 <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign maxW='20'>{`${Smiercoles[0]?.start_time || '----'} - ${Smiercoles[0]?.ending_time || '----'}`}</Td>
                 <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign maxW='20'>{`${Sjueves[0]?.start_time || '----'} - ${Sjueves[0]?.ending_time || '----'}`}</Td>
                 <Td border= {"0px"} borderRight={"2px"} borderRightColor="white" textAlign maxW='20'>{`${Sviernes[0]?.start_time || '----'} - ${Sviernes[0]?.ending_time || '----'}`}</Td>
->>>>>>> 8768211cd65c6a70c39caf27dfd49e68350c57c4
                 </Tr>
             </Tbody>
     </Table>
