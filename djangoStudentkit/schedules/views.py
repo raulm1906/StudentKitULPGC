@@ -25,7 +25,7 @@ class EventViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         id = self.request.query_params.get('id')
         if id is not None:
-            queryset = Schedule.objects.filter(id=id)
+            queryset = Event.objects.filter(id=id)
             return queryset
         else:
-            return Schedule.objects.all()
+            return Event.objects.all()
