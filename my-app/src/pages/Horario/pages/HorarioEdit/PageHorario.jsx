@@ -33,7 +33,7 @@ function PageHorario(){
 
     const postEvent = async (event) => {
         try {
-            const response = await axios.post("http://127.0.0.1:8000/horarios/event/", {
+            const response = await axios.post("https://django.narurm.eu/horarios/event/", {
                 id: event.id,
                 subject_code: event.subject_code,
                 title: event.title,
@@ -56,8 +56,9 @@ function PageHorario(){
 
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
+            const response = await axios.get(`https://django.narurm.eu/horarios/schedule/?id=${horarioid}`)
             setHorario(response.data[0])
+            console.log(horarioid)
         }    
         fetchData()
     }, [horarioid])

@@ -51,8 +51,8 @@ export default function ListHorarios() {
 
   const createSchedule = async (scheduleTitle) => {
     try {
-      const response = await axios.post("http://127.0.0.1:8000/horarios/schedule/", {
-        userId: 1,
+      const response = await axios.post("https://django.narurm.eu/horarios/schedule/", {
+        userId: 2,
         title: scheduleTitle,
       });
       setScheduleData([...scheduleData, response.data])
@@ -65,7 +65,7 @@ export default function ListHorarios() {
 
   const deleteSchedule = async (scheduleId) => {
     try {
-      const response = await axios.delete(`http://127.0.0.1:8000/horarios/schedule/${scheduleId}`)
+      const response = await axios.delete(`https://django.narurm.eu/horarios/schedule/${scheduleId}`)
       const currentSchedules = scheduleData.filter((schedule) => schedule.id !== scheduleId)
       console.log(currentSchedules)
       setScheduleData(currentSchedules)
@@ -76,7 +76,7 @@ export default function ListHorarios() {
 
   useEffect(() => { 
     axios
-    .get("http://127.0.0.1:8000/horarios/schedule/")
+    .get("https://django.narurm.eu/horarios/schedule/")
     .then((response) => {
       setScheduleData(response.data)
       console.log(scheduleData)
