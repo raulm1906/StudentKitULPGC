@@ -87,6 +87,10 @@ function Profesorado() {
                 <div className={`text-center tutoriasFrame ${colorMode === 'dark' ? 'dark' : ''}`}>  
                     {tutoringHour.length != 0 ? <TableProf className="center-x" tutorias={tutoringHour}/> : <h1>No se han registrado horas de tutorías</h1>}
                 </div>
+<<<<<<< HEAD
+             
+
+=======
             
                 <div>
                     <b>{t('ResultProfesorado.asignaturas')}:</b>
@@ -99,6 +103,7 @@ function Profesorado() {
                     ))}
                     </List>
                 </div>
+>>>>>>> 8768211cd65c6a70c39caf27dfd49e68350c57c4
               
             </section>
             

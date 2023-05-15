@@ -18,11 +18,19 @@ function TableProf({tutorias}){
     const [Fjueves,setFjueves] = useState({})
     const [Fviernes,setFviernes] = useState({})
 
+<<<<<<< HEAD
+    useEffect(() => {
+    console.log(tutorias[0]);
+    }, [tutorias]);
+
+
+=======
     const [Slunes,setSlunes] = useState({})
     const [Smartes,setSmartes] = useState({})
     const [Smiercoles,setSmiercoles] = useState({})
     const [Sjueves,setSjueves] = useState({})
     const [Sviernes,setSviernes] = useState({})
+>>>>>>> 8768211cd65c6a70c39caf27dfd49e68350c57c4
     
     useEffect(() => {
 
