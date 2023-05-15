@@ -7,6 +7,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {Search2Icon,ChevronRightIcon} from '@chakra-ui/icons'
+import { useColorMode } from '@chakra-ui/react';
 import axios from 'axios';
 import {
     List,
@@ -20,52 +21,37 @@ function Profesorado() {
     const [newTeacher, setnewTeacher] = useState({})
     const [searchTerm, setSearchTerm] = useState('');
     const [t, i18n] = useTranslation('common');
-    const [knowledge_area,setKnowledge] = useState('');
+    const [knowledge_area,setKnowledge] = useState({})
+    const [knowledge_areaID,setKnowledgeID] = useState('');
+    const [tutoringHour,setTutoringHour] =useState({});
     const[subjectTeacher,setSubjectTeacher] =useState({});
     const [subjects, setSubjects] = useState([]);
+    const { colorMode } = useColorMode();
 
     useEffect(() => {
         axios.get(`https://django.narurm.eu/profesores/teacher/?id=${id}`)
         .then(response => {
-            console.log(id)
-            setnewTeacher(response.data[0]);
+            setnewTeacher(response.data[0]); 
+            setKnowledgeID(response.data[0].knowledge_area)
+        })
+        axios.get(`https://django.narurm.eu/profesores/tutoring_hour/`)
+        .then(response => {
+            setTutoringHour(response.data.filter(item => item.teacher === parseInt(id))) 
         })
         .catch(error => {
-            console.error(error);
+            console.error(error);  
         });
     }, [id])
 
     useEffect(() => {
-        if (newTeacher.id) { // Verifica que newTeacher tenga un valor válido
-            axios.get(`https://django.narurm.eu/profesores/knowledge_area/?id=${newTeacher.id}`)
-                .then(response => {
-                    setKnowledge(response.data[0].knowledge_area); // Accede al valor de knowledge_area en la respuesta
-                })
-                .catch(error => {
-                    console.error(error);
-                });
-        //Zona para obtener los subject del profesor
-        axios.get(`https://django.narurm.eu/asignaturas/subject_teacher/?teacher=${newTeacher.id}`)
+        axios.get(`https://django.narurm.eu/profesores/knowledge_area/${knowledge_areaID}/`)
         .then(response => {
-            setSubjectTeacher(response.data)
+            setKnowledge(response.data)
         })
-        }
-    }, [newTeacher]);
-
-
-
-    useEffect(() => {
-        
-        if (Array.isArray(subjectTeacher)) { // Verifica que subjectTeacher sea un array
-            subjectTeacher.map(element => {
-              axios.get(`https://django.narurm.eu/asignaturas/subject/?code=${element.subject}`)
-                .then(response => {
-                  console.log(response.data) // accede al arreglo de datos del response
-                  setSubjects(prevState => [...prevState, response.data]) // agrega el response al arreglo de subjects
-                })
-            });
-          }
-      }, [subjectTeacher]);
+        .catch(error => {
+            console.error(error); 
+        });
+      }, [knowledge_areaID]);
       
       
       
@@ -75,6 +61,7 @@ function Profesorado() {
     }
 
     const handleChange = event => {
+
         setSearchTerm(event.target.value);
     }
 
@@ -84,28 +71,43 @@ function Profesorado() {
     return (
 
         <div className='d-flex' style={{ gridColumn: 'span 3' }}>
-            <section className="scroll-box">
-                <h1 className='text-center fs-3 mb-3' type="text" name="profesor_nombre"><b>{newTeacher.name}</b></h1>
+            <section className={`scroll-box ${colorMode === 'dark' ? 'dark' : ''}`}>
+                <h1 className='text-center fs-3 mb-3' type="text" name="profesor_nombre"><b> { newTeacher.name}</b></h1>
                 <Grid templateColumns='repeat(2, 1fr)' gap={2}>
-                    <GridItem w='100%' h='10' textAlign><b>{t('ResultProfesorado.email')}:</b>{newTeacher.email}</GridItem>
+                    <GridItem w='100%' h='10' textAlign><b>{t('ResultProfesorado.email')}:</b> { newTeacher.email}</GridItem>
 
-                    <GridItem w='100%' h='10'><b>{t('ResultProfesorado.departamento')}:</b>{newTeacher.office}</GridItem>
+                    <GridItem w='100%' h='10'><b>{t('ResultProfesorado.departamento')}:</b> { newTeacher.office}</GridItem>
 
-                    <GridItem w='100%' h='10'><b>{t('ResultProfesorado.phone')}:</b>{newTeacher.phone_number}</GridItem>
+                    <GridItem w='100%' h='10'><b>{t('ResultProfesorado.phone')}:</b> { newTeacher.phone_number}</GridItem>
 
-                    <GridItem w='100%' h='10'> <b>{t('ResultProfesorado.conocimiento')}: </b>{knowledge_area}</GridItem>
+                    <GridItem w='100%' h='10'> <b>{t('ResultProfesorado.conocimiento')}: </b> { knowledge_area.knowledge_area}</GridItem>
                 </Grid>
                 
                <b>{t('ResultProfesorado.horasTutorias')}:</b>
-                <div className='text-center tutoriasFrame'>
-                    <TableProf className="center-x" tutorias={newTeacher.tutoring_hours}/>
+                <div className={`text-center tutoriasFrame ${colorMode === 'dark' ? 'dark' : ''}`}>  
+                    {tutoringHour.length != 0 ? <TableProf className="center-x" tutorias={tutoringHour}/> : <h1>No se han registrado horas de tutorías</h1>}
                 </div>
+<<<<<<< HEAD
              
 
+=======
+            
+                <div>
+                    <b>{t('ResultProfesorado.asignaturas')}:</b>
+                    <List spacing={3} marginLeft={"2"}>                    
+                    {subjects.map((element, index) => (
+                    <ListItem key={index}>
+                        <ListIcon as={ChevronRightIcon} color='green.500' />
+                        {element[0].name}
+                    </ListItem>
+                    ))}
+                    </List>
+                </div>
+>>>>>>> 8768211cd65c6a70c39caf27dfd49e68350c57c4
               
             </section>
             
-            <section className="search_asignaturas">
+            <section className={`search_asignaturas ${colorMode === 'dark' ? 'dark' : ''}`}>
                 <div className="d-flex nav_search">
                     <Search2Icon margin={"5"}></Search2Icon>
                     <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('ResultProfesorado.profesores')} />

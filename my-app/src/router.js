@@ -10,6 +10,7 @@ import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
 import RegisterHome from './pages/Register/RegisterHome';
 import LoginForm from "./pages/Login/LoginForm";
+import FaqForm from "./pages/FAQ/FaqForm";
 export const router = createBrowserRouter(
   [
     {
@@ -54,5 +55,9 @@ export const router = createBrowserRouter(
     {
       path: "/register",
       element: <RegisterHome />
+    },
+    {
+      path: "/FAQ",
+      element: <FaqForm />
     }
   ])

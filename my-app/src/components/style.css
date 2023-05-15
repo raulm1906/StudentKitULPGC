@@ -141,7 +141,8 @@ nav a{
   justify-content: space-between;
   background-color: #fff;
   padding: 20px;
-  bottom: 0;
+  bottom: -5%;
+  position: relative;
 }
 
 .footer h1 {
@@ -192,4 +193,17 @@ nav a{
   padding-bottom: 25px;
 }
 
+.footer.dark {
+  background-color: black;
+  color: #fff;
+}
+
+.footer button {
+  margin-right: 3em;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
 

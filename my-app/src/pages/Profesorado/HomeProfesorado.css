@@ -20,13 +20,21 @@
     background-color: #EDECEC;
 
 }
+#SearchBar.dark {
+    background-color: #4a4d50;
+    color: white;
+}
+#SearchBar.light {
+    background-color: #EDECEC;
+    color: #000;
+}
 #titleItemBusqueda{
     font-weight: bold;
     font-size: medium;
 }
 #SearchHomeAsignatura{
     height: 70vh;
-    width: 75%;
+    width: 100%;
     margin: 1%;
     position: sticky;
 
