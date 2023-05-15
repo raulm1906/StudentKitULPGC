@@ -16,12 +16,18 @@ import axios from 'axios'
 function PageHorario(){
 
     const [events, setEvents] = useState([])
+    const [originalEvents, setOriginalEvents] = useState([])
     const {horarioid } = useParams()
     const [horario, setHorario] = useState({})
     const [showConfirmation, setShowConfirmation] = useState(false)
 
     const handlePostData =  () => {
         console.log(events)
+        
+        originalEvents.map((event) => {
+            deleteEvent(event)
+        })
+
         events.map((event) => {
             postEvent(event)
         })
@@ -51,6 +57,16 @@ function PageHorario(){
         } catch (error) {
             console.error(error);
             return null;
+        }
+    }
+
+
+    const deleteEvent = async (event) => {
+        try{
+            const response = await axios.delete(`https://django.narurm.eu/horarios/event/?id=${event.id}`)
+            console.log(response)
+        } catch (error) {
+            console.error('Error deleting event:', error)
         }
     }
 
