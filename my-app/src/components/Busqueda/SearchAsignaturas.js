@@ -2,9 +2,11 @@ import React,{useEffect,useState} from 'react';
 import data from '../../data/subjects.json';
 import '../../components/style.css'
 import { Link } from 'react-router-dom';
+import { useColorMode } from '@chakra-ui/react';
 import axios from 'axios';
 const Search = ({ searchTerm, onItemClick}) => {
     const [data, setData] = useState([]);
+    const { colorMode } = useColorMode();
 
     useEffect(()=>{
       axios.get('https://django.narurm.eu/asignaturas/subject/')
@@ -30,7 +32,7 @@ const Search = ({ searchTerm, onItemClick}) => {
  
     return (
      
-    <div id="resultSearch">
+    <div id="resultSearch" className={colorMode === 'dark' ? 'dark' : ''}>
         {filteredData.map((item, index) => (
              <Link className=''
              to={{

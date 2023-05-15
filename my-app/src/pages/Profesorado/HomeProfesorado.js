@@ -16,12 +16,14 @@ import {
 import FilterHomeProfesores from './FilterHomeProfesores';
 import profesores from '../../data/profesores.json';
 import { useTranslation } from 'react-i18next';
+import { useColorMode } from '@chakra-ui/react';
 function HomeProfesorado () {
 
     const [t, i18n] = useTranslation('common');
     const [searchTerm, setSearchTerm] = useState('');
     const [, setSelectedAsignatura] = useState([]);
     const { isOpen, onOpen, onClose } = useDisclosure();
+    const { colorMode } = useColorMode();
 
     const handleAsignaturaSelect = (asignatura) => {
       setSelectedAsignatura(selectedAsignatura => [...selectedAsignatura, asignatura]);
@@ -45,7 +47,7 @@ function HomeProfesorado () {
     <div id = "HomeAsignatura">
         <section id="SearchHomeAsignatura">
             <header id="CabeceraHomeSearch"> 
-                <div id = "SearchBar"> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
+                <div id = "SearchBar" className={colorMode === 'dark' ? 'dark' : ''}> <SearchIcon style={{marginTop: "auto", marginBottom: "auto"}} /><SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('general.placeholderBuscar')} ></SearchBar ></div>
                 <div id ="OrderBy">
                   <Menu>
                     <MenuButton as={Button}>
