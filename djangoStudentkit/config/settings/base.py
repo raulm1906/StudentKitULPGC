@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 import os
 from pathlib import Path
+import json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -153,3 +154,20 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
     'x-requested-with',
 ]
+
+CORS_ALLOW_CREDENTIALS = True
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.office365.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_CHARSET = 'utf-8'
+
+with open('mail.json') as f:
+    mail = json.load(f)
+
+EMAIL_HOST_USER = mail.get('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = mail.get('EMAIL_HOST_PASSWORD', '')
+
+
+ACTIVATION_URL = 'http://localhost:8000/usuarios/activate'
