@@ -22,10 +22,13 @@ function PageHorario(){
     const [showConfirmation, setShowConfirmation] = useState(false)
 
     const handlePostData =  () => {
-        console.log(events)
+        console.log(originalEvents)
         
         originalEvents.map((event) => {
-            deleteEvent(event)
+            const existEvent = events.some((e) => e.id === event.id)
+            if(!existEvent){
+                deleteEvent(event)
+            }
         })
 
         events.map((event) => {
@@ -63,7 +66,7 @@ function PageHorario(){
 
     const deleteEvent = async (event) => {
         try{
-            const response = await axios.delete(`https://django.narurm.eu/horarios/event/?id=${event.id}`)
+            const response = await axios.delete(`https://django.narurm.eu/horarios/event/${event.id}/`)
             console.log(response)
         } catch (error) {
             console.error('Error deleting event:', error)
