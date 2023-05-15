@@ -172,6 +172,79 @@
     font-size: 1.2em;
     margin: 1em;
 }
+
+/* Edit User */
+.editUser {
+    width: 100%;
+    height: 100vh;   
+}
+
+.editUser h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.65em;
+    color: #F89A36;
+    font-weight: 500;
+}
+
+.editUser p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.editUser a {
+    color: #3F20FF;
+}
+
+.editUser label {
+    display: flex;
+    margin-left: 3em;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: justify;
+}
+
+.editUser input[type="radio"] {
+    margin-right: 5px;
+}
+
+.editUser input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.editUser input {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 1px solid #767676;
+    width: 90%;
+    font-size: 1.2em;
+}
+
+.editUser input:hover {
+    background: #EFF4FD;
+    border: 1px solid #0066A1;
+}
+
+.editUser input:focus {
+    outline: none;
+}
+
+.editUser input[type="password"] {
+    letter-spacing: 0.2em;
+}
+
+.editUser button {
+    background-color: #F89A36;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    width: 90%;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 1em;
+}
     
 @media only screen and (max-width: 767px) {
 
@@ -332,5 +405,7 @@
         margin: 1em;
     }
 
-
 }
+
+
+
