@@ -8,6 +8,7 @@ from rest_framework.response import Response
 from django.http import HttpResponse
 from django.contrib.auth import get_user_model
 from rest_framework.authtoken.views import obtain_auth_token  
+from rest_framework.authtoken.models import Token
 
 
 
@@ -22,21 +23,29 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
-'''
-Hay que solucionar que la url de la vista no es captada con el token
-'''
+
 class ActivateAccountView(View):
     def get(self, request, *args, **kwargs):
             try:
-                #user = User.objects.get(activation_token=kwargs['token'])
                 user = User.objects.get(activation_token=kwargs['activation_token'])
             except User.DoesNotExist:
                 #return Response({'message': 'Invalid activation token.'}, status=400)
-                return HttpResponse('Invalid activation token.', status=400)
-            user.is_active = True
-            user.activation_token = ''
-            user.save()
-            #return redirect(reverse('login'))
+                return HttpResponse('Token de confirmación inválido.', status=400)
+            if not user.is_active:
+                user.is_active = True
+                user.activation_token = ''
+                user.save()               
+                #token = Token.objects.create(user=user)
+                #return Response({'token': token.key})
+                return redirect(reverse(obtain_auth_token))
+
+            else:
+                 return HttpResponse('La cuenta ya ha sido confirmada.', status=400)
+            '''
+            Aquí en vez de redirigir al login se podria redirigir directamnte a la página principal ya el usuario logeado
+            o si no, no se si esta bien redirigir al obtain_auth_token porque solo se pueden hacer consultas de tipo post
+            
             return redirect(reverse(obtain_auth_token))
+            '''
 
 
