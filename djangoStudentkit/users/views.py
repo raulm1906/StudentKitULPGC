@@ -37,7 +37,8 @@ class ActivateAccountView(View):
                 user.save()               
                 #token = Token.objects.create(user=user)
                 #return Response({'token': token.key})
-                return redirect(reverse(obtain_auth_token))
+                return redirect('http://localhost:3000/Login')
+                #return redirect(reverse(obtain_auth_token))
 
             else:
                  return HttpResponse('La cuenta ya ha sido confirmada.', status=400)
