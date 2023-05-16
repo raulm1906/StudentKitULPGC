@@ -9,23 +9,30 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-import os
+
 from pathlib import Path
+import json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
+# SECURITY WARNING: keep the secret key used in production secret!
+# TODO generar key en despliegue
+SECRET_KEY = 'ba51191cd9d28890339dabfae3100b9d0121a68d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+=======
+ALLOWED_HOSTS = ['localhost']
+>>>>>>> 58dc943f1b178cbfb2cf8d82ba8ff7a11ab5ddf2
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'asdasdasd'
 
 # Application definition
 
@@ -34,6 +41,7 @@ INSTALLED_APPS = [
     'subjects',
     'teachers',
     'users',
+    'rest_framework.authtoken',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -115,7 +123,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -159,6 +167,13 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.office365.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'ulpgcstudentkit@outlook.es'
-EMAIL_HOST_PASSWORD = 'KANAK45.9'
 EMAIL_CHARSET = 'utf-8'
+
+with open('mail.json') as f:
+    mail = json.load(f)
+
+EMAIL_HOST_USER = mail.get('EMAIL_HOST_USER', '')
+EMAIL_HOST_PASSWORD = mail.get('EMAIL_HOST_PASSWORD', '')
+
+
+ACTIVATION_URL = 'http://localhost:8000/usuarios/activate'
