@@ -1,4 +1,4 @@
-import { Flex, Heading, Button } from '@chakra-ui/react'
+import { Flex, Heading, Button, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import { BsChevronLeft } from 'react-icons/bs'
 import YearDropdown from './YearDropdown';
@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 
 export default function FilterCard(props) {
   const [t, i18n] = useTranslation('common');
+  const { colorMode, toggleColorMode } = useColorMode();
   const handleCloseButton =() => {
     const newStyles = {
       box: {
@@ -26,7 +27,8 @@ export default function FilterCard(props) {
       flexDirection="column"
       w="300px"
       h="65%" 
-      bg="#f0f0f0"
+      bg={colorMode === 'dark' ? "black" : "#f0f0f0"}
+      color={colorMode === 'dark' ? "white" : "inherit"}
       borderRadius="20px"
       position="absolute" 
       zIndex="20"

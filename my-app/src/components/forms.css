@@ -370,4 +370,9 @@
 .dark {
     background-color: black;
     color: white;
-  }
+}
+
+/* Style for schedule */
+.dark-mode {
+    color: black;
+}
