@@ -78,7 +78,7 @@ function RegisterForm() {
           </Button>
 
           <p>Ya tienes una cuenta?</p>
-          <p><a href="">Login</a></p>
+          <p><a>Login</a></p>
         </div>
       </Center>
     )

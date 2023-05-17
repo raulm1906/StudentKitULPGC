@@ -7,7 +7,6 @@ const LayoutPublic = () =>{
     return(
     <>
         <Grid
-                h="100vh"
                 templateRows="auto auto 1fr auto"
                 templateColumns="repeat(3, 1fr)"
                 gap={4}
