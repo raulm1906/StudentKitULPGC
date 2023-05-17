@@ -10,7 +10,7 @@ import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
 import RegisterHome from './pages/Register/RegisterHome';
 import LoginForm from "./pages/Login/LoginForm";
-import a from "./pages/Horario/ListHorarios";
+import editUser from "./pages/Users/editUsers";
 export const router = createBrowserRouter(
   [
     {
@@ -30,7 +30,8 @@ export const router = createBrowserRouter(
         },
         {
           path: "/editUser",
-          element: <editUsers />,
+          element: <editUser />,
+
         },
         {
           path: "/HomeAsignatura",

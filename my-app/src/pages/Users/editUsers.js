@@ -1,14 +1,18 @@
 import React from 'react';
 import { FormControl, FormLabel, Input } from "@chakra-ui/react";
-import { Button, Box, Text } from "@chakra-ui/react";
+import { Button, Flex, GridItem, Box } from "@chakra-ui/react";
 import '../../components/forms.css'
 
 function editUsers() {
 
-  return (
+  const handleClick = () => {
+    
+  }
 
-    <Box colSpan={0} display={"flex"}>
-      <div className="editUser">
+  return (
+    <GridItem colStart={2}>
+
+    <div GridItem colStart={2} className="editUser">
         <h1>Editar Usuario</h1>
           <FormControl>
             <FormLabel className="usuario-label">Nombre de usuario</FormLabel>
@@ -20,11 +24,11 @@ function editUsers() {
             <FormLabel className="usuario-label">Confirmar Contraseña</FormLabel>
             <Input type='password'/>
           </FormControl>
-          <Button type="submit">Cancelar cambios</Button>
-          <Button type="submit">Confirmar cambios</Button>
-      </div>
-    </Box>
-
+          <Box >
+          <Button onClick={handleClick} type="submit">Confirmar cambios</Button>
+          </Box>
+          </div>
+    </GridItem>
 
   )
 }
