@@ -26,7 +26,7 @@ function LoginForm() {
       e.preventDefault();
       console.log(emailInput,passwordInput)
       const data = {
-        "email": emailInput,
+        "username": emailInput,
         "password": passwordInput,
       };
       try{
