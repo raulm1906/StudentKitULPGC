@@ -19,9 +19,9 @@ function Footer() {
         <h1>{t('footer.eiiStudent')}</h1>
         <h2><a>{t('footer.aboutUs')}</a></h2>
         <h2><a><Link to="/FAQ">{t('footer.terms')}</Link></a></h2>
-        <BsTwitter />
-        <AiFillGithub />
-        <h2><a>{t('footer.contact')}: admin@placeholder.com</a></h2>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><BsTwitter /></a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><AiFillGithub /></a>
+        <h2><a>{t('footer.contact')}: eiistudentkit@gmail.com</a></h2>
         <button onClick={toggleColorMode}>{colorMode === 'dark' ? <FaSun /> : <FaMoon />}</button>
     </div>
   );
