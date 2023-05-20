@@ -22,3 +22,6 @@ REST_FRAMEWORK = {
         ],
         
     }
+
+
+ACTIVATION_URL = 'http://localhost:8000/usuarios/activate'

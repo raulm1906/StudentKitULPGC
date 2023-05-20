@@ -171,4 +171,4 @@ EMAIL_HOST_USER = mail.get('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = mail.get('EMAIL_HOST_PASSWORD', '')
 
 
-ACTIVATION_URL = 'https://django.narurm.eu/usuarios/activate'
+
