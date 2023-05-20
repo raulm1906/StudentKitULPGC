@@ -36,7 +36,7 @@ function RegisterHome() {
     if (isFormValid) {
 
       const data = {
-        "first_name": usuarioInput,
+        "username": usuarioInput,
         "email": emailInput,
         "password": passwordInput,
       };

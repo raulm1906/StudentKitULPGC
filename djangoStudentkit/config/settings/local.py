@@ -17,4 +17,11 @@ REST_FRAMEWORK = {
             'rest_framework.renderers.JSONRenderer',
         	'rest_framework.renderers.BrowsableAPIRenderer',
         ),
+        'DEFAULT_AUTHENTICATION_CLASSES': [
+            'rest_framework.authentication.TokenAuthentication',
+        ],
+        
     }
+
+
+ACTIVATION_URL = 'http://localhost:8000/usuarios/activate'

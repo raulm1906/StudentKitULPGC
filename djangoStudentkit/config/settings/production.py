@@ -13,6 +13,9 @@ REST_FRAMEWORK = {
             'rest_framework.renderers.JSONRenderer',
         	'rest_framework.renderers.BrowsableAPIRenderer',
         ),
+        'DEFAULT_AUTHENTICATION_CLASSES': [
+            'rest_framework.authentication.TokenAuthentication',
+        ],
     }
 
 CORS_ALLOW_CREDENTIALS = True
@@ -21,7 +24,7 @@ CORS_ALLOW_CREDENTIALS = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = ['https://django.narurm.eu']
+CSRF_TRUSTED_ORIGINS = ['https://django.narurm.eu','https://narurm.eu']
 
 # session expire at browser close
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
@@ -34,3 +37,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+ACTIVATION_URL = 'https://django.narurm.eu/usuarios/activate'
