@@ -21,7 +21,7 @@ CORS_ALLOW_CREDENTIALS = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
-CSRF_TRUSTED_ORIGINS = ['https://django.narurm.eu']
+CSRF_TRUSTED_ORIGINS = ['https://django.narurm.eu','https://narurm.eu']
 
 # session expire at browser close
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True

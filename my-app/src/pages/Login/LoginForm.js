@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+
 import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Checkbox } from "@chakra-ui/react";
 import { Button, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -8,8 +9,10 @@ import { useColorMode } from '@chakra-ui/react';
 import '../../components/forms.css'
 import RegisterPortada from "../Register/RegisterPortada";
 import axios from 'axios';
+import { Navigate } from 'react-router-dom';
 
 function LoginForm() {
+    const [redirect, setRedirect] = useState(false);
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
@@ -26,19 +29,22 @@ function LoginForm() {
       e.preventDefault();
       console.log(emailInput,passwordInput)
       const data = {
-        "email": emailInput,
+        "username": emailInput,
         "password": passwordInput,
       };
       try{
         const response = await axios.post('https://django.narurm.eu/usuarios/login/',data);
         console.log(response.data)
+        setRedirect(true);
       }catch(error){
         if (error.response) {
-          console.log(error)
-        } else {
-          console.log(error);
+          alert("Contraseña o email no coinciden");
         }
       }
+    }
+
+    if (redirect) {
+      return <Navigate to="/" replace={true} />;
     }
 
     return (

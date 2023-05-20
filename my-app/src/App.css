@@ -51,6 +51,7 @@
   justify-content: space-between;
   background-color: #fff;
   padding: 20px;
+  position: relative;
   bottom: 0;
 }
 

@@ -13,7 +13,8 @@ import {
   Input,
   Text,
   Flex,
-  Box
+  Box,
+  useColorMode
 } from '@chakra-ui/react';
 import { AiOutlinePlus } from 'react-icons/ai'
 import { BsTrash } from 'react-icons/bs'
@@ -30,6 +31,7 @@ export default function ListHorarios() {
   const [scheduleData, setScheduleData] = useState([])
   const [title, setTitle] = useState("")
   const [showInput, setShowInput] = useState(false)
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -94,15 +96,15 @@ export default function ListHorarios() {
     <GridItem gridRow={2} gridColumn={3} display="flex" justifyContent="end" alignItems="center" marginRight="20px">
         <Button 
         onClick={handleToggle} 
-        leftIcon={<Icon as={GrSchedules} color="white.500" />} 
-        bg="#DADADA"
+        leftIcon={<Icon as={GrSchedules} color="white.500"/>} 
+        bg={colorMode === 'dark' ? "#313535" : "#DADADA"}
         borderRadius="20px"
         >{t('listHorarios.mishorarios')}</Button>
     </GridItem>
       <Drawer isOpen={isOpen} placement="right" onClose={handleToggle}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton bg="#DADADA"/>
+          <DrawerCloseButton bg={colorMode === 'dark' ? "#313535" : "#DADADA"}/>
           <DrawerHeader color="white">Mis horarios</DrawerHeader>
           <DrawerBody display="flex" flexDirection="column">
             <Stack spacing="24px">
