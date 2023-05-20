@@ -50,7 +50,7 @@
   "scripts": {
     "start": "concurrently \"npm run start-server\" \"npm run start-react\"",
     "start-server": "node server.js",
-    "start-react": "react-app-rewired start",
+    "start-react": "react-scripts start",
     "@1/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
