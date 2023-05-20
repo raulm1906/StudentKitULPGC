@@ -6,8 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { useColorMode } from '@chakra-ui/react';
 
 export default function EditButton(props) {
-    const [t, i18n] = useTranslation('common');
-    const { colorMode, toggleColorMode } = useColorMode();
+    const [t] = useTranslation('common');
+    const { colorMode } = useColorMode();
     const handleEditButton = () => {
         const newStyles = {
             box: {

@@ -13,7 +13,7 @@ function LoginForm() {
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
-    const [t, i18n] = useTranslation('common');
+    const [t] = useTranslation('common');
     const { colorMode } = useColorMode();
   
     const handleEmailInputChange = (e) => setEmailInput(e.target.value);
@@ -26,7 +26,7 @@ function LoginForm() {
       e.preventDefault();
       console.log(emailInput,passwordInput)
       const data = {
-        "email": emailInput,
+        "username": emailInput,
         "password": passwordInput,
       };
       try{

@@ -11,8 +11,6 @@ import {
   Stack,
   Icon,
   Input,
-  Text,
-  Flex,
   Box,
   useColorMode
 } from '@chakra-ui/react';
@@ -27,11 +25,11 @@ import axios from 'axios'
 
 export default function ListHorarios() {
   const [isOpen, setIsOpen] = useState(false);
-  const [t, i18n] = useTranslation('common');
+  const [t] = useTranslation('common');
   const [scheduleData, setScheduleData] = useState([])
   const [title, setTitle] = useState("")
   const [showInput, setShowInput] = useState(false)
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -81,7 +79,6 @@ export default function ListHorarios() {
     .get("https://django.narurm.eu/horarios/schedule/")
     .then((response) => {
       setScheduleData(response.data)
-      console.log(scheduleData)
     })
     .catch((error) => {
       console.log(error)

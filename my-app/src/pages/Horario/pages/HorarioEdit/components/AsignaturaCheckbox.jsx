@@ -11,8 +11,8 @@ import '../../../../../components/forms.css'
 
 
 export default function AsignaturaCheckbox({ subject }) {
-    const [t, i18n] = useTranslation('common');
-    const { colorMode, toggleColorMode } = useColorMode();
+    const [t] = useTranslation('common');
+    const { colorMode } = useColorMode();
     const initials = getInitials(subject.name)
     const lessons = subject.lessons
     const groupMapping = {

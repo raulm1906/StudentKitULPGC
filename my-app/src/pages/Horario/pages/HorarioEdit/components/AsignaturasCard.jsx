@@ -5,8 +5,8 @@ import YearDropdown from './YearDropdown';
 import { useTranslation } from 'react-i18next';
 
 export default function FilterCard(props) {
-  const [t, i18n] = useTranslation('common');
-  const { colorMode, toggleColorMode } = useColorMode();
+  const [t] = useTranslation('common');
+  const { colorMode } = useColorMode();
   const handleCloseButton =() => {
     const newStyles = {
       box: {

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { Button, Box, Text } from "@chakra-ui/react";
 import '../../components/forms.css'
-import imagen from "./Group 22.svg";
 import RegisterPortada from "./RegisterPortada";
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
@@ -18,7 +17,7 @@ function RegisterHome() {
   const [confirmPasswordInput, setConfirmPasswordInput] = useState('');
   const [isPasswordMatch, setIsPasswordMatch] = useState(true);
   const [isFormValid, setIsFormValid] = useState(false);
-  const [t, i18n] = useTranslation('common');
+  const [t] = useTranslation('common');
   const { colorMode } = useColorMode();
   
   const handleUsuarioInputChange = (e) => setUsuarioInput(e.target.value);

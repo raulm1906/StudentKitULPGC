@@ -1,12 +1,12 @@
 import React from "react";
-import { Box, Image, Center } from "@chakra-ui/react";
+import { Box, Center } from "@chakra-ui/react";
 import imagen from "./Group 22.svg";
 import {useTranslation} from "react-i18next";
 
 
 function RegisterPortada() {
 
-    const [t, i18n] = useTranslation('common');
+    const [t] = useTranslation('common');
   
     return (
     <div className=" text-center w-100 registerPortada">
