@@ -4,18 +4,20 @@ import { BiConversation } from 'react-icons/bi';
 import { useTranslation } from "react-i18next";
 import { Icon } from '@iconify/react';
 import "../components/style.css";
+import { useColorMode } from '@chakra-ui/react';
 
 const Header = () => {
   const { t, i18n } = useTranslation('common');
+  const { colorMode } = useColorMode();
 
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
   };
 
   return (
-    <Navbar expand="lg" style={{ backgroundColor: "#0191CE" }}>
-      <Navbar.Brand href="#home">
-        <BiConversation size={30} />
+    <Navbar expand="lg" style={{ backgroundColor: colorMode === 'dark' ? 'black' : '#0191CE' }}>
+      <Navbar.Brand href="#home" style={{ backgroundColor: colorMode === 'dark' ? 'black' : '#0191CE' }}>
+        <BiConversation size={30} style={{ color: colorMode === 'dark' ? 'white' : 'black' }} />
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

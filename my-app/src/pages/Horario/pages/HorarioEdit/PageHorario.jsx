@@ -16,12 +16,21 @@ import axios from 'axios'
 function PageHorario(){
 
     const [events, setEvents] = useState([])
+    const [originalEvents, setOriginalEvents] = useState([])
     const {horarioid } = useParams()
     const [horario, setHorario] = useState({})
     const [showConfirmation, setShowConfirmation] = useState(false)
 
     const handlePostData =  () => {
-        console.log(events)
+        console.log(originalEvents)
+        
+        originalEvents.map((event) => {
+            const existEvent = events.some((e) => e.id === event.id)
+            if(!existEvent){
+                deleteEvent(event)
+            }
+        })
+
         events.map((event) => {
             postEvent(event)
         })
@@ -33,7 +42,7 @@ function PageHorario(){
 
     const postEvent = async (event) => {
         try {
-            const response = await axios.post("http://127.0.0.1:8000/horarios/event/", {
+            const response = await axios.post("https://django.narurm.eu/horarios/event/", {
                 id: event.id,
                 subject_code: event.subject_code,
                 title: event.title,
@@ -54,10 +63,21 @@ function PageHorario(){
         }
     }
 
+
+    const deleteEvent = async (event) => {
+        try{
+            const response = await axios.delete(`https://django.narurm.eu/horarios/event/${event.id}/`)
+            console.log(response)
+        } catch (error) {
+            console.error('Error deleting event:', error)
+        }
+    }
+
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.get(`http://127.0.0.1:8000/horarios/schedule/?id=${horarioid}`)
+            const response = await axios.get(`https://django.narurm.eu/horarios/schedule/?id=${horarioid}`)
             setHorario(response.data[0])
+            console.log(horarioid)
         }    
         fetchData()
     }, [horarioid])
@@ -65,6 +85,7 @@ function PageHorario(){
     useEffect(() => {
         if (horario && horario.events) {
           setEvents(horario.events)
+          setOriginalEvents(horario.events)
         }
       }, [horario])
 

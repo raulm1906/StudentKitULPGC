@@ -13,7 +13,8 @@ import {
   Input,
   Text,
   Flex,
-  Box
+  Box,
+  useColorMode
 } from '@chakra-ui/react';
 import { AiOutlinePlus } from 'react-icons/ai'
 import { BsTrash } from 'react-icons/bs'
@@ -30,6 +31,7 @@ export default function ListHorarios() {
   const [scheduleData, setScheduleData] = useState([])
   const [title, setTitle] = useState("")
   const [showInput, setShowInput] = useState(false)
+  const { colorMode, toggleColorMode } = useColorMode();
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -51,8 +53,8 @@ export default function ListHorarios() {
 
   const createSchedule = async (scheduleTitle) => {
     try {
-      const response = await axios.post("http://127.0.0.1:8000/horarios/schedule/", {
-        userId: 1,
+      const response = await axios.post("https://django.narurm.eu/horarios/schedule/", {
+        userId: 2,
         title: scheduleTitle,
       });
       setScheduleData([...scheduleData, response.data])
@@ -65,7 +67,7 @@ export default function ListHorarios() {
 
   const deleteSchedule = async (scheduleId) => {
     try {
-      const response = await axios.delete(`http://127.0.0.1:8000/horarios/schedule/${scheduleId}`)
+      const response = await axios.delete(`https://django.narurm.eu/horarios/schedule/${scheduleId}`)
       const currentSchedules = scheduleData.filter((schedule) => schedule.id !== scheduleId)
       console.log(currentSchedules)
       setScheduleData(currentSchedules)
@@ -76,7 +78,7 @@ export default function ListHorarios() {
 
   useEffect(() => { 
     axios
-    .get("http://127.0.0.1:8000/horarios/schedule/")
+    .get("https://django.narurm.eu/horarios/schedule/")
     .then((response) => {
       setScheduleData(response.data)
       console.log(scheduleData)
@@ -94,15 +96,15 @@ export default function ListHorarios() {
     <GridItem gridRow={2} gridColumn={3} display="flex" justifyContent="end" alignItems="center" marginRight="20px">
         <Button 
         onClick={handleToggle} 
-        leftIcon={<Icon as={GrSchedules} color="white.500" />} 
-        bg="#DADADA"
+        leftIcon={<Icon as={GrSchedules} color="white.500"/>} 
+        bg={colorMode === 'dark' ? "#313535" : "#DADADA"}
         borderRadius="20px"
         >{t('listHorarios.mishorarios')}</Button>
     </GridItem>
       <Drawer isOpen={isOpen} placement="right" onClose={handleToggle}>
         <DrawerOverlay />
         <DrawerContent>
-          <DrawerCloseButton bg="#DADADA"/>
+          <DrawerCloseButton bg={colorMode === 'dark' ? "#313535" : "#DADADA"}/>
           <DrawerHeader color="white">Mis horarios</DrawerHeader>
           <DrawerBody display="flex" flexDirection="column">
             <Stack spacing="24px">

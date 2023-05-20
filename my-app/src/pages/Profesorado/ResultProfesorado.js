@@ -7,6 +7,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {Search2Icon,ChevronRightIcon} from '@chakra-ui/icons'
+import { useColorMode } from '@chakra-ui/react';
 import axios from 'axios';
 import {
     List,
@@ -25,6 +26,7 @@ function Profesorado() {
     const [tutoringHour,setTutoringHour] =useState({});
     const[subjectTeacher,setSubjectTeacher] =useState({});
     const [subjects, setSubjects] = useState([]);
+    const { colorMode } = useColorMode();
 
     useEffect(() => {
         axios.get(`https://django.narurm.eu/profesores/teacher/?id=${id}`)
@@ -69,7 +71,7 @@ function Profesorado() {
     return (
 
         <div className='d-flex' style={{ gridColumn: 'span 3' }}>
-            <section className="scroll-box">
+            <section className={`scroll-box ${colorMode === 'dark' ? 'dark' : ''}`}>
                 <h1 className='text-center fs-3 mb-3' type="text" name="profesor_nombre"><b> { newTeacher.name}</b></h1>
                 <Grid templateColumns='repeat(2, 1fr)' gap={2}>
                     <GridItem w='100%' h='10' textAlign><b>{t('ResultProfesorado.email')}:</b> { newTeacher.email}</GridItem>
@@ -82,7 +84,7 @@ function Profesorado() {
                 </Grid>
                 
                <b>{t('ResultProfesorado.horasTutorias')}:</b>
-                <div className='text-center tutoriasFrame'>  
+                <div className={`text-center tutoriasFrame ${colorMode === 'dark' ? 'dark' : ''}`}>  
                     {tutoringHour.length != 0 ? <TableProf className="center-x" tutorias={tutoringHour}/> : <h1>No se han registrado horas de tutorías</h1>}
                 </div>
             
@@ -100,7 +102,7 @@ function Profesorado() {
               
             </section>
             
-            <section className="search_asignaturas">
+            <section className={`search_asignaturas ${colorMode === 'dark' ? 'dark' : ''}`}>
                 <div className="d-flex nav_search">
                     <Search2Icon margin={"5"}></Search2Icon>
                     <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('ResultProfesorado.profesores')} />

@@ -6,10 +6,26 @@ import NotFound from "./components/NotFound";
 import Profesorado from "./pages/Profesorado/ResultProfesorado";
 import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
+import LoginForm from "./pages/Login/LoginForm";
+import RegisterForm from "./pages/Register/RegisterForm";
 import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
 import RegisterHome from './pages/Register/RegisterHome';
-import LoginForm from "./pages/Login/LoginForm";
+import FaqForm from "./pages/FAQ/FaqForm";
+
+
+
+function importarJSON(nombreArchivo) {
+  try {
+    const datos = require(`./datos/${nombreArchivo}.json`);
+    return datos;
+  } catch (error) {
+    console.error(`Error al importar archivo JSON: ${error}`);
+    return null;
+  }
+}
+
+
 export const router = createBrowserRouter(
   [
     {
@@ -48,11 +64,15 @@ export const router = createBrowserRouter(
       ],
     },
     {
-      path: "/Login",
+      path: "/login",
       element: <LoginForm />
     },
     {
-      path: "/Register",
+      path: "/register",
       element: <RegisterHome />
+    },
+    {
+      path: "/FAQ",
+      element: <FaqForm />
     }
   ])

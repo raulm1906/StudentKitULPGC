@@ -9,6 +9,7 @@ import { Grid, GridItem } from '@chakra-ui/react';
 import { useParams } from 'react-router-dom';
 import { ExternalLinkIcon,Search2Icon } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
+import { useColorMode } from '@chakra-ui/react';
 import axios from 'axios';
 import LoadingIcon from '../../LoadingIcon';
 function Asignatura (){  
@@ -16,6 +17,7 @@ function Asignatura (){
     const [newSubject, setAsignatura] = useState({})
     const [searchTerm, setSearchTerm] = useState('');
     const [t, i18n] = useTranslation('common');
+    const { colorMode } = useColorMode();
     const [loading, setLoading] = useState(true);
     useEffect(() => { 
         
@@ -48,7 +50,7 @@ function Asignatura (){
            
         <div className="d-flex "  style={{ gridColumn: 'span 3' }}>
              
-            <section className="d-flex scroll-box">
+            <section className={`d-flex scroll-box ${colorMode === 'dark' ? 'dark' : 'light'}`}>
                 <h2 id="titlePage" type="text" name="nombre_asignatura" className='text-center fs-3 mb-3'><b> {newSubject.name}</b></h2>
                 <Grid templateColumns='repeat(3, 1fr)' gap={2} border={"0px"}>
                     <GridItem w='100%' h='10'><b>{t('ResultAsignaturas.tipo')}: </b>{newSubject.subject_type}</GridItem>
@@ -76,7 +78,7 @@ function Asignatura (){
                <TimeTable horas={newSubject.lessons} />
             </section>
 
-            <section className="search_asignaturas ">
+            <section className={`search_asignaturas ${colorMode === 'dark' ? 'dark' : 'light'}`}>
                 <div className="d-flex nav_search">
                     <Search2Icon margin={"5"}></Search2Icon>
                     <SearchBar searchTerm={searchTerm} handleChange={handleChange} Placeholder={t('ResultAsignaturas.subjects')}/>

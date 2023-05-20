@@ -21,3 +21,11 @@ class ScheduleViewSet(viewsets.ModelViewSet):
 class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
+
+    def get_queryset(self):
+        id = self.request.query_params.get('id')
+        if id is not None:
+            queryset = Event.objects.filter(id=id)
+            return queryset
+        else:
+            return Event.objects.all()

@@ -1,15 +1,15 @@
 from .models import User
-from .serializers import UserSerializer, LoginSerializer
-from django.http import JsonResponse, HttpResponse
-from rest_framework.views import APIView
+from .serializers import UserSerializer
+from rest_framework import generics
+from django.shortcuts import redirect
+from django.urls import reverse
+from django.views.generic.base import View
 from rest_framework.response import Response
-from rest_framework import status, generics, viewsets, permissions, serializers
-from rest_framework.authtoken.views import ObtainAuthToken
+from django.http import HttpResponse
+from django.contrib.auth import get_user_model
+from rest_framework.authtoken.views import obtain_auth_token  
 from rest_framework.authtoken.models import Token
-from rest_framework_simplejwt.authentication import JWTAuthentication
-from rest_framework_simplejwt.tokens import RefreshToken
 
-from django.contrib.auth import get_user_model, authenticate
 
 
 User = get_user_model()
@@ -24,51 +24,29 @@ class UserDetail(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = UserSerializer
 
 
-'''
+class ActivateAccountView(View):
+    def get(self, request, *args, **kwargs):
+            try:
+                user = User.objects.get(activation_token=kwargs['activation_token'])
+            except User.DoesNotExist:
+                #return Response({'message': 'Invalid activation token.'}, status=400)
+                return HttpResponse('Token de confirmación inválido.', status=400)
+            if not user.is_active:
+                user.is_active = True
+                user.activation_token = ''
+                user.save()               
+                #token = Token.objects.create(user=user)
+                #return Response({'token': token.key})
+                return redirect('http://localhost:3000/Login')
+                #return redirect(reverse(obtain_auth_token))
 
-class UsuarioRegistroView(APIView):
-    """1
-    Vista para registrar un nuevo usuario
-    """
-    serializer_class = UserSerializer
-
-    def post(self, request):
-        serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
-class UsuarioInicioSesionView(APIView):
-    """
-    Vista para iniciar sesión en la aplicación y obtener un token de autenticación
-    """
-    serializer_class = UserSerializer
-
-    def post(self, request):
-        serializer = self.serializer_class(data=request.data)
-        if serializer.is_valid():
-            email = serializer.validated_data['email']
-            password = serializer.validated_data['password']
-            user = authenticate(username=email, password=password)
-            if user:
-                login(request, user)
-                token, _ = Token.objects.get_or_create(user=user)
-                return Response({'token': token.key})
-        return Response({'error': 'Nombre de usuario o contraseña incorrectos'}, status=status.HTTP_401_UNAUTHORIZED)
+            else:
+                 return HttpResponse('La cuenta ya ha sido confirmada.', status=400)
+            '''
+            Aquí en vez de redirigir al login se podria redirigir directamnte a la página principal ya el usuario logeado
+            o si no, no se si esta bien redirigir al obtain_auth_token porque solo se pueden hacer consultas de tipo post
+            
+            return redirect(reverse(obtain_auth_token))
+            '''
 
 
-class UsuarioCierreSesionView(APIView):
-    """
-    Vista para cerrar la sesión y revocar el token de autenticación
-    """
-
-    def post(self, request):
-        try:
-            request.user.auth_token.delete()
-        except (AttributeError, Token.DoesNotExist):
-            pass
-        logout(request)
-        return Response(status=status.HTTP_200_OK)
-'''

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Flex, Text, Button, Checkbox } from '@chakra-ui/react'
+import { Flex, Text, Button, Checkbox, useColorMode } from '@chakra-ui/react'
 import { useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
 import { AiFillCaretDown } from 'react-icons/ai'
@@ -7,10 +7,12 @@ import { Icon } from '@chakra-ui/icon'
 import AppContext from '../../../../../app/AppContext'
 import { createEvents, getInitials } from '../utils/utils'
 import { useTranslation } from 'react-i18next';
+import '../../../../../components/forms.css'
 
 
 export default function AsignaturaCheckbox({ subject }) {
     const [t, i18n] = useTranslation('common');
+    const { colorMode, toggleColorMode } = useColorMode();
     const initials = getInitials(subject.name)
     const lessons = subject.lessons
     const groupMapping = {
@@ -75,7 +77,7 @@ export default function AsignaturaCheckbox({ subject }) {
 
     return (
     <Flex flexDirection="row" justifyContent="space-between">
-            <Checkbox marginLeft="10px" checked={isChecked} onChange={handleCheckBoxChange}>
+            <Checkbox marginLeft="10px" checked={isChecked} onChange={handleCheckBoxChange} className={colorMode === 'dark' ? 'dark-mode' : ''}>
                 <Text fontWeight="semibold" color="#919191">
                     {initials}
                 </Text>
@@ -97,6 +99,7 @@ export default function AsignaturaCheckbox({ subject }) {
                                 fontWeight: "normal",
                                 fontSize: "10px"
                             }}
+                            className={colorMode === 'dark' ? 'dark-mode' : ''}
                         >
                             {groupTheory}
                         </MenuButton>
@@ -122,6 +125,7 @@ export default function AsignaturaCheckbox({ subject }) {
                                 fontWeight: "normal",
                                 fontSize: "10px"
                             }}
+                            className={colorMode === 'dark' ? 'dark-mode' : ''}
                         >
                             {groupPractice}
                         </MenuButton>

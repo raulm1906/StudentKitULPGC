@@ -331,6 +331,48 @@
         font-size: 1em;
         margin: 1em;
     }
+}
 
+/* QUESTIONS */
 
+.faqForm {
+    width: 100%;
+    min-height: 100vh; 
+}
+
+.faqForm .question-title {
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    color: #F89A36;
+    font-weight: 500;
+}
+
+.faqForm .answer-text {
+    font-size: 0.95em;
+    text-align: justify;
+    margin-left: 1.5em;
+    padding-right: 2em;
+}
+
+.faqForm .answer-register, .answer-list {
+    font-size: normal;
+    text-align: justify;
+    margin-left: 1.5em;
+    padding-right: 2em;
+}
+
+.faqForm .content-wrapper {
+    margin-bottom: 5%;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/* Style for schedule */
+.dark-mode {
+    color: black;
 }
