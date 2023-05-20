@@ -1,4 +1,5 @@
 // authHelper.js
+import jwt_decode from 'jwt-decode';
 
 // Función para guardar el token en el almacenamiento local
 export const saveToken = (token) => {
@@ -33,10 +34,10 @@ export const saveToken = (token) => {
   export const decodeToken = (token) => {
     try {
       // Decodificar el token utilizando la librería 'jwt-decode'
-      return jwt_decode(token,'PS45.9');
+      return jwt_decode(token,'S45.9');
     } catch (error) {
       // En caso de error, devolver un objeto vacío
-      console.log("No hay nada en el token")
+      console.log(error)
       return {};
     }
   };

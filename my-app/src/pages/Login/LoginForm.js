@@ -34,9 +34,9 @@ function LoginForm() {
       };
       try{
         const response = await axios.post('https://django.narurm.eu/usuarios/login/',data)
-        console.log(response)
-        saveToken(response.data['token']); //guardar el token en memoria usando authHelper
-        setToken(response.data['token']); //guardamos el token en una variable local para verlo usando el UseEffect esto es para testing
+        console.log(response.data.token)
+        saveToken(response.data.token); //guardar el token en memoria usando authHelper
+        decodeToken(getToken())
         //setRedirect(true); Esto redirige al home en el caso de que este todo correcto
       }catch(error){
         if (error.response) {
@@ -44,13 +44,7 @@ function LoginForm() {
         }
       }
     }
-    //Useffect para mostrar el contenido de token
-    useEffect(()=>{
-      async function mostrarDatos(){
-        console.log(decodeToken(getToken()))
-      }
-      mostrarDatos();
-    },[token])
+
 
 
     if (redirect) {
