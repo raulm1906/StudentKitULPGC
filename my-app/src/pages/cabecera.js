@@ -5,15 +5,29 @@ import { useTranslation } from "react-i18next";
 import { Icon } from '@iconify/react';
 import "../components/style.css";
 import { useColorMode } from '@chakra-ui/react';
-
+import { isAuthenticated, removeToken,getToken,decodeToken } from '../authHelper';
+import { useState,useEffect } from 'react';
 const Header = () => {
   const { t, i18n } = useTranslation('common');
   const { colorMode } = useColorMode();
-
+  const [profileUser,setProfileuser] = useState(true);
   const handleLanguageChange = (lang) => {
     i18n.changeLanguage(lang);
   };
 
+  useEffect(()=>{
+    async function cargarUsuario(){
+      if(!getToken()){
+        setProfileuser(false)
+        return;
+      }
+  }
+    cargarUsuario();
+  },[])
+ 
+  useEffect(()=>{
+    profileUser ? console.log(decodeToken(getToken())) : null ;
+  },[profileUser])
   return (
     <Navbar expand="lg" style={{ backgroundColor: colorMode === 'dark' ? 'black' : '#0191CE' }}>
       <Navbar.Brand href="#home" style={{ backgroundColor: colorMode === 'dark' ? 'black' : '#0191CE' }}>
@@ -35,7 +49,16 @@ const Header = () => {
         <Nav>
           <button opacity="0" onClick={() => handleLanguageChange('en')} style={{ marginRight: 10, backgroundColor: 'transparent'}}><Icon icon="flag:gb-1x1" /></button>
           <button variant="light" onClick={() => handleLanguageChange('es')}><Icon icon="flag:es-1x1"/></button>
-          <NavLink  to="/Register" className="mr-sm-2" >Sign In</NavLink>
+
+          {isAuthenticated() ? (
+            <li>
+              <button onClick={handleLogout}>Cerrar sesión</button>
+            </li>
+          ) : (
+            <li>
+              <NavLink  to="/Register" className="mr-sm-2" >Sign In</NavLink></li>
+          )}
+          
         </Nav>
       </Navbar.Collapse>
     </Navbar>

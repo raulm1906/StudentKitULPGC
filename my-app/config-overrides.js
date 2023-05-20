@@ -1,12 +1,20 @@
-module.exports = function override(config) {
-    // Añade las configuraciones de polyfills necesarias a la propiedad `fallback`
-    if (config.resolve) {
-      if (!config.resolve.fallback) {
-        config.resolve.fallback = {};
-      }
-      config.resolve.fallback.crypto = false;
-    }
-  
-    return config;
+const autoprefixer = require('autoprefixer');
+
+module.exports = function override(config, env) {
+  // ...
+  config.plugins.push(autoprefixer());
+  // ...
+  return config;
+};
+
+module.exports = function override(config, env) {
+  // ...
+  config.resolve.fallback = {
+    ...config.resolve.fallback,
+    crypto: false,
   };
-  
+  // ...
+  return config;
+};
+
+

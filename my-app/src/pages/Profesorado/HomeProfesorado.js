@@ -14,7 +14,6 @@ import {
 
   } from '@chakra-ui/react'
 import FilterHomeProfesores from './FilterHomeProfesores';
-import profesores from '../../data/profesores.json';
 import { useTranslation } from 'react-i18next';
 import { useColorMode } from '@chakra-ui/react';
 function HomeProfesorado () {
@@ -34,14 +33,7 @@ function HomeProfesorado () {
     }
   
   
-  function getAsignaturasSinParentesis() {
-    const asignaturasSinParentesis = profesores
-      .map((element) => element.asignaturas)
-      .flat()
-      .filter((asignatura) => !/\(|\)/.test(asignatura))
-      .sort()
-      return [...new Set(asignaturasSinParentesis)];
-  }
+
   return (
     
     <div id = "HomeAsignatura">
@@ -82,7 +74,7 @@ function HomeProfesorado () {
           <DrawerCloseButton />
           <DrawerHeader>{t('profesorado.filters')}</DrawerHeader>
           <DrawerBody>
-            <FilterHomeProfesores onAsignaturaSelect={handleAsignaturaSelect} asignaturas={getAsignaturasSinParentesis()} />
+            <FilterHomeProfesores onAsignaturaSelect={handleAsignaturaSelect}  />
           </DrawerBody>
           <DrawerFooter>
             {/* any footer content goes here */}

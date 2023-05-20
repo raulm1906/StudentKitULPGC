@@ -1,5 +1,4 @@
 import React,{useEffect,useState} from 'react';
-import data from '../../data/subjects.json';
 import '../../components/style.css'
 import { Link } from 'react-router-dom';
 import { useColorMode } from '@chakra-ui/react';

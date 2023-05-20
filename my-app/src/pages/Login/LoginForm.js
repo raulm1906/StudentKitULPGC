@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
-
 import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Checkbox } from "@chakra-ui/react";
 import { Button, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -10,8 +9,9 @@ import '../../components/forms.css'
 import RegisterPortada from "../Register/RegisterPortada";
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
-
+import { saveToken, getToken, decodeToken,isAuthenticated } from "../../authHelper";
 function LoginForm() {
+    const [token , setToken] = useState("")
     const [redirect, setRedirect] = useState(false);
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
@@ -22,8 +22,8 @@ function LoginForm() {
     const handleEmailInputChange = (e) => setEmailInput(e.target.value);
     const handlePasswordInput = (e) => setPasswordInput(e.target.value);
     const handleRememberMeChange = (e) => setRememberMe(e.target.checked);
-  
     const isEmailError = emailInput === '';
+
 
     const handleSubmit = async(e) => {
       e.preventDefault();
@@ -33,15 +33,25 @@ function LoginForm() {
         "password": passwordInput,
       };
       try{
-        const response = await axios.post('https://django.narurm.eu/usuarios/login/',data);
-        console.log(response.data)
-        setRedirect(true);
+        const response = await axios.post('https://django.narurm.eu/usuarios/login/',data)
+        console.log(response)
+        saveToken(response.data['token']); //guardar el token en memoria usando authHelper
+        setToken(response.data['token']); //guardamos el token en una variable local para verlo usando el UseEffect esto es para testing
+        //setRedirect(true); Esto redirige al home en el caso de que este todo correcto
       }catch(error){
         if (error.response) {
           alert("Contraseña o email no coinciden");
         }
       }
     }
+    //Useffect para mostrar el contenido de token
+    useEffect(()=>{
+      async function mostrarDatos(){
+        console.log(decodeToken(getToken()))
+      }
+      mostrarDatos();
+    },[token])
+
 
     if (redirect) {
       return <Navigate to="/" replace={true} />;
