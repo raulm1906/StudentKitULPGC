@@ -1,3 +1,4 @@
+import jwt
 from .models import User
 from .serializers import UserSerializer
 from rest_framework import generics
@@ -6,9 +7,10 @@ from django.urls import reverse
 from django.views.generic.base import View
 from rest_framework.response import Response
 from django.http import HttpResponse
-from django.contrib.auth import get_user_model
-from rest_framework.authtoken.views import obtain_auth_token  
+from django.contrib.auth import get_user_model, authenticate
+from rest_framework.authtoken.views import obtain_auth_token, APIView  
 from rest_framework.authtoken.models import Token
+from django.conf import settings
 
 
 
@@ -48,5 +50,19 @@ class ActivateAccountView(View):
             
             return redirect(reverse(obtain_auth_token))
             '''
+class CustomLoginView(APIView):
+    def post(self, request):
+        email = request.data.get('username')
+        password = request.data.get('password')
 
+        # Realiza la autenticación del usuario (ejemplo: usando Django's authenticate)
+        user = authenticate(request, email=email, password=password)
+
+        if user is not None:
+            token = jwt.encode({'user_id': user.id}, settings.SECRET_KEY, algorithm='HS256')
+            Token.objects.get_or_create(user=user)
+
+            return Response({'token': token, 'user': user.id})
+
+        return Response({'error': 'Credenciales inválidas'}, status=400)
 

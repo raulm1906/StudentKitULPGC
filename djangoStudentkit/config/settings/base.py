@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 import json
 from pathlib import Path
+from django.core.management.utils import get_random_secret_key
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -27,7 +28,7 @@ ALLOWED_HOSTS = ['*']
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # TODO generar key en despliegue
-SECRET_KEY = 'ba51191cd9d28890339dabfae3100b9d0121a68d'
+SECRET_KEY = get_random_secret_key()
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,6 +38,7 @@ INSTALLED_APPS = [
     'users',
     'rest_framework.authtoken',
     'rest_framework',
+    'pyjwt',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
