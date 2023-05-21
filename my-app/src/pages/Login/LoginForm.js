@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
+
 import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Checkbox } from "@chakra-ui/react";
 import { Button, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
@@ -9,22 +10,22 @@ import '../../components/forms.css'
 import RegisterPortada from "../Register/RegisterPortada";
 import axios from 'axios';
 import { Navigate } from 'react-router-dom';
-import { saveToken, getToken, decodeToken,isAuthenticated } from "../../authHelper";
+import { decodeToken, getToken, saveToken } from "../../authHelper";
+
 function LoginForm() {
-    const [token , setToken] = useState("")
     const [redirect, setRedirect] = useState(false);
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
     const [t, i18n] = useTranslation('common');
     const { colorMode } = useColorMode();
-  
+    const [usuario, setusuario] = useState({})
     const handleEmailInputChange = (e) => setEmailInput(e.target.value);
     const handlePasswordInput = (e) => setPasswordInput(e.target.value);
     const handleRememberMeChange = (e) => setRememberMe(e.target.checked);
+  
     const isEmailError = emailInput === '';
-
-
+    /*
     const handleSubmit = async(e) => {
       e.preventDefault();
       console.log(emailInput,passwordInput)
@@ -33,20 +34,31 @@ function LoginForm() {
         "password": passwordInput,
       };
       try{
-        const response = await axios.post('https://django.narurm.eu/usuarios/login/',data)
-        console.log(response.data.token)
-        saveToken(response.data.token); //guardar el token en memoria usando authHelper
-        decodeToken(getToken())
-        //setRedirect(true); Esto redirige al home en el caso de que este todo correcto
+        const response = await axios.post('https://django.narurm.eu/usuarios/login/',data);
       }catch(error){
         if (error.response) {
           alert("Contraseña o email no coinciden");
         }
       }
+    }*/
+
+ 
+    const handleSubmit = async(e) => {
+      e.preventDefault();
+      try{
+        const data = {
+          "username": emailInput,
+          "password": passwordInput,
+        };
+        const response = await axios.get('https://django.narurm.eu/usuarios/',data)
+        const usr = response.data.filter(usr => usr.email === emailInput)
+        localStorage.setItem("id",usr[0].id)
+        setRedirect(true)
+      }catch(error){
+        alert('Contraseña o nombre de usuarios no coinciden')
+      }
+     
     }
-
-
-
     if (redirect) {
       return <Navigate to="/" replace={true} />;
     }
