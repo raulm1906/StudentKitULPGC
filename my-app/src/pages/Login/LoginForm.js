@@ -71,23 +71,11 @@ function LoginForm() {
         <FormControl>
         <FormLabel className="email-label">{t('InicioSesion.email')}</FormLabel>
           <Input placeholder='pepe.fernandez110@alu.ulpgc.es' type='email' value={emailInput} onChange={handleEmailInputChange} />
-          {!isEmailError ? (
-            <FormHelperText>
-              {t('mensajeErrorLogin.mensajeErrorLogin1')}
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>{t('mensajeErrorLogin.mensajeErrorLogin1')}</FormErrorMessage>
-          )}
+ 
 
           <FormLabel className="contraseña-label">{t('InicioSesion.contraseña')}</FormLabel>
           <Input type='password' value={passwordInput} onChange={handlePasswordInput} />
-          {!isEmailError ? (
-            <FormHelperText>
-              {t('mensajeErrorLogin.mensajeErrorLogin1')}
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>{t('mensajeErrorLogin.mensajeErrorLogin1')}</FormErrorMessage>
-          )}
+ 
 
         </FormControl>
         <Button type="submit">{t('InicioSesion.login')}</Button>

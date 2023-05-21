@@ -28,43 +28,17 @@ function RegisterForm() {
           <FormLabel>Nombre de usuario</FormLabel>
 
           <Input placeholder='Nombre de Usuario' type='usuario' value={usuarioInput} onChange={handleUsuarioInputChange}/>
-          {!isUsuarioError ? (
-            <FormHelperText>
-              Enter your username.
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>Username is required.</FormErrorMessage>
-          )}
+ 
 
           <FormLabel>Email</FormLabel>
           <Input placeholder='pepe.fernandez110@alu.ulpgc.es' type='email' value={emailInput} onChange={handleEmailInputChange} />
-          {!isEmailError ? (
-            <FormHelperText>
-              Enter the email you'd like to receive the newsletter on.
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>Email is required.</FormErrorMessage>
-          )}
 
           <FormLabel>Contraseña</FormLabel>
           <Input type='password' value={passwordInput} onChange={handlePasswordInput} />
-          {!isEmailError ? (
-            <FormHelperText>
-              Enter the email you'd like to receive the newsletter on.
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>Email is required.</FormErrorMessage>
-          )}
 
           <FormLabel>Confirmar Contraseña</FormLabel>
           <Input type='password' value={confirmPasswordInput} onChange={handleConfirmPasswordInput} />
-          {!isEmailError ? (
-            <FormHelperText>
-              Enter the email you'd like to receive the newsletter on.
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>Email is required.</FormErrorMessage>
-          )}
+
 
         </FormControl>
           <Button
