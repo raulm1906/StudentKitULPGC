@@ -1,0 +1,82 @@
+[
+    {
+        "Classroom": "A2-4",
+        "Day": "MIERCOLES",
+        "FHour": "12:30",
+        "Group": "1",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-3",
+        "Day": "JUEVES",
+        "FHour": "14:30",
+        "Group": "41",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L2-2",
+        "Day": "JUEVES",
+        "FHour": "10:30",
+        "Group": "32",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-4",
+        "Day": "JUEVES",
+        "FHour": "12:30",
+        "Group": "43",
+        "IHour": "10:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-2",
+        "Day": "VIERNES",
+        "FHour": "14:30",
+        "Group": "44",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "A2-5",
+        "Day": "MARTES",
+        "FHour": "10:30",
+        "Group": "2",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L2-2",
+        "Day": "MIERCOLES",
+        "FHour": "14:30",
+        "Group": "45",
+        "IHour": "12:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-4",
+        "Day": "MIERCOLES",
+        "FHour": "10:30",
+        "Group": "48",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L1-1",
+        "Day": "VIERNES",
+        "FHour": "10:30",
+        "Group": "46",
+        "IHour": "8:30",
+        "Week": "ambos"
+    },
+    {
+        "Classroom": "L3-2",
+        "Day": "VIERNES",
+        "FHour": "14:30",
+        "Group": "47",
+        "IHour": "12:30",
+        "Week": "ambos"
+    }
+]

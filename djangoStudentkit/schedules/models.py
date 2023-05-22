@@ -1,40 +1,17 @@
 from django.db import models
-from users.models import Users
+from users.models import User
+from config.settings.base import AUTH_USER_MODEL
 
 
 # Create your models here.
 
-class Groups(models.Model):
-    groupcode = models.IntegerField(db_column='groupCode', primary_key=True)  # Field name made lowercase.
-    type = models.CharField(max_length=11)
-
-    class Meta:
-        db_table = 'GROUPS'
-
-
-class Subjectschedules(models.Model):
-    subjectcode = models.OneToOneField('subjects.Subject', models.DO_NOTHING, db_column='subjectCode', primary_key=True)  # Field name made lowercase. The composite primary key (subjectCode, groupCode) found, that is not supported. The first column is selected.
-    groupcode = models.ForeignKey(Groups, models.DO_NOTHING, db_column='groupCode')  # Field name made lowercase.
-    schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023, blank=True, null=True)  # Field name made lowercase.
-
-    class Meta:
-        db_table = 'SUBJECTSCHEDULES'
-        unique_together = (('subjectcode', 'groupcode'),)
-
-
-class Userschedules(models.Model):
-    code = models.AutoField(primary_key=True)  # The composite primary key (code, id) found, that is not supported. The first column is selected.
-    id = models.IntegerField()
-    schedulepath = models.CharField(db_column='schedulePath', unique=True, max_length=1023)  # Field name made lowercase.
-
-    class Meta:
-        db_table = 'USERSCHEDULES'
-        unique_together = (('code', 'id'),)
 
 class Event(models.Model):
+    id = models.UUIDField(primary_key=True)
     title = models.CharField(max_length=255)
-    start_time = models.CharField(max_length=255)
-    end_time = models.CharField(max_length=255)
+    subject_code = models.CharField(max_length=30)
+    startTime = models.CharField(max_length=255)
+    endTime = models.CharField(max_length=255)
     days_of_week = models.IntegerField(choices=(
         (1, 'Monday'),
         (2, 'Tuesday'),
@@ -44,16 +21,22 @@ class Event(models.Model):
         (6, 'Saturday'),
         (7, 'Sunday'),
     ))
+    schedule = models.ForeignKey('Schedule', on_delete=models.CASCADE, related_name='events')
+    startRecur = models.CharField(max_length=255, default= "2023-03-01T00:00:00")
+    endRecur = models.CharField(max_length=255, default="2024-05-01T00:00:00")
+    rrule = models.JSONField(default=dict(freq='weekly', interval=1))
+    backgroundColor = models.CharField(max_length=255, default="#FEAD57")
+    color = models.CharField(max_length=255, default="#FEAD57")
 
-    def __str__(self):
-        return self.title
+    class Meta:
+        db_table = 'event'
     
 
 class Schedule(models.Model):
-    userId = models.ForeignKey(Users, on_delete=models.CASCADE)
-    events = models.ManyToManyField('Event')
+    userId = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=30)
 
-    def __str__(self):
-        return f"Schedule for {self.user.username}"
+    class Meta:
+        db_table = 'schedule'
     
 

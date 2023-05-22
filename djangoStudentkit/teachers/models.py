@@ -1,8 +1,6 @@
 from django.db import models
-from subjects.models import Subject
 
 # Create your models here.
-
 
 DAY_OF_WEEK_CHOICES = (
     (1, 'Monday'),
@@ -11,7 +9,6 @@ DAY_OF_WEEK_CHOICES = (
     (4, 'Thursday'),
     (5, 'Friday'),
 )
-
 
 class KnowledgeArea(models.Model):
     # Field name made lowercase.
@@ -43,7 +40,7 @@ class Teacher(models.Model):
     )
     email = models.EmailField(max_length=255, unique=True)
     phone_number = models.CharField(
-        max_length=255, unique=True, null=True)
+        max_length=20, unique=False, null=True)
     office = models.CharField(max_length=255, null=True)
 
     class Meta:

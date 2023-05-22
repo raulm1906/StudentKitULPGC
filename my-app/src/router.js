@@ -6,11 +6,12 @@ import NotFound from "./components/NotFound";
 import Profesorado from "./pages/Profesorado/ResultProfesorado";
 import ListHorarios from './pages/Horario/ListHorarios';
 import PageHorario from "./pages/Horario/pages/HorarioEdit/PageHorario";
+import LoginForm from "./pages/Login/LoginForm";
+import RegisterForm from "./pages/Register/RegisterForm";
 import HomeAsignaturas from "./pages/Asignaturas/HomeAsignaturas";
 import HomeProfesorado from "./pages/Profesorado/HomeProfesorado";
 import RegisterHome from './pages/Register/RegisterHome';
 import LoginForm from "./pages/Login/LoginForm";
-
 export const router = createBrowserRouter(
   [
     {
@@ -56,4 +57,16 @@ export const router = createBrowserRouter(
       path: "/Register",
       element: <RegisterHome />
     },
+    {
+      path: "/login",
+      element: <LoginForm />
+    },
+    {
+      path: "/register",
+      element: <RegisterHome />
+    },
+    {
+      path: "/FAQ",
+      element: <FaqForm />
+    }
   ])

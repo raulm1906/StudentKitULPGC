@@ -1,61 +1,97 @@
 import React from "react";
 import { useState } from "react";
-import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input } from "@chakra-ui/react";
-import { Button, Box } from "@chakra-ui/react";
 
+import { FormControl, FormLabel, FormHelperText, FormErrorMessage, Input, Checkbox } from "@chakra-ui/react";
+import { Button, Box } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import { useColorMode } from '@chakra-ui/react';
 import '../../components/forms.css'
 import RegisterPortada from "../Register/RegisterPortada";
+import axios from 'axios';
+import { Navigate } from 'react-router-dom';
+import { decodeToken, getToken, saveToken } from "../../authHelper";
+
 function LoginForm() {
+    const [redirect, setRedirect] = useState(false);
     const [emailInput, setEmailInput] = useState('');
     const [passwordInput, setPasswordInput] = useState('');
-  
+    const [rememberMe, setRememberMe] = useState(false);
+    const [t, i18n] = useTranslation('common');
+    const { colorMode } = useColorMode();
+    const [usuario, setusuario] = useState({})
     const handleEmailInputChange = (e) => setEmailInput(e.target.value);
     const handlePasswordInput = (e) => setPasswordInput(e.target.value);
+    const handleRememberMeChange = (e) => setRememberMe(e.target.checked);
   
     const isEmailError = emailInput === '';
-  
+    /*
+    const handleSubmit = async(e) => {
+      e.preventDefault();
+      console.log(emailInput,passwordInput)
+      const data = {
+        "username": emailInput,
+        "password": passwordInput,
+      };
+      try{
+        const response = await axios.post('https://django.narurm.eu/usuarios/login/',data);
+      }catch(error){
+        if (error.response) {
+          alert("Contraseña o email no coinciden");
+        }
+      }
+    }*/
+
+ 
+    const handleSubmit = async(e) => {
+      e.preventDefault();
+      try{
+        const data = {
+          "username": emailInput,
+          "password": passwordInput,
+        };
+        const response = await axios.get('https://django.narurm.eu/usuarios/',data)
+        const usr = response.data.filter(usr => usr.email === emailInput)
+        localStorage.setItem("id",usr[0].id)
+        setRedirect(true)
+      }catch(error){
+        alert('Contraseña o nombre de usuarios no coinciden')
+      }
+     
+    }
+    if (redirect) {
+      return <Navigate to="/" replace={true} />;
+    }
+
     return (
     <Box colSpan={2} display={"flex"}>
-      <RegisterPortada></RegisterPortada>
-      
-      <div className=" form">
-        <h1>Bienvenido de <br></br> vuelta!</h1>
+      <div className={` text-center w-100 form ${colorMode === 'dark' ? 'dark' : ''}`}>
+        <h1>{t('InicioSesion.mensajeInicioSesion1')}</h1>
+        <form onSubmit={handleSubmit}>
         <FormControl>
-          <FormLabel>Email</FormLabel>
+        <FormLabel className="email-label">{t('InicioSesion.email')}</FormLabel>
           <Input placeholder='pepe.fernandez110@alu.ulpgc.es' type='email' value={emailInput} onChange={handleEmailInputChange} />
-          {!isEmailError ? (
-            <FormHelperText>
-              Enter the email you'd like to receive the newsletter on.
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>Email is required.</FormErrorMessage>
-          )}
+ 
 
-          <FormLabel>Contraseña</FormLabel>
+          <FormLabel className="contraseña-label">{t('InicioSesion.contraseña')}</FormLabel>
           <Input type='password' value={passwordInput} onChange={handlePasswordInput} />
-          {!isEmailError ? (
-            <FormHelperText>
-              Enter the email you'd like to receive the newsletter on.
-            </FormHelperText>
-          ) : (
-            <FormErrorMessage>Email is required.</FormErrorMessage>
-          )}
+ 
 
         </FormControl>
-          <Button
-              size='md'
-              height='48px'
-              width='200px'
-              border='2px'
-              borderColor='green.500'
-          >
-          Login
-          </Button>
+        <Button type="submit">{t('InicioSesion.login')}</Button>
+        </form>
 
-          <p>Todavía no tienes una cuenta?</p>
-          <p><a href="">Regístrate</a></p>
-        </div>
-      </Box>
+        <FormLabel className="rememberMe-label">
+          <Checkbox
+            isChecked={rememberMe}
+            onChange={handleRememberMeChange}
+          />
+          {t('InicioSesion.recuerdame')}
+        </FormLabel>
+        <p>{t('InicioSesion.mensajeInicioSesion2')} <Link to="/Register">{t('InicioSesion.registrate')}</Link> </p>
+      </div>
+      <RegisterPortada></RegisterPortada>
+    </Box>
     )
 }
 

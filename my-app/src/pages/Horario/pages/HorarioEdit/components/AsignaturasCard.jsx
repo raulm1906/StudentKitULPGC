@@ -1,10 +1,12 @@
-import { Flex, Heading, Button } from '@chakra-ui/react'
+import { Flex, Heading, Button, useColorMode } from '@chakra-ui/react'
 import React from 'react'
 import { BsChevronLeft } from 'react-icons/bs'
-import YearDropdown from './YearDropdown'
+import YearDropdown from './YearDropdown';
+import { useTranslation } from 'react-i18next';
 
 export default function FilterCard(props) {
-
+  const [t, i18n] = useTranslation('common');
+  const { colorMode, toggleColorMode } = useColorMode();
   const handleCloseButton =() => {
     const newStyles = {
       box: {
@@ -24,17 +26,18 @@ export default function FilterCard(props) {
       as="section"
       flexDirection="column"
       w="300px"
-      h="70%" 
-      bg="#f0f0f0"
+      h="65%" 
+      bg={colorMode === 'dark' ? "black" : "#f0f0f0"}
+      color={colorMode === 'dark' ? "white" : "inherit"}
       borderRadius="20px"
-      position="fixed" 
+      position="absolute" 
       zIndex="20"
       transition="0.5s ease all"
       margin="20px"
       marginLeft={props.marginCard}
     >
       <Flex justifyContent="space-between" alignItems="center">
-        <Heading marginLeft="20px" fontSize="lg">Asignaturas</Heading>
+        <Heading marginLeft="20px" fontSize="lg">{t('ResultAsignaturas.subjects')}</Heading>
         <Button 
           bg="#DADADA" 
           borderRadius="full" 
@@ -46,10 +49,13 @@ export default function FilterCard(props) {
         </Button>
       </Flex>
 
-      <Flex flexDirection="column" h="100%">
+      <Flex flexDirection="column" h="90%" pb={3} px={1} overflowY="scroll">
         
-        <YearDropdown year="Año 1" />
-        <YearDropdown year="Año 2"/>
+        <YearDropdown year={1}/>
+        <YearDropdown year={2}/>
+        <YearDropdown year={3}/>
+        <YearDropdown year={4}/>
+        
       </Flex>
     </Flex>
   )

@@ -1,10 +1,13 @@
 import { Button } from '@chakra-ui/button'
 import React from 'react'
 import { Icon } from '@chakra-ui/icon'
-import { MdOutlineEdit } from 'react-icons/md'
+import { MdOutlineEdit } from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
+import { useColorMode } from '@chakra-ui/react';
 
 export default function EditButton(props) {
-  
+    const [t, i18n] = useTranslation('common');
+    const { colorMode, toggleColorMode } = useColorMode();
     const handleEditButton = () => {
         const newStyles = {
             box: {
@@ -24,8 +27,8 @@ export default function EditButton(props) {
             onClick={handleEditButton} 
             borderRadius="20px"
             marginLeft="20px"
-            bg="#DADADA"
+            bg={colorMode === 'dark' ? "#313535" : "#DADADA"}
             rightIcon={<Icon as={MdOutlineEdit} />} 
-        >Editar Horario</Button>
+        >{t('ResultAsignaturas.editarHorario')}</Button>
         )
 }

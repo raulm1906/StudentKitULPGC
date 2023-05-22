@@ -1,49 +1,43 @@
 import React, { useContext } from 'react'
-import { Flex, Text, Button, Checkbox } from '@chakra-ui/react'
-import { useState } from 'react'
+import { Flex, Text, Button, Checkbox, useColorMode } from '@chakra-ui/react'
+import { useState } from 'react';
 import { Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/menu'
 import { AiFillCaretDown } from 'react-icons/ai'
 import { Icon } from '@chakra-ui/icon' 
 import AppContext from '../../../../../app/AppContext'
+import { createEvents, getInitials } from '../utils/utils'
+import { useTranslation } from 'react-i18next';
+import '../../../../../components/forms.css'
 
-const daysOfWeek = {
-        "LUNES": 1,
-        "MARTES": 2,
-        "MIERCOLES": 3,
-        "JUEVES": 4,
-        "VIERNES": 5
-    }
 
-function createEvents(sessions, id){
-    return sessions.map(session =>({
-        id: id,
-        title: `${id} Grupo ${session.Group}`,
-        startTime: session.IHour,
-        endTime: session.FHour,
-        daysOfWeek: [daysOfWeek[`${session.Day}`]], // 1 = Monday
-        startRecur: '2023-03-01T00:00:00', 
-        endRecur: '2024-05-01T00:00:00',
-        rrule: {
-            freq: 'weekly',
-            interval: 1,
-        },
-    }))
-}
+export default function AsignaturaCheckbox({ subject }) {
+    const [t, i18n] = useTranslation('common');
+    const { colorMode, toggleColorMode } = useColorMode();
+    const initials = getInitials(subject.name)
+    const lessons = subject.lessons
+    const groupMapping = {
+        41: 17,
+        42: 17,
+        43: 18,
+        44: 18,
+        45: 19,
+        46: 19,
+        47: 20,
+        48: 20,
+        49: 21,
+        50: 21,
+        51: 22,
+        52: 22
+      }
 
-export default function AsignaturaCheckbox({ id, name }) {
-    const datos = require(`/src/data/subjectSchedules/${id}.json`)
-
-    {/* Handles state of the checkbox */}
     const [isChecked, setIsChecked] = useState(false)
-
-    {/* Handles the list of events that will be displayed on the schedule */}
     const {events, setEvents} = useContext(AppContext)
-
-    { /* Handles the state of selected theory group */}
     const [groupTheory, setGroupTheory] = useState(null)
-
-    { /* Handles the state of selected practice group */}
     const [groupPractice, setGroupPractice] = useState(null)
+
+    function getActualGroup(group) {
+        return groupMapping[group] || group;
+    }
 
     function handleTheory(group){
         setGroupTheory(group)
@@ -54,17 +48,22 @@ export default function AsignaturaCheckbox({ id, name }) {
     }    
 
     function handleNewEvents(){
-        const sessionsTheory = datos.filter(item => item.Group === groupTheory)
-        const sessionsPractice = datos.filter(item => item.Group === groupPractice)
+        const sessionsTheory = lessons.filter(item => item.group === groupTheory)
+        const sessionsPractice = lessons.filter(item => item.group === getActualGroup(groupPractice))
+        console.log(sessionsPractice)
+        const sessionsPracticeInClassroom = lessons.filter(item => item.group === groupPractice)
 
-        const eventsTheory = createEvents(sessionsTheory, id)
-        const eventsPractice = createEvents(sessionsPractice, id)
 
-        setEvents([...events, ...eventsTheory, ...eventsPractice])
+        const eventsTheory = createEvents(sessionsTheory, initials, "#FEAD57")
+        const eventsPractice = createEvents(sessionsPractice, initials, "#1FACE8")
+        const eventsPracticeInClassroom = createEvents(sessionsPracticeInClassroom, initials, "#71D359")
+
+        setEvents([...events, ...eventsTheory, ...eventsPractice, ...eventsPracticeInClassroom])
+
     }
 
-    function handleDeleteEvents(id){
-        setEvents(events.filter(event => event.id !== id));
+    function handleDeleteEvents(){
+        setEvents(events.filter(event => event.subject_code !== subject.code.toString()))
     }
 
     function handleCheckBoxChange(e){
@@ -72,20 +71,20 @@ export default function AsignaturaCheckbox({ id, name }) {
         if(e.target.checked) {
             handleNewEvents()
         }else{
-            handleDeleteEvents(id)
+            handleDeleteEvents()
         }
     } 
 
     return (
     <Flex flexDirection="row" justifyContent="space-between">
-            <Checkbox marginLeft="10px" checked={isChecked} onChange={handleCheckBoxChange}>
+            <Checkbox marginLeft="10px" checked={isChecked} onChange={handleCheckBoxChange} className={colorMode === 'dark' ? 'dark-mode' : ''}>
                 <Text fontWeight="semibold" color="#919191">
-                    {name}
+                    {initials}
                 </Text>
             </Checkbox>
             <Flex>
                 <Flex flexDirection="column" marginLeft="10px" marginRight="10px" alignItems="center">
-                    <Text fontSize="xs">Teoría</Text>
+                    <Text fontSize="xs">{t('AsignaturasCard.teoria')}</Text>
                     <Menu>
                         <MenuButton 
                             as={Button} 
@@ -100,17 +99,18 @@ export default function AsignaturaCheckbox({ id, name }) {
                                 fontWeight: "normal",
                                 fontSize: "10px"
                             }}
+                            className={colorMode === 'dark' ? 'dark-mode' : ''}
                         >
                             {groupTheory}
                         </MenuButton>
                         <MenuList>
-                            <MenuItem onClick={() => handleTheory("1")}>Grupo 1</MenuItem>
-                            <MenuItem onClick={() => handleTheory("2")}>Grupo 2</MenuItem>
+                            <MenuItem onClick={() => handleTheory(1)}>Grupo 1</MenuItem>
+                            <MenuItem onClick={() => handleTheory(2)}>Grupo 2</MenuItem>
                         </MenuList>
                     </Menu>
                 </Flex>
                 <Flex flexDirection="column" marginLeft="10px" marginRight="10px" alignItems="center">
-                    <Text fontSize="xs">Práctica</Text>
+                    <Text fontSize="xs">{t('AsignaturasCard.practice')}</Text>
                     <Menu>
                         <MenuButton 
                             as={Button} 
@@ -125,15 +125,19 @@ export default function AsignaturaCheckbox({ id, name }) {
                                 fontWeight: "normal",
                                 fontSize: "10px"
                             }}
+                            className={colorMode === 'dark' ? 'dark-mode' : ''}
                         >
                             {groupPractice}
                         </MenuButton>
                         <MenuList>
-                            <MenuItem onClick={() => handlePractice("17")}>Grupo 17</MenuItem>
-                            <MenuItem onClick={() => handlePractice("18")}>Grupo 18</MenuItem>
-                            <MenuItem onClick={() => handlePractice("19")}>Grupo 19</MenuItem>
-                            <MenuItem onClick={() => handlePractice("20")}>Grupo 20</MenuItem>
-                            <MenuItem onClick={() => handlePractice("22")}>Grupo 22</MenuItem>
+                            <MenuItem onClick={() => handlePractice(41)}>Grupo 41</MenuItem>
+                            <MenuItem onClick={() => handlePractice(42)}>Grupo 42</MenuItem>
+                            <MenuItem onClick={() => handlePractice(43)}>Grupo 43</MenuItem>
+                            <MenuItem onClick={() => handlePractice(44)}>Grupo 44</MenuItem>
+                            <MenuItem onClick={() => handlePractice(45)}>Grupo 45</MenuItem>
+                            <MenuItem onClick={() => handlePractice(46)}>Grupo 46</MenuItem>
+                            <MenuItem onClick={() => handlePractice(47)}>Grupo 47</MenuItem>
+                            <MenuItem onClick={() => handlePractice(48)}>Grupo 48</MenuItem>
                         </MenuList>
                     </Menu>
                 </Flex>

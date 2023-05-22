@@ -1,6 +1,7 @@
 #HomeAsignatura{
     display: flex;
     justify-content: space-evenly;
+    grid-column: span 3;
 }
 #CabeceraHomeSearch{
     margin: 1%;
@@ -18,6 +19,14 @@
     justify-content: center;
     background-color: #EDECEC;
 
+}
+#SearchBar.dark {
+    background-color: #4a4d50;
+    color: white;
+}
+#SearchBar.light {
+    background-color: #EDECEC;
+    color: #000;
 }
 #titleItemBusqueda{
     font-weight: bold;

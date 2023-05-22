@@ -8,13 +8,14 @@ const SearchProfesores = ({searchTerm}) => {
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(()=>{
-      axios.get('http://127.0.0.1:8000/profesores/teacher/')
+      axios.get('https://django.narurm.eu/profesores/teacher/')
       .then(response => {
         setData(response.data);
       })
       .catch(error => {
           console.error(error);
       });
+      
     },[]);
 
         

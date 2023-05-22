@@ -5,7 +5,7 @@
     "footer": {
         "eiiStudent": "Estudiante EII",
         "aboutUs": "Sobre Nosotros",
-        "terms": "Términos",
+        "terms": "FAQ",
         "contact": "Contacto"
     }, 
     "header": {
@@ -15,8 +15,9 @@
     },
     "profesorado": {
         "ordenar": "Ordenar Por",
-        "itemorder": "Item de Ordenación",
-        "filters": "Filtros"
+        "itemOrder": "Item de Ordenación",
+        "filters": "Filtros",
+        "useFilters": "Usar Filtros"
     },
     "SearchHomeProfesorado": {
         "correo": "Correo",
@@ -24,7 +25,8 @@
     },
     "HomeAsignatura": {
         "coordinador": "Coordinador",
-        "curso": "Curso"
+        "curso": "Curso",
+        "filters": "Filtros"
     },
     "ResultProfesorado": {
         "email": "Correo",
@@ -37,7 +39,7 @@
         "profesores": "Profesores"
     },
     "ResultAsignaturas": {
-        "tipo": "tipo",
+        "tipo": "Tipo",
         "title": "Título",
         "departamento": "Deparmento",
         "duracion": "Duración",
@@ -45,7 +47,10 @@
         "year": "Año",
         "profesorado": "Profesorado",
         "docente": "Proyecto Docente de la Asignatura",
-        "subjects": "Asignaturas"
+        "subjects": "Asignaturas",
+        "Year1": "Año 1",
+        "Year2": "Año 2",
+        "editarHorario": "Editar Horario"
     },
     "Day": {
         "Monday": "Lunes",
@@ -58,6 +63,119 @@
     "tablaProfesorado": {
         "1": "Primer Semestre",
         "2": "Segundo Semestre"
-    }
+    },
+    "listHorarios": {
+        "mishorarios": "Mis Horarios"
+    },
+    "AsignaturasCard": {
+        "teoria": "Toería",
+        "practice": "Práctica",
+        "group": "Grupo"
+    },
+    "Registro": {
+        "mensajeRegistro": "Crea una cuenta",
+        "nombreDeUsuario": "Nombre de Usuario",
+        "email": "Correo electrónico",
+        "contraseña": "Contraseña",
+        "confirmarContraseña": "Confirmar contraseña",
+        "registrarse": "Registrarse",
+        "mensajeLogin": "¿Ya tienes una cuenta?",
+        "login": "Iniciar sesión"
+    },
+    "Portada": {
+        "mensajePortada1": "La mejor herramienta como estudiante de la ULPGC",
+        "mensajePortada2": "(y también la última)",
+        "mensajePortada3": "Accede de forma rápida a la información del profesorado, asignaturas y cursos, y create un horario personal!"
+    },
+    "InicioSesion": {
+        "mensajeInicioSesion1": "Bienvenido de vuelta!",
+        "email": "Correo electrónico",
+        "contraseña": "Contraseña",
+        "login": "Iniciar sesión",
+        "recuerdame": "Recuérdame",
+        "mensajeInicioSesion2": "¿Todavía no tienes una cuenta?",
+        "registrate": "Regístrate"
+    },
+    "mensajeErrorRegistro": {
+        "mensajeRegistro1": "Las contraseñas no coinciden",
+        "mensajeRegistro2": "Formulario enviado",
+        "mensajeRegistro3": "Formulario no válido"
+    },
+    "mensajeErrorLogin": {
+        "mensajeErrorLogin1": "Introduzca la dirección de correo electrónico en la que desea recibir el boletín.",
+        "mensajeErrorLogin2": "El correo electrónico es obligatorio."
+    },
+    "Preguntas": {
+        "titulo": "PREGUNTAS FRECUENTES",
+        "pregunta1": "¿Cómo puedo editar un horario existente?",
+        "pregunta2": "¿Cómo puedo encontrar la información de un profesor específico para cada asignatura en mi horario?",
+        "pregunta3": "¿Qué sucede si quiero cambiar el nombre de una asignatura en mi horario?",
+        "pregunta4": "¿Es posible agregar notas o descripciones adicionales a cada asignatura en mi horario?",
+        "pregunta5": "¿Es posible asignar colores diferentes a las asignaturas para una mejor visualización?",
+        "pregunta6": "¿Hay límites en la cantidad de asignaturas que puedo agregar a mi horario?",
+        "pregunta7": "¿Es posible compartir mi horario con otras personas?",
+        "pregunta8": "¿Puedo personalizar la apariencia visual de mi horario, por ejemplo: cambiar el fondo o los colores de las asignaturas?",
+        "pregunta9": "¿Qué debo hacer si hay un conflicto de horarios entre dos asignaturas que quiero tomar?",
+        "pregunta10": "¿Puedo recibir notificaciones de las clases y eventos en mi horario?",
+        "pregunta11": "¿Cómo puedo encontrar información detallada sobre una asignatura en particular, como su descripción, objetivo y contenido?",
+        "pregunta12": "¿Dónde puedo encontrar información sobre las evaluaciones y los criterios de calificación de una asignatura?",
+        "pregunta13": "¿Cómo puedo crear una cuenta en la aplicación?",
+        "pregunta14": "¿Qué significa la opción 'Recuérdame' en la página de inicio de sesión?",
+        "pregunta15": "¿Es necesario crear una cuenta para poder crear un horario?"
+    },
+    "Respuestas": {
+        "respuesta1_1": "1. Inicio sesión en tu cuenta para acceder a todas las funcionalidades de la aplicación.",
+        "respuesta1_2": "2. Navega hasta la sección 'Horarios' dentro del menú principal.",
+        "respuesta1_3": "3. Haz clic en el botón 'Mis Horarios' para ver tus horarios guardados.",
+        "respuesta1_4": "4. Selecciona el horario existente al que deseas realizar cambios.",
+        "respuesta1_5": "5. Una vez que se muestra el horario, verás un icono de lápiz que indica la opción de edición. Haz clic en ese icono para comenzar a editar el horario.",
+        "respuesta1_6": "6. Se te presentarán las opciones que puedes editar, pero ten en cuenta que no es posible cambiar en el horario.",
+        "respuesta1_7": "7. Realiza los cambios deseados en el horario.",
+        "respuesta1_8": "8. Una vez que hayas realizado todas las ediciones necesarias, haz clic en el botón 'Guardar' para guardar los cambios en el horario.",
 
+        "respuesta2_1": "1. Inicia sesión en tu cuenta para acceder a todas las funcionalidades de la aplicación.",
+        "respuesta2_2": "2. Navega hasta la sección 'Profesorado' dentro del menú principal.",
+        "respuesta2_3": "3. Dentro de la sección 'Profesorado', encontrarás una lista de profesores disponibles.",
+        "respuesta2_4": "4. Busca el nombre del profesor que deseas obtener información.",
+        "respuesta2_5": "5. Haz clic en el nombre del profesor para acceder a su perfil y ver su información académica.",
+        "respuesta2_6": "6. Dentro del perfil del profesor, podrás encontrar detalles como su área de conocimiento, su horario de tutorías y cualquier otra información relevante.",
+
+        "respuesta3": "Si deseas cambiar el nombre de una asignatura en tu horario, lamento informarte que actualmente no está permitido realizar cambios en los nombres de las asignaturas. La aplicación no ofrece la funcionalidad de modificar los nombres.",
+        "respuesta4": "Lo sentimos, en nuestra aplicación actualmente no contamos con la opción de añadir notas. Sin embargo, puedes tomar notas adicionales fuera de la aplicación, utilizando métodos como tomar apuntes en un bloc de notas o utilizar una herramienta de notas en tu dispositivo.",
+        "respuesta5": "Sí, es posible asignar colores diferentes a las asignaturas en nuestra aplicación para una mejor visualización. Nuestro equipo de administración ha trabajado en la implementación de colores específicos para cada tipo de asignatura, lo que facilita su identificación visual en el horario. Por ejemplo, la clase de teoría se muestra en un color naranja, la clase de práctica en aula se representa en azul y la clase de práctica en laboratorio se visualiza en verde.",
+        "respuesta6": "No, no hay límites en la cantidad de asignaturas que puedes agregar a tu horario. Puedes añadir tantas asignaturas como necesites para completar tu plan de estudios o tus intereses académicos.",
+        "respuesta7": "No, no es posible compartir tu horario con otras personas en esta aplicación. La función de compartir horarios con otros usuarios no está disponible en este momento. Nuestra aplicación está diseñada principalmente para uso individual y no permite compartir con otros usuarios.",
+        "respuesta8": "No, no puedes cambiar el fondo de tu horario en nuestra aplicación. Sin embargo, puedes personalizar la apariencia visual de tu horario utilizando el modo oscuro, el cual puedes activar desde el inicio de la aplicación. El modo oscuro cambiará los colores de tu horario para que sean más oscuros y suaves.",
+
+        "respuesta9_1": "1. Inicia sesión en tu cuenta y ve a la sección 'Horarios'.",
+        "respuesta9_2": "2. Selecciona el horario existente en el que deseas hacer el cambio.",
+        "respuesta9_3": "3. Haz clic en el icono de lápiz para editar el horario.",
+        "respuesta9_4": "4. Verás las opción de cada asignatura, incluyendo la opción de seleccionar el grupo.",
+        "respuesta9_5": "5. Elige el nuevo grupo deseado para la asignatura que deseas cambiar.",
+        "respuesta9_6": "6. Aseguráte de guardar los cambios haciendo clic en el botón 'Guardar'.",
+
+        "respuesta10": "Lo sentimos, en la aplicación actual no contamos con la función de recibir notificaciones de las clases pueden ser una herramienta útil para mantenerte al tanto de tus compromisos académicos, pero en este momento no podemos ofrecer esa funcionalidad. Sin embargo, te recomendamos estar atento a tu horario y configurar recordatorios en tu dispositivo personal para asegurarte de no perder ninguna clase o evento importante.",
+
+        "respuesta11_1": "1. Inicia sesión en tu cuenta en la aplicación y accede a la sección 'Asignaturas'.",
+        "respuesta11_2": "2. Se mostrará una lista de tus asignaturas y selecciona la asignatura específica de la cual deseas obtener información.",
+        "respuesta11_3": "3. Al hacer clic en la asignatura, se te presentará una página con información relacionada con la asignatura en particular.",
+        "respuesta11_4": "4. Explora la información proporcionada.",
+
+        "respuesta12_5": "5. Dentro de esta información, si encuentras un enlace, haz clic en él para acceder más detalles sobre cómo se evaluará y calificará la asignatura.",
+
+        "respuesta13_informacion": "Para crear una cuenta en nuestra aplicación, debes seguir estos pasos:",
+        "respuesta13_1": "1. Accede a la página de inicio de sesión.",
+        "respuesta13_2": "2. En la página de inicio de sesión, encontrarás un enlace que indica 'Sign up'. Haz clic en ese enlace.",
+        "respuesta13_3": "3. Se te redigirá a la página de registro",
+        "respuesta13_4": "4. En la página de registro, se te pedirá que proporciones la siguiente información:",
+        "respuesta13_4_usuario": "Nombre de usuario: Ingresa un nombre de usuario único que te identificará en la aplicación.",
+        "respuesta13_4_correo": "Correo electrónico: Introduce tu dirección de correo electrónico válida.",
+        "respuesta13_4_contraseña": "Contraseña: Elige una contraseña segura para proteger tu cuenta.",
+        "respuesta13_4_confirmarContraseña": "Confirmar Contraseña: Vuelve a ingresar la misma contraseña que elegiste anteriormente para confirmarla.",
+        "respuesta13_5": "5. Una vez que hayas completado todos los campos requeridos, haz clic en el botón 'Registrarse' para crear tu cuenta.",
+        "respuesta13_6": "6. Si todos los datos son válidos y se registran correctamente, se te redigirá a tu perfil de usuario o a la página de inicio de la aplicación.",
+
+        "respuesta14": "La opción 'Recuérdame' en la página de inicio de sesión es una función que te permite mantener tu sesión iniciada en la aplicación incluso después de cerrarla y volver a abrirla en el mismo dispositivo. Al seleccionar esta opción, la aplicación recordará tus credenciales de inicio de sesión para que no tengas que introducirlas nuevamente cada vez que accedas.",
+        "respuesta15": "Sí, para poder crear un horario es necesario que crees una cuenta en nuestra aplicación. De esta manera, podrás disfrutar de todas las características y beneficios que ofrecemos. Al registrarte, tendrás acceso personalizado a tu horario, podrás guardar y actualizar tus asignaturas. Además, al crear una cuenta, te brindamos la opción de guardar múltiples horarios y acceder a ellos desde cualquier dispositivo."
+    }
 }

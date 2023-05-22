@@ -5,18 +5,19 @@
     "footer": {
         "eiiStudent": "EII Student",
         "aboutUs": "About Us",
-        "terms": "Terms",
+        "terms": "FAQ",
         "contact": "Contact"
     }, 
     "header": {
         "horarios": "Schedules",
-        "profesorado": "Faculty",
+        "profesorado": "Teachers",
         "asignaturas": "Subjects"
     }, 
     "profesorado": {
         "ordenar": "Sort By",
         "itemOrder": "Item Order",
-        "filters": "Filters"
+        "filters": "Filters",
+        "useFilters": "Use Filters"
     },
     "SearchHomeProfesorado": {
         "correo": "Email",
@@ -47,7 +48,10 @@
         "year": "Year",
         "profesorado": "Teachers",
         "docente": "Subject Teaching Project",
-        "subjects": "Subjects"
+        "subjects": "Subjects",
+        "Year1": "Year 1",
+        "Year2": "Year 2",
+        "editarHorario": "Edit Schedule"
     },
     "Day": {
         "Monday": "Monday",
@@ -60,5 +64,119 @@
     "tablaProfesorado": {
         "1": "First Semestre",
         "2": "Second Semestre"
+    },
+    "listHorarios": {
+        "mishorarios": "My Schedules"
+    },
+    "AsignaturasCard": {
+        "teoria": "Theory",
+        "practice": "Practice",
+        "group": "Group"
+    },
+    "Registro": {
+        "mensajeRegistro": "Create an account",
+        "nombreDeUsuario": "Username",
+        "email": "Email",
+        "contraseña": "Password",
+        "confirmarContraseña": "Confirm Password",
+        "registrarse": "Check in",
+        "mensajeLogin": "Do you already have an account?",
+        "login": "Login"
+    },
+    "Portada": {
+        "mensajePortada1": "The best tool as a ULPGC student",
+        "mensajePortada2": "(and also the last one)",
+        "mensajePortada3": "Quickly access faculty, subject and course information, and create a personal schedule!"
+    },
+    "InicioSesion": {
+        "mensajeInicioSesion1": "Welcome back!",
+        "email": "Email",
+        "contraseña": "Password",
+        "login": "Login",
+        "recuerdame": "Remember me",
+        "mensajeInicioSesion2": "Don't have an account yet?",
+        "registrate": "Sign up"
+    },
+    "mensajeErrorRegistro": {
+        "mensajeRegistro1": "Passwords do not match",
+        "mensajeRegistro2": "Form submitted",
+        "mensajeRegistro3": "Form not valid"
+    },
+    "mensajeErrorLogin": {
+        "mensajeErrorLogin1": "Enter the email you'd like to receive the newsletter on.",
+        "mensajeErrorLogin2": "Email is required."
+    },
+    "Preguntas": {
+        "titulo": "FREQUENT QUESTIONS",
+        "pregunta1": "How can I edit an existing schedule?",
+        "pregunta2": "How can I find the information of a specific teacher for each subject in my schedule?",
+        "pregunta3": "What if I want to change the name of a subject in my timetable?",
+        "pregunta4": "Is it possible to add additional notes or descriptions to each subject on my schedule?",
+        "pregunta5": "Is it possible to assign different colors to the subjects for a better visualization?",
+        "pregunta6": "Are there limits to the number of subjects I can add to my schedule?",
+        "pregunta7": "Is it possible to share my schedule with other people?",
+        "pregunta8": "Can I customize the visual appearance of my schedule, for example: change the background or the colors of the subjects?",
+        "pregunta9": "What should I do if there is a schedule conflict between two subjects I want to take?",
+        "pregunta10": "Can I receive notifications of classes and events on my schedule?",
+        "pregunta11": "How can I find detailed information about a particular subject, such as its description, objective and content?",
+        "pregunta12": "Where can I find information about assessments and grading criteria for a subject?",
+        "pregunta13": "How can I create an account in the app?",
+        "pregunta14": "What does the 'Remember Me' option on the login page mean?",
+        "pregunta15": "Is it necessary to create an account to be able to create a schedule?"
+    },
+    "Respuestas": {
+        "respuesta1_1": "1. Log in to your account to access all the features of the application.",
+        "respuesta1_2": "2. Navigate to the 'Schedules' section within the main menu.",
+        "respuesta1_3": "3. Click the 'My Schedules' button to view your saved schedules.",
+        "respuesta1_4": "4. Select the existing schedule you want to make changes to.",
+        "respuesta1_5": "5. Once the schedule is displayed, you will see a pencil icon indicating the editing option. Click on that icon to start editing the schedule.",
+        "respuesta1_6": "6. You will be presented with options that you can edit, but note that it is not possible to change on the schedule.",
+        "respuesta1_7": "7. Make the desired changes to the schedule.",
+        "respuesta1_8": "8. Once you have made all the necessary edits, click the 'Save' button to save your changes to the schedule.",
+
+        "respuesta2_1": "1. Sign in to your account to access all the features of the application.",
+        "respuesta2_2": "2. Navigate to the 'Teachers' section within the main menu.",
+        "respuesta2_3": "3. Within the 'Teachers' section, you will find a list of available teachers.",
+        "respuesta2_4": "4. Search for the name of the professor you want to obtain information about.",
+        "respuesta2_5": "5. Click on the professor's name to access his profile and see his academic information.",
+        "respuesta2_6": "6. Within the teacher's profile, you will be able to find details such as their area of knowledge, their tutorial schedule and any other relevant information.",
+
+        "respuesta3": "If you want to change the name of a subject in your schedule, I regret to inform you that it is currently not allowed to make changes in the names of the subjects. The application does not offer the functionality to modify the names.",
+        "respuesta4": "Sorry, we don't currently have the option to add notes in our app. However, you can take additional notes outside of the app, using methods like taking notes in a notepad or using a note tool on your device.",
+        "respuesta5": "Yes, it is possible to assign different colors to the subjects in our application for a better visualization. Our administration team has worked on the implementation of specific colors for each type of subject, which makes it easier to visually identify them in the schedule. For example, The theory class is shown in orange, the classroom practice class is shown in blue, and the laboratory practice class is shown in green.",
+        "respuesta6": "No, there are no limits to the number of subjects you can add to your schedule. You can add as many subjects as you need to complete your study plan or academic interests.",
+        "respuesta7": "No, it is not possible to share your schedule with other people in this app. The feature of sharing schedules with other users is not available at this time. Our app is designed primarily for individual use and does not allow sharing with other users.",
+        "respuesta8": "No, you cannot change the background of your schedule in our app. However, you can customize the visual appearance of your schedule using the dark mode, which you can activate from the start of the app. Dark mode will change the colors of your schedule to make them darker and smoother.",
+
+        "respuesta9_1": "1. Log in to your account and go to the 'Schedules' section.",
+        "respuesta9_2": "2. Select the existing time you want to make the change.",
+        "respuesta9_3": "3. Click the pencil icon to edit the schedule.",
+        "respuesta9_4": "4. You will see the options for each subject, including the option to select the group.",
+        "respuesta9_5": "5. Choose the desired new group for the subject you wish to change.",
+        "respuesta9_6": "6. Make sure to save your changes by clicking the 'Save' button.",
+
+        "respuesta10": "Sorry, in the current application we do not have the function to receive notifications of the classes can be a useful tool to keep you on top of your academic commitments, but at this moment we can not offer that functionality. However, we recommend you to be vigilant to your schedule and set reminders on your personal device to make sure you don't miss any classes or important events.",
+
+        "respuesta11_1": "1. Log in to your account in the application and access the 'Subjects' section.",
+        "respuesta11_2": "2. A list of your subjects will be displayed and select the specific subject for which you want information.",
+        "respuesta11_3": "3. By clicking on the subject, you will be presented with a page with information related to the particular subject.",
+        "respuesta11_4": "4. Explore the information provided.",
+
+        "respuesta12_5": "5. Within this information, if you find a link, click on it to access more details about how the subject will be evaluated and graded.",
+
+        "respuesta13_informacion": "To create an account in our application, you must follow these steps:",
+        "respuesta13_1": "1. Access the login page.",
+        "respuesta13_2": "2. On the login page, you will find a link saying 'Sign up'. Click on that link.",
+        "respuesta13_3": "3. You will be redirected to the registration page",
+        "respuesta13_4": "4. On the registration page, you will be asked to provide the following information:",
+        "respuesta13_4_usuario": "Username: Enter a unique username that will identify you in the application.",
+        "respuesta13_4_correo": "Email: Please enter your valid email address.",
+        "respuesta13_4_contraseña": "Password: Choose a strong password to protect your account.",
+        "respuesta13_4_confirmarContraseña": "Confirm Password: Re-enter the same password you chose earlier to confirm it.",
+        "respuesta13_5": "5. Once you have completed all the required fields, click the 'Sign Up' button to create your account.",
+        "respuesta13_6": "6. If all the details are valid and entered correctly, you will be redirected to your user profile or the application home page.",
+
+        "respuesta14": "The 'Remember me' option on the login page is a feature that allows you to stay signed in to the app even after closing the app and reopening it on the same device. By selecting this option, the app will remember your login credentials. login so you don't have to enter them again every time you log in.",
+        "respuesta15": "Yes, in order to create a schedule it is necessary that you create an account in our application. In this way, you will be able to enjoy all the features and benefits that we offer. By registering, you will have personalized access to your schedule, you will be able to save and update your subjects. Plus, when you create an account, we give you the option to save multiple schedules and access them from any device."
     }
 }
